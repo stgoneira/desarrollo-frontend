@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Desarrollo Frontend - Sesión 3</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-separator="---" data-markdown data-line-numbers>
+    				<textarea data-template>
+## [Sesión 2 - Desarrollo Frontend](#)
+
+Santiago Neira
+--- 
+## [ Sesión Anterior ](#)
+- Sintaxis de HTML y CSS
+- [Doctypes](https://www.w3schools.com/tags/tag_doctype.asp)
+- Uso de referencias
+- Etiquetas para Formularios (HTML)
+- GET y POST 
+--- 
+## [Sintaxis HTML](#)
+![](imagenes/sintaxis-html.png)
+---
+## [Sintaxis CSS](#)
+```css [3-5]
+/* comentario sobre la sintaxis:
+
+selector {
+    propiedad: valor;
+} 
+*/
+
+p {
+    color: red;
+}
+
+.clase {
+    background-color: #cccccc;
+}
+
+#identificador {
+    text-decoration: underline;
+}
+```
+---
+## [Estructura HTML5](#)
+```html5 [6,11]
+&lt;!doctype html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;Estructura HTML&lt;/title&gt;
+    &lt;link href=&quot;estilo.css&quot; rel=&quot;stylesheet&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hola Mundo!&lt;/h1&gt;
+    
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+```		
+---
+## Validaciones Código
+
+[https://validator.w3.org/](https://validator.w3.org/)
+---
+## [Desafíos de Hoy](#)
+
+- Uso de Git
+- Formulario funcional
+- Chrome Developer Tools
+- Fundamentos Javascript
+- Javascript Fetch
+
+---
+## Qué usaremos hoy
+
+- Github Pages [https://pages.github.com/](https://pages.github.com/)
+- Supabase [https://supabase.com/](https://supabase.com/)
+- PostgREST [https://postgrest.org/en/stable/api.html#insertions-updates](https://postgrest.org/en/stable/api.html#insertions-updates)
+---
+## Git
+
+![GIT commands](https://support.nesi.org.nz/hc/article_attachments/360004194235/Git_Diagram.svg)
+
+---
+## Github
+
+- Markdown [(ver ref)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- Github Pages [https://pages.github.com/](https://pages.github.com/)
+
+---
+## [Evaluaciones](Evaluaciones)
+
+- Revisión de avances semanalmente
+- Construcción portafolio con 2 proyectos (curso y personal)
+- Se esperan COMMITs periódicos (ojalá diarios)
+- Pueden trabajar en pares
+
+---
+## [Ejemplo](#)
+
+Aplicación simple de registro de alumnos:
+
+[https://stgoneira.github.io/alumnos/registro.html](https://stgoneira.github.io/alumnos/registro.html)
+---
+## Código 
+
+https://github.com/stgoneira/stgoneira.github.io/tree/master/alumnos
+---
+## [Chrome Developer Tools](#)
+
+- Revisiones de código
+- Modificaciones en código 
+- Revisión responsividad
+
+--- 
+## [Desafío 1](#)
+
+Crear página personal con Github Pages donde:
+
+- La página de inicio contendrá su nombre y apellido como título
+- Descripción con enlaces a repositorio en github con código y a Github Page para visualización
+- HTML: Uso de listas o tablas 
+- HTML: Uso de imágenes 
+- CSS: Uso de márgenes y padding
+- CSS: Cambio de colores de letra
+- CSS: Cambio de colores de fondo de la página y algunos elementos
+- Diseño a gusto 
+---
+## [Break](#)
+
+10 minutos de break
+---
+## [Sintaxis Javascript]()
+
+- Case Sensitive
+- Existen palabras [reservadas](https://www.w3schools.com/js/js_reserved.asp)
+
+---
+## [Recursos]()
+
+- Probar y compartir código [https://jsfiddle.net/](https://jsfiddle.net/)
+
+---
+## [Referencias de Apoyo]()
+
+- Elementos de HTML (español) [https://developer.mozilla.org/es/docs/Web/HTML/Element](https://developer.mozilla.org/es/docs/Web/HTML/Element)
+- Elementos de CSS (español) [https://developer.mozilla.org/es/docs/Web/CSS/Reference](https://developer.mozilla.org/es/docs/Web/CSS/Reference)
+- Javascript (español) [https://developer.mozilla.org/es/docs/Web/JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- Referencias JS (inglés) [https://www.w3schools.com/jsref/default.asp](https://www.w3schools.com/jsref/default.asp)
+
+				    </textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
