@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Desarrollo Frontend - Sesión 3</title>
+		<title>Desarrollo Frontend - Sesión 4</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -21,6 +21,14 @@
 ## [Sesión 4 - Desarrollo Frontend](#)
 
 Santiago Neira
+--- 
+## [Actividades de Hoy](#)
+- Escoger un desafío de la lista 
+- Realizar de manera individual o en pares 
+- Pueden cooperar en grupos de 4
+- Crear repositorio en Github para su código 
+- Revisión de avances a mitad de la sesión y al final 
+- Desarrollo de 1 caso de manera guiada con profesor (opcional)
 --- 
 ## [ Sesión Anterior ](#)
 - Configuración Github en Windows
@@ -57,9 +65,23 @@ git clone https://github.com/su-usuario/su-repo.git
 ## [Configuración inicial Github (Win)](#)
 
 7. Agregue o modifique algún archivo en VS Code
-8. Agregue los archivos
-8. Realice un commit por editor o por consola
+8. Agregue los archivos a "Staging Area" de GIT a través de línea de comandos o con su editor de código
+```bash
+git add -A # agrega todos los archivos modificados o nuevos 
+git add minuevoarchivo.html # agrega archivo individual 
+```
+9. Realice un commit por editor o por consola (continua)
+```bash
+git commit -m "agrego html"
+```
+---
+## [Configuración inicial Github (Win)](#)
 
+10. Envío el código al servidor GIT remoto por UI o terminal:
+```bash
+git push 
+```
+11. Se abrirá ventana de Credential Manager. Escoja la opción para autenticarse a través del browser.
 ---
 ## [Sintaxis HTML](#)
 ![](imagenes/sintaxis-html.png)
@@ -86,8 +108,8 @@ p {
 }
 ```
 ---
-## [Estructura HTML5](#)
-```html5 [6,11]
+## [Plantilla HTML](#)
+```html5 []
 &lt;!doctype html&gt;
 &lt;html lang=&quot;es&quot;&gt;
   &lt;head&gt;
@@ -96,55 +118,82 @@ p {
     &lt;link href=&quot;estilo.css&quot; rel=&quot;stylesheet&quot; /&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;h1&gt;Hola Mundo!&lt;/h1&gt;
+    
+	&lt;form id=&quot;mi-form&quot;&gt;
+		&lt;div id=&quot;mensajes&quot;&gt;&lt;/div&gt;
+		Nombre: &lt;input type=&quot;text&quot; id=&quot;nombre&quot; name=&quot;nombre&quot; /&gt;&lt;br /&gt;
+		Apellido: &lt;input type=&quot;text&quot; id=&quot;apellido&quot; name=&quot;apellido&quot; /&gt;&lt;br /&gt;
+		&lt;button type=&quot;submit&quot;&gt;Enviar&lt;/button&gt;
+	&lt;/form&gt;
     
     &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-```		
+```
+---
+## [Plantilla CSS](#)
+```css []		
+body {
+	background-color: yellow;
+}
+div.ok {
+	background-color: green;
+	color: white;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+```
+---
+## [Plantilla JS](#)
+```js []		
+document.getElementById("mi-form").addEventListener("submit", procesarFormulario);
+
+function procesarFormulario(evento) {	
+  evento.preventDefault()
+  const nombre = document.getElementById("nombre").value;
+  const apellido = document.getElementById("apellido").value;
+  
+  console.log( nombre );
+  console.log( apellido );
+  
+  const mensajesNode = document.getElementById("mensajes");
+  mensajesNode.innerHTML = "Datos guardados";
+  mensajesNode.className = "ok";
+  
+  return false;
+}
+```
 ---
 ## Validaciones Código
 
 [https://validator.w3.org/](https://validator.w3.org/)
 ---
-## [Actividad de hoy](#)
-
-- Uso de Git
-- Formulario funcional
-- Chrome Developer Tools
-- Fundamentos Javascript
-- Javascript Fetch
-
----
-## Qué usaremos hoy
-
-- Github Pages [https://pages.github.com/](https://pages.github.com/)
-- Supabase [https://supabase.com/](https://supabase.com/)
-- PostgREST [https://postgrest.org/en/stable/api.html#insertions-updates](https://postgrest.org/en/stable/api.html#insertions-updates)
----
-## Git
+## Comandos Comunes GIT 
 
 ![GIT commands](https://support.nesi.org.nz/hc/article_attachments/360004194235/Git_Diagram.svg)
 
 ---
-## Github
+## [Github Markdown (*.md)](#)
 
-- Markdown [(ver ref)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- Github Pages [https://pages.github.com/](https://pages.github.com/)
-
----
+- Referencia Markdown [(ver ref)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 --- 
 ## [Recursos]()
 
 - Probar y compartir código [https://jsfiddle.net/](https://jsfiddle.net/)
+- Generador y gradientes CSS predefinidos [https://cssgradient.io/](https://cssgradient.io/)
 
 ---
-## [Referencias de Apoyo]()
+## [Referencias Español]()
 
-- Elementos de HTML (español) [https://developer.mozilla.org/es/docs/Web/HTML/Element](https://developer.mozilla.org/es/docs/Web/HTML/Element)
+- Elementos de HTML (español) [https://developer.mozilla.org/es/docs/Web/HTML/Reference](https://developer.mozilla.org/es/docs/Web/HTML/Reference)
 - Elementos de CSS (español) [https://developer.mozilla.org/es/docs/Web/CSS/Reference](https://developer.mozilla.org/es/docs/Web/CSS/Reference)
-- Javascript (español) [https://developer.mozilla.org/es/docs/Web/JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- Javascript (español) [https://developer.mozilla.org/es/docs/Web/JavaScript/Reference](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference)
+
+---
+## [Referencias Inglés]()
+- Referencia HTML (inglés) [https://www.w3schools.com/tags/default.asp](https://www.w3schools.com/tags/default.asp)
+- Referencia CSS (inglés) [https://www.w3schools.com/cssref/default.asp](https://www.w3schools.com/cssref/default.asp)
 - Referencias JS (inglés) [https://www.w3schools.com/jsref/default.asp](https://www.w3schools.com/jsref/default.asp)
 
 				    </textarea>
