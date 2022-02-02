@@ -1,0 +1,62 @@
+body {
+    /*
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    */
+    background-image: url('images/stack_of_books_pattern.jpg');
+    background-repeat: repeat;
+    font-size: 25px;
+    text-align: center;
+}
+
+img#img-anne {    
+    border: 5px solid black;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+    height: 190px;
+    width: auto;    
+}
+
+div.formulario {
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;   
+    text-align: left; 
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+div.botones {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+label {
+    width: 200px;
+    display: inline-block;
+}
+
+input {
+    font-size: 15px;
+    padding: 7px 10px;
+    border: 1px solid brown;
+    border-radius: 5px;
+}
+
+div.form-line {
+    margin-bottom: 15px;
+}
+
+select {
+    padding: 8px 20px;
+    font-size: 15px;
+    border: 1px solid brown;
+    border-radius: 5px;
+}

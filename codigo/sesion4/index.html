@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuevo Libro de Anne Baileys</title>
+    <link href="estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Nuevo Libro de Anne Baileys</h1>
+
+    <img id="img-anne" src="images/books-on-writing.jpg" alt="Anne Baileys" />
+
+    <video width="320" height="240" controls>
+        <source src="video/movie.mp4" type="video/mp4">
+        <source src="video/movie.ogv" type="video/ogg">
+        Su navegador no soporta el formato de video.
+    </video>
+
+    <div class="formulario">
+        <form action="" method="get">
+            <div class="form-line">
+                <label for="nombre">Nombre</label>
+                <input name="nombre" id="nombre" placeholder="Juan Pérez" />
+            </div>
+            
+            <div class="form-line">
+                <label for="email">Email</label>
+                <input name="email" id="email" placeholder="jperez@gmail.com" />
+            </div>        
+             
+            <div class="form-line">
+                <p>Género:</p>
+                <div class="radio-option">
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                </div>
+            </div>
+            
+            <div class="form-line">
+                <label for="edad">Edad:</label>
+                <select name="edad" id="edad">
+                    <option value="10-20">10-20</option>
+                    <option value="21-30">21-30</option>
+                    <option value="31-40">31-40</option>
+                    <option value="41-50">41-50</option>
+                    <option value="51-60">51-60</option>
+                    <option value="61-70">61-70</option>
+                    <option value="71-80">71-80</option>
+                </select>
+            </div>
+            
+            <div class="botones">
+                <button type="submit">Suscribir</button>
+                <button type="reset">Limpiar</button>
+            </div>
+            
+        </form>
+    </div>    
+
+</body>
+</html>
