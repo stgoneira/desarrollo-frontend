@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Desarrollo Frontend - Sesión 9</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-separator="---" data-markdown data-line-numbers>
+    				<textarea data-template>
+## [Sesión 9 - Desarrollo Frontend](#)
+
+Santiago Neira
+--- 
+## [Actividades de Hoy](#)
+- Versionamiento SW
+- Bootstrap 
+- Javascript 
+- Librerías 
+--- 
+## [ Sesión Anterior ](#)
+- Layouts
+- Estructura
+- Fontawesome
+- Google Fonts 
+--- 
+## [Versionamiento SW](#)
+![https://upload.wikimedia.org/wikipedia/commons/8/82/Semver.jpg](https://upload.wikimedia.org/wikipedia/commons/8/82/Semver.jpg)
+
+--- 
+## [Versionamiento SW](#)
+- Alpha 1.2.0-a.1
+- Beta 1.2.0-b.2
+- Release Candidate 1.2.0-rc.3
+- Release 1.2.0
+- Post Release Fixes 1.2.5 
+
+--- 
+## [Versionamiento en GIT](#)
+- Branches 
+- Tags 
+
+--- 
+## [GIT Tags](#)
+```bash 
+git tag v1.0.0 # crea el tag
+git push origin --tags # envía todos los tags al repo remoto 
+```
+--- 
+## [GIT Branches](#)
+```bash 
+git branch -a # lista branches locales y remotos 
+git branch v2 # crea branch v2 que apunta al HEAD 
+git push --all 
+```
+--- 
+## Material Lectura
+
+- [https://en.wikipedia.org/wiki/Software_versioning](https://en.wikipedia.org/wiki/Software_versioning)
+
+--- 
+## [Arquitectura](#)
+- Microservicios
+- Monolítica 
+- Escalamiento Vertical vs Horizontal 
+--- 
+## [Integración Librerías](#)
+- Descarga 
+- CDN 
+- NPM / Yarn o similar 
+--- 
+## [NPM](#)
+- Información del proyecto 
+- Control versiones utilizadas
+- Maneja dependencias
+- Paquetes en [npmjs.com](npmjs.com)
+--- 
+## [NPM](#)
+```bash 
+npm init 
+npm install packagename
+```
+--- 
+# [Bootstrap](#)
+
+Quickly design and customize responsive [mobile-first](#) sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring [Sass](#) variables and mixins, [responsive grid system](#), extensive prebuilt components, and powerful [JavaScript plugins](#).
+--- 
+# [Bootstrap](#)
+- Container 
+- Grid Layout 
+- Navbar 
+- Carousel 
+--- 
+## [JS](#)
+- Integración a HTML por Eventos
+- Lenguaje NO tipado 
+--- 
+## [Lectura JS](#)
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- [https://developer.mozilla.org/es/docs/Web/API/Document/querySelectorAll](https://developer.mozilla.org/es/docs/Web/API/Document/querySelectorAll)
+- [https://developer.mozilla.org/es/docs/Web/API/Element/classList](https://developer.mozilla.org/es/docs/Web/API/Element/classList)
+- [https://developer.mozilla.org/es/docs/Web/Events](https://developer.mozilla.org/es/docs/Web/Events)
+
+--- 
+## [Caso](#) 
+
+La Fuente de Soda/Restaurant/Comida al paso XXX necesita construir una página web para poder mostrar la siguiente información:
+
+- La carta de Sandwiches / Empanadas / Platos / Bebestibles / Postres 
+- La historia de la empresa (50 años) con fotos y videos de la evolución (continúa).
+--- 
+## [Caso](#)
+
+- Una sección nosotros donde esté la foto de los trabajadores actuales de cada una de las 2 sucursales.
+- Una sección donde estén los datos de nuestras 2 sucursales que incluya el mapa y cómo llegar, teléfonos y correos.
+- Y un formulario de contacto para consultas y quejas.
+
+				    </textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
