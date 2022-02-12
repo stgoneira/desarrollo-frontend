@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Desarrollo Frontend - Sesión 13</title>
+		<title>Desarrollo Frontend - Sesión 12</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -18,7 +18,7 @@
 			<div class="slides">
 				<section data-separator="---" data-markdown data-line-numbers>
     				<textarea data-template>
-## [Sesión 13 - Desarrollo Frontend](#)
+## [Sesión 12 - Desarrollo Frontend](#)
 
 Santiago Neira
 --- 
