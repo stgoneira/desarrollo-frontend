@@ -1,5 +1,8 @@
 # DESARROLLO FRONTEND
 
+## OBJETIVO 
+Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript de acuerdo a los requerimientos y acorde a las buenas prácticas de la industria. 
+
 ## SESIONES
 
 ### Sesión 2 - 20220817
