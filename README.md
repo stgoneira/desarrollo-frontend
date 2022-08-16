@@ -21,7 +21,19 @@
 1. Septiembre 15 - Jueves 
 1. Septiembre 20 - Martes 
 
-## Contenidos 
+## Recursos 
+
+- https://developer.mozilla.org/es/docs/Web/HTML (español) 
+- https://developer.mozilla.org/es/docs/Web/JavaScript (español) 
+- https://developer.mozilla.org/es/docs/Web/CSS (español) 
+- https://developer.mozilla.org/en-US/docs/Web/HTML (inglés) 
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript (inglés) 
+- https://developer.mozilla.org/en-US/docs/Web/CSS (inglés) 
+- https://getbootstrap.com/ 
+- https://www.w3schools.com/html/default.asp 
+- https://www.w3schools.com/css/default.asp 
+- https://www.w3schools.com/js/default.asp 
+- https://www.w3schools.com/bootstrap5/index.php
 
 
 
