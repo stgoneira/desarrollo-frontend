@@ -1,3 +1,0 @@
-# SESIÓN 14
-
-Comenzamos a desarrollar el Desafío de la semana 2 y 3. Les dejé en el repositorio "desarrollo-frontend" la Rúbrica y un documento con los desafíos. Ustedes pueden plantear sus propios casos si así lo desean, igual que la semana 1. Importante es que si plantean un caso, me lo envíen.
