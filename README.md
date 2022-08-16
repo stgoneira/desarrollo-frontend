@@ -2,6 +2,8 @@
 
 ## Sesiones 
 
+19:30 - 21:45 hrs 
+
 1. Agosto 16 - Martes 
 1. Agosto 17 - Miércoles
 1. Agosto 18 - Jueves 
