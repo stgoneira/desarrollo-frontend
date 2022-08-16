@@ -2,22 +2,22 @@
 
 ## Sesiones 
 
-1. 16 Agosto - Martes 
-1. 17 Agosto - Miércoles
-1. 18 Agosto - Jueves 
-1. 23 Agosto - Martes 
-1. 24 Agosto - Miércoles
-1. 25 Agosto - Jueves 
-1. 30 Agosto - Martes 
-1. 31 Agosto - Miércoles
-1. 01 Septiembre - Jueves 
-1. 06 Septiembre - Martes 
-1. 07 Septiembre - Miércoles
-1. 08 Septiembre - Jueves 
-1. 13 Septiembre - Martes 
-1. 14 Septiembre - Miércoles
-1. 15 Septiembre - Jueves 
-1. 20 Septiembre - Martes 
+1. Agosto 16 - Martes 
+1. Agosto 17 - Miércoles
+1. Agosto 18 - Jueves 
+1. Agosto 23 - Martes 
+1. Agosto 24 - Miércoles
+1. Agosto 25 - Jueves 
+1. Agosto 30 - Martes 
+1. Agosto 31 - Miércoles
+1. Septiembre 01 - Jueves 
+1. Septiembre 06 - Martes 
+1. Septiembre 07 - Miércoles
+1. Septiembre 08 - Jueves 
+1. Septiembre 13 - Martes 
+1. Septiembre 14 - Miércoles
+1. Septiembre 15 - Jueves 
+1. Septiembre 20 - Martes 
 
 
 
