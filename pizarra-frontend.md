@@ -6,10 +6,11 @@
 
 ### Sesión 1 - 20220816 
 
-- Presentación del curso
-- Presentación profesor y alumnos 
-- Instalación herramientas
+#### objetivos del día 
+- Conocer a sus compañeros y profesor
+- Identificar los contenidos del curso
 - Reconocer el rol de la tríada HTML, CSS y Javascript 
 - Reconocer la importancia y diferencias entre GIT y Github 
 - Reconocer la importancia de las librerías y frameworks (ej. jQuery y Bootstrap)
+- Instalar herramientas necesarias para el curso
 - Creación primer proyecto - Hola Mundo con HTML, CSS y JS 
