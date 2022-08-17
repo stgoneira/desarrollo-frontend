@@ -7,6 +7,7 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ### Sesión 2 - 20220817
 
+
 ### Sesión 1 - 20220816 
 
 #### objetivos del día 
