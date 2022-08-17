@@ -23,4 +23,5 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 1. Crear carpeta para el proyecto 
 2. En VSCode seleccionar opción File -> Open Folder 
-3. Crear archivo index.html como en ej: 
+3. Crear archivo index.html como en ej: https://github.com/stgoneira/desarrollo-frontend/blob/main/codigo/sesiones/sesion-1/index.html 
+4. Validar código HTML en https://validator.w3.org/ 
