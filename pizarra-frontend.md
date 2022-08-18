@@ -7,8 +7,24 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ### Sesión 3 - 20220818
 
+#### objetivos del día 
 
+- Crear formulario usando HTML
+- Incorporar Javascript a la página (hola mundo!)
+- Identificar la sintaxis básica de Javascript (funciones y variables)
+- Reconocer la importancia de los eventos en JS 
+- Recuperar la información de un formulario HTML usando la API DOM 
+- Utilizar las herramientas de desarrollo del navegador
+- Creación de una cuenta en GITHUB 
+- Reconocer los comandos básicos de GIT 
+- Utilizar GITHUB como un servidor para hospedar mi sitio 
 
+#### recursos 
+
+- https://www.w3schools.com/html/html_forms.asp
+- https://developer.mozilla.org/es/docs/Glossary/DOM 
+- https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event
+- https://developer.mozilla.org/es/docs/Web/API/Document/querySelector
 
 
 ### Sesión 2 - 20220817
@@ -27,6 +43,10 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 - Reconocer los distintos selectores disponibles en CSS 
 - Definir proyecto a desarrollar durante el curso 
 - Reconocer las rutas absolutas y relativas 
+
+#### recursos 
+
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types 
 
 
 ### Sesión 1 - 20220816 

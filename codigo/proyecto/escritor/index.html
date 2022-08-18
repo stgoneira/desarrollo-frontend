@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Philip Kotler</title>
     <link rel="shortcut icon" href="/codigo/proyecto/escritor/favicon.ico" />
+    <link rel="stylesheet" href="css/estilo.css" />
 </head>
 <body>
 
@@ -38,12 +39,39 @@
         </p>
     </main>
 
+    <section>
+        <h2>Suscripción Boletín</h2>
+        <form method="get">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" />
+            <br />
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" />
+            <br />
+            <input type="radio" id="masculino" name="genero" value="M" />
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="F" />
+            <label for="femenino">Femenino</label>
+            <br />
+            Intereses:<br />
+            <input type="checkbox" id="marketing-directo" name="marketing-directo" value="MD" />
+            <label for="marketing-directo">Marketing Directo</label>
+            <input type="checkbox" id="marketing-email" name="marketing-email" value="ME" />
+            <label for="marketing-email">Email Marketing</label>
+
+            <br />
+            <button id="btn-suscribir" type="submit">Suscribir</button>
+        </form>
+    </section>
+
     <footer>
         <ul>
-            <li><a href="#"><img src="images/icons/envelope.svg" alt="email" /></a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#"><img src="images/icons/envelope.svg" alt="Email" /></a></li>
+            <li><a href="#"><img src="images/icons/facebook.svg" alt="Facebook" /></a></li>
+            <li><a href="#"><img src="images/icons/linkedin.svg" alt="linkedin" /></a></li>
         </ul>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
