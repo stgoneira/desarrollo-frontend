@@ -7,6 +7,13 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ### Sesión 2 - 20220817
 
+#### objetivos del día 
+
+- Utilizar las Herramientas de Desarrollo del Browser 
+- Utilizar las etiquetas meta, link, a, header, footer, nav, main, img, strong 
+- Definir proyecto a desarrollar durante el curso 
+- Reconocer las rutas absolutas y relativas 
+
 
 ### Sesión 1 - 20220816 
 
