@@ -5,12 +5,26 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ## SESIONES
 
+### Sesión 3 - 20220818
+
+
+
+
+
 ### Sesión 2 - 20220817
+
+#### tarea 
+
+1. Definir el proyecto que quieren desarrollar durante el curso
+2. Aplicar los conceptos vistos durante la clase en su proyecto 
+3. (Opcional) Investigar elementos relacionados (no vistos en la clase) que puedan ayudarle a mejorar su proyecto
 
 #### objetivos del día 
 
 - Utilizar las Herramientas de Desarrollo del Browser 
 - Utilizar las etiquetas meta, link, a, header, footer, nav, main, img, strong 
+- Incorporar hoja de estilos CSS externa 
+- Reconocer los distintos selectores disponibles en CSS 
 - Definir proyecto a desarrollar durante el curso 
 - Reconocer las rutas absolutas y relativas 
 
