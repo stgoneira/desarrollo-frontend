@@ -5,6 +5,16 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ## SESIONES
 
+### Sesión 4 - 20220823
+
+#### objetivos del día 
+
+- Identificar la sintaxis básica de Javascript (funciones y variables)
+- Creación de una cuenta en GITHUB 
+- Reconocer los comandos básicos de GIT 
+- Utilizar GITHUB como un servidor para hospedar mi sitio 
+
+
 ### Sesión 3 - 20220818
 
 #### objetivos del día 
@@ -15,9 +25,7 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 - Reconocer la importancia de los eventos en JS 
 - Recuperar la información de un formulario HTML usando la API DOM 
 - Utilizar las herramientas de desarrollo del navegador
-- Creación de una cuenta en GITHUB 
-- Reconocer los comandos básicos de GIT 
-- Utilizar GITHUB como un servidor para hospedar mi sitio 
+
 
 #### recursos 
 
