@@ -14,6 +14,13 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 - Reconocer los comandos básicos de GIT 
 - Utilizar GITHUB como un servidor para hospedar mi sitio 
 
+#### recursos 
+- https://www.w3schools.com/css/css_attribute_selectors.asp 
+- https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes 
+- https://developer.mozilla.org/es/docs/Web/API/Document/querySelector 
+- https://developer.mozilla.org/es/docs/Web/API/Document/querySelectorAll 
+- https://developer.mozilla.org/es/docs/Web/API/NodeList 
+
 
 ### Sesión 3 - 20220818
 
