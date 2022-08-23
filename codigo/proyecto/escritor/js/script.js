@@ -4,9 +4,21 @@ window.addEventListener('DOMContentLoaded', (e) => {
     btnSuscribir.addEventListener("click", (e) => {
         e.preventDefault();
         let nombre      = document.getElementById("nombre").value;
-        let genero      = getGenero();         
+        let email       = document.getElementById("correo").value;
+        let genero      = getGenero();
         let intereses   = getIntereses();
-        console.dir(intereses);
+        let suscriptor  = {
+                nombre,
+                email,
+                genero,
+                intereses            
+        };
+        console.dir(suscriptor);        
+        const url   = `https://frontend-course-336a0-default-rtdb.firebaseio.com/suscriptores.json`;        
+        fetch(url, {
+            method: 'POST',
+            body: JSON.stringify(suscriptor)
+        });
         return false;
     });    
 });
