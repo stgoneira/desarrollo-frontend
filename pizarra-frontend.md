@@ -9,7 +9,12 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 #### objetivos del día 
 
-- Identificar la sintaxis básica de Javascript (funciones y variables)
+- Identificar la sintaxis básica de Javascript (funciones y variables) 
+- Creación cuenta de Firebase y Base de Datos Realtime 
+- Inserción de datos vía REST API a Firebase usando función FETCH de Javascript 
+- Uso de funciones getElementById() y querySelector() en Javascript 
+- Validación de datos simples en Javascript 
+- Incorporación de Bootstrap al proyecto 
 - Creación de una cuenta en GITHUB 
 - Reconocer los comandos básicos de GIT 
 - Utilizar GITHUB como un servidor para hospedar mi sitio 
