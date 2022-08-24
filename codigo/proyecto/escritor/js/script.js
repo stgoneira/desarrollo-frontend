@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', (e) => {
     console.log("DOM Cargado...")
     let btnSuscribir = document.getElementById("btn-suscribir");
-    btnSuscribir.addEventListener("click", (e) => {
+    btnSuscribir.addEventListener("click", async (e) => {
         e.preventDefault();
 
         try {            
@@ -13,23 +13,19 @@ window.addEventListener('DOMContentLoaded', (e) => {
                     nombre,
                     email,
                     genero,
-                    intereses            
+                    intereses 
             };        
             //const url   = `https://frontend-course-336a0-default-rtdb.firebaseio.com/suscriptores.json`;        
-            const url = "https://learningfirebase-fcaed-default-rtdb.firebaseio.com/suscriptores.jsonx";
-            fetch(url, {
+            const url = "https://learningfirebase-fcaed-default-rtdb.firebaseio.com/suscriptores.json";
+            const respuesta = await fetch(url, {
                 method: 'POST',
                 body: JSON.stringify(suscriptor)
-            })
-                .then( response => {
-                    if( response.ok )
-                        return response.json();
-                    else 
-                        throw new Error("Error en la respuesta. Código: "+response.status)
-                })
-                .then( data => console.dir(data) )
-                .catch( error => console.error('Error fetch(): '+error))
-            ;
+            });
+            if( !respuesta.ok ) {
+                throw new Error("Error en la respuesta. Código: "+respuesta.status);
+            }
+            const data = await respuesta.json();
+            mostrarExito(`Se ha guardado su suscripción con ID: ${data.name}`)
         } catch( e ) {
             mostrarError(e.message);
         }

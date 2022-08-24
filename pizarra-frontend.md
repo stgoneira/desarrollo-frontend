@@ -5,6 +5,8 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ## SESIONES
 
+### Sesión 5 - 20220824
+
 #### objetivos del día 
 
 - Integrar Bootstrap al proyecto
@@ -17,7 +19,13 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 #### recursos 
 
-- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
+- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces 
+- https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/async_function 
+- https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/await 
+- https://developer.mozilla.org/es/docs/Glossary/Callback_function 
+- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
+
+
 
 ### Sesión 4 - 20220823
 
