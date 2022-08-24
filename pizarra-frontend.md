@@ -5,6 +5,20 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ## SESIONES
 
+#### objetivos del día 
+
+- Integrar Bootstrap al proyecto
+- Retroalimentar al usuario del formulario con mensajes usando la API DOM 
+- Identificar si la llamada a la API Rest fue exitosa o no 
+- Incorporación de Bootstrap al proyecto 
+- Creación de una cuenta en GITHUB 
+- Reconocer los comandos básicos de GIT 
+- Utilizar GITHUB como un servidor para hospedar mi sitio 
+
+#### recursos 
+
+- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
+
 ### Sesión 4 - 20220823
 
 #### objetivos del día 
@@ -14,10 +28,6 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 - Inserción de datos vía REST API a Firebase usando función FETCH de Javascript 
 - Uso de funciones getElementById() y querySelector() en Javascript 
 - Validación de datos simples en Javascript 
-- Incorporación de Bootstrap al proyecto 
-- Creación de una cuenta en GITHUB 
-- Reconocer los comandos básicos de GIT 
-- Utilizar GITHUB como un servidor para hospedar mi sitio 
 
 #### recursos 
 - https://www.w3schools.com/css/css_attribute_selectors.asp 
