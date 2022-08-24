@@ -23,21 +23,42 @@ window.addEventListener('DOMContentLoaded', (e) => {
         let nombre  = document.getElementById("nombre").value;
         let email   = document.getElementById("correo").value;
         let genero  = getGenero(); 
+        let intereses = getIntereses();
         let suscriptor = { // JSON =  JavaScript object notation 
             // clave: valor
             nombre_completo: nombre,  //nombre,
             email, // email: email,
             genero,
+            intereses,
             fecha_registro: (new Date()).toISOString() 
         };        
         console.dir(suscriptor);
     });    
 });
+function getIntereses() {
+    let inputIntereses  = document.querySelectorAll("input[name='intereses']:checked");
+    let arrIntereses    = []; 
+    
+    // alternativa 1:
+    //inputIntereses.forEach( nodoInteres => arrIntereses.push(nodoInteres.value) );
+    
+    // alternativa 2:
+    for( let i = 0; i < inputIntereses.length; i++ ) {
+        const interes = inputIntereses[i].value;
+        arrIntereses.push(interes);
+    }
+
+    if( inputIntereses.length < 1 ) {
+        mostrarError("Debe seleccionar al menos 1 tema de su interés!!!");
+        return false; 
+    }
+    return arrIntereses; 
+}
 function getGenero() {
-    let inputSeleccionado = document.querySelector("input[name='genero']:checked")
+    let inputSeleccionado = document.querySelector("input[name='genero']:checked");
     if ( inputSeleccionado == null ) {
         mostrarError("Debe seleccionar un género!!!");
-        return false 
+        return false;
     }
     const genero = inputSeleccionado.value;
     return genero;
