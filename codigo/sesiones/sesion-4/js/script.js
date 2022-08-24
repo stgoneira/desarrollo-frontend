@@ -33,8 +33,17 @@ window.addEventListener('DOMContentLoaded', (e) => {
             fecha_registro: (new Date()).toISOString() 
         };        
         console.dir(suscriptor);
+        guardarSuscriptor( suscriptor );
     });    
 });
+function guardarSuscriptor( suscriptor ) {
+    const url = "https://curso-frontend-29032-default-rtdb.firebaseio.com/suscriptores.json";
+    fetch(url, {
+        method: "POST",
+        body:   JSON.stringify(suscriptor) 
+    });
+}
+
 function getIntereses() {
     let inputIntereses  = document.querySelectorAll("input[name='intereses']:checked");
     let arrIntereses    = []; 
