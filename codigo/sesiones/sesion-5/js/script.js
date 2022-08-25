@@ -71,7 +71,7 @@ async function guardarSuscriptor( suscriptor ) {
         body:   JSON.stringify(suscriptor) 
     });
     const data = await respuesta.json();
-    mostrarExito("Se guardó correctamente su suscripción"); 
+    mostrarExito("Se guardó correctamente su suscripción con ID: "+data.name); 
 }
 
 function getIntereses() {
