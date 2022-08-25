@@ -38,17 +38,40 @@ window.addEventListener('DOMContentLoaded', (e) => {
             };        
             console.dir(suscriptor);
             guardarSuscriptor( suscriptor );
+            mostrarExito("Se guardó correctamente su suscripción!!!");
         } catch(e) {
             mostrarError(e.message); 
         }
     });    
 });
-function guardarSuscriptor( suscriptor ) {
+function mostrarExito(mensaje) {
+    // aparezca cuadro verder y
+    // se muestre el mensaje 
+    alert(mensaje);
+    // TODO: hacer que el mensaje se muestre en el cuadro verde 
+}
+
+async function guardarSuscriptor( suscriptor ) {
     const url = "https://curso-frontend-29032-default-rtdb.firebaseio.com/suscriptores.json";
+    // alternativas:
+    // 1) Callbacks     
+    /*
     fetch(url, {
         method: "POST",
         body:   JSON.stringify(suscriptor) 
+    })
+        .then( respuesta => respuesta.json() ) // devuelve una Promesa 
+        .then( data => mostrarExito("Se guardó correctamente su suscripción") )
+    ;
+    */
+
+    // 2) Async Await 
+    const respuesta = await fetch(url, {
+        method: "POST",
+        body:   JSON.stringify(suscriptor) 
     });
+    const data = await respuesta.json();
+    mostrarExito("Se guardó correctamente su suscripción"); 
 }
 
 function getIntereses() {
@@ -79,7 +102,7 @@ function getGenero() {
 }
 
 function mostrarError(mensajeDeError) {
-    // valor anterior "none"
+    // valor anterior "none"    
     document.getElementById("form-mensaje-error").style.display = "block";
     const ul = document.querySelector("#form-mensaje-error ul");
     const li = document.createElement("li");
@@ -87,5 +110,3 @@ function mostrarError(mensajeDeError) {
     li.appendChild(liText); 
     ul.appendChild(li); 
 }
-
-

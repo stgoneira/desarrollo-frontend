@@ -27,6 +27,7 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 - https://www.w3schools.com/js/js_errors.asp#:~:text=JavaScript%20try%20and%20catch,occurs%20in%20the%20try%20block
 - https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/try...catch 
 - https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Control_flow_and_error_handling 
+- https://developer.mozilla.org/es/docs/Web/CSS/display 
 
 
 
