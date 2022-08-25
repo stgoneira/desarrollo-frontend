@@ -39,8 +39,8 @@ window.addEventListener('DOMContentLoaded', (e) => {
             console.dir(suscriptor);
             guardarSuscriptor( suscriptor );
             mostrarExito("Se guardó correctamente su suscripción!!!");
-        } catch(e) {
-            mostrarError(e.message); 
+        } catch(err) { 
+            mostrarError(err.message); 
         }
     });    
 });
