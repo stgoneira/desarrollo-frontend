@@ -24,6 +24,9 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 - https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/await 
 - https://developer.mozilla.org/es/docs/Glossary/Callback_function 
 - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
+- https://www.w3schools.com/js/js_errors.asp#:~:text=JavaScript%20try%20and%20catch,occurs%20in%20the%20try%20block
+- https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/try...catch 
+- https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Control_flow_and_error_handling 
 
 
 
