@@ -1,0 +1,36 @@
+/* 
+Sintaxis es:
+
+selector {
+    atributo1: valor;
+    atributo2: valor;
+}
+*/
+
+/* 1. selectores por etiqueta */
+header {
+    background-color: black;
+    color: white;
+}
+
+p {
+    color: #CCbb99;
+}
+
+/* 2. selectores por clase */
+.enlace-redsocial {
+    color: yellow;
+}
+
+/* 3. selectores por ID */
+#imagen-principal {
+    border: 2px solid green;
+}
+
+
+/* podemos mezclar de los distintos tipos de
+selectores para ser más específico 
+*/
+body h1.titulo {
+    margin-bottom: 30px;
+}

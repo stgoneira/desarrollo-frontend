@@ -7,7 +7,14 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ### Sesión 6 - 20220825
 
+#### objetivos del día 
 
+- Creación de Layouts con Bootstrap 
+- Utilización de componentes de Bootstrap: Navbar, Alerts y Carousel 
+- Creación de una cuenta en GITHUB 
+- Reconocer los comandos básicos de GIT 
+- Utilizar GITHUB como un servidor para hospedar mi sitio 
+- Entrega del trabajo final y rúbrica 
 
 ### Sesión 5 - 20220824
 
@@ -17,9 +24,6 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 - Retroalimentar al usuario del formulario con mensajes usando la API DOM 
 - Identificar si la llamada a la API Rest fue exitosa o no 
 - Incorporación de Bootstrap al proyecto 
-- Creación de una cuenta en GITHUB 
-- Reconocer los comandos básicos de GIT 
-- Utilizar GITHUB como un servidor para hospedar mi sitio 
 
 #### recursos 
 
