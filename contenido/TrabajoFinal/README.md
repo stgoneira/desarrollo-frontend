@@ -2,7 +2,7 @@
 
 Desarrolle de manera individual o en parejas un sitio web de tema libre que contemple al menos lo siguiente:
 
-1. Al menos 5 páginas HTML (ej. Inicio, Toma de Horas, Nosotros, Suscripciones, Biografía, Contacto, Bibliografía, Galería de Imágenes, Videos, etc)
+1. Al menos 5 páginas HTML (ej. Inicio, Toma de Horas, Nosotros, Suscripciones, Biografía, Contacto, Bibliografía, Galería de Imágenes, Videos, etc). Utilice como mínimo las siguientes etiquetas: de título (h1..h6), div, main, header, footer, img, p, form, input, option, select, button, table y video. 
 2. Al menos 2 formularios con 5 campos para el ingreso de datos, utilice controles diversos como por ej: input, radios, checkbox, textarea, entre otros 
 3. Validar el código HTML y CSS de cada una de las páginas en la W3C 
 4. El código HTML, CSS y JS debe ser ordenado, es decir, use indentación, saltos de línea, nombres de ID y clase entendibles, nombres de variables y funciones, bloques, etc.
