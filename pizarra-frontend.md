@@ -5,6 +5,33 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ## SESIONES
 
+### Sesión 7 - 20220830 
+
+#### objetivos del día 
+- Identificar las diferencias entre GIT y Github 
+- Reconocer los comandos básicos de GIT (add, commit, push y pull) 
+- Reconocer la utilidad del archivo .gitignore 
+- Identificar la función de las ramas y etiquetas en GIT 
+- Documentación proyecto Github usando Markdown
+- Cambiar la familia de fuentes con CSS 
+- Utilización de componentes de Bootstrap: Navbar, Alerts y Carousel  
+- Determinar entrega número 1 y plazo - Avances proyecto final 
+- Completar cuestionario plataforma AIEP 
+
+#### recursos 
+
+- https://git-scm.com/download/win 
+- https://fonts.google.com/
+- https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+- https://github.com/stgoneira/desarrollo-frontend/tree/main/contenido/TrabajoFinal 
+- Cuestionario plataforma AIEP: https://educacioncontinua-otec.aiep.cl/mod/quiz/view.php?id=384303 
+
+
+
+
+
+
+
 ### Sesión 6 - 20220825
 
 #### objetivos del día 
@@ -12,7 +39,6 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 - Creación de Layouts con Bootstrap 
 - Utilización de componentes de Bootstrap: Navbar, Alerts y Carousel 
 - Creación de una cuenta en GITHUB 
-- Reconocer los comandos básicos de GIT 
 - Utilizar GITHUB como un servidor para hospedar mi sitio 
 - Entrega del trabajo final y rúbrica 
 
