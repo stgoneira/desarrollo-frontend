@@ -12,4 +12,5 @@ Desarrolle de manera individual o en parejas un sitio web de tema libre que cont
 8. Debe validar cada campo del formulario usando Javascript. Se solicita validar cada campo al ser modificado y en conjunto al pinchar el botón final. 
 9. Los datos de los formularios deben tener coherencia y ser persistidos en alguna plataforma externa como Firebase 
 10. El código fuente debe estar en un repositorio GIT en la plataforma de Github de manera pública. Debe documentar claramente en su archivo README.md al menos lo siguiente: el contexto del proyecto, los requerimientos y las versiones de las librerías o frameworks utilizados.
-11. El proyecto debe ser expuesto y funcional a través de Github Pages 
+11. Debe hacer entregas parciales, para ello debe etiquetar en su repositorio GIT ejemplo: entrega 1 = etiqueta v0.1, entrega 2 etiqueta v0.2, y así sucesivamente
+12. El proyecto debe ser expuesto y funcional a través de Github Pages 
