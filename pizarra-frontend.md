@@ -8,8 +8,14 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 ### Sesión 8 - 20220831
 
 #### objetivos del día 
+- Integrar librería jQuery 
+- Incrustar mapas 
+- Formulario de contacto usando jQuery 
+- Cambiar tipografía usando Google Fonts 
+- Incrustar partes en HTML con jQuery usando load() 
 - Utilización de componentes de Bootstrap: Navbar, Alerts y Carousel  
-- Determinar entrega número 1 y plazo - Avances proyecto final 
+- Entrega enunciado Actividad 1 
+- Mostrar los ejemplos de Proyectos 
 
 
 
