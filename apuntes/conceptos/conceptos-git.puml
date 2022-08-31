@@ -1,0 +1,17 @@
+@startmindmap 
+*[#Orange] Git  
+**[#Lime] Comandos Inicio 
+***[#DarkCyan] git init   
+***[#DarkCyan] git clone 
+***[#DarkCyan] git config   
+**[#Lime] Comandos Repo Local
+***[#DarkCyan] git add   
+***[#DarkCyan] git commit  
+**[#Lime] Comandos Remotos
+***[#DarkCyan] git push 
+***[#DarkCyan] git pull     
+**[#Lime] Hospedaje Repo  
+***[#DarkCyan] Github 
+***[#DarkCyan] Bitbucket 
+***[#DarkCyan] Gitlab  
+@endmindmap 
