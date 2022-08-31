@@ -5,18 +5,27 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ## SESIONES
 
+### Sesión 8 - 20220831
+
+#### objetivos del día 
+- Utilización de componentes de Bootstrap: Navbar, Alerts y Carousel  
+- Determinar entrega número 1 y plazo - Avances proyecto final 
+
+
+
+
+
 ### Sesión 7 - 20220830 
 
 #### objetivos del día 
 - Identificar las diferencias entre GIT y Github 
 - Reconocer los comandos básicos de GIT (add, commit, push y pull) 
 - Reconocer la utilidad del archivo .gitignore 
-- Identificar la función de las ramas y etiquetas en GIT 
+- Identificar la función de las ramas y etiquetas en GIT (branch y tags)
 - Documentación proyecto Github usando Markdown
 - Cambiar la familia de fuentes con CSS 
-- Utilización de componentes de Bootstrap: Navbar, Alerts y Carousel  
-- Determinar entrega número 1 y plazo - Avances proyecto final 
 - Completar cuestionario plataforma AIEP 
+- Avances proyecto Final 
 
 #### recursos 
 
