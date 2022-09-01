@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="./css/estilo.css" />
+  </head>
+  <body>
+    <div id="cabecera"></div>
+
+    <div class="container">
+      <h1>Contacto</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est molestias neque delectus? Impedit accusamus perspiciatis voluptate suscipit et placeat laborum esse maiores iure soluta, velit commodi eos quam numquam a?
+      </p>
+      <div class="row">
+        <div class="col-6">
+          <iframe 
+            width="425" 
+            height="350" 
+            frameborder="0" 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0" 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-70.61977654695512%2C-33.421623044359364%2C-70.6167832016945%2C-33.42040295568676&amp;layer=mapnik" 
+            style="border: 1px solid black"
+          >
+          </iframe>
+          <br/>
+          <small>
+            <a href="https://www.openstreetmap.org/#map=19/-33.42101/-70.61828">
+              Ver mapa más grande
+            </a>
+          </small>
+          
+        </div>
+        <div class="col-6">
+          <form>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button id="btn-contacto" type="button" class="btn btn-primary">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="pie-pagina"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/script-contacto.js"></script>
+  </body>
+</html>
