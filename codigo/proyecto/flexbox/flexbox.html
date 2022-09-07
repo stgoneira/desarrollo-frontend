@@ -5,16 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aprendiedo Flexbox</title>
-    <link rel="stylesheet" href="./flexbox.css" />
+    <link rel="stylesheet" href="./css/flexbox1.css" />
+    <link rel="stylesheet" href="./css/flexbox2.css" />
+
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
     
-    <section class="contenedor">
-        <div class="c1">Caja 1</div>
-        <div class="c2">
+    <pre class="ej1"><code class="language-css">
+        .ej1-contenedor div {
+            border: 1px solid black;
+            padding: 1em;     
+        }
+        
+        .ej1-contenedor {
+            display: flex;
+            flex-direction: row;
+            background: #ccc;
+        }
+    </code></pre>
+    <section class="ej1-contenedor">
+        <div class="ej1-c1">Caja 1</div>
+        <div class="ej1-c2">
             Caja 2
         </div>
-        <div class="c3">Caja 3</div>
+        <div class="ej1-c3">Caja 3</div>
+    </section>
+
+    <pre class="ej2"><code class="language-css">
+        .ej2-contenedor div {
+            border: 1px solid red;
+            padding: 1em;     
+        }
+        
+        .ej2-contenedor {
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+        }
+    </code></pre>
+    <section class="ej2-contenedor">
+        <div class="ej2-c1">Caja 1</div>
+        <div class="ej2-c2">
+            Caja 2
+        </div>
+        <div class="ej2-c3">Caja 3</div>
     </section>
 
 </body>

@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div.contenedor {
+    min-height: 100vh;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; /* alineación eje principal */
+    align-items: center; /* alineación eje transversal */
+}
+
+header nav {
+    order: 2;
+}
+header form {
+    order: 3;
+}
+header img.logo {
+    order: 1;
+}
+
+
+footer, header {
+    background-color: black;
+    color: #ccc;
+    padding: 10px;    
+}
+
+footer {
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav li a {
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;    
+}
+
+header nav li a:hover { 
+    text-decoration: underline;
+}
+
+/* ####### CUERPO ######## */
+section.cuerpo {
+    display: flex;
+    flex: 1;
+}
+
+section.cuerpo aside{
+    flex: 1;
+    background-color: cadetblue;
+}
+
+section.cuerpo main {
+    flex: 4;
+    padding: 1rem;
+    background-color: chocolate;
+}
