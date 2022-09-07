@@ -5,6 +5,66 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ## SESIONES
 
+### Sesión 10 - 
+- Github fork 
+- Github Pull Request 
+- Github Sync
+- Git tags  
+- Retroalimentación Entrega 1 
+- Avanzar en 2da Entrega 
+- Usar el Carousel de Bootstrap 
+
+#### dinámica trabajo colaborativo Github 
+
+1. Una de las personas va a crear un repositorio 
+2. Enviará un push con cambios (2 archivos) 
+3. El otro compañero hará un Fork del proyecto 
+4. Realizará algunos cambios sobre los archivos y realizará el commit y push respectivo 
+5. Luego enviará un "Pull Request" 
+6. El dueño del repositorio revisará el "Pull Request" y aceptará los cambios 
+
+#### dinámica sync fork Github 
+
+1. El dueño del repositorio actualiza algunos archivos con commit y push 
+2. El colaborador sincroniza su repositorio 
+
+#### creación Tag vía Browser en Github 
+1. Ir a la sección de Releases 
+2. Crear Tag 
+
+#### creación Tag vía Consola 
+
+1. git tag nombreTag
+ej: git tag v0.1 
+
+2. git push origin --tags 
+Sincroniza los tags del repositorio local con el repositorio remoto 
+
+#### crear tag vía herramienta gráfica 
+
+
+
+
+
+
+
+
+
+### Sesión 9 - 20220901
+
+#### objetivos del día 
+- Subir a plataforma de AIEP en Actividad 1 la primera entrega, enviar:
+	- Integrantes 
+	- Enlace repositorio 
+	- Enlace Github Pages 
+- Reconocer el uso de noConflict() de jQuery 
+- Usar la función ajax() de jQuery 
+- Usar el Debugger de JS 
+
+#### recursos 
+
+- https://api.jquery.com/jQuery.noConflict/#jQuery-noConflict-removeAll
+
 ### Sesión 8 - 20220831
 
 #### objetivos del día 
