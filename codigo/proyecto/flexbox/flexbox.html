@@ -7,6 +7,7 @@
     <title>Aprendiedo Flexbox</title>
     <link rel="stylesheet" href="./css/flexbox1.css" />
     <link rel="stylesheet" href="./css/flexbox2.css" />
+    <link rel="stylesheet" href="./css/flexbox3.css" />
 
     <link rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css" />
@@ -53,6 +54,37 @@
             Caja 2
         </div>
         <div class="ej2-c3">Caja 3</div>
+    </section>
+
+    
+    <pre class="ej3"><code class="language-css">
+        .ej3-contenedor div {
+            border: 1px solid red;
+            padding: 1em;     
+        }
+        
+        .ej3-contenedor {
+            display: flex;
+            height: 300px;
+            flex-direction: row;
+            background-color: chartreuse;
+        }
+        
+        .ej3-contenedor div.ej3-c1
+        ,.ej3-contenedor div.ej3-c3 {
+            flex: 1;
+        }
+        
+        .ej3-contenedor div.ej3-c2 {
+            flex: 3;
+        }        
+    </code></pre>
+    <section class="ej3-contenedor">
+        <div class="ej3-c1">Caja 1</div>
+        <div class="ej3-c2">
+            Caja 2
+        </div>
+        <div class="ej3-c3">Caja 3</div>
     </section>
 
 </body>

@@ -1,0 +1,20 @@
+.ej3-contenedor div {
+    border: 1px solid red;
+    padding: 1em;     
+}
+
+.ej3-contenedor {
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    background-color: chartreuse;
+}
+
+.ej3-contenedor div.ej3-c1
+,.ej3-contenedor div.ej3-c3 {
+    flex: 1;
+}
+
+.ej3-contenedor div.ej3-c2 {
+    flex: 3;
+}
