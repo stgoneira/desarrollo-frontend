@@ -5,7 +5,29 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ## SESIONES
 
-### Sesión 10 - 
+### Sesión 11 - 20220907
+
+- Flexbox
+- Consumir API Rest (Method GET)
+- Ejercicio
+- Retroalimentaciones Entrega 1 
+
+#### recursos 
+- https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox 
+- https://www.w3schools.com/css/css3_flexbox.asp 
+- https://www.w3schools.com/css/css_pseudo_classes.asp 
+- https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes 
+- https://jsonplaceholder.typicode.com/photos 
+- https://stackoverflow.com/questions/1575141/how-to-make-a-div-100-height-of-the-browser-window 
+
+
+
+
+
+
+
+
+### Sesión 10 - 20220906
 - Github fork 
 - Github Pull Request 
 - Github Sync

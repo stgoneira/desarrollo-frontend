@@ -1,11 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .contenedor {
     display: flex;
-    
+    flex-direction: column;
+    justify-content: space-evenly;
+
     background: #ccc;
-    padding: 50px;
+    padding: 0px;
+    height: 100vh;
 }
 
 .contenedor div {
     border: 1px solid black;
-    padding: 1em;
+    padding: 1em;     
+}
+
+.c1 {
+ 
+}
+
+.contenedor div.c2 {
+ 
+}
+
+.c3 {
+ 
 }
