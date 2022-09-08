@@ -21,7 +21,7 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 - https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries 
 - https://www.w3schools.com/css/css3_flexbox_responsive.asp 
 - https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties
-
+- https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/ 
 
 ### Sesión 11 - 20220907
 

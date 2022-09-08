@@ -107,3 +107,15 @@ section.cuerpo main {
         flex-direction: column;
     }
 }
+
+/* ####### FOTOS ######## */
+div#fotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div#fotos img {
+    margin: 1rem; 
+    width: 30%;   
+}
