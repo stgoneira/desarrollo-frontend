@@ -1,0 +1,20 @@
+section.ej5-contenedor {
+    display: flex;
+    flex-direction: row;    
+    background-color: #ccc;
+}
+
+section.ej5-contenedor div {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+section.ej5-contenedor div.ej5-c1 {
+    flex-grow: 1;
+}
+section.ej5-contenedor div.ej5-c2 {
+    flex-grow: 3;
+}
+section.ej5-contenedor div.ej5-c3 {
+    flex-grow: 1;
+}

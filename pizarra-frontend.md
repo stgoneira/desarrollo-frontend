@@ -19,6 +19,7 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 - https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes 
 - https://jsonplaceholder.typicode.com/photos 
 - https://stackoverflow.com/questions/1575141/how-to-make-a-div-100-height-of-the-browser-window 
+- https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units 
 
 
 
@@ -28,8 +29,13 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 
 ### Sesión 10 - 20220906
+(existen 2 repositorios: principal y el fork)
 - Github fork 
 - Github Pull Request 
+
+(existe 1 repositorio)
+- Github Colaboradores
+
 - Github Sync
 - Git tags  
 - Retroalimentación Entrega 1 
