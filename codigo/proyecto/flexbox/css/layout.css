@@ -2,6 +2,18 @@
 :root {
     --bg-color: black;
 }
+/* ####### PRINT ######## */
+@media print {
+    body header
+    ,body footer
+    ,body aside {
+        display: none;
+    }
+
+    body main {
+        text-align: center;
+    }
+}
 
 /* ####### GLOBAL ######## */
 body {
