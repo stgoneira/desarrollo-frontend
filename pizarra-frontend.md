@@ -3,7 +3,24 @@
 ## OBJETIVO 
 Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript de acuerdo a los requerimientos y acorde a las buenas prácticas de la industria. 
 
+## POR REVISAR 
+
+- Videos 3 y 4 en plataforma 
+- Validación de todos los campos del formulario (algoritmo) 
+
 ## SESIONES
+
+### Sesión 12 - 20220908
+
+- Aplicar CSS Media Queries para hacer responsiva la página HTML
+- Recuperar datos a través de API Rest (GET Method)
+- Cargar datos con API DOM y usando propiedad innerHTML  
+
+#### recursos 
+- https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries 
+- https://www.w3schools.com/css/css3_flexbox_responsive.asp 
+- https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties
+
 
 ### Sesión 11 - 20220907
 

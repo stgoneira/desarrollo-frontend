@@ -1,3 +1,9 @@
+/* ####### VARIABLES ######## */
+:root {
+    --bg-color: black;
+}
+
+/* ####### GLOBAL ######## */
 body {
     margin: 0;
     padding: 0;
@@ -5,10 +11,28 @@ body {
 
 div.contenedor {
     min-height: 100vh;
-    background-color: yellow;
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+/* ####### FOOTER ######## */
+footer {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+/* ####### HEADER ######## */
+@media (max-width: 768px ) {
+    header {
+        flex-wrap: wrap;
+        align-items: center;        
+    }    
+    body header nav li a {
+        padding: 0.5rem;
+    }
 }
 
 header {
@@ -16,6 +40,8 @@ header {
     flex-direction: row; 
     justify-content: space-around; /* alineación eje principal */
     align-items: center; /* alineación eje transversal */
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 header nav {
@@ -28,20 +54,12 @@ header img.logo {
     order: 1;
 }
 
-
-footer, header {
-    background-color: black;
-    color: #ccc;
-    padding: 10px;    
-}
-
-footer {
-    text-align: center;
-}
-
 header nav ul {
     display: flex;
     list-style: none;
+
+    margin-inline-start: 0;
+    padding-inline-start: 0;
 }
 
 header nav li a {
@@ -70,4 +88,10 @@ section.cuerpo main {
     flex: 4;
     padding: 1rem;
     background-color: chocolate;
+}
+
+@media (max-width: 768px ) {
+    section.cuerpo {
+        flex-direction: column;
+    }
 }
