@@ -13,6 +13,7 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 ### Sesión 12 - 20220908
 
 - Aplicar CSS Media Queries para hacer responsiva la página HTML
+- Utilizar variables en CSS y sus limitaciones 
 - Recuperar datos a través de API Rest (GET Method)
 - Cargar datos con API DOM y usando propiedad innerHTML  
 
