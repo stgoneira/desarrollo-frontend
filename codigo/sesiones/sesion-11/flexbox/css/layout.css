@@ -1,0 +1,37 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* row: eje principal = X ---- column: eje principal = Y */
+    justify-content: space-between;
+    /* align-items: ; alineación eje transversal */ 
+    min-height: 100vh; /* body debe ocupar el 100% del alto del Browser */
+    background-color: yellow;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.cuerpo {
+    display: flex;
+}
+
+aside {
+    background-color: rgb(7, 4, 4);
+    flex: 1;
+}
+
+main {
+    background-color: aquamarine;
+    flex: 3;
+    padding-left: 2rem;
+}
