@@ -1,0 +1,10 @@
+section.ej1-contenedor {
+    display: flex;
+    flex-direction: row;
+    background-color: #ccc;
+}
+
+section.ej1-contenedor div {
+    border: 1px solid black;
+    padding: 1rem;
+}

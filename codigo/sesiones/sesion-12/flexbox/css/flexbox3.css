@@ -1,0 +1,12 @@
+section.ej3-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* eje principal */
+    /* align-items: ; /* eje transversal */
+    background-color: #ccc;
+}
+
+section.ej3-contenedor div {
+    border: 1px solid black;
+    padding: 1rem;
+}

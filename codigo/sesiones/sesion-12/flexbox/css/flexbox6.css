@@ -1,0 +1,13 @@
+section.ej6-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: #ccc;
+    height: 100px;
+}
+
+section.ej6-contenedor div {
+    border: 1px solid black;
+    padding: 1rem;
+    height: 10px;
+}
