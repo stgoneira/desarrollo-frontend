@@ -10,6 +10,28 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ## SESIONES
 
+### Sesión 13 - 20220913
+
+- Instalación de NodeJS 16 LTS (10 minutos) 
+	y probar la instalación en CMD usando: 
+	> node -v 
+	16.17.0 
+	
+- Creación de proyecto con React 
+	Ejecutar en CMD en la carpeta deseada donde queramos colocar el proyecto: 
+	> npx create-react-app nombre-de-mi-proyecto 
+	
+	Luego entrar en la carpeta del proyecto y ejecutar en modo desarrollo: 	
+	> cd nombre-de-mi-proyecto
+	> npm start 
+	
+- Creación de Componentes React 
+- Uso de Props 
+- Uso de Hook useState()
+- Manejo de eventos 
+- Creación de instancias de componentes 
+- Subir indicaciones trabajo final (15 Sept) 
+
 ### Sesión 12 - 20220908
 
 - Aplicar CSS Media Queries para hacer responsiva la página HTML (print, layout y menú) 
