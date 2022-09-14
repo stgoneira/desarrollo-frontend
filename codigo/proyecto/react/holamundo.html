@@ -14,6 +14,7 @@
         <ol>
             <li>One file React (Babel y React CDN)</li>
             <li>useState()</li>
+            <li>props.children</li>
             <li>Function Components</li>
             <li>Class Components</li>
         </ol>
@@ -26,7 +27,31 @@
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <script type="text/babel">
+        const miContextoDefaultValues = {
+            nombre: "",
+            mensaje: "",
+            setNombre: () => {},
+            setMensaje: () => {}
+        }
+        const MiContexto = React.createContext(miContextoDefaultValues);
+
+        function MiAplicacion(props) {
+            const [nombre, setNombre]   = React.useState("");
+            const [mensaje, setMensaje] = React.useState("");
+            const estado = {
+                nombre, setNombre,
+                mensaje, setMensaje
+            };
+
+            return (
+                <MiContexto.Provider value={estado}>
+                    {props.children}
+                </MiContexto.Provider>
+            )
+        }
+
         class MiBotonClase extends React.Component {
             constructor() {
                 super();
@@ -72,9 +97,39 @@
             );
         }
 
+        function MiFormulario(props) {
+            const miContexto = React.useContext(MiContexto);
+            return(
+                <form>
+                    Nombre: <br />
+                    <input 
+                        type="text"                         
+                        value={miContexto.nombre} 
+                        onChange={(evento) => miContexto.setNombre(evento.target.value) }
+                    />
+                    <br />
+                    Mensaje: <br />
+                    <textarea
+                        onChange={(evento) => miContexto.setMensaje(evento.target.value) }
+                        value={miContexto.mensaje}
+                    ></textarea>
+                </form>
+            )
+        }
+
+        function MisDatos(props) {
+            const contexto = React.useContext(MiContexto);
+            return (
+                <div>
+                    <span>Nombre: {contexto.nombre}<br /></span>
+                    <span>Mensaje: {contexto.mensaje} <br /></span>
+                </div>
+            )
+        }
+
         const root = ReactDOM.createRoot(document.getElementById("my-react-app"));        
         root.render(
-            <>
+            <MiAplicacion>
                 <MiBoton texto="Boton Funciont Comp" />
                 <br /><br />
                 <MiBoton texto="Otro Boton Funciont Comp" />
@@ -82,7 +137,10 @@
                 <MiBotonClase texto="Boton de Clase" />
                 <br /><br />
                 <MiBotonClase texto="Boton de Clase 2" />
-            </>
+                <br /><br /><br />
+                <MiFormulario />
+                <MisDatos />
+            </MiAplicacion>
         );
     </script>
 </body>
