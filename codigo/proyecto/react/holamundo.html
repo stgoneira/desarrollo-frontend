@@ -4,33 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
+    <title>React Básico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />  
 </head>
 <body>
-    <h1>Mi aplicación React</h1>
-
-    <div id="my-react-app"></div>
+    <div class="container p-5" style="background: #ccc;">
+        <h1>Mi aplicación React</h1>
+        <p>Ejemplo pequeño de:</p>
+        <ol>
+            <li>One file React (Babel y React CDN)</li>
+            <li>useState()</li>
+            <li>Function Components</li>
+            <li>Class Components</li>
+        </ol>
+    </div>
+    
+    <div class="container p-5">
+        <div id="my-react-app"></div>
+    </div>    
 
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script>
-        const domContainer = document.querySelector("#my-react-app");
-        const root = ReactDOM.createRoo(domContainer); 
-
-        const e = React.createElement;
-
-        class LikeButton extends React.Component {
-            constructor(props) {
-                super(props);
-                this.state = { liked: false };
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        class MiBotonClase extends React.Component {
+            constructor() {
+                super();
+                this.state = {likes: 0};
             }
-
             render() {
-                
+                return (
+                    <>
+                        <button
+                            style={{backgroundColor: 'green'}}
+                            onClick={() => this.setState({likes: this.state.likes+1})}
+                        >
+                            {this.props.texto}
+                        </button>
+                        { this.state.likes > 0 && 
+                        <span>A {this.state.likes} les gusta esto.</span>
+                    } 
+                    </>
+                );
             }
         }
 
-        root.render( e() );
+        function MiBoton(props) {
+            const [likes, setLikes] = React.useState(0);
+            return (
+                <>
+                    <button
+                        onClick={() => { setLikes(likes+1) }}
+                    >
+                        {props.texto}
+                    </button>
+                    <br />
+                    { likes > 0 && 
+                        <span>A {likes} les gusta esto.</span>
+                    } 
+                </>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById("my-react-app"));        
+        root.render(
+            <>
+                <MiBoton texto="Boton Funciont Comp" />
+                <br /><br />
+                <MiBoton texto="Otro Boton Funciont Comp" />
+                <br /><br />
+                <MiBotonClase texto="Boton de Clase" />
+                <br /><br />
+                <MiBotonClase texto="Boton de Clase 2" />
+            </>
+        );
     </script>
 </body>
 </html>
