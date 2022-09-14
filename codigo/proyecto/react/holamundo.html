@@ -37,7 +37,13 @@
                     <>
                         <button
                             style={{backgroundColor: 'green'}}
-                            onClick={() => this.setState({likes: this.state.likes+1})}
+                            onClick={() => this.setState(
+                                (state, props) => {
+                                    return {
+                                        likes: state.likes + 1
+                                    }
+                                }
+                            )}
                         >
                             {this.props.texto}
                         </button>
