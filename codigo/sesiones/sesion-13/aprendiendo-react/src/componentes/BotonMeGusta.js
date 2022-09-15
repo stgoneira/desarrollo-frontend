@@ -4,6 +4,9 @@ function BotonMeGusta() {
     // hook useState() - permite guardar el estado 
     const [likes, setLikes] = useState(0);
 
+    // JSX => HTML para Javascript 
+    // <br /> -> HTML5 compatible y JSX compatible 
+    // <br>   -> HTML5 compatible, pero no JSX compatible 
     return (
         <>
         <button

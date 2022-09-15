@@ -5,10 +5,26 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ## POR REVISAR 
 
-- Videos 3 y 4 en plataforma 
 - Validación de todos los campos del formulario (algoritmo) 
 
 ## SESIONES
+
+### Sesión 14 - 20220914
+
+- Repasar lo básico de React 
+- Componentes tipo Función 
+- Componentes tipo Clase
+- Hook useState() 
+- Hook useContext() 
+- Formularios 
+- Uso función fetch() dentro de React 
+
+*Notas:*
+Si desea subir su proyecto con React debe ejecutar el comando: 
+
+> npm run build 
+
+Y subir la carpeta *build* a Github Pages. 
 
 ### Sesión 13 - 20220913
 
