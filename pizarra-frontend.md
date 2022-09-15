@@ -9,6 +9,29 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ## SESIONES
 
+### Sesión 15 - 20220915
+
+- Compartir estados entre componentes usando React Context 
+- Uso del Hook useState() 
+- Uso del Hook useEffect() en React 
+- Creación de una aplicación sencilla de React usando CDN 
+- Uso de props.children 
+- Creación de Componente de Galería de Imágenes usando Flex, React y fetch() 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Sesión 14 - 20220914
 
 - Repasar lo básico de React 
