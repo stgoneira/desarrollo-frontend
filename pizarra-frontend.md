@@ -18,6 +18,9 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 - Uso de props.children 
 - Creación de Componente de Galería de Imágenes usando Flex, React y fetch() 
 
+#### recursos 
+
+- https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/export 
 
 
 

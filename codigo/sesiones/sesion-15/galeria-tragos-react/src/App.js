@@ -1,10 +1,20 @@
+import { useState } from 'react';
 import './App.css';
+import { MiContexto } from './componentes/MiContexto';
 
-function App() {
+function App(props) {
+  const [trago, setTrago] = useState("");
+  const estado = {
+    trago,
+    setTrago
+  };
+
   return (
-    <div className="App">
-      
-    </div>
+    <MiContexto.Provider value={estado}>
+      <div className="App">
+        {props.children}
+      </div>
+    </MiContexto.Provider>
   );
 }
 
