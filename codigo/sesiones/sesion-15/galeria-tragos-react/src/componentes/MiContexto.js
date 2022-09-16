@@ -5,4 +5,4 @@ export const miContextoValoresPorDefecto = {
     setTrago: (t) => {} 
 };
 
-export const MiContexto = createContext();
+export const MiContexto = createContext( miContextoValoresPorDefecto );
