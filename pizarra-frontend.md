@@ -9,6 +9,14 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript 
 
 ## SESIONES
 
+### Sesión 16 - 20220920
+
+- Desafío React o terminar trabajo final 
+- Utilización de React en una sola página 
+- Retroalimentación sobre trabajos 
+- Resolución de dudas 
+
+
 ### Sesión 15 - 20220915
 
 - Compartir estados entre componentes usando React Context 
