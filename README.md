@@ -30,36 +30,37 @@
 **Clase 2:** Fundamentos de HTML - etiquetas, atributos, estructura básica de una página web.
 
 ### Semana 2:
-**Clase 3:** Fundamentos de CSS - selectores, propiedades, estilos y hojas de estilo.
+**Clase 3:** Fundamentos de CSS - selectores, propiedades, estilos y hojas de estilo.  
 **Clase 4:** Diseño y posicionamiento de elementos con CSS - cajas, flexbox y grid.
 
 ### Semana 3:
-**Clase 5:** JavaScript básico - variables, tipos de datos, funciones y eventos.
-**Clase 6:** Manipulación del DOM con JavaScript - selección de elementos, cambio de contenido, eventos.
+**Clase 5:** JavaScript básico - variables, tipos de datos, funciones y eventos.  
+**Clase 6:** Manipulación del DOM con JavaScript - selección de elementos, cambio de contenido, eventos.  
 
-### Semana 4:
-**Clase 7:** Trabajo con formularios HTML y validación de datos con JavaScript.
-**Clase 8:** Trabajo con formularios HTML y validación de datos con JavaScript.
+### Semana 4:  
+**Clase 7:** Trabajo con formularios HTML y validación de datos con JavaScript.  
+**Clase 8:** Trabajo con formularios HTML y validación de datos con JavaScript.  
 
 ### Semana 5:
-**Clase 9:** Diseño responsive - media queries, viewport y adaptación de elementos para diferentes dispositivos.
-**Clase 10:** Frameworks CSS - Bootstrap.
+**Clase 9:** Diseño responsive - media queries, viewport y adaptación de elementos para diferentes dispositivos.  
+**Clase 10:** Frameworks CSS - Bootstrap.  
 
-### Semana 6:
-**Clase 11:** Introducción a React - componentes, props y state.
-**Clase 12:** Creación de una aplicación React básica - instalación, configuración y estructura del proyecto.
+### Semana 6:  
+**Clase 11:** Introducción a React - componentes, props y state.  
+**Clase 12:** Creación de una aplicación React básica - instalación, configuración y estructura del proyecto.  
 
-### Semana 7:
-**Clase 13:** Creación de componentes React - manejo de eventos, props y state.
-**Clase 14:** Creación de rutas con React. 
+### Semana 7:  
+**Clase 13:** Creación de componentes React - manejo de eventos, props y state.  
+**Clase 14:** Creación de rutas con React.  
 
-### Semana 8:
-**Clase 15:** Trabajo con APIs - solicitudes a través de fetch.
-**Clase 16:** Gestión de estado en aplicaciones React - Context API.
+### Semana 8:  
+**Clase 15:** Trabajo con APIs - solicitudes a través de fetch.  
+**Clase 16:** Gestión de estado en aplicaciones React - Context API.  
 
-### Semana 9:
-**Clase 17:** Deploy de una aplicación React -  GitHub Pages.
-**Clase 18:** Revisión del curso y próximos pasos para el desarrollo web.
+### Semana 9:  
+**Clase 17:** Deploy de una aplicación React -  GitHub Pages.  
+**Clase 18:** Revisión del curso y próximos pasos para el desarrollo web.  
+
 
 ## Recursos 
 
