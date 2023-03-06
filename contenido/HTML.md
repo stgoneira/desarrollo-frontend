@@ -24,7 +24,7 @@ En resumen, HTML proporciona las herramientas necesarias para crear páginas web
 
 La "divitis" es un término que se utiliza para referirse a la sobreutilización de elementos div en un documento HTML, lo que puede conducir a una estructura de código ineficiente, difícil de mantener y poco semántica. Aquí te presento algunas recomendaciones para evitar la divitis en HTML:
 
-**Utiliza elementos semánticos**: Los elementos HTML5 como header, nav, main, section, article, aside y footer proporcionan una estructura semántica clara y significativa al contenido de la página. Utiliza estos elementos siempre que sea posible para definir la estructura del contenido de la página.
+**Utiliza elementos semánticos**: Los elementos HTML5 como ***header, nav, main, section, article, aside y footer*** proporcionan una estructura semántica clara y significativa al contenido de la página. Utiliza estos elementos siempre que sea posible para definir la estructura del contenido de la página.
 
 **Agrupa elementos con contenedores semánticos**: En lugar de envolver cada elemento con un elemento div genérico, utiliza contenedores semánticos para agrupar los elementos relacionados. Por ejemplo, puedes usar un elemento aside para agrupar los elementos de la barra lateral, o un elemento section para agrupar los elementos relacionados de una sección de contenido.
 
