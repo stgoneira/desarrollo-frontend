@@ -1,337 +1,161 @@
 # DESARROLLO FRONTEND
 
-## OBJETIVO 
-Implementar páginas web básicas responsivas utilizando HTML, CSS y Javascript de acuerdo a los requerimientos y acorde a las buenas prácticas de la industria. 
-
-## POR REVISAR 
-
-- Validación de todos los campos del formulario (algoritmo) 
+## OBJETIVO GENERAL
+Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y React de acuerdo a los requerimientos y acorde a las buenas prácticas de la industria. 
 
 ## SESIONES
 
-### Sesión 16 - 20220920
-
-- Desafío React o terminar trabajo final 
-- Utilización de React en una sola página 
-- Retroalimentación sobre trabajos 
-- Resolución de dudas 
+### Sesión 18
+- Revisar los conceptos fundamentales de HTML, CSS y JavaScript aprendidos durante el curso
+- Evaluar el progreso individual de cada estudiante en el aprendizaje de desarrollo web
+- Presentar diferentes opciones de continuación de estudio en el campo del desarrollo web, como cursos avanzados, proyectos prácticos y recursos en línea.
 
 
-### Sesión 15 - 20220915
 
-- Compartir estados entre componentes usando React Context 
-- Uso del Hook useState() 
-- Uso del Hook useEffect() en React 
-- Creación de una aplicación sencilla de React usando CDN 
-- Uso de props.children 
-- Creación de Componente de Galería de Imágenes usando Flex, React y fetch() 
+### Sesión 17
+- Comprender cómo hacer deploy de una aplicación React en GitHub Pages
+
+
+
+### Sesión 16
+- Comprender el concepto de gestión de estado en React y por qué es importante para aplicaciones más complejas.
+- Conocer la herramienta Context API de React y cómo se utiliza para compartir información entre diferentes componentes.
+- Crear una aplicación React con múltiples componentes y entender cómo compartir información entre ellos utilizando Context API. 
+
+
+
+### Sesión 15
+- Conocer el concepto de API y por qué es importante para conectar una aplicación web con un servidor.
+- Saber cómo utilizar fetch en JavaScript para hacer solicitudes a una API y manejar las respuestas.
+- Crear una aplicación React que se conecte con una API y muestre información dinámica.
+
+
+
+### Sesión 14
+- Conocer las diferentes herramientas para manejar el enrutamiento en una aplicación React, como react-router-dom.
+- Entender cómo crear rutas en React y navegar entre diferentes vistas.
+- Crear una aplicación React con múltiples vistas y entender cómo manejar el enrutamiento entre ellas.
+
+
+
+### Sesión 13 
+- Saber cómo crear componentes en React y utilizar props para personalizar su contenido.
+- Entender cómo manejar eventos en React y actualizar el state de la aplicación según las interacciones del usuario.
+- Crear componentes en React y entender cómo se comunican entre sí para crear una aplicación más compleja.
+
+
+
+### Sesión 12
+- Comprender los conceptos básicos de React y por qué es una de las herramientas más populares para el desarrollo web.
+- Conocer los componentes en React y cómo se utilizan para modularizar el código.
+- Entender el concepto de props y state en React y cómo se utilizan para manejar la información en la aplicación.
+
+
+
+### Sesión 11 
+- Saber cómo instalar y configurar una aplicación React utilizando herramientas como create-react-app.
+- Conocer la estructura básica de una aplicación React y cómo se organizan los archivos y carpetas.
+- Crear una aplicación React básica y entender cómo se comunican los componentes entre sí.
+
+
+
+### Sesión 10
+- Conocer los conceptos básicos de los frameworks CSS y por qué se utilizan.
+- Entender las ventajas de utilizar un framework como Bootstrap para acelerar el desarrollo web.
+- Saber cómo utilizar Bootstrap para crear diseños responsivos y personalizarlos según las necesidades del proyecto.
+
+
+
+### Sesión 9
+
+#### objetivos del día 
+- Comprender el concepto de diseño responsive y por qué es importante para crear sitios web accesibles desde diferentes dispositivos.
+- Conocer el uso de media queries para adaptar los estilos de una página web según el tamaño de la pantalla.
+- Saber cómo utilizar viewport para definir las dimensiones de la pantalla en dispositivos móviles.
 
 #### recursos 
 
-- https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/export 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-### Sesión 14 - 20220914
-
-- Repasar lo básico de React 
-- Componentes tipo Función 
-- Componentes tipo Clase
-- Hook useState() 
-- Hook useContext() 
-- Formularios 
-- Uso función fetch() dentro de React 
-
-*Notas:*
-Si desea subir su proyecto con React debe ejecutar el comando: 
-
-> npm run build 
-
-Y subir la carpeta *build* a Github Pages. 
-
-### Sesión 13 - 20220913
-
-- Instalación de NodeJS 16 LTS (10 minutos) 
-	y probar la instalación en CMD usando: 
-	> node -v 
-	16.17.0 
-	
-- Creación de proyecto con React 
-	Ejecutar en CMD en la carpeta deseada donde queramos colocar el proyecto: 
-	> npx create-react-app nombre-de-mi-proyecto 
-	
-	Luego entrar en la carpeta del proyecto y ejecutar en modo desarrollo: 	
-	> cd nombre-de-mi-proyecto
-	> npm start 
-	
-- Creación de Componentes React 
-- Uso de Props 
-- Uso de Hook useState()
-- Manejo de eventos 
-- Creación de instancias de componentes 
-- Subir indicaciones trabajo final (15 Sept) 
-
-### Sesión 12 - 20220908
-
-- Aplicar CSS Media Queries para hacer responsiva la página HTML (print, layout y menú) 
-- Utilizar variables en CSS y sus limitaciones 
-- Recuperar datos a través de API Rest (GET Method)
-- Cargar datos con API DOM y usando propiedad innerHTML  
-
-#### recursos 
-- https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries 
-- https://www.w3schools.com/css/css3_flexbox_responsive.asp 
-- https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties
-- https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/ 
-
-### Sesión 11 - 20220907
-
-- Flexbox
-- Ejercicio
-- Retroalimentaciones Entrega 1 
-
-#### recursos 
-- https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox 
-- https://www.w3schools.com/css/css3_flexbox.asp 
-- https://www.w3schools.com/css/css_pseudo_classes.asp 
-- https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes 
-- https://jsonplaceholder.typicode.com/photos 
-- https://stackoverflow.com/questions/1575141/how-to-make-a-div-100-height-of-the-browser-window 
-- https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units 
-
-
-
-
-
-
-
-
-### Sesión 10 - 20220906
-(existen 2 repositorios: principal y el fork)
-- Github fork 
-- Github Pull Request 
-
-(existe 1 repositorio)
-- Github Colaboradores
-
-- Github Sync
-- Git tags  
-- Retroalimentación Entrega 1 
-- Avanzar en 2da Entrega 
-- Usar el Carousel de Bootstrap 
-
-#### dinámica trabajo colaborativo Github 
-
-1. Una de las personas va a crear un repositorio 
-2. Enviará un push con cambios (2 archivos) 
-3. El otro compañero hará un Fork del proyecto 
-4. Realizará algunos cambios sobre los archivos y realizará el commit y push respectivo 
-5. Luego enviará un "Pull Request" 
-6. El dueño del repositorio revisará el "Pull Request" y aceptará los cambios 
-
-#### dinámica sync fork Github 
-
-1. El dueño del repositorio actualiza algunos archivos con commit y push 
-2. El colaborador sincroniza su repositorio 
-
-#### creación Tag vía Browser en Github 
-1. Ir a la sección de Releases 
-2. Crear Tag 
-
-#### creación Tag vía Consola 
-
-1. git tag nombreTag
-ej: git tag v0.1 
-
-2. git push origin --tags 
-Sincroniza los tags del repositorio local con el repositorio remoto 
-
-#### crear tag vía herramienta gráfica 
-
-
-
-
-
-
-
-
-
-### Sesión 9 - 20220901
+### Sesión 8
 
 #### objetivos del día 
-- Subir a plataforma de AIEP en Actividad 1 la primera entrega, enviar:
-	- Integrantes 
-	- Enlace repositorio 
-	- Enlace Github Pages 
-- Reconocer el uso de noConflict() de jQuery 
-- Usar la función ajax() de jQuery 
-- Usar el Debugger de JS 
+- Saber cómo enviar los datos de un formulario a un servidor utilizando JavaScript.
+- Conocer las diferentes opciones de validación de datos en JavaScript, como required, minlength, pattern, etc.
+- Crear un formulario de registro completo y validar los datos utilizando JavaScript.
+
+
+
+### Sesión 7
+
+#### objetivos del día 
+- Comprender el funcionamiento de los formularios HTML y cómo se utilizan para recopilar información de los usuarios.
+- Saber cómo validar los datos de un formulario utilizando JavaScript.
+- Conocer los diferentes tipos de elementos de formulario en HTML, como input, textarea, select, etc.
 
 #### recursos 
 
-- https://api.jquery.com/jQuery.noConflict/#jQuery-noConflict-removeAll
-
-### Sesión 8 - 20220831
-
-#### objetivos del día 
-- Integrar librería jQuery 
-- Incrustar mapas 
-- Formulario de contacto usando jQuery 
-- Cambiar tipografía usando Google Fonts 
-- Incrustar partes en HTML con jQuery usando load() 
-- Utilización de componentes de Bootstrap: Navbar, Alerts y Carousel  
-- Entrega enunciado Actividad 1 
-- Mostrar los ejemplos de Proyectos 
 
 
-
-
-
-### Sesión 7 - 20220830 
+### Sesión 6
 
 #### objetivos del día 
-- Identificar las diferencias entre GIT y Github 
-- Reconocer los comandos básicos de GIT (add, commit, push y pull) 
-- Reconocer la utilidad del archivo .gitignore 
-- Identificar la función de las ramas y etiquetas en GIT (branch y tags)
-- Documentación proyecto Github usando Markdown
-- Cambiar la familia de fuentes con CSS 
-- Completar cuestionario plataforma AIEP 
-- Avances proyecto Final 
+- Conocer los métodos de selección de elementos del DOM en JavaScript, como getElementById, getElementsByClassName, querySelector, etc.
+- Saber cómo cambiar el contenido de un elemento del DOM utilizando JavaScript.
+- Entender cómo utilizar eventos en JavaScript para crear interacciones en una página web.
+
+
+
+### Sesión 5
+
+#### objetivos del día 
+- Comprender los conceptos básicos de JavaScript, como variables, tipos de datos, operadores, condicionales, etc.
+- Conocer el funcionamiento de las funciones en JavaScript y cómo se utilizan para modularizar el código.
+- Entender el concepto de eventos y cómo se utilizan para crear interacciones en una página web.
 
 #### recursos 
 
-- https://git-scm.com/download/win 
-- https://fonts.google.com/
-- https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-- https://github.com/stgoneira/desarrollo-frontend/tree/main/contenido/TrabajoFinal 
-- Cuestionario plataforma AIEP: https://educacioncontinua-otec.aiep.cl/mod/quiz/view.php?id=384303 
 
 
-
-
-
-
-
-### Sesión 6 - 20220825
+### Sesión 4
 
 #### objetivos del día 
-
-- Creación de Layouts con Bootstrap 
-- Utilización de componentes de Bootstrap: Navbar, Alerts y Carousel 
-- Creación de una cuenta en GITHUB 
-- Utilizar GITHUB como un servidor para hospedar mi sitio 
-- Entrega del trabajo final y rúbrica 
-
-### Sesión 5 - 20220824
-
-#### objetivos del día 
-
-- Integrar Bootstrap al proyecto
-- Retroalimentar al usuario del formulario con mensajes usando la API DOM 
-- Identificar si la llamada a la API Rest fue exitosa o no 
-- Incorporación de Bootstrap al proyecto 
+- Entender el modelo de caja de CSS y cómo se utiliza para controlar el tamaño y posición de los elementos.
+- Conocer las propiedades de flexbox y grid y cómo se utilizan para crear diseños flexibles y responsivos.
+- Crear diseños complejos utilizando CSS y las herramientas aprendidas en clase.
 
 #### recursos 
 
-- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces 
-- https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/async_function 
-- https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/await 
-- https://developer.mozilla.org/es/docs/Glossary/Callback_function 
-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
-- https://www.w3schools.com/js/js_errors.asp#:~:text=JavaScript%20try%20and%20catch,occurs%20in%20the%20try%20block
-- https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/try...catch 
-- https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Control_flow_and_error_handling 
-- https://developer.mozilla.org/es/docs/Web/CSS/display 
 
 
-
-### Sesión 4 - 20220823
+### Sesión 3
 
 #### objetivos del día 
 
-- Identificar la sintaxis básica de Javascript (funciones y variables) 
-- Creación cuenta de Firebase y Base de Datos Realtime 
-- Inserción de datos vía REST API a Firebase usando función FETCH de Javascript 
-- Uso de funciones getElementById() y querySelector() en Javascript 
-- Validación de datos simples en Javascript 
-
-#### recursos 
-- https://www.w3schools.com/css/css_attribute_selectors.asp 
-- https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes 
-- https://developer.mozilla.org/es/docs/Web/API/Document/querySelector 
-- https://developer.mozilla.org/es/docs/Web/API/Document/querySelectorAll 
-- https://developer.mozilla.org/es/docs/Web/API/NodeList 
-
-
-### Sesión 3 - 20220818
-
-#### objetivos del día 
-
-- Crear formulario usando HTML
-- Incorporar Javascript a la página (hola mundo!)
-- Identificar la sintaxis básica de Javascript (funciones y variables)
-- Reconocer la importancia de los eventos en JS 
-- Recuperar la información de un formulario HTML usando la API DOM 
-- Utilizar las herramientas de desarrollo del navegador
-
+- Entender el funcionamiento de los selectores CSS y cómo se utilizan para aplicar estilos a elementos específicos.
+- Conocer las propiedades CSS más comunes, como color, tamaño, margen, padding, etc.
+- Crear hojas de estilo y aplicar estilos a una página web utilizando CSS.
 
 #### recursos 
 
-- https://www.w3schools.com/html/html_forms.asp
-- https://developer.mozilla.org/es/docs/Glossary/DOM 
-- https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event
-- https://developer.mozilla.org/es/docs/Web/API/Document/querySelector
 
 
-### Sesión 2 - 20220817
-
-#### tarea 
-
-1. Definir el proyecto que quieren desarrollar durante el curso
-2. Aplicar los conceptos vistos durante la clase en su proyecto 
-3. (Opcional) Investigar elementos relacionados (no vistos en la clase) que puedan ayudarle a mejorar su proyecto
+### Sesión 2
 
 #### objetivos del día 
 
-- Utilizar las Herramientas de Desarrollo del Browser 
-- Utilizar las etiquetas meta, link, a, header, footer, nav, main, img, strong 
-- Incorporar hoja de estilos CSS externa 
-- Reconocer los distintos selectores disponibles en CSS 
-- Definir proyecto a desarrollar durante el curso 
-- Reconocer las rutas absolutas y relativas 
+- Identificar y utilizar correctamente las etiquetas HTML más comunes, como **html, head, body, p, a, img, entre otras etiquetas.**
+- Conocer los diferentes tipos de atributos HTML y cómo se utilizan para agregar funcionalidades a los elementos.
+- Crear una página web básica utilizando HTML y aplicar los conceptos aprendidos en clase.
 
 #### recursos 
 
-- https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types 
 
 
-### Sesión 1 - 20220816 
+### Sesión 1
 
-#### objetivos del día 
-- Conocer a sus compañeros y profesor
-- Identificar los contenidos del curso
-- Identificar la dinámica del curso 
-- Reconocer el rol de la tríada HTML, CSS y Javascript 
-- Reconocer la importancia y diferencias entre GIT y Github 
-- Reconocer la importancia de las librerías y frameworks (ej. jQuery y Bootstrap)
-- Instalar herramientas necesarias para el curso (VSCode y plugin Live Server)
-- Creación primer proyecto - Hola Mundo con HTML, CSS y JS 
+#### objetivos del día
+- Comprender los conceptos básicos del desarrollo web y cómo se relacionan HTML, CSS y JavaScript.
+- Entender los diferentes roles que puede tener un desarrollador web dentro de un equipo de trabajo.
+- Conocer las herramientas y recursos que se utilizarán durante el curso.
 
-#### ejercicio 1 - hola mundo
-
-1. Crear carpeta para el proyecto 
-2. En VSCode seleccionar opción File -> Open Folder 
-3. Crear archivo index.html como en ej: https://github.com/stgoneira/desarrollo-frontend/blob/main/codigo/sesiones/sesion-1/index.html 
-4. Validar código HTML en https://validator.w3.org/ 
