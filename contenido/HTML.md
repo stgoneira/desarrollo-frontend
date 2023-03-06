@@ -32,7 +32,7 @@ Un ejemplo de etiqueta básica sería:
 <p>Este es un párrafo de ejemplo</p>
 ```
 
-En este ejemplo, la etiqueta <p> define un párrafo.
+En este ejemplo, la etiqueta ***P*** define un párrafo.
 
 Los atributos son propiedades que se aplican a una etiqueta y se utilizan para proporcionar información adicional sobre el elemento. Los atributos se escriben dentro de la etiqueta y se componen de un nombre y un valor, separados por un signo igual (=).
 
