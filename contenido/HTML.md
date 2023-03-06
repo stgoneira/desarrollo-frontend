@@ -153,3 +153,91 @@ La "divitis" es un término que se utiliza para referirse a la sobreutilización
 **Utiliza herramientas de análisis de código**: Las herramientas de análisis de código pueden ayudarte a detectar y corregir la divitis en tus documentos HTML. Utiliza herramientas como HTMLHint, CSSLint y W3C Markup Validation Service para comprobar la calidad y la validez de tu código HTML.
 
 En resumen, para evitar la divitis en HTML, es importante utilizar elementos semánticos, agrupar elementos con contenedores semánticos, utilizar clases y atributos personalizados, simplificar el código HTML, utilizar CSS para aplicar estilos y utilizar herramientas de análisis de código para detectar y corregir errores en el código.
+
+```html
+<div id="wrapper">
+  <div id="header">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="content">
+    <div class="section">
+      <h2>Sección 1</h2>
+      <div class="subsection">
+        <h3>Subsección 1</h3>
+        <p>Contenido de la subsección 1.</p>
+      </div>
+      <div class="subsection">
+        <h3>Subsección 2</h3>
+        <p>Contenido de la subsección 2.</p>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Sección 2</h2>
+      <div class="subsection">
+        <h3>Subsección 1</h3>
+        <p>Contenido de la subsección 1.</p>
+      </div>
+      <div class="subsection">
+        <h3>Subsección 2</h3>
+        <p>Contenido de la subsección 2.</p>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p>Derechos de autor © 2021. Todos los derechos reservados.</p>
+  </div>
+</div>
+```
+
+```html
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>Sección 1</h2>
+    <div class="subsection">
+      <h3>Subsección 1</h3>
+      <p>Contenido de la subsección 1.</p>
+    </div>
+    <div class="subsection">
+      <h3>Subsección 2</h3>
+      <p>Contenido de la subsección 2.</p>
+    </div>
+  </section>
+  <section>
+    <h2>Sección 2</h2>
+    <div class="subsection">
+      <h3>Subsección 1</h3>
+      <p>Contenido de la subsección 1.</p>
+    </div>
+    <div class="subsection">
+      <h3>Subsección 2</h3>
+      <p>Contenido de la subsección 2.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>Derechos de autor © 2021. Todos los derechos reservados.</p>
+</footer>
+```
