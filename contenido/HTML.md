@@ -110,6 +110,7 @@ En resumen, la estructura básica de un documento HTML incluye la declaración D
 <body>
     <h1>Título principal de la página</h1>
     <p>Este es un párrafo de ejemplo.</p>
+    &lt;!-- falta agregar más información --&gt;
     <img src="imagen.jpg" alt="Descripción de la imagen">
 </body>
 </html>
