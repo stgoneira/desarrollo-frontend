@@ -50,11 +50,9 @@ En este ejemplo, la etiqueta <img> define una imagen. Los atributos src y alt pr
 
 En HTML5, la mayoría de las etiquetas requieren tanto una etiqueta de apertura como una etiqueta de cierre para definir el contenido que se encuentra entre ellas. La etiqueta de apertura se escribe con el nombre de la etiqueta y se coloca entre corchetes angulares (< y >), mientras que la etiqueta de cierre se escribe con una barra diagonal (/) antes del nombre de la etiqueta y se coloca entre corchetes angulares.
 
-En este ejemplo, la etiqueta de apertura <p> define un párrafo y la etiqueta de cierre </p> indica el final del párrafo.
+En este ejemplo, la etiqueta de apertura ***P*** define un párrafo y la etiqueta de cierre indica el final del párrafo.
 
-Algunas etiquetas en HTML5, como la etiqueta <img>, no requieren una etiqueta de cierre porque no contienen contenido entre ellas. En estos casos, la etiqueta de apertura se escribe con un signo de cierre (/) al final.
-
-En este ejemplo, la etiqueta <img> define una imagen y no requiere una etiqueta de cierre porque no contiene contenido entre ellas.
+Algunas etiquetas en HTML5, como la etiqueta ***IMG***, no requieren una etiqueta de cierre porque no contienen contenido entre ellas. En estos casos, la etiqueta de apertura se escribe con un signo de cierre (/) al final.
 
 Es importante asegurarse de que todas las etiquetas de apertura tengan su correspondiente etiqueta de cierre para evitar errores en el código HTML.
 
