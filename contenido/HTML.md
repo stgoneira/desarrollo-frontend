@@ -22,6 +22,38 @@ HTML es un lenguaje de marcado que se utiliza para crear páginas web. A continu
 
 En resumen, HTML proporciona las herramientas necesarias para crear páginas web mediante el uso de etiquetas y elementos para definir la estructura y el contenido de la página, así como para crear interactividad con los usuarios mediante el uso de formularios y enlaces.
 
+## Sintaxis HTML 
+
+Las etiquetas son elementos que definen y estructuran el contenido de una página web. Cada etiqueta se escribe entre corchetes angulares (< y >) y puede tener atributos para proporcionar información adicional sobre el elemento.
+
+Un ejemplo de etiqueta básica sería:
+
+```html 
+<p>Este es un párrafo de ejemplo</p>
+```
+
+En este ejemplo, la etiqueta <p> define un párrafo.
+
+Los atributos son propiedades que se aplican a una etiqueta y se utilizan para proporcionar información adicional sobre el elemento. Los atributos se escriben dentro de la etiqueta y se componen de un nombre y un valor, separados por un signo igual (=).
+
+Un ejemplo de etiqueta con atributos sería:
+
+```html
+<img src="imagen.jpg" alt="Descripción de la imagen">
+```
+
+En este ejemplo, la etiqueta <img> define una imagen. Los atributos src y alt proporcionan información sobre la ubicación de la imagen y una descripción alternativa para la imagen, respectivamente.
+
+Además, HTML también incluye la posibilidad de agregar comentarios en el código. Los comentarios son notas que se agregan al código para proporcionar información adicional o para recordar a los programadores lo que hace una sección específica del código. Los comentarios en HTML se escriben entre <!-- y -->.
+
+Un ejemplo de comentario en HTML sería:
+
+```html
+<!-- Este es un comentario en HTML -->
+```
+
+En resumen, la sintaxis de HTML se compone de etiquetas, que definen y estructuran el contenido de una página web, y atributos, que proporcionan información adicional sobre una etiqueta. También se pueden agregar comentarios para proporcionar información adicional sobre el código.
+
 ## Estructura Básica 
 
 La estructura básica de un documento HTML consta de tres partes principales: ***la declaración DOCTYPE, el elemento head y el elemento body.***
