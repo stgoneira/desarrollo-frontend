@@ -243,3 +243,12 @@ Ejemplo con DIVITIS corregida:
   <p>Derechos de autor © 2021. Todos los derechos reservados.</p>
 </footer>
 ```
+
+## Recursos 
+
+- https://developer.mozilla.org/es/docs/Web/HTML
+- https://developer.mozilla.org/es/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL 
+- https://developer.mozilla.org/es/docs/Web/HTML/Attributes/rel 
+- https://validator.w3.org/ 
+- https://developer.mozilla.org/es/docs/Web/HTML/Element/form
+- https://www.w3schools.com/html/html_forms.asp 
