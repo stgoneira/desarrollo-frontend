@@ -1,4 +1,4 @@
-## Javascript 
+# Javascript 
 
 JavaScript es un lenguaje de programación que se utiliza ampliamente en el desarrollo frontend para crear aplicaciones web interactivas y dinámicas. A continuación, se presentan los conceptos fundamentales de JavaScript para el desarrollo frontend:
 
