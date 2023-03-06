@@ -154,6 +154,7 @@ La "divitis" es un término que se utiliza para referirse a la sobreutilización
 
 En resumen, para evitar la divitis en HTML, es importante utilizar elementos semánticos, agrupar elementos con contenedores semánticos, utilizar clases y atributos personalizados, simplificar el código HTML, utilizar CSS para aplicar estilos y utilizar herramientas de análisis de código para detectar y corregir errores en el código.
 
+Ejemplo de código con DIVITIS:
 ```html
 <div id="wrapper">
   <div id="header">
@@ -199,6 +200,7 @@ En resumen, para evitar la divitis en HTML, es importante utilizar elementos sem
 </div>
 ```
 
+Ejemplo con DIVITIS corregida:
 ```html
 <header>
   <div class="logo">
