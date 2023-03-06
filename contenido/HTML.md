@@ -1,5 +1,7 @@
 # HTML 
 
+## Fundamentos de HTML 
+
 HTML es un lenguaje de marcado que se utiliza para crear páginas web. A continuación se resumen los fundamentos de HTML:
 
 **Estructura básica**: Todo documento HTML comienza con el elemento html, que contiene dos elementos principales: head y body. El elemento head contiene información sobre el documento, como el título de la página y los enlaces a las hojas de estilo CSS, mientras que el elemento body contiene el contenido visible de la página.
@@ -19,6 +21,68 @@ HTML es un lenguaje de marcado que se utiliza para crear páginas web. A continu
 **Formularios**: Los formularios se definen utilizando la etiqueta form y se utilizan para recopilar datos de los usuarios. Los elementos de formulario, como los campos de texto y los botones, se definen utilizando etiquetas específicas, como input y button.
 
 En resumen, HTML proporciona las herramientas necesarias para crear páginas web mediante el uso de etiquetas y elementos para definir la estructura y el contenido de la página, así como para crear interactividad con los usuarios mediante el uso de formularios y enlaces.
+
+## Estructura Básica 
+
+### DOCTYPE 
+La estructura básica de un documento HTML consta de tres partes principales: ***la declaración DOCTYPE, el elemento head y el elemento body.***
+
+La declaración DOCTYPE es la primera línea del documento HTML y se utiliza para indicar el tipo de documento HTML que se está utilizando. Esta declaración no es un elemento HTML, sino una instrucción que le dice al navegador cómo procesar el código HTML. La declaración DOCTYPE se escribe como sigue:
+
+```html
+<!DOCTYPE html>
+```
+
+### HEAD
+El elemento head es un contenedor para metadatos (información sobre el documento) y enlaces a archivos externos como hojas de estilo CSS y scripts JavaScript. Los metadatos incluyen información como el título de la página, la descripción y palabras clave que los motores de búsqueda pueden utilizar para clasificar y encontrar la página. El elemento head se escribe dentro del elemento HTML y antes del elemento body. Un ejemplo de un elemento head básico se muestra a continuación:
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <title>Título de la página</title>
+    <meta name="description" content="Descripción de la página">
+    <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+```
+
+### BODY 
+
+El elemento body es el contenedor principal para el contenido de la página. ***Incluye todo el texto, imágenes, videos y otros elementos visuales*** que se muestran en la página. El elemento body se escribe después del elemento head y se cierra al final del documento. Un ejemplo de un elemento body básico se muestra a continuación:
+
+```html
+<body>
+    <h1>Título principal de la página</h1>
+    <p>Este es un párrafo de ejemplo.</p>
+    <img src="imagen.jpg" alt="Descripción de la imagen">
+</body>
+
+```
+
+### Ejemplo estructura completa
+
+En resumen, la estructura básica de un documento HTML incluye la declaración DOCTYPE, el elemento head y el elemento body. La declaración DOCTYPE indica el tipo de documento HTML que se está utilizando, el elemento head contiene información sobre el documento y enlaces a archivos externos, y el elemento body contiene el contenido principal de la página. A continuación se muestra un ejemplo completo de un documento HTML que utiliza la estructura básica:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Título de la página</title>
+    <meta name="description" content="Descripción de la página">
+    <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Título principal de la página</h1>
+    <p>Este es un párrafo de ejemplo.</p>
+    <img src="imagen.jpg" alt="Descripción de la imagen">
+</body>
+</html>
+
+```
 
 ## Divitis (DIV)
 
