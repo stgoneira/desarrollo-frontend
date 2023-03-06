@@ -4,21 +4,21 @@
 
 HTML es un lenguaje de marcado que se utiliza para crear páginas web. A continuación se resumen los fundamentos de HTML:
 
-**Estructura básica**: Todo documento HTML comienza con el elemento html, que contiene dos elementos principales: head y body. El elemento head contiene información sobre el documento, como el título de la página y los enlaces a las hojas de estilo CSS, mientras que el elemento body contiene el contenido visible de la página.
+**Estructura básica**: Todo documento HTML comienza con el elemento html, que contiene dos elementos principales: ***head y body***. El elemento head contiene información sobre el documento, como el título de la página y los enlaces a las hojas de estilo CSS, mientras que el elemento body contiene el contenido visible de la página.
 
 **Etiquetas y elementos**: Los elementos de HTML se definen utilizando etiquetas. Cada etiqueta comienza con el símbolo < y termina con el símbolo >. Los elementos pueden contener texto, imágenes, enlaces y otros elementos. Algunos elementos, como las imágenes y los enlaces, requieren atributos para funcionar correctamente.
 
-**Encabezados y párrafos**: Los encabezados se utilizan para dividir el contenido de la página en secciones y se definen utilizando las etiquetas h1 a h6. Los párrafos se definen utilizando la etiqueta p y se utilizan para agrupar el texto en párrafos.
+**Encabezados y párrafos**: Los encabezados se utilizan para dividir el contenido de la página en secciones y se definen utilizando las etiquetas ***h1 a h6***. Los párrafos se definen utilizando la ***etiqueta p*** y se utilizan para agrupar el texto en párrafos.
 
-**Listas**: Las listas se definen utilizando las etiquetas ul (lista sin orden), ol (lista ordenada) y li (elemento de lista).
+**Listas**: Las listas se definen utilizando las etiquetas ***ul (lista sin orden), ol (lista ordenada)*** y ***li (elemento de lista)***.
 
-**Enlaces**: Los enlaces se definen utilizando la etiqueta a y se utilizan para crear hipervínculos a otras páginas web o a secciones de la misma página.
+**Enlaces**: Los enlaces se definen utilizando la ***etiqueta a*** y se utilizan para crear hipervínculos a otras páginas web o a secciones de la misma página.
 
-**Imágenes**: Las imágenes se definen utilizando la etiqueta img y requieren un atributo src para especificar la ubicación del archivo de imagen.
+**Imágenes**: Las imágenes se definen utilizando la ***etiqueta img*** y requieren un ***atributo src*** para especificar la ubicación del archivo de imagen.
 
-**Tablas**: Las tablas se definen utilizando las etiquetas table, tr (fila de tabla) y td (celda de tabla) y se utilizan para mostrar datos en forma de tabla.
+**Tablas**: Las tablas se definen utilizando las ***etiquetas table, tr (fila de tabla) y td (celda de tabla)*** y se utilizan para mostrar datos en forma de tabla.
 
-**Formularios**: Los formularios se definen utilizando la etiqueta form y se utilizan para recopilar datos de los usuarios. Los elementos de formulario, como los campos de texto y los botones, se definen utilizando etiquetas específicas, como input y button.
+**Formularios**: Los formularios se definen utilizando la ***etiqueta form*** y se utilizan para recopilar datos de los usuarios. Los elementos de formulario, como los campos de texto y los botones, se definen utilizando ***etiquetas específicas, como input y button***.
 
 En resumen, HTML proporciona las herramientas necesarias para crear páginas web mediante el uso de etiquetas y elementos para definir la estructura y el contenido de la página, así como para crear interactividad con los usuarios mediante el uso de formularios y enlaces.
 
