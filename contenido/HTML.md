@@ -24,9 +24,9 @@ En resumen, HTML proporciona las herramientas necesarias para crear páginas web
 
 ## Estructura Básica 
 
-### DOCTYPE 
 La estructura básica de un documento HTML consta de tres partes principales: ***la declaración DOCTYPE, el elemento head y el elemento body.***
 
+### DOCTYPE 
 La declaración DOCTYPE es la primera línea del documento HTML y se utiliza para indicar el tipo de documento HTML que se está utilizando. Esta declaración no es un elemento HTML, sino una instrucción que le dice al navegador cómo procesar el código HTML. La declaración DOCTYPE se escribe como sigue:
 
 ```html
