@@ -24,6 +24,7 @@ En resumen, HTML proporciona las herramientas necesarias para crear páginas web
 
 ## Sintaxis HTML 
 
+### Etiquetas 
 Las etiquetas son elementos que definen y estructuran el contenido de una página web. Cada etiqueta se escribe entre corchetes angulares (< y >) y puede tener atributos para proporcionar información adicional sobre el elemento.
 
 Un ejemplo de etiqueta básica sería:
@@ -34,6 +35,7 @@ Un ejemplo de etiqueta básica sería:
 
 En este ejemplo, la etiqueta ***P*** define un párrafo.
 
+### Atributos 
 Los atributos son propiedades que se aplican a una etiqueta y se utilizan para proporcionar información adicional sobre el elemento. Los atributos se escriben dentro de la etiqueta y se componen de un nombre y un valor, separados por un signo igual (=).
 
 Un ejemplo de etiqueta con atributos sería:
@@ -44,6 +46,25 @@ Un ejemplo de etiqueta con atributos sería:
 
 En este ejemplo, la etiqueta <img> define una imagen. Los atributos src y alt proporcionan información sobre la ubicación de la imagen y una descripción alternativa para la imagen, respectivamente.
 
+### Etiqueta de apertura y cierre 
+
+En HTML5, la mayoría de las etiquetas requieren tanto una etiqueta de apertura como una etiqueta de cierre para definir el contenido que se encuentra entre ellas. La etiqueta de apertura se escribe con el nombre de la etiqueta y se coloca entre corchetes angulares (< y >), mientras que la etiqueta de cierre se escribe con una barra diagonal (/) antes del nombre de la etiqueta y se coloca entre corchetes angulares.
+
+En este ejemplo, la etiqueta de apertura <p> define un párrafo y la etiqueta de cierre </p> indica el final del párrafo.
+
+Algunas etiquetas en HTML5, como la etiqueta <img>, no requieren una etiqueta de cierre porque no contienen contenido entre ellas. En estos casos, la etiqueta de apertura se escribe con un signo de cierre (/) al final.
+
+En este ejemplo, la etiqueta <img> define una imagen y no requiere una etiqueta de cierre porque no contiene contenido entre ellas.
+
+Es importante asegurarse de que todas las etiquetas de apertura tengan su correspondiente etiqueta de cierre para evitar errores en el código HTML.
+
+```html
+<p>Este es un párrafo de ejemplo</p>
+
+<img src="imagen.jpg" alt="Descripción de la imagen" />
+```
+
+### Comentarios
 Además, HTML también incluye la posibilidad de agregar comentarios en el código. Los comentarios son notas que se agregan al código para proporcionar información adicional o para recordar a los programadores lo que hace una sección específica del código. Los comentarios en HTML se escriben entre <!-- y -->.
 
 Un ejemplo de comentario en HTML sería:
@@ -110,7 +131,7 @@ En resumen, la estructura básica de un documento HTML incluye la declaración D
 <body>
     <h1>Título principal de la página</h1>
     <p>Este es un párrafo de ejemplo.</p>
-    &lt;!-- falta agregar más información --&gt;
+    <!-- falta agregar más información -->
     <img src="imagen.jpg" alt="Descripción de la imagen">
 </body>
 </html>
