@@ -71,12 +71,19 @@ git config --global core.editor "code --wait
 
 
 3. Configurar credenciales:
-Si planeas conectarte a un repositorio remoto, debes configurar tus credenciales de Git para que puedas autenticarte. Ejecuta el comando git config --global credential.helper wincred para guardar tus credenciales de forma segura en el administrador de credenciales de Windows.
+Si planeas conectarte a un repositorio remoto, debes configurar tus credenciales de Git para que puedas autenticarte. Ejecuta el comando para guardar tus credenciales de forma segura en el administrador de credenciales de Windows.
+
+```
+git config --global credential.helper wincred
+```
 
 4. Verificar la configuración:
-Para ver la configuración actual de Git, puedes ejecutar git config --list. Esto mostrará una lista de todas las configuraciones de Git establecidas en tu sistema.
+Para ver la configuración actual de Git, puedes ejecutar el comando de más abajo, esto mostrará una lista de todas las configuraciones de Git establecidas en tu sistema.
 
-¡Y eso es todo! Con estos pasos básicos, ya estarás listo para comenzar a utilizar Git en Windows.
+```
+git config --list
+```
+
 
 ## Gestión de Credenciales en Windows
 
