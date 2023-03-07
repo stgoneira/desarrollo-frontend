@@ -7,6 +7,14 @@
 1. [Javascript](Javascript.md)
 1. [ReactJS](React.md)
 
+# Herramientas
+
+1. VScode https://code.visualstudio.com/
+1. VSCode Live Server https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+1. Opcionalmente a VSCode puede utilizar ***Sublime, Notepad++ o similar***.
+1. GIT https://git-scm.com/download/win 
+1. Opcionalmente - GIT GUI Clients https://git-scm.com/download/gui/windows
+
 # Metodología 
 
 Bienvenidos al curso de Desarrollo Frontend. Durante este curso, vamos a cubrir una serie de tecnologías clave para el desarrollo de aplicaciones web modernas, incluyendo HTML, CSS, Javascript y ReactJS.
