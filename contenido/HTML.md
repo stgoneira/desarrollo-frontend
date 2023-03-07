@@ -136,6 +136,37 @@ En resumen, la estructura básica de un documento HTML incluye la declaración D
 
 ```
 
+## Etiquetas
+
+### Encabezados y párrafos 
+
+En HTML, los encabezados se utilizan para indicar la importancia y jerarquía del contenido en una página web, mientras que los párrafos se utilizan para agrupar y presentar contenido textual.
+
+Los encabezados se indican mediante etiquetas de "h1" a "h6", donde "h1" representa el encabezado más importante y "h6" el menos importante. 
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de encabezados y párrafos en HTML</title>
+</head>
+<body>
+	<h1>Encabezado de nivel 1</h1>
+	<p>Este es un párrafo que contiene un ejemplo de encabezado de nivel 2:</p>
+	<h2>Encabezado de nivel 2</h2>
+	<p>Este es otro párrafo que contiene un ejemplo de encabezado de nivel 3:</p>
+	<h3>Encabezado de nivel 3</h3>
+	<p>Este es un párrafo que contiene varios ejemplos de encabezados:</p>
+	<h4>Encabezado de nivel 4</h4>
+	<h5>Encabezado de nivel 5</h5>
+	<h6>Encabezado de nivel 6</h6>
+	<p>Este es un párrafo que contiene más texto después de los encabezados.</p>
+</body>
+</html>
+```
+
+### Listas 
+
 ## Divitis (DIV)
 
 La "divitis" es un término que se utiliza para referirse a la sobreutilización de elementos div en un documento HTML, lo que puede conducir a una estructura de código ineficiente, difícil de mantener y poco semántica. Aquí te presento algunas recomendaciones para evitar la divitis en HTML:
