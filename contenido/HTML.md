@@ -187,6 +187,26 @@ Por ejemplo, para crear un enlace a un archivo de audio llamado "mi_cancion.mp3"
 
 En este ejemplo, el atributo "href" se establece en "mi_cancion.mp3" para indicar que se trata de un archivo de audio en lugar de una página web. El atributo "target" se establece en "_blank" para indicar que se abrirá el archivo de audio en una nueva pestaña del navegador. El atributo "title" se establece en "Escuchar mi canción" para proporcionar información adicional sobre el recurso vinculado. "Mi canción" es el texto del enlace que se mostrará en la página. Cuando el usuario haga clic en el texto del enlace, se abrirá el archivo de audio en una nueva pestaña del navegador.
 
+### Imágenes 
+
+En HTML, las imágenes se insertan en una página utilizando la etiqueta "IMG". La etiqueta "IMG" es un elemento vacío, lo que significa que no tiene una etiqueta de cierre. En su lugar, se utilizan los atributos para indicar la información necesaria para mostrar la imagen.
+
+El atributo más importante de la etiqueta "IMG" es "src", que especifica la URL de la imagen que se desea mostrar. Otros atributos útiles incluyen "alt" para proporcionar una descripción de la imagen para las personas con discapacidades visuales, "width" y "height" para especificar las dimensiones de la imagen en píxeles, y "title" para proporcionar información adicional sobre la imagen.
+
+Por ejemplo, para insertar una imagen de un gato llamado "michi.jpg" que se encuentra en el mismo directorio que la página actual, se utilizaría el siguiente código:
+
+```html
+<img src="michi.jpg" alt="Foto de un gato llamado Michi" />
+```
+
+En este ejemplo, "michi.jpg" es la URL de la imagen que se desea mostrar, y "Foto de un gato llamado Michi" es una descripción alternativa de la imagen para las personas con discapacidades visuales. Cuando se muestra la página, se mostrará la imagen de Michi en su tamaño original.
+
+```html
+<img src="michi.jpg" alt="Foto de un gato llamado Michi" width="300" height="200" style="border: 1px solid black;" class="imagen-gato" id="michi-foto" />
+```
+
+En este ejemplo, la imagen de Michi se muestra con un borde negro sólido, y se ha aplicado la clase "imagen-gato" y el identificador "michi-foto" para poder aplicar estilos o referirse a la imagen de manera única en el futuro.
+
 ### Listas 
 
 En HTML, las listas se utilizan para presentar información en un formato estructurado y fácilmente legible. Hay tres tipos de listas en HTML: listas ordenadas, listas desordenadas y listas de definición.
