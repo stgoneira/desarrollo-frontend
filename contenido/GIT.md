@@ -116,3 +116,37 @@ La primera vez que Git te pida tus credenciales, el Git Credential Manager te pe
 A partir de ahora, Git usará Git Credential Manager para Windows para almacenar y recuperar tus credenciales cada vez que necesite conectarse al servidor Git.
 
 Espero que esto te ayude a manejar tus credenciales de Git en Windows de manera efectiva.
+
+# Github 
+
+## Issues 
+
+GitHub Issues es una herramienta de seguimiento de problemas que permite a los desarrolladores y colaboradores realizar un seguimiento de los problemas que surgen en un proyecto.
+
+Los issues de GitHub son similares a los tickets de soporte de una empresa, y permiten a los usuarios informar sobre errores, solicitar nuevas funciones, hacer preguntas y discutir problemas relacionados con el proyecto. A continuación, se describen los pasos básicos para utilizar GitHub Issues:
+
+Crear un nuevo issue: El primer paso para utilizar GitHub Issues es crear un nuevo issue. Para ello, simplemente haga clic en el botón "Issues" en la parte superior del repositorio, y luego haga clic en el botón "New Issue". A continuación, se puede proporcionar un título para el issue y una descripción detallada del problema.
+
+Asignar el issue a un colaborador: Una vez creado el issue, puede asignarse a un colaborador específico para su seguimiento y resolución. Para asignar un issue a un colaborador, basta con seleccionar el nombre del colaborador en el menú desplegable "Assignees".
+
+Establecer etiquetas para el issue: Las etiquetas son útiles para organizar los issues y hacer que sean más fáciles de encontrar. Las etiquetas pueden utilizarse para identificar el tipo de problema (bug, mejora, pregunta, etc.) o para indicar la prioridad del problema.
+
+Comentar en el issue: Una vez creado un issue, los usuarios pueden comentar en él para proporcionar información adicional o para discutir posibles soluciones. Los comentarios pueden utilizarse para intercambiar ideas y colaborar con otros miembros del equipo.
+
+Cerrar el issue: Una vez que se ha resuelto un issue, puede cerrarse. Para cerrar un issue, simplemente haga clic en el botón "Close Issue". Si el problema vuelve a surgir más tarde, el issue puede reabrirse.
+
+En resumen, GitHub Issues es una herramienta de seguimiento de problemas muy útil para proyectos de software. Permite a los desarrolladores y colaboradores comunicarse y colaborar en la resolución de problemas, lo que puede mejorar significativamente la calidad del software.
+
+## Github Projects 
+
+GitHub Projects es una herramienta de gestión de proyectos que permite a los desarrolladores y colaboradores organizar, priorizar y hacer un seguimiento del trabajo en un proyecto de software. A continuación, se describen los pasos básicos para utilizar GitHub Projects:
+
+Crear un nuevo proyecto: El primer paso para utilizar GitHub Projects es crear un nuevo proyecto. Para ello, simplemente haga clic en la pestaña "Projects" en la parte superior del repositorio, y luego haga clic en el botón "New project". A continuación, se puede proporcionar un título para el proyecto y una descripción detallada del mismo.
+
+Agregar columnas al proyecto: Una vez creado el proyecto, se pueden agregar columnas para representar los diferentes estados del trabajo en el proyecto. Por ejemplo, se pueden agregar columnas como "To do", "In progress" y "Done". Para agregar una columna, simplemente haga clic en el botón "Add column" y proporcione un nombre para la columna.
+
+Agregar tarjetas al proyecto: Una vez que se han creado las columnas, se pueden agregar tarjetas para representar las tareas individuales que deben realizarse en el proyecto. Por ejemplo, se puede agregar una tarjeta para una tarea como "Corregir un error en el código". Para agregar una tarjeta, simplemente haga clic en la columna correspondiente y haga clic en el botón "Add card". A continuación, se puede proporcionar un título para la tarjeta y una descripción detallada de la tarea.
+
+Asignar tarjetas a colaboradores: Una vez que se han agregado las tarjetas al proyecto, se pueden asignar a los colaboradores específicos para su realización. Para asignar una tarjeta a un colaborador, simplemente arrastre y suelte la tarjeta en la columna "Assigned" y seleccione el nombre del colaborador.
+
+Mover tarjetas entre columnas: A medida que se realiza el trabajo en el proyecto, las tarjetas pueden moverse entre las diferentes columnas para indicar su estado actual. Por ejemplo, una tarjeta que se encuentra en la columna "To do" puede moverse a la columna "In progress" cuando un colaborador comienza a trabajar en ella. Para mover una tarjeta, simplemente arrastre y suelte la tarjeta en la columna correspondiente.
