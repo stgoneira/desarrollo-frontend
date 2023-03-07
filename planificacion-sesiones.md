@@ -145,8 +145,8 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 #### objetivos del día 
 
 - Identificar y utilizar correctamente las etiquetas HTML más comunes, como **html, head, body, p, a, img, entre otras etiquetas.**
-- Conocer los diferentes tipos de atributos HTML y cómo se utilizan para agregar funcionalidades a los elementos.
-- Crear una página web básica utilizando HTML y aplicar los conceptos aprendidos en clase.
+- Conocer los atributos HTML y cómo se utilizan para agregar funcionalidades a los elementos.
+- Crear una página web básica utilizando HTML y aplicar los conceptos aprendidos en clase (divitis).
 
 #### recursos 
 
@@ -157,5 +157,5 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 #### objetivos del día
 - Comprender los conceptos básicos del desarrollo web y cómo se relacionan HTML, CSS y JavaScript.
 - Entender los diferentes roles que puede tener un desarrollador web dentro de un equipo de trabajo.
-- Conocer las herramientas y recursos que se utilizarán durante el curso.
-
+- Conocer, instalar y configurar las herramientas que se utilizarán durante el curso.
+- Desarrollar proyecto del tipo "Hola Mundo"
