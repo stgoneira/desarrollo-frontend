@@ -33,7 +33,74 @@
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
-## [GIT](#)
+## [GIT y Github](#)
+
+- Es un sistema de [control de versiones distribuido](#)
+- Permite a los desarrolladores [colaborar en proyectos](#) de software de manera eficiente.
+- [Github](#), por otro lado, es una [plataforma](#) en línea que proporciona [alojamiento](#) para repositorios de GIT y [herramientas de colaboración](#)
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [GIT - Flujo Básico - Clonar Repositorio](#)
+
+![Clonar Repositorio GIT](../assets/ppt/git-clone.webp)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [GIT - Flujo Básico](#)
+
+![Flujo Básico de Trabajo en GIT](../assets/ppt/git-basic-flow.png)
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ejemplo GIT - Flujo Básico](#)
+
+1. Crear repositorio en Github. Sólo marcar opción de creación archivo README.md.
+2. Presionar botón verde **Code** y copiar enlace **HTTP**
+3. Ve a la carpeta donde quieres colocar el proyecto en tu computador usando el explorar de archivos, por ej. Mis Documentos.
+4. Click derecho y escoge **"Open in terminal"**
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ejemplo GIT - Flujo Básico](#)
+
+5. Ahora ejecuta el comando GIT clone con el enlace que copiaste:
+```
+git clone https://github.com/miusuario/mi-proyecto.git
+```
+
+6. Modifica el archivo **README.md** que se clonó
+7. En la terminal ejecuta 
+
+```
+git status
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ejemplo GIT - Flujo Básico](#)
+
+8. Agrega todos los cambios al área intermedia (staging)
+```
+git add -A
+```
+
+9. Confirma los cambios en el repositorio local con el mensaje adecuado según los cambios que realizaste
+```
+git commit -m "modificaciones descripción proyecto"
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ejemplo GIT - Flujo Básico](#)
+
+10. Finalmente envía las modificaciones al repositorio remoto (Github) usando PUSH
+```
+git push
+```
+
+11. Revisa en Github que el repositorio remoto se haya actualizado
+
 
 ---
 <!-- .slide: data-background-image="../assets/bg.png" data-background-size="contain" -->

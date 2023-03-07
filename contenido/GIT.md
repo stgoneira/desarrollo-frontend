@@ -145,3 +145,11 @@ Mover tarjetas entre columnas: A medida que se realiza el trabajo en el proyecto
 ## Diferencia GIT y Github
 
 GIT es un sistema de control de versiones distribuido de código abierto que se utiliza para rastrear cambios en archivos y coordinar el trabajo en proyectos de software. Github, por otro lado, es una plataforma en línea que proporciona alojamiento para repositorios de GIT y herramientas de colaboración para equipos de desarrollo.
+
+## Clonación
+
+Puedes ir a la carpeta donde quieres colocar el proyecto, dar click derecho y pinchar sobre "Open in terminal". Luego clonas con el sgte comando:
+
+```
+git clone https://github.com/miusuario/mi-proyecto.git
+```
