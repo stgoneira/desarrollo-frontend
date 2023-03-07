@@ -41,6 +41,43 @@ Después de enviar la solicitud de pull request, el propietario del repositorio 
 En resumen, un pull request es una herramienta esencial en el flujo de trabajo colaborativo para mantener el control de cambios en el código fuente y asegurar la calidad y estabilidad del repositorio.
 
 
+## Configuración Inicial en Windows 
+
+1. Configurar nombre de usuario y correo electrónico:
+Abre Git Bash (o la terminal de Git) y escribe git config --global user.name "Tu nombre aquí" seguido de git config --global user.email "tu-correo-electronico@ejemplo.com".
+Esto establece tu nombre de usuario y dirección de correo electrónico que se utilizarán en los commits de Git.
+
+2. Configurar editor de texto:
+Si no has configurado previamente tu editor de texto predeterminado, puedes hacerlo con el comando: 
+
+```
+git config --global core.editor "nombre-de-tu-editor". 
+```
+
+Ejemplo con Sublime:
+```
+git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.exe' -w
+```
+
+Ejemplo con Notepad++:
+```
+git config --global core.editor "notepad++.exe -multiInst -notabbar -nosession -noPlugin
+```
+
+Ejemplo con VSCode:
+```
+git config --global core.editor "code --wait
+```
+
+
+3. Configurar credenciales:
+Si planeas conectarte a un repositorio remoto, debes configurar tus credenciales de Git para que puedas autenticarte. Ejecuta el comando git config --global credential.helper wincred para guardar tus credenciales de forma segura en el administrador de credenciales de Windows.
+
+4. Verificar la configuración:
+Para ver la configuración actual de Git, puedes ejecutar git config --list. Esto mostrará una lista de todas las configuraciones de Git establecidas en tu sistema.
+
+¡Y eso es todo! Con estos pasos básicos, ya estarás listo para comenzar a utilizar Git en Windows.
+
 ## Gestión de Credenciales en Windows
 
 Para manejar las credenciales de Git en Windows, hay varios métodos que puedes utilizar. Aquí te presento dos de las formas más comunes:
