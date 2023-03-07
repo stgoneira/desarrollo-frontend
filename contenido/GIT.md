@@ -1,7 +1,9 @@
-# GIT 
+# GIT y Github 
+
+![Flujo Básico de Trabajo en GIT](../assets/ppt/git-basic-flow.png)
 
 ## Introducción a GIT 
-Git es un sistema de control de versiones distribuido y gratuito que permite a los desarrolladores colaborar en proyectos de software de manera eficiente. A continuación se presentan los conceptos fundamentales de Git:
+Git es un sistema de control de versiones distribuido y gratuito que permite a los desarrolladores colaborar en proyectos de software de manera eficiente. A continuación se presentan los conceptos fundamentales de GIT:
 
 **Repositorio**: un repositorio de Git es un lugar donde se almacena el código fuente y la información relacionada con un proyecto de software. Los repositorios pueden ser locales o remotos.
 
@@ -131,3 +133,7 @@ Agregar tarjetas al proyecto: Una vez que se han creado las columnas, se pueden 
 Asignar tarjetas a colaboradores: Una vez que se han agregado las tarjetas al proyecto, se pueden asignar a los colaboradores específicos para su realización. Para asignar una tarjeta a un colaborador, simplemente arrastre y suelte la tarjeta en la columna "Assigned" y seleccione el nombre del colaborador.
 
 Mover tarjetas entre columnas: A medida que se realiza el trabajo en el proyecto, las tarjetas pueden moverse entre las diferentes columnas para indicar su estado actual. Por ejemplo, una tarjeta que se encuentra en la columna "To do" puede moverse a la columna "In progress" cuando un colaborador comienza a trabajar en ella. Para mover una tarjeta, simplemente arrastre y suelte la tarjeta en la columna correspondiente.
+
+## Diferencia GIT y Github
+
+GIT es un sistema de control de versiones distribuido de código abierto que se utiliza para rastrear cambios en archivos y coordinar el trabajo en proyectos de software. Github, por otro lado, es una plataforma en línea que proporciona alojamiento para repositorios de GIT y herramientas de colaboración para equipos de desarrollo.
