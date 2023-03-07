@@ -87,8 +87,9 @@ git config --list
 
 ## Gestión de Credenciales en Windows
 
-Para manejar las credenciales de Git en Windows, hay varios métodos que puedes utilizar. Aquí te presento dos de las formas más comunes:
+Para manejar las credenciales de Git en Windows, hay varios métodos que puedes utilizar. Aquí te presento dos de las formas más comunes: el administrador de credenciales de Windows y 
 
+### Administrador de Credenciales de Windows
 Usar el "Administrador de Credenciales de Windows"
 Windows tiene una herramienta llamada "Administrador de Credenciales" que te permite almacenar tus credenciales de Git de manera segura. Para hacer esto, sigue los siguientes pasos:
 
@@ -98,6 +99,7 @@ Ingresa el nombre del servidor Git (por ejemplo, github.com) y tu nombre de usua
 Haz clic en "Aceptar" para guardar tus credenciales.
 A partir de ahora, Git usará estas credenciales cada vez que te conectes al servidor Git.
 
+### Git Credential Manager para Windows
 Usar Git Credential Manager para Windows
 Otra opción es usar el Git Credential Manager para Windows, que es un programa que te permite almacenar tus credenciales de Git de manera segura. Para hacer esto, sigue los siguientes pasos:
 
@@ -105,7 +107,9 @@ Descarga e instala Git Credential Manager para Windows desde https://github.com/
 
 Abre una ventana de línea de comandos de Git y ejecuta el siguiente comando:
 
+```
 git config --global credential.helper manager
+```
 
 La primera vez que Git te pida tus credenciales, el Git Credential Manager te pedirá permiso para almacenarlas. Haz clic en "Aceptar" para permitirlo.
 
