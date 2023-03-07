@@ -165,6 +165,28 @@ Los encabezados se indican mediante etiquetas de "h1" a "h6", donde "h1" represe
 </html>
 ```
 
+### Enlaces 
+
+En HTML, los enlaces se utilizan para crear hipervínculos a otras páginas web o recursos en línea, como imágenes, archivos de audio o video, documentos PDF, etc. Los enlaces se crean utilizando la etiqueta "A", que significa "ancla". La etiqueta "A" se utiliza junto con el atributo "href", que especifica la URL del recurso al que se desea enlazar.
+
+Por ejemplo, para crear un enlace a la página principal de Google, se utilizaría el siguiente código:
+
+```html
+<a href="https://www.google.com">Ir a Google</a>
+```
+
+En este ejemplo, "https://www.google.com" es la URL del recurso al que se desea enlazar, y "Ir a Google" es el texto del enlace que se mostrará en la página. Cuando el usuario haga clic en el texto del enlace, se abrirá la página de Google en una nueva pestaña del navegador.
+
+Además del atributo "href", la etiqueta "<a>" también puede incluir otros atributos, como "target" para especificar dónde se abrirá el recurso vinculado (por ejemplo, en una nueva pestaña del navegador), "title" para proporcionar información adicional sobre el recurso vinculado, y "rel" para especificar la relación entre la página actual y la página vinculada.
+
+Por ejemplo, para crear un enlace a un archivo de audio llamado "mi_cancion.mp3" que se encuentra en el mismo directorio que la página actual, se utilizaría el siguiente código:
+
+```html
+<a href="mi_cancion.mp3" target="_blank" title="Escuchar mi canción">Mi canción</a>
+```
+
+En este ejemplo, el atributo "href" se establece en "mi_cancion.mp3" para indicar que se trata de un archivo de audio en lugar de una página web. El atributo "target" se establece en "_blank" para indicar que se abrirá el archivo de audio en una nueva pestaña del navegador. El atributo "title" se establece en "Escuchar mi canción" para proporcionar información adicional sobre el recurso vinculado. "Mi canción" es el texto del enlace que se mostrará en la página. Cuando el usuario haga clic en el texto del enlace, se abrirá el archivo de audio en una nueva pestaña del navegador.
+
 ### Listas 
 
 En HTML, las listas se utilizan para presentar información en un formato estructurado y fácilmente legible. Hay tres tipos de listas en HTML: listas ordenadas, listas desordenadas y listas de definición.
@@ -204,6 +226,8 @@ Las listas de definición se utilizan para presentar información en un formato 
 	<dd>Lenguaje de programación utilizado para crear interactividad en páginas web.</dd>
 </dl>
 ```
+
+
 
 
 ## Divitis (DIV)
