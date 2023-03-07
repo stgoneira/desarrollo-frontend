@@ -1,5 +1,7 @@
 ## SCRUM
 
+![SCRUM](../assets/ppt/scrum.png)
+
 Scrum es un marco de trabajo ágil para la gestión y desarrollo de proyectos de software que se enfoca en la colaboración, la flexibilidad y la entrega iterativa e incremental de un producto. A continuación, se resumen los fundamentos de Scrum:
 
 **Roles**: Scrum define tres roles principales: ***el propietario del producto (Product Owner), el equipo de desarrollo (Development Team) y el Scrum Master***. Cada uno de estos roles tiene responsabilidades específicas dentro del marco de trabajo.
