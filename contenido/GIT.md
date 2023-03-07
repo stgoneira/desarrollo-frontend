@@ -9,6 +9,14 @@ Git es un sistema de control de versiones distribuido y gratuito que permite a l
 
 **Commits**: un commit es un conjunto de cambios realizados en los archivos de un repositorio en un momento dado. Cada commit tiene un mensaje descriptivo que indica el propósito de los cambios.
 
+**Working directory**: Es la carpeta donde se guardan los archivos de tu proyecto y donde trabajas en ellos. Es el lugar donde realizas cambios y modificaciones en los archivos.
+
+**Staging area**: Es una especie de "área intermedia" entre el working directory y el repositorio GIT. En la staging area es donde se preparan los cambios que serán confirmados (commited) en el repositorio. Es decir, se seleccionan los archivos modificados o creados en el working directory que se quieren añadir al repositorio.
+
+**Push**: Es el comando que se utiliza para subir los cambios que has realizado en tu repositorio local a un repositorio remoto, como Github. Cuando ejecutas el comando "git push", los cambios que has realizado se envían al repositorio remoto y se actualiza la versión del proyecto en ese repositorio.
+
+**Pull**: Es el comando que se utiliza para descargar los cambios que se han realizado en el repositorio remoto y que todavía no están en tu repositorio local. Cuando ejecutas el comando "git pull", los cambios que se han realizado en el repositorio remoto se descargan y se actualiza tu repositorio local con la versión más reciente del proyecto.
+
 **Ramas**: una rama es una línea de desarrollo independiente que permite a los desarrolladores trabajar en diferentes funciones o características del proyecto sin afectar el trabajo de otros desarrolladores. Las ramas se fusionan para integrar los cambios de diferentes ramas.
 
 **Merge**: fusionar es el proceso de combinar los cambios de dos o más ramas de Git en una sola rama. Esto permite a los desarrolladores integrar sus cambios y colaborar en un proyecto.
