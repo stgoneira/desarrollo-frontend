@@ -167,6 +167,45 @@ Los encabezados se indican mediante etiquetas de "h1" a "h6", donde "h1" represe
 
 ### Listas 
 
+En HTML, las listas se utilizan para presentar información en un formato estructurado y fácilmente legible. Hay tres tipos de listas en HTML: listas ordenadas, listas desordenadas y listas de definición.
+
+Las listas ordenadas se utilizan cuando se necesita presentar información en un orden específico. Se indican mediante la etiqueta "OL". Cada elemento de la lista se indica con la etiqueta "LI". Por ejemplo, para crear una lista ordenada de números del 1 al 5, se utiliza la siguiente estructura:
+
+```html
+<ol>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</ol>
+```
+
+Las listas desordenadas se utilizan para presentar información en un orden no específico. Se indican mediante la etiqueta "UL". Cada elemento de la lista se indica con la etiqueta "LI". Por ejemplo, para crear una lista desordenada de frutas, se utiliza la siguiente estructura:
+
+```html
+<ul>
+	<li>Manzana</li>
+	<li>Pera</li>
+	<li>Banana</li>
+	<li>Naranja</li>
+</ul>
+```
+
+Las listas de definición se utilizan para presentar información en un formato de "término-definición". Se indican mediante la etiqueta "DL". Cada término se indica con la etiqueta "DT", y cada definición se indica con la etiqueta "DD". Por ejemplo, para crear una lista de definición de términos informáticos, se utiliza la siguiente estructura:
+
+```html
+<dl>
+	<dt>HTML</dt>
+	<dd>Lenguaje de marcado utilizado para crear páginas web.</dd>
+	<dt>CSS</dt>
+	<dd>Lenguaje utilizado para dar estilo y diseño a páginas web.</dd>
+	<dt>JavaScript</dt>
+	<dd>Lenguaje de programación utilizado para crear interactividad en páginas web.</dd>
+</dl>
+```
+
+
 ## Divitis (DIV)
 
 La "divitis" es un término que se utiliza para referirse a la sobreutilización de elementos div en un documento HTML, lo que puede conducir a una estructura de código ineficiente, difícil de mantener y poco semántica. Aquí te presento algunas recomendaciones para evitar la divitis en HTML:
