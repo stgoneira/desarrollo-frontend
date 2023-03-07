@@ -15,6 +15,11 @@
 1. GIT https://git-scm.com/download/win 
 1. Opcionalmente - GIT GUI Clients https://git-scm.com/download/gui/windows
 
+# Plataformas 
+
+1. Github (debe tener una cuenta) https://github.com/
+1. Codepen https://codepen.io/
+
 # Metodología 
 
 Bienvenidos al curso de Desarrollo Frontend. Durante este curso, vamos a cubrir una serie de tecnologías clave para el desarrollo de aplicaciones web modernas, incluyendo HTML, CSS, Javascript y ReactJS.
