@@ -44,7 +44,12 @@ En resumen, un pull request es una herramienta esencial en el flujo de trabajo c
 ## Configuración Inicial en Windows 
 
 1. Configurar nombre de usuario y correo electrónico:
-Abre Git Bash (o la terminal de Git) y escribe git config --global user.name "Tu nombre aquí" seguido de git config --global user.email "tu-correo-electronico@ejemplo.com".
+Abre Git Bash (o la terminal de Git) y escribe:
+
+```
+git config --global user.name "Tu nombre aquí"
+git config --global user.email "tu-correo-electronico@ejemplo.com".
+```
 Esto establece tu nombre de usuario y dirección de correo electrónico que se utilizarán en los commits de Git.
 
 2. Configurar editor de texto:
@@ -56,28 +61,20 @@ git config --global core.editor "nombre-de-tu-editor".
 
 Ejemplo con Sublime:
 ```
-git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.exe' -w
+git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.exe' -w"
 ```
 
 Ejemplo con Notepad++:
 ```
-git config --global core.editor "notepad++.exe -multiInst -notabbar -nosession -noPlugin
+git config --global core.editor "notepad++.exe -multiInst -notabbar -nosession -noPlugin"
 ```
 
 Ejemplo con VSCode:
 ```
-git config --global core.editor "code --wait
+git config --global core.editor "code --wait"
 ```
 
-
-3. Configurar credenciales:
-Si planeas conectarte a un repositorio remoto, debes configurar tus credenciales de Git para que puedas autenticarte. Ejecuta el comando para guardar tus credenciales de forma segura en el administrador de credenciales de Windows.
-
-```
-git config --global credential.helper wincred
-```
-
-4. Verificar la configuración:
+3. Verificar la configuración:
 Para ver la configuración actual de Git, puedes ejecutar el comando de más abajo, esto mostrará una lista de todas las configuraciones de Git establecidas en tu sistema.
 
 ```
@@ -85,37 +82,21 @@ git config --list
 ```
 
 
-## Gestión de Credenciales en Windows
+## Usar varias credenciales
 
-Para manejar las credenciales de Git en Windows, hay varios métodos que puedes utilizar. Aquí te presento dos de las formas más comunes: el administrador de credenciales de Windows y 
+Para guardar dos cuentas de GitHub diferentes en el Windows Credential Manager con Git Credential Manager Core (GCM Core), puedes seguir estos pasos:
 
-### Administrador de Credenciales de Windows
-Usar el "Administrador de Credenciales de Windows"
-Windows tiene una herramienta llamada "Administrador de Credenciales" que te permite almacenar tus credenciales de Git de manera segura. Para hacer esto, sigue los siguientes pasos:
+Asegúrate de tener instalado GCM Core. Si no lo tienes instalado, puedes descargarlo desde el sitio web de GCM Core.
 
-Abre el "Administrador de Credenciales" buscándolo en el menú Inicio o en la barra de búsqueda.
-Haz clic en "Agregar una credencial".
-Ingresa el nombre del servidor Git (por ejemplo, github.com) y tu nombre de usuario y contraseña de Git.
-Haz clic en "Aceptar" para guardar tus credenciales.
-A partir de ahora, Git usará estas credenciales cada vez que te conectes al servidor Git.
-
-### Git Credential Manager para Windows
-Usar Git Credential Manager para Windows
-Otra opción es usar el Git Credential Manager para Windows, que es un programa que te permite almacenar tus credenciales de Git de manera segura. Para hacer esto, sigue los siguientes pasos:
-
-Descarga e instala Git Credential Manager para Windows desde https://github.com/microsoft/Git-Credential-Manager-for-Windows/releases.
-
-Abre una ventana de línea de comandos de Git y ejecuta el siguiente comando:
+Abre una terminal (como el Símbolo del sistema en Windows) y ejecuta el siguiente comando:
 
 ```
-git config --global credential.helper manager
+git config --global credential.useHttpPath true
 ```
 
-La primera vez que Git te pida tus credenciales, el Git Credential Manager te pedirá permiso para almacenarlas. Haz clic en "Aceptar" para permitirlo.
+Este comando configura Git para que use la URL completa del repositorio en lugar del host de alojamiento como clave para almacenar las credenciales.
 
-A partir de ahora, Git usará Git Credential Manager para Windows para almacenar y recuperar tus credenciales cada vez que necesite conectarse al servidor Git.
-
-Espero que esto te ayude a manejar tus credenciales de Git en Windows de manera efectiva.
+Entonces se abrirá el browser predeterminado y usará la cuenta conectada de Github para la autenticación. Si estás conectado desde distintas cuentas en distintos browsers, puedes ir cambiando el browser predeterminado usando la aplicación ***"Default Apps"*** en Windows.
 
 # Github 
 
