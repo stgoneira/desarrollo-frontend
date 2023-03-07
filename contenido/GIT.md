@@ -39,3 +39,32 @@ En términos prácticos, un pull request es un mensaje que el colaborador envía
 Después de enviar la solicitud de pull request, el propietario del repositorio principal puede revisar los cambios propuestos en la rama del colaborador y decidir si desea aceptarlos o rechazarlos. Si se aceptan, los cambios se fusionan en la rama de destino del repositorio principal. Si se rechazan, el colaborador debe realizar las correcciones necesarias y volver a enviar una nueva solicitud de pull request.
 
 En resumen, un pull request es una herramienta esencial en el flujo de trabajo colaborativo para mantener el control de cambios en el código fuente y asegurar la calidad y estabilidad del repositorio.
+
+
+## Gestión de Credenciales en Windows
+
+Para manejar las credenciales de Git en Windows, hay varios métodos que puedes utilizar. Aquí te presento dos de las formas más comunes:
+
+Usar el "Administrador de Credenciales de Windows"
+Windows tiene una herramienta llamada "Administrador de Credenciales" que te permite almacenar tus credenciales de Git de manera segura. Para hacer esto, sigue los siguientes pasos:
+
+Abre el "Administrador de Credenciales" buscándolo en el menú Inicio o en la barra de búsqueda.
+Haz clic en "Agregar una credencial".
+Ingresa el nombre del servidor Git (por ejemplo, github.com) y tu nombre de usuario y contraseña de Git.
+Haz clic en "Aceptar" para guardar tus credenciales.
+A partir de ahora, Git usará estas credenciales cada vez que te conectes al servidor Git.
+
+Usar Git Credential Manager para Windows
+Otra opción es usar el Git Credential Manager para Windows, que es un programa que te permite almacenar tus credenciales de Git de manera segura. Para hacer esto, sigue los siguientes pasos:
+
+Descarga e instala Git Credential Manager para Windows desde https://github.com/microsoft/Git-Credential-Manager-for-Windows/releases.
+
+Abre una ventana de línea de comandos de Git y ejecuta el siguiente comando:
+
+git config --global credential.helper manager
+
+La primera vez que Git te pida tus credenciales, el Git Credential Manager te pedirá permiso para almacenarlas. Haz clic en "Aceptar" para permitirlo.
+
+A partir de ahora, Git usará Git Credential Manager para Windows para almacenar y recuperar tus credenciales cada vez que necesite conectarse al servidor Git.
+
+Espero que esto te ayude a manejar tus credenciales de Git en Windows de manera efectiva.
