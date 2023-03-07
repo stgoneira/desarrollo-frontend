@@ -103,15 +103,17 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 - Conocer los métodos de selección de elementos del DOM en JavaScript, como getElementById, getElementsByClassName, querySelector, etc.
 - Saber cómo cambiar el contenido de un elemento del DOM utilizando JavaScript.
 - Entender cómo utilizar eventos en JavaScript para crear interacciones en una página web.
+- Comprender los conceptos básicos de JavaScript, como variables, tipos de datos, operadores, condicionales, etc.
+- Conocer el funcionamiento de las funciones en JavaScript y cómo se utilizan para modularizar el código.
+- Entender el concepto de eventos y cómo se utilizan para crear interacciones en una página web.
 
 
 
 ### Sesión 5
 
 #### objetivos del día 
-- Comprender los conceptos básicos de JavaScript, como variables, tipos de datos, operadores, condicionales, etc.
-- Conocer el funcionamiento de las funciones en JavaScript y cómo se utilizan para modularizar el código.
-- Entender el concepto de eventos y cómo se utilizan para crear interacciones en una página web.
+
+- Formularios HTML 
 
 #### recursos 
 
@@ -159,3 +161,14 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 - Entender los diferentes roles que puede tener un desarrollador web dentro de un equipo de trabajo.
 - Conocer, instalar y configurar las herramientas que se utilizarán durante el curso.
 - Desarrollar proyecto del tipo "Hola Mundo"
+
+
+
+- Instalar herramientas del curso 
+- Creación de cuentas en plataformas 
+- Comprender la metodología del curso 
+- Completar Jamboard con su nombre y cuenta de Github, próxima semana debe resumir su proyecto para convencer a colaboradores 
+- Comprender los Fundamentos de HTML
+- Desarrollo "Hola Mundo" en HTML 
+- Despliegue en Github Pages 
+- Completar ejercicio o tarea para la casa 
