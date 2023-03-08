@@ -276,6 +276,19 @@ Este ejemplo muestra cómo insertar un archivo de audio en una página web con c
 ```
 
 
+#### Video
+
+Este ejemplo muestra cómo insertar un archivo de video en una página web con controles de reproducción y dos etiquetas &lt;source&gt; que proporcionan diferentes formatos de archivo de video. El ancho y alto del video se especifican en los atributos "width" y "height". Si el navegador no puede reproducir el archivo de video, se mostrará el mensaje "Tu navegador no soporta la etiqueta video.".
+
+```html
+<video controls width="600" height="400">
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  Tu navegador no soporta la etiqueta video.
+</video>
+```
+
+
 ## Divitis (DIV)
 
 La "divitis" es un término que se utiliza para referirse a la sobreutilización de elementos div en un documento HTML, lo que puede conducir a una estructura de código ineficiente, difícil de mantener y poco semántica. Aquí te presento algunas recomendaciones para evitar la divitis en HTML:
