@@ -10,11 +10,11 @@ HTML es un lenguaje de marcado que se utiliza para crear páginas web. A continu
 
 **Encabezados y párrafos**: Los encabezados se utilizan para dividir el contenido de la página en secciones y se definen utilizando las etiquetas ***h1 a h6***. Los párrafos se definen utilizando la ***etiqueta p*** y se utilizan para agrupar el texto en párrafos.
 
-**Listas**: Las listas se definen utilizando las etiquetas ***ul (lista sin orden), ol (lista ordenada)*** y ***li (elemento de lista)***.
-
 **Enlaces**: Los enlaces se definen utilizando la ***etiqueta a*** y se utilizan para crear hipervínculos a otras páginas web o a secciones de la misma página.
 
 **Imágenes**: Las imágenes se definen utilizando la ***etiqueta img*** y requieren un ***atributo src*** para especificar la ubicación del archivo de imagen.
+
+**Listas**: Las listas se definen utilizando las etiquetas ***ul (lista sin orden), ol (lista ordenada)*** y ***li (elemento de lista)***.
 
 **Tablas**: Las tablas se definen utilizando las ***etiquetas table, tr (fila de tabla) y td (celda de tabla)*** y se utilizan para mostrar datos en forma de tabla.
 
