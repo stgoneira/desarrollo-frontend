@@ -261,6 +261,19 @@ Las listas de definición se utilizan para presentar información en un formato 
 ```
 
 
+### Otras etiquetas  
+
+#### Audio 
+
+Este ejemplo muestra cómo insertar un archivo de audio en una página web con controles de reproducción y dos etiquetas &lt;source&gt; que proporcionan diferentes formatos de archivo de audio. Si el navegador no puede reproducir el archivo de audio, se mostrará el mensaje "Tu navegador no soporta la etiqueta audio.".
+
+```html
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  <source src="audio.ogg" type="audio/ogg">
+  Tu navegador no soporta la etiqueta audio.
+</audio>
+```
 
 
 ## Divitis (DIV)
