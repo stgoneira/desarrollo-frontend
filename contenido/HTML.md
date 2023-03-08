@@ -528,6 +528,172 @@ Aquí hay un ejemplos de cómo se puede utilizar:
 
 ### Formularios 
 
+Los formularios en HTML permiten a los usuarios enviar información a un servidor web. El proceso de envío de información comienza cuando el usuario completa y envía el formulario haciendo clic en el botón de envío.
+
+Para crear un formulario en HTML5, se utiliza la etiqueta &lt;form&gt;. La etiqueta &lt;form&gt; envuelve los elementos de entrada y define los atributos del formulario, como la acción (la página web que procesa los datos), el método de envío (GET o POST) y otros atributos opcionales, como el encabezado y el pie de página.
+
+Los elementos de entrada se utilizan para recopilar información del usuario y se pueden incluir en un formulario utilizando etiquetas como <input>, <select>, <textarea>, <label>, entre otras. Cada etiqueta de entrada tiene atributos específicos que se pueden utilizar para controlar el comportamiento y la apariencia del elemento, como el tipo de entrada (texto, fecha, número, etc.), el tamaño, el valor predeterminado, etc.
+
+Una vez que el usuario completa y envía el formulario, los datos se envían al servidor web utilizando el método especificado en el atributo del formulario 'method' (GET o POST). El servidor web procesa los datos y devuelve una respuesta al usuario.
+
+Es importante destacar que, a diferencia de otras tecnologías web como JavaScript, HTML no proporciona una funcionalidad interactiva para los formularios. Por lo tanto, la validación de los datos del formulario y otras funciones interactivas requieren JavaScript o alguna otra tecnología.
+
+Ejemplo de formulario de inicio de sesión:
+
+```html
+<form action="/login" method="post">
+  <label for="username">Usuario:</label>
+  <input type="text" id="username" name="username"><br>
+
+  <label for="password">Contraseña:</label>
+  <input type="password" id="password" name="password"><br>
+
+  <input type="submit" value="Iniciar sesión">
+</form>
+```
+
+En este ejemplo, se utiliza el método POST para enviar los datos de inicio de sesión al servidor web. Los campos de entrada incluyen un campo de texto para el nombre de usuario y un campo de contraseña para la contraseña. Al hacer clic en el botón de envío, los datos se envían al servidor web y se procesan.
+
+Ejemplo de formulario de contacto:
+
+```html
+<form action="/contacto" method="post">
+  <label for="name">Nombre:</label>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email" name="email"><br>
+
+  <label for="message">Mensaje:</label>
+  <textarea id="message" name="message"></textarea><br>
+
+  <input type="submit" value="Enviar">
+</form>
+```
+
+En este ejemplo, se utiliza el método POST para enviar los datos de contacto al servidor web. Los campos de entrada incluyen un campo de texto para el nombre, un campo de correo electrónico y un campo de mensaje de texto. Al hacer clic en el botón de envío, los datos se envían al servidor web y se procesan.
+
+Es importante mencionar que estos ejemplos son solo básicos y no incluyen la validación de datos, por lo que se deben implementar medidas de seguridad adicionales para evitar ataques malintencionados.
+
+Resumen de etiquetas para formularios:
+
+**&lt;form&gt;**: Crea un formulario y envuelve todos los elementos del formulario.
+
+**&lt;input&gt;**: Crea un campo de entrada para el usuario, como un campo de texto, un botón de opción, una casilla de verificación, un botón de radio, un campo de fecha, un campo de número, un campo de correo electrónico, entre otros.
+
+**&lt;label&gt;**: Asocia una etiqueta con un campo de entrada, lo que ayuda a mejorar la accesibilidad y la usabilidad de los formularios.
+
+**&lt;select&gt;**: Crea un menú desplegable de opciones para que el usuario seleccione una opción.
+
+**&lt;option&gt;**: Define una opción en un menú desplegable o una lista de opciones.
+
+**&lt;textarea&gt;**: Crea un campo de texto de varias líneas para que el usuario ingrese información.
+
+**&lt;button&gt;**: Crea un botón que se puede utilizar para enviar un formulario o para realizar alguna otra acción en el lado del cliente.
+
+**&lt;fieldset&gt;**: Agrupa varios elementos de entrada juntos y los rodea con un borde y un título opcional.
+
+**&lt;legend&gt;**: Proporciona un título para un campo de entrada agrupado en un elemento de campo.
+
+**&lt;datalist&gt;**: Proporciona una lista de opciones para un campo de entrada de texto.
+
+**&lt;output&gt;**: Muestra el resultado de un cálculo o una acción en el lado del cliente.
+
+**&lt;progress&gt;**: Muestra el progreso de una tarea en el lado del cliente.
+
+Estas son algunas de las etiquetas más comunes que se utilizan en los formularios de HTML5, aunque existen otras etiquetas menos utilizadas y específicas.
+
+```html
+<form action="/procesar-formulario" method="post">
+  <fieldset>
+    <legend>Datos personales:</legend>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required><br>
+
+    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Datos de la cuenta:</legend>
+    <label for="nombre_usuario">Nombre de usuario:</label>
+    <input type="text" id="nombre_usuario" name="nombre_usuario" minlength="6" required><br>
+
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" minlength="8" required><br>
+
+    <label for="confirmar_contrasena">Confirmar contraseña:</label>
+    <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" minlength="8" required><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Preferencias:</legend>
+    <label for="ciudad">Ciudad de residencia:</label>
+    <select id="ciudad" name="ciudad" required>
+      <option value="">Seleccione una opción</option>
+      <option value="Bogotá">Bogotá</option>
+      <option value="Medellín">Medellín</option>
+      <option value="Cali">Cali</option>
+      <option value="Barranquilla">Barranquilla</option>
+    </select><br>
+
+    <label for="genero">Género:</label>
+    <label><input type="radio" name="genero" value="hombre" required> Hombre</label>
+    <label><input type="radio" name="genero" value="mujer"> Mujer</label><br>
+
+    <label for="hobbies">Hobbies:</label>
+    <input type="text" id="hobbies" name="hobbies" list="lista_hobbies">
+    <datalist id="lista_hobbies">
+      <option value="Leer">
+      <option value="Ver películas">
+      <option value="Practicar deportes">
+      <option value="Jugar videojuegos">
+      <option value="Cocinar">
+      <option value="Bailar">
+    </datalist>
+  </fieldset>
+
+  <fieldset>
+    <legend>Comentarios:</legend>
+    <label for="comentarios">Comentarios:</label>
+    <textarea id="comentarios" name="comentarios"></textarea><br>
+  </fieldset>
+
+  <button type="submit">Enviar formulario</button>
+</form>
+```
+
+Ejemplo con eventos y javascript:
+
+```html
+<form onsubmit="resultado.value = parseInt(num1.value) + parseInt(num2.value); progreso.value = 100; return false;"
+      onreset="progreso.value=0"
+  >
+  <fieldset>
+    <legend>Suma:</legend>
+    <label for="num1">Primer número:</label>
+    <input type="number" id="num1" name="num1" required><br>
+
+    <label for="num2">Segundo número:</label>
+    <input type="number" id="num2" name="num2" required><br>
+
+    <label for="resultado">Resultado:</label>
+    <output for="num1 num2" id="resultado"></output><br>
+
+    <label for="progreso">Progreso:</label>
+    <progress id="progreso" value="0" max="100"></progress>
+  </fieldset>
+
+  <button type="submit">Calcular</button>
+  <button type="reset">Limpiar</button>
+</form>
+```
 
 ## Divitis (DIV)
 
