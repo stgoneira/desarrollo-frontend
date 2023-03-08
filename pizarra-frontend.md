@@ -5,6 +5,12 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
+### Sesión 2 - 20230309
+
+- Identificar y utilizar correctamente las etiquetas HTML más comunes, como **html, head, body, p, a, img, entre otras etiquetas.**
+- Conocer los atributos HTML y cómo se utilizan para agregar funcionalidades a los elementos.
+- Crear una página web básica utilizando HTML y aplicar los conceptos aprendidos en clase (divitis).
+
 ### Sesión 1 - 20230307
 
 #### Objetivos
@@ -14,6 +20,13 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 - Conocer, instalar y configurar las herramientas que se utilizarán durante el curso ***(GIT, VSCode, LiveServer)***.
 - Desarrollar proyecto del tipo "Hola Mundo"
 - Desplegar proyecto en Github
-- Identificar y utilizar correctamente las etiquetas HTML más comunes, como **html, head, body, p, a, img, entre otras etiquetas.**
-- Conocer los atributos HTML y cómo se utilizan para agregar funcionalidades a los elementos.
-- Crear una página web básica utilizando HTML y aplicar los conceptos aprendidos en clase (divitis).
+
+#### Tarea 
+
+1. Lectura resumen HTML en https://github.com/stgoneira/desarrollo-frontend/blob/main/contenido/HTML.md 
+
+2. Lectura de cómo escribir código Markdown https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+3. Desplegar proyecto "hola mundo" en su github y obtener URL 
+
+4. Escribir su Github, perfil y comenzar descripción de proyecto en Jamboard (enlace en plataforma AIEP)
