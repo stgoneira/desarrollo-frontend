@@ -283,6 +283,23 @@ Aquí hay un ejemplo de una tabla HTML5 básica con dos filas y dos columnas:
 </table>
 ```
 
+En este ejemplo, hay dos filas: una fila de encabezado y una fila de celdas regulares. La etiqueta &lt;th&gt; se utiliza para las celdas de encabezado, mientras que la etiqueta &lt;td&gt; se utiliza para las celdas regulares.
+
+#### Tablas Avanzadas
+
+##### THEAD, TBODY, TFOOT
+
+HTML proporciona algunas etiquetas adicionales que se pueden utilizar en una tabla para definir encabezados y pies de tabla, así como para agrupar filas y columnas.
+
+Aquí están algunas de las etiquetas de tabla adicionales que puedes utilizar:
+
+**&lt;thead&gt;**: Esta etiqueta se utiliza para definir la sección de encabezado de la tabla. Normalmente se utiliza para agregar una fila de encabezado a la tabla utilizando la etiqueta &lt;th&gt;
+
+**&lt;tbody&gt;**: se utiliza para agrupar las filas regulares de la tabla. 
+
+**&lt;tfoot&gt;**: Esta etiqueta se utiliza para definir la sección de pie de tabla. Normalmente se utiliza para agregar una fila de totales o resúmenes a la tabla.
+
+##### SCOPE, COLSPAN, ROWSPAN
 
 ### Multimedia  
 
