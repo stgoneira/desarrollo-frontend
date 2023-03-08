@@ -532,7 +532,7 @@ Los formularios en HTML permiten a los usuarios enviar información a un servido
 
 Para crear un formulario en HTML5, se utiliza la etiqueta &lt;form&gt;. La etiqueta &lt;form&gt; envuelve los elementos de entrada y define los atributos del formulario, como la acción (la página web que procesa los datos), el método de envío (GET o POST) y otros atributos opcionales, como el encabezado y el pie de página.
 
-Los elementos de entrada se utilizan para recopilar información del usuario y se pueden incluir en un formulario utilizando etiquetas como <input>, <select>, <textarea>, <label>, entre otras. Cada etiqueta de entrada tiene atributos específicos que se pueden utilizar para controlar el comportamiento y la apariencia del elemento, como el tipo de entrada (texto, fecha, número, etc.), el tamaño, el valor predeterminado, etc.
+Los elementos de entrada se utilizan para recopilar información del usuario y se pueden incluir en un formulario utilizando etiquetas como &lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;, &lt;label&gt;, entre otras. Cada etiqueta de entrada tiene atributos específicos que se pueden utilizar para controlar el comportamiento y la apariencia del elemento, como el tipo de entrada (texto, fecha, número, etc.), el tamaño, el valor predeterminado, etc.
 
 Una vez que el usuario completa y envía el formulario, los datos se envían al servidor web utilizando el método especificado en el atributo del formulario 'method' (GET o POST). El servidor web procesa los datos y devuelve una respuesta al usuario.
 
