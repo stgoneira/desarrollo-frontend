@@ -288,6 +288,21 @@ Este ejemplo muestra cómo insertar un archivo de video en una página web con c
 </video>
 ```
 
+#### Picture 
+
+La etiqueta &lt;picture&gt; permite proporcionar varias imágenes en diferentes tamaños y resoluciones, para que el navegador pueda elegir la imagen más adecuada para el dispositivo del usuario y la velocidad de conexión a Internet. La etiqueta &lt;picture&gt; se utiliza en combinación con la etiqueta &lt;source&gt; para proporcionar diferentes imágenes en diferentes formatos y resoluciones, y la etiqueta &lt;img&gt; para proporcionar una imagen de respaldo en caso de que no se pueda cargar ninguna de las imágenes especificadas.
+
+Aquí te dejo un ejemplo de cómo utilizar la etiqueta &lt;picture&gt;:
+
+```html
+<picture>
+  <source media="(min-width: 768px)" srcset="imagen-grande.jpg">
+  <source media="(min-width: 576px)" srcset="imagen-mediana.jpg">
+  <img src="imagen-pequena.jpg" alt="Descripción de la imagen">
+</picture>
+```
+
+En este ejemplo, se proporcionan tres imágenes diferentes para diferentes tamaños de pantalla. Si el ancho de la pantalla es mayor o igual a 768 píxeles, se mostrará la imagen grande, si es mayor o igual a 576 píxeles, se mostrará la imagen mediana, y si es menor que 576 píxeles, se mostrará la imagen pequeña. Si ninguna de las imágenes especificadas puede ser cargada, se mostrará la imagen de respaldo especificada en el atributo "src" de la etiqueta &lt;img&gt;.
 
 ## Divitis (DIV)
 
