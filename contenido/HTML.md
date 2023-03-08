@@ -266,6 +266,8 @@ Las listas de definición se utilizan para presentar información en un formato 
 
 ### Tablas 
 
+#### Tablas Básicas 
+
 HTML5 proporciona una manera fácil y sencilla de crear tablas en una página web. Para crear una tabla, primero necesitas el elemento &lt;table&gt;. Luego, dentro de la etiqueta de apertura y cierre de la tabla, debes agregar las etiquetas de fila &lt;tr&gt; y las etiquetas de celda &lt;td&gt; o &lt;th&gt;. Las etiquetas &lt;td&gt; se utilizan para las celdas regulares de la tabla, mientras que las etiquetas &lt;th&gt; se utilizan para las celdas de encabezado.
 
 Aquí hay un ejemplo de una tabla HTML5 básica con dos filas y dos columnas:
@@ -285,9 +287,7 @@ Aquí hay un ejemplo de una tabla HTML5 básica con dos filas y dos columnas:
 
 En este ejemplo, hay dos filas: una fila de encabezado y una fila de celdas regulares. La etiqueta &lt;th&gt; se utiliza para las celdas de encabezado, mientras que la etiqueta &lt;td&gt; se utiliza para las celdas regulares.
 
-#### Tablas Avanzadas
-
-##### THEAD, TBODY, TFOOT
+#### THEAD, TBODY, TFOOT
 
 HTML proporciona algunas etiquetas adicionales que se pueden utilizar en una tabla para definir encabezados y pies de tabla, así como para agrupar filas y columnas.
 
