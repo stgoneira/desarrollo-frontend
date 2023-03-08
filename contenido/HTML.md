@@ -403,6 +403,49 @@ El atributo scope solo se usa en las etiquetas de encabezado de una tabla (es de
 
 Por otro lado, las etiquetas de datos de una tabla (es decir, las etiquetas td) no necesitan tener el atributo scope, ya que no son celdas de encabezado.
 
+Existe otra alternativa para mejorar la accesibilidad de una tabla, me refiero al atributo ***headers***.
+
+El uso del atributo headers no es obligatorio en una tabla, pero se recomienda su uso en ciertas situaciones para mejorar la accesibilidad y la usabilidad de la tabla.
+
+El atributo headers es especialmente útil cuando hay celdas de datos que se extienden a través de varias celdas de encabezado. En estos casos, es difícil para los lectores de pantalla y otros dispositivos de asistencia determinar a qué celdas de encabezado se refiere la celda de datos.
+
+Por ejemplo, si tienes una tabla que muestra los horarios de clase, y una celda de datos muestra que una clase de matemáticas tiene lugar los martes a las 9:00 am, y se extiende a través de dos celdas de encabezado ("Martes" y "9:00 am"), entonces utilizar el atributo headers para indicar las celdas de encabezado asociadas puede hacer que la tabla sea más accesible.
+
+Además, el uso del atributo headers también puede ser útil cuando se necesita hacer referencia a celdas de encabezado específicas desde fuera de la tabla (por ejemplo, mediante enlaces o scripts). En estos casos, tener id únicos en las celdas de encabezado y utilizar el atributo headers para asociar celdas de datos con celdas de encabezado puede hacer que sea más fácil referirse a las celdas de la tabla desde otros lugares en el documento.
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th id="lunes" scope="col">Lunes</th>
+      <th id="martes" scope="col">Martes</th>
+      <th id="miercoles" scope="col">Miércoles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="hora1" scope="row">8:00 am</th>
+      <td headers="lunes hora1">Clase de matemáticas</td>
+      <td headers="martes hora1">Clase de ciencias</td>
+      <td headers="miercoles hora1">Clase de historia</td>
+    </tr>
+    <tr>
+      <th id="hora2" scope="row">9:00 am</th>
+      <td headers="lunes hora2">Clase de literatura</td>
+      <td headers="martes hora2">Clase de matemáticas</td>
+      <td headers="miercoles hora2">Clase de inglés</td>
+    </tr>
+    <tr>
+      <th id="hora3" scope="row">10:00 am</th>
+      <td headers="lunes hora3">Clase de historia</td>
+      <td headers="martes hora3">Clase de literatura</td>
+      <td headers="miercoles hora3">Clase de ciencias</td>
+    </tr>
+  </tbody>
+</table>
+
+```
 
 ### Multimedia  
 
