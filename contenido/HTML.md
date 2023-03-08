@@ -360,38 +360,49 @@ Asociar celdas de encabezado con celdas de datos en una tabla simple:
 </table>
 ```
 
-En este ejemplo, las celdas de encabezado se definen con el atributo "scope" establecido en "col" para indicar que se aplican a todas las celdas de la columna. Esto significa que las celdas de encabezado "Nombre", "Edad" y "País" están asociadas con todas las celdas de datos de la columna correspondiente.
+En este ejemplo, las celdas de ***encabezado*** se definen con el atributo ***"scope"*** establecido en "col" para indicar que se aplican a todas las celdas de la columna. Esto significa que las celdas de encabezado "Nombre", "Edad" y "País" están asociadas con todas las celdas de datos de la columna correspondiente.
 
-Asociar celdas de encabezado con celdas de datos en una tabla más compleja:
+Ahora un ejemplo más complejo:
 
 ```html
 <table>
   <thead>
     <tr>
       <th></th>
-      <th scope="col">Lunes</th>
-      <th scope="col">Martes</th>
-      <th scope="col">Miércoles</th>
+      <th scope="colgroup" colspan="2">Semana 1</th>
+      <th scope="colgroup" colspan="2">Semana 2</th>
+    </tr>
+    <tr>
+      <th scope="col">Día</th>
+      <th scope="col">Mañana</th>
+      <th scope="col">Tarde</th>
+      <th scope="col">Mañana</th>
+      <th scope="col">Tarde</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Mañana</th>
-      <td>Clase de matemáticas</td>
-      <td>Clase de inglés</td>
-      <td>Clase de historia</td>
+      <th scope="row">Lunes</th>
+      <td>8:00 am</td>
+      <td>1:00 pm</td>
+      <td>9:00 am</td>
+      <td>2:00 pm</td>
     </tr>
     <tr>
-      <th scope="row">Tarde</th>
-      <td>Clase de música</td>
-      <td>Clase de educación física</td>
-      <td>Clase de arte</td>
+      <th scope="row">Martes</th>
+      <td>8:30 am</td>
+      <td>1:30 pm</td>
+      <td>9:30 am</td>
+      <td>2:30 pm</td>
     </tr>
   </tbody>
 </table>
 ```
 
-En este ejemplo, las celdas de encabezado se definen con el atributo "scope" establecido en "col" para indicar que se aplican a todas las celdas de la columna correspondiente. Además, la primera celda de cada fila de datos se define como una celda de encabezado de fila con el atributo "scope" establecido en "row". Esto significa que la celda de encabezado "Mañana" está asociada con las celdas de datos de la fila "Mañana" y la celda de encabezado "Tarde" está asociada con las celdas de datos de la fila "Tarde".
+El atributo scope solo se usa en las etiquetas de encabezado de una tabla (es decir, las etiquetas th). El propósito de este atributo es proporcionar información sobre el alcance de la celda de encabezado en relación con las celdas de datos asociadas. Al indicar el alcance, se puede hacer que la tabla sea más accesible para las personas que utilizan tecnologías de asistencia, como lectores de pantalla.
+
+Por otro lado, las etiquetas de datos de una tabla (es decir, las etiquetas td) no necesitan tener el atributo scope, ya que no son celdas de encabezado.
+
 
 ### Multimedia  
 
