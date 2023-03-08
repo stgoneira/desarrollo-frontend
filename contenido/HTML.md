@@ -304,6 +304,42 @@ Aquí te dejo un ejemplo de cómo utilizar la etiqueta &lt;picture&gt;:
 
 En este ejemplo, se proporcionan tres imágenes diferentes para diferentes tamaños de pantalla. Si el ancho de la pantalla es mayor o igual a 768 píxeles, se mostrará la imagen grande, si es mayor o igual a 576 píxeles, se mostrará la imagen mediana, y si es menor que 576 píxeles, se mostrará la imagen pequeña. Si ninguna de las imágenes especificadas puede ser cargada, se mostrará la imagen de respaldo especificada en el atributo "src" de la etiqueta &lt;img&gt;.
 
+#### Figure
+
+La etiqueta figure en HTML se utiliza para agregar contenido multimedia (como imágenes, videos, gráficos, etc.) a una página web, junto con una leyenda que describe el contenido. Esta etiqueta es especialmente útil para contenido visual, ya que permite separar el contenido visual del resto del contenido de la página, lo que hace que la página sea más accesible para los usuarios con discapacidad visual y permite que los motores de búsqueda indexen mejor el contenido.
+
+Aquí hay un ejemplos de cómo se puede utilizar:
+
+```html
+<!-- figure and image tag -->
+<figure>
+  <img src="ejemplo.jpg" alt="Ejemplo de imagen">
+  <figcaption>Esta es una imagen de ejemplo</figcaption>
+</figure>
+
+<!-- figure and video tag -->
+<figure>
+  <video controls>
+    <source src="ejemplo.mp4" type="video/mp4">
+    <source src="ejemplo.webm" type="video/webm">
+    Tu navegador no soporta el elemento de video.
+  </video>
+  <figcaption>Este es un video de ejemplo</figcaption>
+</figure>
+
+<!-- figure and picture tag -->
+<figure>
+  <picture>
+    <source srcset="imagen-small.jpg" media="(max-width: 768px)">
+    <source srcset="imagen-medium.jpg" media="(max-width: 1024px)">
+    <img src="imagen-large.jpg" alt="Imagen de ejemplo">
+  </picture>
+  <figcaption>Esta es una imagen de ejemplo</figcaption>
+</figure>
+
+```
+
+
 ## Divitis (DIV)
 
 La "divitis" es un término que se utiliza para referirse a la sobreutilización de elementos div en un documento HTML, lo que puede conducir a una estructura de código ineficiente, difícil de mantener y poco semántica. Aquí te presento algunas recomendaciones para evitar la divitis en HTML:
