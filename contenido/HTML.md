@@ -62,6 +62,20 @@ Es importante asegurarse de que todas las etiquetas de apertura tengan su corres
 <img src="imagen.jpg" alt="Descripción de la imagen" />
 ```
 
+Hay varias etiquetas de HTML que no requieren una etiqueta de cierre y se consideran etiquetas "autocerrantes". Algunas de ellas son:
+
+<br>: se utiliza para agregar un salto de línea en una página web y no requiere una etiqueta de cierre.
+
+<img>: se utiliza para insertar imágenes en una página web y no requiere una etiqueta de cierre.
+
+<input>: se utiliza para crear campos de entrada de datos en una página web y no requiere una etiqueta de cierre.
+
+<meta>: se utiliza para proporcionar información meta sobre una página web, como la descripción, palabras clave y codificación de caracteres, y no requiere una etiqueta de cierre.
+
+<link>: se utiliza para enlazar archivos externos como hojas de estilo CSS y fuentes de Google Fonts y no requiere una etiqueta de cierre.
+
+Es importante tener en cuenta que aunque estas etiquetas no requieren una etiqueta de cierre, aún necesitan ser cerradas correctamente utilizando el formato adecuado, por ejemplo, <br /> en lugar de solo <br>.
+
 ### Comentarios
 Además, HTML también incluye la posibilidad de agregar comentarios en el código. Los comentarios son notas que se agregan al código para proporcionar información adicional o para recordar a los programadores lo que hace una sección específica del código. Los comentarios en HTML se escriben entre <!-- y -->.
 
