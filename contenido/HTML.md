@@ -328,7 +328,70 @@ Aquí están algunas de las etiquetas de tabla adicionales que puedes utilizar:
 </table>
 ```
 
-##### Tablas Complejas 
+En este ejemplo, la etiqueta &lt;tfoot&gt; se utiliza para agrupar la fila de pie, que contiene una sola celda que abarca las tres columnas de la tabla utilizando el atributo ***colspan***.
+
+#### Tablas Complejas 
+
+El atributo ***"scope"*** en las tablas HTML se utiliza para asociar celdas de encabezado con celdas de datos. Esto es útil para mejorar la accesibilidad y la semántica de la tabla, ya que ayuda a los lectores de pantalla a comprender la relación entre los encabezados y los datos. A continuación se muestran algunos ejemplos para ilustrar cómo se utiliza el atributo "scope" en las tablas HTML:
+
+Asociar celdas de encabezado con celdas de datos en una tabla simple:
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Edad</th>
+      <th scope="col">País</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>María</td>
+      <td>28</td>
+      <td>España</td>
+    </tr>
+    <tr>
+      <td>Juan</td>
+      <td>35</td>
+      <td>México</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+En este ejemplo, las celdas de encabezado se definen con el atributo "scope" establecido en "col" para indicar que se aplican a todas las celdas de la columna. Esto significa que las celdas de encabezado "Nombre", "Edad" y "País" están asociadas con todas las celdas de datos de la columna correspondiente.
+
+Asociar celdas de encabezado con celdas de datos en una tabla más compleja:
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th scope="col">Lunes</th>
+      <th scope="col">Martes</th>
+      <th scope="col">Miércoles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Mañana</th>
+      <td>Clase de matemáticas</td>
+      <td>Clase de inglés</td>
+      <td>Clase de historia</td>
+    </tr>
+    <tr>
+      <th scope="row">Tarde</th>
+      <td>Clase de música</td>
+      <td>Clase de educación física</td>
+      <td>Clase de arte</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+En este ejemplo, las celdas de encabezado se definen con el atributo "scope" establecido en "col" para indicar que se aplican a todas las celdas de la columna correspondiente. Además, la primera celda de cada fila de datos se define como una celda de encabezado de fila con el atributo "scope" establecido en "row". Esto significa que la celda de encabezado "Mañana" está asociada con las celdas de datos de la fila "Mañana" y la celda de encabezado "Tarde" está asociada con las celdas de datos de la fila "Tarde".
 
 ### Multimedia  
 
