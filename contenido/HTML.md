@@ -64,9 +64,9 @@ Es importante asegurarse de que todas las etiquetas de apertura tengan su corres
 
 Hay varias etiquetas de HTML que no requieren una etiqueta de cierre y se consideran etiquetas "autocerrantes". Algunas de ellas son:
 
-<br>: se utiliza para agregar un salto de línea en una página web y no requiere una etiqueta de cierre.
+&lt;br&gt;: se utiliza para agregar un salto de línea en una página web y no requiere una etiqueta de cierre.
 
-<img>: se utiliza para insertar imágenes en una página web y no requiere una etiqueta de cierre.
+&lt;img&gt;: se utiliza para insertar imágenes en una página web y no requiere una etiqueta de cierre.
 
 <input>: se utiliza para crear campos de entrada de datos en una página web y no requiere una etiqueta de cierre.
 
