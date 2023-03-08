@@ -18,6 +18,8 @@ HTML es un lenguaje de marcado que se utiliza para crear páginas web. A continu
 
 **Tablas**: Las tablas se definen utilizando las ***etiquetas table, tr (fila de tabla) y td (celda de tabla)*** y se utilizan para mostrar datos en forma de tabla.
 
+**Multimedia**: HTML5 introduce nuevas etiquetas que permiten la inserción y reproducción de contenido multimedia, como el video y el audio, directamente en las páginas web. Las etiquetas <video> y <audio> permiten definir la ubicación de los archivos de audio y video, así como especificar su formato y otras opciones de reproducción, como el control de volumen y la reproducción automática. Además, estas etiquetas proporcionan una manera fácil de agregar subtítulos y otros metadatos al contenido multimedia, lo que mejora la accesibilidad y la experiencia del usuario. 
+
 **Formularios**: Los formularios se definen utilizando la ***etiqueta form*** y se utilizan para recopilar datos de los usuarios. Los elementos de formulario, como los campos de texto y los botones, se definen utilizando ***etiquetas específicas, como input y button***.
 
 En resumen, HTML proporciona las herramientas necesarias para crear páginas web mediante el uso de etiquetas y elementos para definir la estructura y el contenido de la página, así como para crear interactividad con los usuarios mediante el uso de formularios y enlaces.
@@ -220,6 +222,7 @@ En este ejemplo, "michi.jpg" es la URL de la imagen que se desea mostrar, y "Fot
 
 En este ejemplo, la imagen de Michi se muestra con un borde negro sólido, y se ha aplicado la clase "imagen-gato" y el identificador "michi-foto" para poder aplicar estilos o referirse a la imagen de manera única en el futuro.
 
+
 ### Listas 
 
 En HTML, las listas se utilizan para presentar información en un formato estructurado y fácilmente legible. Hay tres tipos de listas en HTML: listas ordenadas, listas desordenadas y listas de definición.
@@ -261,7 +264,27 @@ Las listas de definición se utilizan para presentar información en un formato 
 ```
 
 
-### Otras etiquetas  
+### Tablas 
+
+HTML5 proporciona una manera fácil y sencilla de crear tablas en una página web. Para crear una tabla, primero necesitas el elemento &lt;table&gt;. Luego, dentro de la etiqueta de apertura y cierre de la tabla, debes agregar las etiquetas de fila &lt;tr&gt; y las etiquetas de celda &lt;td&gt; o &lt;th&gt;. Las etiquetas &lt;td&gt; se utilizan para las celdas regulares de la tabla, mientras que las etiquetas &lt;th&gt; se utilizan para las celdas de encabezado.
+
+Aquí hay un ejemplo de una tabla HTML5 básica con dos filas y dos columnas:
+
+```html
+<table>
+  <tr>
+    <th>Encabezado 1</th>
+    <th>Encabezado 2</th>
+  </tr>
+  <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+  </tr>
+</table>
+```
+
+
+### Multimedia  
 
 #### Audio 
 
@@ -338,6 +361,9 @@ Aquí hay un ejemplos de cómo se puede utilizar:
 </figure>
 
 ```
+
+
+### Formularios 
 
 
 ## Divitis (DIV)
