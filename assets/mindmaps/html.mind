@@ -1,0 +1,25 @@
+mindmap
+  root((HTML))    
+    Fundamentos
+      Estructura
+        DOCTYPE
+        HTML
+            HEAD
+            BODY
+      Sintaxis
+        Etiquetas
+            Atributos
+            Apertura
+            Cierre      
+        Comentarios
+    Propósito Etiquetas
+        Encabezados y párrafos 
+        Enlaces 
+        Listas 
+        Tablas
+        Multimedia
+            Imágenes
+            Videos
+            Audio
+        Formularios
+
