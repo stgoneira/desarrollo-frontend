@@ -815,4 +815,4 @@ Ejemplo con DIVITIS corregida:
 
 ## Mind Map
 
-[![HTML Mindmap](./../assets/mindmaps/html.svg)
+![HTML Mindmap](./../assets/mindmaps/html.svg)
