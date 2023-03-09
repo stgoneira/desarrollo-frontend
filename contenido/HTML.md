@@ -1,5 +1,23 @@
 # HTML 
 
+## Historia HTML
+
+HTML (HyperText Markup Language) es un lenguaje de marcado utilizado para la creación de páginas web. Desde su creación en **1991**, HTML ha evolucionado significativamente para adaptarse a las necesidades cambiantes de la web.
+
+**HTML 1.0** fue la primera versión de HTML, introducida en 1991. Era una versión muy simple que incluía etiquetas básicas como &lt;html&gt;, &lt;head&gt; y &lt;body&gt;.
+
+**HTML 2.0** se introdujo en 1995 y agregó nuevas características, como formularios, tablas y soporte para imágenes.
+
+**HTML 3.2**, lanzado en 1997, fue una revisión importante que agregó más características como soporte para hojas de estilo en cascada (CSS) y marcos (frames).
+
+**HTML 4.0** se lanzó en 1997 y agregó características como soporte para capas, tablas complejas y formularios más avanzados.
+
+**HTML5**, lanzado en 2014, es la última versión de HTML. HTML5 agregó muchas nuevas características, incluyendo soporte para video y audio nativos, elementos semánticos como &lt;header&gt; y &lt;footer&gt;, y la capacidad de crear aplicaciones web complejas utilizando tecnologías como WebGL y WebSockets.
+
+## Web Semántica
+
+La web semántica es un concepto relacionado con la utilización de HTML y otras tecnologías web para permitir que los datos en la web sean más comprensibles para las máquinas. Esto se logra utilizando vocabularios semánticos como RDF (Resource Description Framework) y OWL (Web Ontology Language) para etiquetar la información en la web con significado explícito. La idea detrás de la web semántica es que las máquinas puedan comprender mejor la información en la web y, por lo tanto, proporcionar resultados de búsqueda más precisos y útiles.
+
 ## Fundamentos de HTML 
 
 HTML es un lenguaje de marcado que se utiliza para crear páginas web. A continuación se resumen los fundamentos de HTML:
