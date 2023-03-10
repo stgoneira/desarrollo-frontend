@@ -7,9 +7,20 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ### Sesión 2 - 20230309
 
+- Comprender la sintaxis, estructura y fundamentos de HTML 
 - Identificar y utilizar correctamente las etiquetas HTML más comunes, como **html, head, body, p, a, img, entre otras etiquetas.**
 - Conocer los atributos HTML y cómo se utilizan para agregar funcionalidades a los elementos.
 - Crear una página web básica utilizando HTML y aplicar los conceptos aprendidos en clase (divitis).
+
+#### Tareas 
+
+Completar ejercicios de HTML del 2.1 hasta el 2.5 en la plataforma del AIEP. 
+
+Plazo hasta el fin de semana. 
+
+
+
+
 
 ### Sesión 1 - 20230307
 
