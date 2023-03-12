@@ -80,10 +80,8 @@ li[class="a"] {
 
 li[class~="a"] {
     color: red;
-}
-   
+}   
 ```
-
 
 1. **Pseudo-clases**: las pseudo-clases seleccionan elementos en función de su estado o relación con otros elementos. Se usan con un colon ":" después del selector. Algunas de las pseudo-clases más comunes son:
 
