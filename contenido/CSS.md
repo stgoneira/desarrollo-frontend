@@ -33,7 +33,7 @@ p {
 }
 ```
 
-2. **Selector de clase**: este selector selecciona todos los elementos HTML que tengan un atributo "class" específico. Las clases son muy útiles para aplicar estilos a grupos de elementos que comparten características comunes.
+1. **Selector de clase**: este selector selecciona todos los elementos HTML que tengan un atributo "class" específico. Las clases son muy útiles para aplicar estilos a grupos de elementos que comparten características comunes.
 
 ```css
 .my-class {
@@ -42,7 +42,7 @@ p {
 
 ```
 
-3. **Selector de ID**: este selector selecciona un elemento HTML específico que tenga un atributo "id" único. Es importante recordar que cada "id" debe ser único en toda la página.
+1. **Selector de ID**: este selector selecciona un elemento HTML específico que tenga un atributo "id" único. Es importante recordar que cada "id" debe ser único en toda la página.
 
 ```css
 #my-id {
@@ -51,7 +51,7 @@ p {
 
 ```
 
-4. **Selector de descendencia**: este selector selecciona todos los elementos que son descendientes de un elemento HTML específico. Se usa un espacio para separar el elemento padre del hijo.
+1. **Selector de descendencia**: este selector selecciona todos los elementos que son descendientes de un elemento HTML específico. Se usa un espacio para separar el elemento padre del hijo.
 
 ```css
 div p {
@@ -59,7 +59,7 @@ div p {
 }
 ```
 
-5. **Selector de hijo directo**: este selector selecciona todos los elementos que son hijos directos de un elemento HTML específico. Se usa el signo ">" para separar el elemento padre del hijo directo.
+1. **Selector de hijo directo**: este selector selecciona todos los elementos que son hijos directos de un elemento HTML específico. Se usa el signo ">" para separar el elemento padre del hijo directo.
 
 ```css
 div > p {
@@ -67,7 +67,25 @@ div > p {
 }
 ```
 
-6. **Pseudo-clases**: las pseudo-clases seleccionan elementos en función de su estado o relación con otros elementos. Se usan con un colon ":" después del selector. Algunas de las pseudo-clases más comunes son:
+1. **Selector de atributo**: Estos selectores permiten seleccionar un elemento solo a partir de la presencia de un atributo (por ejemplo href) o a partir de varias coincidencias diferentes con respecto al valor del atributo.
+
+```css
+li[class] {
+    font-size: 200%;
+}
+
+li[class="a"] {
+    background-color: yellow;
+}
+
+li[class~="a"] {
+    color: red;
+}
+   
+```
+
+
+1. **Pseudo-clases**: las pseudo-clases seleccionan elementos en función de su estado o relación con otros elementos. Se usan con un colon ":" después del selector. Algunas de las pseudo-clases más comunes son:
 
 - :hover: selecciona un elemento cuando el cursor se sitúa sobre él.
 - :active: selecciona un elemento cuando está siendo clicado.
@@ -88,7 +106,7 @@ li:first-child {
 ```
 
 
-7. **Pseudo-elementos**: los pseudo-elementos seleccionan partes específicas de un elemento, como su primer letra o su contenido después del elemento. Se usan con dos puntos "::" después del selector. Algunos de los pseudo-elementos más comunes son:
+1. **Pseudo-elementos**: los pseudo-elementos seleccionan partes específicas de un elemento, como su primer letra o su contenido después del elemento. Se usan con dos puntos "::" después del selector. Algunos de los pseudo-elementos más comunes son:
 
 - ::before: inserta contenido antes del contenido del elemento seleccionado.
 - ::after: inserta contenido después del contenido del elemento seleccionado.
@@ -306,5 +324,6 @@ En resumen, CSS Grid es una técnica de diseño de CSS que se basa en un contene
 
 ## Lecturas 
 
-https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model 
+- https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model 
 
+- https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors
