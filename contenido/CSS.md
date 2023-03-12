@@ -59,7 +59,7 @@ div p {
 }
 ```
 
-5. Selector de hijo directo: este selector selecciona todos los elementos que son hijos directos de un elemento HTML específico. Se usa el signo ">" para separar el elemento padre del hijo directo.
+5. **Selector de hijo directo**: este selector selecciona todos los elementos que son hijos directos de un elemento HTML específico. Se usa el signo ">" para separar el elemento padre del hijo directo.
 
 ```css
 div > p {
