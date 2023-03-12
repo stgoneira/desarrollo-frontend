@@ -255,7 +255,7 @@ El elemento &lt;a&gt;, que se utiliza para los enlaces, y los elementos &lt;span
 
 El tipo de caja que se aplica a un elemento está definido por los valores de propiedad **display, como block y inline**, y se relaciona con el valor externo (outer) de visualización (display).
 
-### Aparte: tipos de visualización interna y externa
+### Visualización interna y externa
 En este punto, será mejor que también expliquemos los tipos de visualización interna y externa. Como se mencionó anteriormente, las cajas en CSS tienen un tipo de visualización externa, que define si se trata de una caja en bloque o en línea.
 
 Sin embargo, las cajas también tienen un tipo de visualización interna, que determina cómo se disponen los elementos dentro de esa caja. De forma predeterminada, los elementos dentro de una caja se presentan en flujo normal, lo que significa que se comportan como otros elementos de tipo en bloque o en línea (como se explicó anteriormente).
