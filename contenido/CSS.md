@@ -174,6 +174,33 @@ Algunas de las principales propiedades de estilo CSS que un desarrollador fronte
 
 Estas son solo algunas de las propiedades de estilo CSS que un desarrollador frontend debiera conocer. Hay muchas más propiedades y valores que puedes utilizar para personalizar y dar estilo a tus páginas web. Es importante experimentar y practicar para dominar CSS.
 
+
+## Estilos en Cascada 
+
+Los estilos en cascada en CSS se refieren al proceso por el cual se aplican las reglas de estilo a los elementos en una página web. Aquí te presento un resumen de cómo funciona la cascada de estilos en CSS, junto con algunos ejemplos:
+
+1. **Herencia**: algunos estilos se heredan automáticamente de los elementos padres a los elementos hijos. Por ejemplo, si se establece el color de fuente en un elemento body, todos los elementos dentro de ese body heredarán ese color de fuente, a menos que se especifique un color diferente en una regla de estilo posterior.
+
+1. **Prioridad**: cuando hay múltiples reglas de estilo que se aplican a un mismo elemento, se utiliza un sistema de prioridad para determinar cuál regla prevalece. La prioridad se basa en la especificidad del selector, el orden de las reglas en el código, y si se utiliza ***!important*** en alguna de las reglas.
+
+1. **Cascada**: si hay reglas de estilo que se aplican a un mismo elemento y tienen la misma prioridad, se utiliza el orden en que se declaran en el código para determinar cuál regla prevalece. Esto significa que las reglas que aparecen más abajo en el código tienen más peso que las que aparecen más arriba.
+
+```css
+body {
+  color: blue;
+  font-size: 16px;
+}
+
+h1 {
+  color: red;
+  font-size: 2em;
+}
+```
+
+En este ejemplo, el color de fuente para todos los elementos en la página se establece en azul en la regla body. Sin embargo, para los encabezados de nivel 1 (h1), se establece un color de fuente diferente en rojo. Esto demuestra cómo las reglas de estilo pueden anularse entre sí en función de su especificidad y orden.
+
+En resumen, los estilos en cascada en CSS son un proceso fundamental para aplicar estilos a elementos en una página web. Comprender cómo funcionan la herencia, la prioridad y la cascada de estilos es clave para diseñar páginas web con estilos efectivos y coherentes.
+
 ## Layouts usando CSS 
 
 ### CSS Flexbox 
