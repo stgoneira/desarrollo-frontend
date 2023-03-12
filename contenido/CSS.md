@@ -230,6 +230,37 @@ En este ejemplo, creamos 2 cajas rectangulares utilizando un elemento HTML div c
 
 Este ejemplo es solo un ejemplo básico, pero el modelo de cajas en CSS ofrece muchas posibilidades para crear diseños más complejos y detallados en una página web.
 
+### Cajas en bloque y en línea
+
+En CSS, en general, hay dos tipos de cajas: 
+
+- Cajas en bloque 
+- Cajas en línea 
+
+Estas características se refieren al modo como se comporta la caja en términos de flujo de página y en relación con otras cajas de la página:
+
+Si una caja se define como un bloque, se comportará de las maneras siguientes:
+
+La caja fuerza un salto de línea al llegar al final de la línea.
+La caja se extenderá en la dirección de la línea para llenar todo el espacio disponible que haya en su contenedor. En la mayoría de los casos, esto significa que la caja será tan ancha como su contenedor, y llenará el 100% del espacio disponible. Se respetan las propiedades width y height.
+El relleno, el margen y el borde mantienen a los otros elementos alejados de la caja. A menos que decidamos cambiar el tipo de visualización a en línea, elementos como los encabezados (por ejemplo, &lt;h1&gt;) y todos los elementos &lt;p&gt; usan por defecto block como tipo de visualización externa.
+
+Si una caja tiene una visualización externa de tipo **inline**, entonces:
+
+La caja no fuerza ningún salto de línea al llegar al final de la línea.
+Las propiedades **width y height** no se aplican.
+Se aplican relleno, margen y bordes verticales, pero no mantienen alejadas otras cajas en línea.
+Se aplican relleno, margen y bordes horizontales, y mantienen alejadas otras cajas en línea.
+El elemento &lt;a&gt;, que se utiliza para los enlaces, y los elementos &lt;span&gt;, &lt;em&gt; y &lt;strong&gt; son ejemplos de elementos que se muestran en línea por defecto.
+
+El tipo de caja que se aplica a un elemento está definido por los valores de propiedad **display, como block y inline**, y se relaciona con el valor externo (outer) de visualización (display).
+
+### Aparte: tipos de visualización interna y externa
+En este punto, será mejor que también expliquemos los tipos de visualización interna y externa. Como se mencionó anteriormente, las cajas en CSS tienen un tipo de visualización externa, que define si se trata de una caja en bloque o en línea.
+
+Sin embargo, las cajas también tienen un tipo de visualización interna, que determina cómo se disponen los elementos dentro de esa caja. De forma predeterminada, los elementos dentro de una caja se presentan en flujo normal, lo que significa que se comportan como otros elementos de tipo en bloque o en línea (como se explicó anteriormente).
+
+Sin embargo, podemos cambiar el tipo de visualización interna utilizando valores de display, como **flex**. Si en un elemento establecemos display: flex;, el tipo de visualización **externa** es de tipo bloque (block), pero el tipo de visualización **interna** cambia a flexible (flex). Cualquier elemento que sea hijo directo de esta caja pasará a comportarse como un elemento de tipo flex, de acuerdo con las reglas que se establecen en la especificación de Flexbox, tema que veremos más adelante.
 
 
 ## Layouts usando CSS 
@@ -271,3 +302,9 @@ CSS Grid es una técnica de diseño de CSS que permite crear diseños de página
 **Diseño de áreas**: CSS Grid permite definir áreas en la cuadrícula mediante la propiedad grid-template-areas, lo que facilita la creación de diseños complejos con múltiples elementos.
 
 En resumen, CSS Grid es una técnica de diseño de CSS que se basa en un contenedor de elementos flexibles organizados en una cuadrícula de filas y columnas. Las propiedades de la cuadrícula permiten controlar el espacio entre filas y columnas, el posicionamiento de los elementos y la definición de áreas en la cuadrícula. CSS Grid es una técnica de diseño responsive que permite crear diseños adaptables a diferentes tamaños de pantalla y dispositivos, y se puede utilizar junto con otras técnicas de diseño de CSS, como Flexbox.
+
+
+## Lecturas 
+
+https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model 
+
