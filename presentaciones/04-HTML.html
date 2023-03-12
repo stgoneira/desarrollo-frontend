@@ -58,15 +58,28 @@
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Etiqueta Apertura y Cierre](#)
 
-- La mayoría de las etiquetas requieren tanto una etiqueta de apertura como una de cierre.
-- La diferencia entre la de apertura y la de cierre, es que esta última usa una barra diagonal (/)
+- La mayoría de las etiquetas requieren tanto una [etiqueta de apertura](#) como una de [cierre](#).
+- La diferencia entre la de apertura y la de cierre, es que esta última usa una [barra diagonal (/)](#)
+- Algunas etiquetas como [IMG, BR](#), no requieren la etiqueta de cierre
 
 ```html
-<!-- etiqueta sin atributos-->
+<!-- etiqueta P usa apertura y cierre -->
 <p>Este es un párrafo de ejemplo</p>
 
-<!-- etiqueta con atributos-->
+<!-- etiqueta IMG no necesita cierre, en HTML5 opcionalmente 
+	lleva la barra (/) al final -->
 <img src="imagen.jpg" alt="Descripción de la imagen" />
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Comentarios](#)
+
+- Los comentarios nos permiten escribir código que [NO será interpretado](#) por el motor o browser 
+- Podemos por ej. escribir [tareas por hacer, explicaciones sobre el código](#), entre muchos otros motivos 
+
+```html
+<!-- comentario -->
 ```
 
 ---
@@ -104,10 +117,218 @@
 - El [BODY](#) contiene el contenido principal de la página, lo visible.
 - Pueden haber [comentarios](#) donde los necesites
 
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Encabezados y Párrafos](#)
+
+```html
+<!-- las etiquetas H van desde H1 a H6 
+     H1 es el título principal, H2 el subtítulo y
+     así sucesivamente -->
+<h1>Banco Pichincha</h1>
+<p><!-- la etiqueta P representa un párrafo -->
+	Encuentra la forma de lograr tus metas. Préstamos, tarjetas de crédito, avances de efectivo, inversiones, planes de ahorro y cuentas.
+</p>
+	<h2>Cuentas Bancarias</h2>
+		<h3>Cuenta Corriente</h3>
+		<h3>Cuenta Ahorro</h3>
+
+	<h2>Créditos</h2>
+		<h3>Hipotecario</h3>
+		<h3>Consumo</h3>
+
+	<h2>Seguros</h2>
+		<h3>Automotriz</h3>
+		<h3>Vida</h3>
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Enlaces](#)
+
+```html
+<!-- la etiqueta <a> representa un enlace en HTML -->
+<a href="seguros.html">Seguros</a>
+
+<!-- href puede ser un enlace relativo o absoluto -->
+<a href="../index.html">Inicio</a>
+
+<!-- puedes apuntar a cualquier tipo de archivo -->
+<a href="https://cdn.mibanco.cl/pdf/tyc.pdf">
+	Términos y Condiciones
+</a>
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Imágenes](#)
+
+```html
+<!-- etiqueta IMG para insertar imágenes -->
+<!-- atributo SRC es obligatorio -->
+<!-- atributo ALT es opcional, pero requerido por validadores -->
+<img src="gato.jpg" alt="Gato durmiendo" />
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Listas](#)
+### Listas Ordenadas
+
+
+```html
+<h1>Ranking ATP - 2023-03-12</h1>
+<!-- lista ordenada usa etiqueta OL -->
+<ol>
+	<li>Novak Djokovic</li>
+	<li>Carlos Alcaraz</li>
+	<li>Stefano Tsitsipas</li>
+	<li>Casper Ruud</li>
+</ol>
+<!-- resultado: 
+1. Novak Djokovic
+2. Carlos Alcaraz
+3. Stefano Tsitsipas
+4. Casper Ruud
+-->
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Listas](#)
+### Listas NO ordenadas 
+
+
+```html
+<h1>Lista Compras</h1>
+<!-- lista NO ordenada usa etiqueta UL -->
+<ul>
+	<li>Tomate</li>
+	<li>Lechuga</li>
+	<li>Palta</li>
+</ul>
+<!-- resultado: 
+- Tomate
+- Lechuga
+- Palta 
+-->
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Tablas](#)
+### Tabla Básica
+
+```html
+<table>
+	<tr>
+		<!-- TH table head o encabezado -->		
+		<th>Encabezado 1</th>
+		<th>Encabezado 2</th>
+	</tr>
+	<tr><!-- fila 1 -->
+		<!-- TD table data o dato -->
+		<td>Celda 1.1</td>
+		<td>Celda 1.2</td>
+	</tr>
+	<tr><!-- fila 2 -->
+		<td>Celda 2.1</td>
+		<td>Celda 2.2</td>
+	</tr>
+</table>
+```
+
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/QWVQgmw?default-tab=html%2Cresult" -->
+
+===
+## [Tabla con Secciones](#)
+### THEAD, TBODY, TFOOT
+
+
+```html
+<table>
+	<thead>
+	  <tr>
+		<th>Nombre</th>
+		<th>Edad</th>
+		<th>País</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td>María</td>
+		<td>28</td>
+		<td>México</td>
+	  </tr>
+	  <tr>
+		<td>John</td>
+		<td>35</td>
+		<td>Estados Unidos</td>
+	  </tr>
+	</tbody>
+	<tfoot>
+	  <tr>
+		<td colspan="3">Total de personas: 2</td>
+	  </tr>
+	</tfoot>
+  </table>
+```
+
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/KKxQqxV?default-tab=html%2Cresult" -->
+
+===
+## [Tabla Avanzada](#)
+### SCOPE, COLSPAN
+
+```html 
+<table>
+	<thead>
+	  <tr>
+		<th></th>
+		<th scope="colgroup" colspan="2">Semana 1</th>
+		<th scope="colgroup" colspan="2">Semana 2</th>
+	  </tr>
+	  <tr>
+		<th scope="col">Día</th>
+		<th scope="col">Mañana</th>
+		<th scope="col">Tarde</th>
+		<th scope="col">Mañana</th>
+		<th scope="col">Tarde</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<th scope="row">Lunes</th>
+		<td>8:00 am</td>
+		<td>1:00 pm</td>
+		<td>9:00 am</td>
+		<td>2:00 pm</td>
+	  </tr>
+	  <tr>
+		<th scope="row">Martes</th>
+		<td>8:30 am</td>
+		<td>1:30 pm</td>
+		<td>9:30 am</td>
+		<td>2:30 pm</td>
+	  </tr>
+	</tbody>
+  </table>
+```
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/RwYQgeE?default-tab=html%2Cresult" -->
+
+---
+
+
 <!-- 
 TODO
 
 Validaciones w3c y otras
+https://wave.webaim.org/
+http://www.responsinator.com/
 
 -->
 

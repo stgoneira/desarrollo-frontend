@@ -340,7 +340,7 @@ Aquí están algunas de las etiquetas de tabla adicionales que puedes utilizar:
   </tbody>
   <tfoot>
     <tr>
-      <td colspan="3">Total de personas: 2</td>
+      <td colspan="2">Total de personas: 2</td>
     </tr>
   </tfoot>
 </table>
