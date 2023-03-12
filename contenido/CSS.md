@@ -67,6 +67,14 @@ div > p {
 }
 ```
 
+1. **Selector hermano adyacente**: El selector de elementos hermanos adyacentes (+) se utiliza para seleccionar un elemento que se encuentra justo al lado de otro elemento en el mismo nivel de la jerarquía. Por ejemplo, para seleccionar todos los elementos &lt;img&gt; que aparecen justo después de elementos &lt;p&gt;:
+
+```css
+p + img {
+  
+}
+```
+
 1. **Selector de atributo**: Estos selectores permiten seleccionar un elemento solo a partir de la presencia de un atributo (por ejemplo href) o a partir de varias coincidencias diferentes con respecto al valor del atributo.
 
 ```css
