@@ -109,6 +109,26 @@ h1::before {
 Es importante tener en cuenta que algunos navegadores pueden no admitir todas las pseudo-clases y pseudo-elementos, por lo que es recomendable verificar su compatibilidad antes de usarlos en un proyecto.
 
 
+## Propiedades de Estilo 
+
+Algunas de las principales propiedades de estilo CSS que un desarrollador frontend debiera conocer:
+
+1. **Propiedades de texto**: estas propiedades te permiten modificar el aspecto del texto, como su tamaño, color, fuente, entre otras. Algunas de las propiedades más comunes son font-size, color, font-family, text-align, line-height, y text-decoration.
+
+1. **Propiedades de fondo**: estas propiedades te permiten establecer el fondo de un elemento, como su color o imagen de fondo. Algunas de las propiedades más comunes son background-color, background-image, background-repeat, background-size y background-position.
+
+1. **Propiedades de borde**: estas propiedades te permiten establecer el borde de un elemento, como su estilo, color y tamaño. Algunas de las propiedades más comunes son border-style, border-color, border-width, border-radius y outline.
+
+1. **Propiedades de posicionamiento**: estas propiedades te permiten controlar el posicionamiento de los elementos en la página. Algunas de las propiedades más comunes son position, top, bottom, left, right, z-index y display.
+
+1. **Propiedades de dimensiones**: estas propiedades te permiten establecer la altura y el ancho de los elementos. Algunas de las propiedades más comunes son height, width, max-height, max-width y min-height.
+
+1. **Propiedades de animación y transición**: estas propiedades te permiten animar y transicionar los elementos en la página. Algunas de las propiedades más comunes son animation, transition, transform, y opacity.
+
+1. **Propiedades de flexbox y grid**: estas propiedades te permiten crear diseños flexibles y responsivos en la página. Algunas de las propiedades más comunes son display: flex y display: grid, align-items, justify-content, y grid-template-columns.
+
+Estas son solo algunas de las propiedades de estilo CSS que un desarrollador frontend debiera conocer. Hay muchas más propiedades y valores que puedes utilizar para personalizar y dar estilo a tus páginas web. Es importante experimentar y practicar para dominar CSS.
+
 ## Layouts usando CSS 
 
 ### CSS Flexbox 
