@@ -200,6 +200,22 @@ Algunas de las principales propiedades de estilo CSS que un desarrollador fronte
 
 Estas son solo algunas de las propiedades de estilo CSS que un desarrollador frontend debiera conocer. Hay muchas más propiedades y valores que puedes utilizar para personalizar y dar estilo a tus páginas web. Es importante experimentar y practicar para dominar CSS.
 
+### Valores
+
+Los valores posibles para los atributos CSS se pueden clasificar de varias formas, pero aquí te presento algunas de las más comunes:
+
+1. **Valores fijos**: Estos valores son definidos por el usuario y no cambian. Por ejemplo, un color en formato hexadecimal (#FFFFFF) o un tamaño en píxeles (20px).
+
+1. **Valores relativos**: Estos valores se basan en otros valores y pueden cambiar según el contexto en el que se encuentran. Por ejemplo, el ancho de un elemento puede ser definido como un porcentaje del ancho de su contenedor.
+
+1. **Valores de palabras clave**: Estos valores son palabras específicas que tienen un significado predefinido en CSS. Por ejemplo, "bold" se utiliza para definir un texto en negrita.
+
+1. **Valores numéricos**: Estos valores son números que se utilizan para definir medidas, como el ancho de un borde o el espaciado entre elementos.
+
+1. **Valores de función**: Estos valores utilizan una función específica para generar un valor. Por ejemplo, la función "rgb()" se utiliza para definir un color en formato RGB.
+
+Estas son solo algunas de las formas en que se pueden clasificar los valores posibles para los atributos CSS. Es importante tener en cuenta que, dependiendo del atributo, puede haber otras formas de clasificación.
+
 
 ## Estilos en Cascada 
 
