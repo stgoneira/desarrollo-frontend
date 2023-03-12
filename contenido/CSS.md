@@ -346,8 +346,13 @@ CSS Grid es una técnica de diseño de CSS que permite crear diseños de página
 En resumen, CSS Grid es una técnica de diseño de CSS que se basa en un contenedor de elementos flexibles organizados en una cuadrícula de filas y columnas. Las propiedades de la cuadrícula permiten controlar el espacio entre filas y columnas, el posicionamiento de los elementos y la definición de áreas en la cuadrícula. CSS Grid es una técnica de diseño responsive que permite crear diseños adaptables a diferentes tamaños de pantalla y dispositivos, y se puede utilizar junto con otras técnicas de diseño de CSS, como Flexbox.
 
 
+## Mindmap
+
+![Mapa Mental](../assets/mindmaps/css.svg) 
+
 ## Lecturas 
 
 - https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model 
 
 - https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors
+

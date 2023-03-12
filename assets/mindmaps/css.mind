@@ -1,0 +1,39 @@
+mindmap
+  root((CSS))    
+    Selectores
+        Básicos
+            Tipo o Etiqueta 
+            Clase
+            ID
+            Descendencia
+        Avanzados
+            Hijo Directo
+            Hermano Adyacente
+            Atributo
+            Pseudo Clase
+            Pseudo Elemento
+    Propiedades
+        Valores
+            Fijos
+            Relativos
+            Palabras clave
+            Numéricos
+            De función
+    Estilos en Cascada
+        Especificidad
+        Herencia
+        Keyword !important
+    Modelo de Cajas
+        Content 
+        Padding
+        Border
+        Margin
+    Diseño Layouts
+        Floats
+        Flexbox
+        Grid
+    Integración con HTML
+        En línea
+        Hoja externa
+        Etiqueta style  
+
