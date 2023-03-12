@@ -11,11 +11,11 @@ CSS es un lenguaje de estilo utilizado para diseñar y presentar páginas web. A
 
 **Estilos en cascada**: CSS utiliza una técnica llamada "estilos en cascada", que significa que las reglas de estilo se aplican en cascada, lo que significa que se aplican primero las reglas más específicas y luego las reglas menos específicas. También se pueden aplicar estilos heredados de elementos padres a elementos hijos.
 
-**Hojas de estilo externas e internas**: Las hojas de estilo externas se vinculan a una página web utilizando la etiqueta link, mientras que las hojas de estilo internas se definen dentro del documento HTML utilizando la etiqueta style.
+**Integración con HTML**: Las hojas de estilo externas se vinculan a una página web utilizando la etiqueta ***link***, mientras que las hojas de estilo internas se definen dentro del documento HTML utilizando la etiqueta ***style***. También es posible usar el atributo ***style***, lo que se conoce como estilo en línea. 
 
 **Modelos de caja**: El modelo de caja de CSS define cómo se representa visualmente un elemento HTML. La caja incluye el contenido, el borde, el margen y el relleno.
 
-**Diseño de diseño**: CSS ofrece varias técnicas de diseño, como flexbox y CSS grid, que permiten controlar la distribución y el diseño de los elementos en una página web.
+**Diseño de Layouts**: CSS ofrece varias técnicas de diseño, como flexbox y CSS grid, que permiten controlar la distribución y el diseño de los elementos en una página web. 
 
 En resumen, CSS permite definir el estilo y la presentación de una página web utilizando selectores, propiedades y reglas de estilo. Las hojas de estilo externas e internas se utilizan para aplicar estos estilos a una página web, mientras que las técnicas de diseño, como flexbox y CSS grid, permiten controlar la distribución y el diseño de los elementos en una página web.
 
@@ -23,7 +23,7 @@ En resumen, CSS permite definir el estilo y la presentación de una página web 
 
 Los selectores son una parte fundamental del lenguaje CSS, que te permiten seleccionar uno o varios elementos HTML para aplicarles estilos. Hay varios tipos de selectores, y cada uno tiene una sintaxis y uso específicos.
 
-Aquí te explico algunos de los selectores más comunes:
+### Selectores CSS Básicos 
 
 1. **Selector de tipo**: este selector selecciona todos los elementos HTML que coincidan con un tipo específico. Por ejemplo, si queremos aplicar un estilo a todos los párrafos en una página, usaríamos el selector de tipo "p".
 
@@ -58,6 +58,8 @@ div p {
   color: red;
 }
 ```
+
+### Selectores CSS Avanzados 
 
 1. **Selector de hijo directo**: este selector selecciona todos los elementos que son hijos directos de un elemento HTML específico. Se usa el signo ">" para separar el elemento padre del hijo directo.
 
