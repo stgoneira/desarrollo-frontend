@@ -343,18 +343,117 @@
 ===
 <!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/YzOeQbd?default-tab=html%2Cresult" -->
 
+---
+## [Web Semántica](#)
 
+- [Datos más comprensibles](#) para las máquinas 
+- [Mejora accesibilidad](#) para personas con discapacidades visuales, auditivas o motoras 
+- HTML incorpora [etiquetas](#) como HEADER, NAV, MAIN, SECTION, ARTICLE, ASIDE, FOOTER, entre otras para mejorar esto  
 
+===
+## [Divitis](#)
 
+- [Uso excesivo](#) de etiqueta [DIV](#) en el código HTML 
+- Causa [problemas](#) de [accesibilidad](#)
+- Se [corrige](#) usando [etiquetas semánticas](#) e intentando generar una [estrucutura más plana](#)
 
-<!-- 
-TODO
+===
+## [Código con Divitis](#)
+```html
+<div id="wrapper">
+	<div id="header">
+	  <div class="logo">
+		<img src="logo.png" alt="Logo">
+	  </div>
+	  <div class="menu">
+		<ul>
+		  <li><a href="#">Inicio</a></li>
+		  <li><a href="#">Acerca de</a></li>
+		  <li><a href="#">Productos</a></li>
+		  <li><a href="#">Contacto</a></li>
+		</ul>
+	  </div>
+	</div>
+	<div id="content">
+	  <div class="section">
+		<h2>Sección 1</h2>
+		<div class="subsection">
+		  <h3>Subsección 1</h3>
+		  <p>Contenido de la subsección 1.</p>
+		</div>
+		<div class="subsection">
+		  <h3>Subsección 2</h3>
+		  <p>Contenido de la subsección 2.</p>
+		</div>
+	  </div>
+	  <div class="section">
+		<h2>Sección 2</h2>
+		<div class="subsection">
+		  <h3>Subsección 1</h3>
+		  <p>Contenido de la subsección 1.</p>
+		</div>
+		<div class="subsection">
+		  <h3>Subsección 2</h3>
+		  <p>Contenido de la subsección 2.</p>
+		</div>
+	  </div>
+	</div>
+	<div id="footer">
+	  <p>Derechos de autor © 2021. Todos los derechos reservados.</p>
+	</div>
+  </div>
+```
+===
+## [Código corregido](#)
+```html
+<header>
+	<div class="logo">
+	  <img src="logo.png" alt="Logo">
+	</div>
+	<nav>
+	  <ul>
+		<li><a href="#">Inicio</a></li>
+		<li><a href="#">Acerca de</a></li>
+		<li><a href="#">Productos</a></li>
+		<li><a href="#">Contacto</a></li>
+	  </ul>
+	</nav>
+  </header>
+  <main>
+	<section>
+	  <h2>Sección 1</h2>
+	  <div class="subsection">
+		<h3>Subsección 1</h3>
+		<p>Contenido de la subsección 1.</p>
+	  </div>
+	  <div class="subsection">
+		<h3>Subsección 2</h3>
+		<p>Contenido de la subsección 2.</p>
+	  </div>
+	</section>
+	<section>
+	  <h2>Sección 2</h2>
+	  <div class="subsection">
+		<h3>Subsección 1</h3>
+		<p>Contenido de la subsección 1.</p>
+	  </div>
+	  <div class="subsection">
+		<h3>Subsección 2</h3>
+		<p>Contenido de la subsección 2.</p>
+	  </div>
+	</section>
+  </main>
+  <footer>
+	<p>Derechos de autor © 2021. Todos los derechos reservados.</p>
+  </footer>
+```
 
-Validaciones w3c y otras
-https://wave.webaim.org/
-http://www.responsinator.com/
+---
+## [Herramientas](#)
 
--->
+- https://validator.w3.org/
+- https://wave.webaim.org/
+- http://www.responsinator.com/
 
 ---
 <!-- .slide: data-background-image="../assets/bg.png" data-background-size="contain" -->
