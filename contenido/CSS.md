@@ -201,6 +201,37 @@ En este ejemplo, el color de fuente para todos los elementos en la página se es
 
 En resumen, los estilos en cascada en CSS son un proceso fundamental para aplicar estilos a elementos en una página web. Comprender cómo funcionan la herencia, la prioridad y la cascada de estilos es clave para diseñar páginas web con estilos efectivos y coherentes.
 
+## Modelo de Cajas
+
+![Modelo de Cajas](./../assets/ppt/css-box-model.webp)
+
+El modelo de cajas en CSS se refiere a la manera en que se representa visualmente un elemento HTML en una página web. En CSS, cada elemento es tratado como una caja rectangular que se compone de cuatro áreas principales: el contenido, el padding, el borde y el margen.
+
+El contenido se refiere al espacio que ocupa el contenido real del elemento, como el texto, las imágenes o los videos. El padding es el espacio que se encuentra entre el contenido y el borde del elemento, y se puede ajustar con CSS para dar un mayor espacio entre el contenido y el borde. El borde es la línea que rodea el elemento y puede tener diferentes estilos, grosores y colores. El margen es el espacio que se encuentra fuera del borde y que separa el elemento de otros elementos de la página.
+
+El modelo de cajas en CSS permite controlar el tamaño, la posición y la apariencia visual de los elementos de una página web mediante la manipulación de estas cuatro áreas. También es posible aplicar estilos específicos para cada una de ellas, lo que permite crear diseños más complejos y detallados en una página web.
+
+```html
+<div class="mi-caja">Caja 1</div>
+<div class="mi-caja">Caja 2</div>
+```
+
+```css
+.mi-caja {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 10px;
+}
+```
+
+En este ejemplo, creamos 2 cajas rectangulares utilizando un elemento HTML div con la clase .mi-caja. En el CSS, establecemos el tamaño de la caja utilizando las propiedades width y height. A continuación, establecemos un espacio de 20 píxeles alrededor del contenido de la caja utilizando la propiedad padding. Agregamos un borde negro de 2 píxeles de grosor alrededor de la caja utilizando la propiedad border, y finalmente establecemos un margen de 10 píxeles alrededor de la caja utilizando la propiedad margin.
+
+Este ejemplo es solo un ejemplo básico, pero el modelo de cajas en CSS ofrece muchas posibilidades para crear diseños más complejos y detallados en una página web.
+
+
+
 ## Layouts usando CSS 
 
 ### CSS Flexbox 
