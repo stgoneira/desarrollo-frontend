@@ -200,16 +200,18 @@ p {color: red;}
 
 ===
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
-## 3. [Selector por ID](#)
+## 4. [Selector de descendencia](#)
 
 [Código CSS](#)
 ```css
-#user-data {font-weight: bold; }
+div p {color: red;}
 ```
 [Código HTML](#)
 ```html
 <p>párrafo 1</p>
-<p id="user-data">Juanito Pérez</p>
+<div>
+	<p>párrafo 2</p>
+</div>
 <p>párrafo 3</p>
 ```
 
@@ -217,6 +219,109 @@ p {color: red;}
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Selectores Avanzados](#)
+### 5. Selector de hijo directo 
+
+[Código CSS](#)
+```css
+aside p {color: blue;} /* descendencia */
+aside > p {color: red;} /* hijo directo */
+```
+[Código HTML](#)
+```html
+<aside>
+	<p>párrafo 1</p>  
+	<p>párrafo 2</p>
+</aside>
+<aside>
+	<article>
+		<p>párrafo 3</p>
+	</article>
+</aside>
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [6. Selector Hermano Adyacente](#)
+
+[Código CSS](#)
+```css
+h1 {text-align: center; }
+h1 + p { /* hermano adyacente */
+  color: gray;
+  font-weight: bold;
+  text-align: center;
+}
+```
+[Código HTML](#)
+```html
+<article>
+	<h1>La falta de sueño podría restar eficacia a las vacunas</h1>
+	<p>Bajada de la noticia...</p>
+	<p>párrafo 1</p>
+	<p>párrafo 2</p>
+  </article>
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [7. Selector de atributo](#)
+
+[Código CSS](#)
+```css
+a[data-categoria="social"] {
+	color: red;
+}
+```
+[Código HTML](#)
+```html
+<ul>
+	<li><a href="#" data-categoria="normal">Inicio</a></li>
+	<li><a href="#" data-categoria="normal">Nosotros</a></li>
+	<li><a href="#" data-categoria="normal">Contacto</a></li>
+	<li><a href="#" data-categoria="social">Instagram</a></li>
+	<li><a href="#" data-categoria="social">Facebook</a></li>
+</ul>
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [8. Pseudo Clases](#)
+
+[Código CSS](#)
+```css
+a:hover {
+	color: orange;
+}
+```
+[Código HTML](#)
+```html
+<ul>
+	<li><a href="#">Inicio</a></li>
+	<li><a href="#">Nosotros</a></li>
+	<li><a href="#">Contacto</a></li>	
+</ul>
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [9. Pseudo Elementos](#)
+
+[Código CSS](#)
+```css
+p::first-letter {
+	font-size: 50px;
+	font-weight: bold;
+}
+```
+[Código HTML](#)
+```html
+<article>
+	<h2>La falta de sueño podría restar eficacia a las vacunas</h2>
+	<p>
+		El grado de protección de las vacunas puede depender de que se duerma lo suficiente, al menos seis horas, en los días anteriores y posteriores al pinchanzo, señala un estudio que publica este lunes Current Bilogy.
+	</p>
+</article>
+```
 
 
 ---
