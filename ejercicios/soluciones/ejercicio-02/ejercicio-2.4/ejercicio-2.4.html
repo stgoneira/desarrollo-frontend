@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registro - Ejercicio 2.4</title>
+</head>
+<body>
+    <header>        
+        <h1>Form Registro - Ejercicio 2.4</h1>        
+    </header>
+    <main>
+        <form action="form" method="POST">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <br />
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" />
+            <br />
+            <label for="confirma-pwd">Confirma contraseña</label>
+            <input type="password" name="confirma-pwd" id="confirma-pwd" />
+            <br />
+            <label for="pais">País Residencia</label>
+            <select name="pais" id="pais">
+                <option>Chile</option>
+                <option>Colombia</option>
+                <option>Ecuador</option>
+                <option>Venezuela</option>
+                <option>Perú</option>
+            </select>
+            <br />
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="M" />
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="femenino" name="genero" value="F" />
+            <br />
+            <label for="terminos">Acepto los términos y condiciones del sitio:</label>
+            <input type="checkbox" id="terminos" name="terminos" required />
+            <br />
+            <button type="submit">Registrar</button>
+        </form>
+    </main>
+</body>
+</html>
