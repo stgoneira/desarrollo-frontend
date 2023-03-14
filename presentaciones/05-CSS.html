@@ -443,6 +443,51 @@ img {
 ===
 <!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/wvEmgVV?default-tab=html%2Cresult" --> 
 
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Propiedades de Dimensiones](#)
+```css
+.caja {
+	max-width: 100px;
+	min-height: 100px;
+	max-height: 200px;
+	background-color: yellow;
+	margin: 10px;
+}
+```
+```html
+<div class="caja">A: The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero.</div>
+<div class="caja">B: </div>
+<div class="caja">C: </div>
+```
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/KKxoeOb?default-tab=html%2Cresult" --> 
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Propiedades de Animación](#)
+```css
+.ejemplo {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation: mover 2s ease-in-out infinite;
+	transition: transform 0.5s ease-in-out;
+}
+@keyframes mover {
+	0% { transform: translateX(0); }
+	50% { transform: translateX(200px); }
+	100% { transform: translateX(0); }
+}
+.ejemplo:hover {
+	opacity: 0.5;	
+}  
+```
+```html
+<div class="ejemplo"></div>
+```
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/WNgzKpP?default-tab=html%2Cresult" --> 
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
