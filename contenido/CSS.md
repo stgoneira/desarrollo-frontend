@@ -141,12 +141,12 @@ Algunas de las principales propiedades de estilo CSS que un desarrollador fronte
 
 - **Propiedades de texto**: estas propiedades te permiten modificar el aspecto del texto, como su tamaño, color, fuente, entre otras. Algunas de las propiedades más comunes son: 
 
-- font-size
-- color
-- font-family
-- text-align
-- line-height
-- text-decoration
+    - font-size
+    - color
+    - font-family
+    - text-align
+    - line-height
+    - text-decoration
 
 - **Propiedades de fondo**: estas propiedades te permiten establecer el fondo de un elemento, como su color o imagen de fondo. Algunas de las propiedades más comunes son:
 
