@@ -35,7 +35,9 @@
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [CSS](#)
 
-
+- Es un [lenguaje de estilos](#) para describir la presentación de [documentos HTML o XML](#) 
+- Nos sirve para controlar el [estilo visual](#), especialmente de [sitios web](#) 
+- Existen [3 versiones](#) y en vez de trabajar hacia una [4ta](#) ahora se progresa [en módulos](#) 
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
@@ -47,19 +49,174 @@
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Sintaxis](#)
 
+- Al igual que en la mayoría de los lenguajes podemos [comentar](#)
+- CSS se escribe usando [reglas](#)
+- Las reglas están compuestas por [uno o más selectores](#) y [declaraciones](#) 
+- Las declaraciones son el par de una [propiedad](#) más un [valor](#) 
 
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Sintaxis](#)
 
-```css
-
-```
+![Sintaxis CSS](../assets/ppt/css-declaration-small.png)
 
 ===
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Comentarios](#)
 
 ```css
-
+/* soy un comentario en css */
+p {
+	color: red; 
+}
 ```
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/GRXxZdm?default-tab=html%2Cresult" -->
+
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Integración en HTML](#)
+
+```html
+<!-- 1. etiqueta LINK -->
+<link rel="stylesheet" type="text/css" href="estilos.css" />
+
+<!-- 2. etiqueta STYLE -->
+<style>
+	body {color: red; }
+</style>
+
+<!-- 3. atributo STYLE (CSS en línea) -->
+<p style="color: red;">Hola mundo</p>
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [1. Etiqueta Link](#)
+
+```html
+&lt;html lang=&quot;es&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot; /&gt;    
+		&lt;title&gt;integración CSS con etiqueta LINK&lt;/title&gt;
+		&lt;!-- integración de código CSS con HTML --&gt;
+		&lt;!-- debe ir en el HEAD --&gt;
+		&lt;link href=&quot;estilo.css&quot; rel=&quot;stylesheet&quot; /&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Hola Mundo!&lt;/h1&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [2. Etiqueta Style](#)
+
+```html
+&lt;html lang=&quot;es&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot; /&gt;    
+		&lt;title&gt;integración CSS con etiqueta STYLE&lt;/title&gt;
+		&lt;!-- integración de código CSS con HTML --&gt;
+		&lt;!-- debe ir en el HEAD --&gt;
+		&lt;style&gt;
+		h1 {color: red;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Hola Mundo!&lt;/h1&gt;
+		&lt;p&gt;Soy un texto de saludo.&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [3. Atributo Style](#)
+
+```html
+&lt;html lang=&quot;es&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot; /&gt;    
+		&lt;title&gt;integración CSS con atributo STYLE&lt;/title&gt;		
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;!-- el atributo style se usa sin selector --&gt;
+		&lt;!-- es específico para la etiqueta en cuestión --&gt;
+		&lt;h1 style="color: red;"&gt;Hola Mundo!&lt;/h1&gt;
+		&lt;p&gt;Soy un texto de saludo.&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+```
+
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Selectores Básicos](#)
+### 1. Selector de tipo o por etiqueta 
+
+[Código CSS](#)
+```css
+p {color: red;}
+```
+[Código HTML](#)
+```html
+<p>párrafo 1</p>
+<p>párrafo 2</p>
+<p>párrafo 3</p>
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## 2. [Selector de clase](#)
+
+[Código CSS](#)
+```css
+.destacado {color: red;}
+```
+[Código HTML](#)
+```html
+<p>párrafo 1</p>
+<p class="destacado">párrafo 2</p>
+<p>párrafo 3</p>
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## 3. [Selector por ID](#)
+
+[Código CSS](#)
+```css
+#user-data {font-weight: bold; }
+```
+[Código HTML](#)
+```html
+<p>párrafo 1</p>
+<p id="user-data">Juanito Pérez</p>
+<p>párrafo 3</p>
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## 3. [Selector por ID](#)
+
+[Código CSS](#)
+```css
+#user-data {font-weight: bold; }
+```
+[Código HTML](#)
+```html
+<p>párrafo 1</p>
+<p id="user-data">Juanito Pérez</p>
+<p>párrafo 3</p>
+```
+
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Selectores Avanzados](#)
 
 
 ---

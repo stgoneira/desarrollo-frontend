@@ -33,7 +33,7 @@ p {
 }
 ```
 
-1. **Selector de clase**: este selector selecciona todos los elementos HTML que tengan un atributo "class" específico. Las clases son muy útiles para aplicar estilos a grupos de elementos que comparten características comunes.
+2. **Selector de clase**: este selector selecciona todos los elementos HTML que tengan un atributo "class" específico. Las clases son muy útiles para aplicar estilos a grupos de elementos que comparten características comunes.
 
 ```css
 .my-class {
@@ -42,7 +42,7 @@ p {
 
 ```
 
-1. **Selector de ID**: este selector selecciona un elemento HTML específico que tenga un atributo "id" único. Es importante recordar que cada "id" debe ser único en toda la página.
+3. **Selector de ID**: este selector selecciona un elemento HTML específico que tenga un atributo "id" único. Es importante recordar que cada "id" debe ser único en toda la página.
 
 ```css
 #my-id {
@@ -51,7 +51,7 @@ p {
 
 ```
 
-1. **Selector de descendencia**: este selector selecciona todos los elementos que son descendientes de un elemento HTML específico. Se usa un espacio para separar el elemento padre del hijo.
+4. **Selector de descendencia**: este selector selecciona todos los elementos que son descendientes de un elemento HTML específico. Se usa un espacio para separar el elemento padre del hijo.
 
 ```css
 div p {
@@ -61,7 +61,7 @@ div p {
 
 ### Selectores CSS Avanzados 
 
-1. **Selector de hijo directo**: este selector selecciona todos los elementos que son hijos directos de un elemento HTML específico. Se usa el signo ">" para separar el elemento padre del hijo directo.
+5. **Selector de hijo directo**: este selector selecciona todos los elementos que son hijos directos de un elemento HTML específico. Se usa el signo ">" para separar el elemento padre del hijo directo.
 
 ```css
 div > p {
@@ -69,7 +69,7 @@ div > p {
 }
 ```
 
-1. **Selector hermano adyacente**: El selector de elementos hermanos adyacentes (+) se utiliza para seleccionar un elemento que se encuentra justo al lado de otro elemento en el mismo nivel de la jerarquía. Por ejemplo, para seleccionar todos los elementos &lt;img&gt; que aparecen justo después de elementos &lt;p&gt;:
+6. **Selector hermano adyacente**: El selector de elementos hermanos adyacentes (+) se utiliza para seleccionar un elemento que se encuentra justo al lado de otro elemento en el mismo nivel de la jerarquía. Por ejemplo, para seleccionar todos los elementos &lt;img&gt; que aparecen justo después de elementos &lt;p&gt;:
 
 ```css
 p + img {
@@ -77,7 +77,7 @@ p + img {
 }
 ```
 
-1. **Selector de atributo**: Estos selectores permiten seleccionar un elemento solo a partir de la presencia de un atributo (por ejemplo href) o a partir de varias coincidencias diferentes con respecto al valor del atributo.
+7. **Selector de atributo**: Estos selectores permiten seleccionar un elemento solo a partir de la presencia de un atributo (por ejemplo href) o a partir de varias coincidencias diferentes con respecto al valor del atributo.
 
 ```css
 li[class] {
@@ -93,7 +93,7 @@ li[class~="a"] {
 }   
 ```
 
-1. **Pseudo-clases**: las pseudo-clases seleccionan elementos en función de su estado o relación con otros elementos. Se usan con un colon ":" después del selector. Algunas de las pseudo-clases más comunes son:
+8. **Pseudo-clases**: las pseudo-clases seleccionan elementos en función de su estado o relación con otros elementos. Se usan con un colon ":" después del selector. Algunas de las pseudo-clases más comunes son:
 
 - :hover: selecciona un elemento cuando el cursor se sitúa sobre él.
 - :active: selecciona un elemento cuando está siendo clicado.
@@ -114,7 +114,7 @@ li:first-child {
 ```
 
 
-1. **Pseudo-elementos**: los pseudo-elementos seleccionan partes específicas de un elemento, como su primer letra o su contenido después del elemento. Se usan con dos puntos "::" después del selector. Algunos de los pseudo-elementos más comunes son:
+9. **Pseudo-elementos**: los pseudo-elementos seleccionan partes específicas de un elemento, como su primer letra o su contenido después del elemento. Se usan con dos puntos "::" después del selector. Algunos de los pseudo-elementos más comunes son:
 
 - ::before: inserta contenido antes del contenido del elemento seleccionado.
 - ::after: inserta contenido después del contenido del elemento seleccionado.
