@@ -18,3 +18,4 @@ Crea un archivo HTML básico que contenga:
 - Usar el modelo de cajas de CSS para el espacio entre elementos 
 - En esta instancia NO es necesario preocuparse del maquetado o layout
 - Desplegar en Github Pages 
+- Validar y corregir si es necesario el código HTML y CSS en W3C Validator
