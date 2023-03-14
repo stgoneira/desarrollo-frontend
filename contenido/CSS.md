@@ -150,53 +150,52 @@ Algunas de las principales propiedades de estilo CSS que un desarrollador fronte
 
 - **Propiedades de fondo**: estas propiedades te permiten establecer el fondo de un elemento, como su color o imagen de fondo. Algunas de las propiedades más comunes son:
 
-- background-color
-- background-image
-- background-repeat
-- background-size 
-- background-position
+    - background-color
+    - background-image
+    - background-repeat
+    - background-size 
+    - background-position
 
 - **Propiedades de borde**: estas propiedades te permiten establecer el borde de un elemento, como su estilo, color y tamaño. Algunas de las propiedades más comunes son: 
 
-- border-style
-- border-color
-- border-width
-- border-radius 
-- outline
-
+    - border-style
+    - border-color
+    - border-width
+    - border-radius 
+    - outline
 
 - **Propiedades de posicionamiento**: estas propiedades te permiten controlar el posicionamiento de los elementos en la página. Algunas de las propiedades más comunes son: 
 
-- position
-- top
-- bottom
-- left
-- right
-- z-index
-- display
+    - position
+    - top
+    - bottom
+    - left
+    - right
+    - z-index
+    - display
 
 - **Propiedades de dimensiones**: estas propiedades te permiten establecer la altura y el ancho de los elementos. Algunas de las propiedades más comunes son:
 
-- height
-- width
-- max-height
-- max-width
-- min-height.
+    - height
+    - width
+    - max-height
+    - max-width
+    - min-height
 
 - **Propiedades de animación y transición**: estas propiedades te permiten animar y transicionar los elementos en la página. Algunas de las propiedades más comunes son: 
 
-- animation
-- transition
-- transform
-- opacity
+    - animation
+    - transition
+    - transform
+    - opacity
 
 - **Propiedades de flexbox y grid**: estas propiedades te permiten crear diseños flexibles y responsivos en la página. Algunas de las propiedades más comunes son display: 
 
-- flex 
-- display
-- align-items
-- justify-content
-- grid-template-columns
+    - flex 
+    - display
+    - align-items
+    - justify-content
+    - grid-template-columns
 
 Estas son solo algunas de las propiedades de estilo CSS que un desarrollador frontend debiera conocer. Hay muchas más propiedades y valores que puedes utilizar para personalizar y dar estilo a tus páginas web. Es importante experimentar y practicar para dominar CSS.
 
