@@ -323,6 +323,132 @@ p::first-letter {
 </article>
 ```
 
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Estilos en Cascada](#)
+
+- Estilos se [heredan](#) automáticamente 
+- Las reglas que aparecen [más abajo](#) en el código tienen [más peso](#) 
+    - [!important](#) 
+	- [especifidad](#) 
+- [Sistema](#) de [prioridad](#) para evaluar qué reglas prevalecen
+- Para esto son muy útiles las [Herramientas de Desarrollo](#)
+
+===
+
+```css
+article#art-2 {
+	border: 1px dotted green;
+	background-color: gray;
+	color: yellow;
+}
+
+article.noticia {
+	border: 1px solid black;
+	color: green !important;
+}  
+```
+
+```html
+<article id="art-1" class="noticia">
+	<h2>Fenómeno de la Niña llega a su fin</h2>
+	<p>El Fenómeno de la Niña llegó a su fin, anunciaron los servicios climáticos estadounidenses. Sin embargo, los efectos en este momento son...</p>
+</article>
+
+<article id="art-2" class="noticia">
+	<h2>Militarización de la frontera norte de Chile</h2>
+	<p>La presencia militar en las zonas fronterizas sin una política de carácter humanitario, que logre garantizar la protección de personas en...</p>
+</article>
+```
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/qBMoROq?default-tab=html%2Cresult" -->
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Propiedades de Texto](#)
+
+```css
+/* Aplica las siguientes propiedades de texto a todos los elementos */
+body {
+  font-family: Arial, sans-serif; /* Establece la fuente de texto */
+  font-size: 16px; /* Establece el tamaño de texto */
+  line-height: 1.5; /* Establece la altura de línea */
+  color: #333; /* Establece el color de texto */
+  text-align: center; /* Establece la alineación de texto */
+  text-decoration: underline; /* Establece la decoración de texto */
+  text-transform: uppercase; /* Establece la transformación de texto */
+  letter-spacing: 2px; /* Establece el espaciado entre letras */
+  word-spacing: 5px; /* Establece el espaciado entre palabras */
+  text-shadow: 1px 1px 1px #000; /* Establece la sombra de texto */
+}
+
+/* Establece el estilo de fondo para resaltar el texto */
+span {
+  background-color: yellow;
+  padding: 5px;
+}
+
+```
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/JjaLEWE?default-tab=html%2Cresult" --> 
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Propiedades para Fondos](#)
+```css
+/* Establece el fondo para el cuerpo de la página */
+body {
+  background-color: #f5f5f5; /* Establece el color de fondo */
+  background-image: url('bg.jpg'); /* Establece la imagen de fondo */
+  background-repeat: no-repeat; /* Establece la repetición de imagen */
+  background-size: cover; /* Establece el tamaño de imagen */
+  background-position: center center; /* Establece la posición de imagen */  
+}
+
+/* Establece el estilo de fondo para un elemento específico */
+div {
+	background-color: rgba(0, 0, 0, 0.5); /* Establece el color de fondo con transparencia */
+	background-image: linear-gradient(to bottom, #000000, #777); /* Establece un degradado de fondo */  
+	color: white;
+	padding: 100px;
+  }
+```
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/zYJWNLN?default-tab=html%2Cresult" --> 
+
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Propiedades para Bordes](#)
+```css
+/* Establece las propiedades de borde para un elemento */
+div {
+  border-style: solid; /* Establece el estilo de borde */
+  border-width: 2px; /* Establece el ancho de borde */
+  border-color: #333; /* Establece el color de borde */
+  border-radius: 10px; /* Establece la curvatura de borde */
+  padding: 100px;
+}
+
+/* Establece un borde diferente para un elemento específico */
+img {
+  border: dashed 4px #f00; /* Establece el estilo, ancho y color de borde juntos */
+}
+```
+
+```html
+<img src="https://picsum.photos/200/300" alt="random photo" />
+<div>Lorem ipsum dolor</div>
+```
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/wvEmgVV?default-tab=html%2Cresult" --> 
+
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Resumen](#)
+
+![mindmap](../assets/mindmaps/css.svg)
 
 ---
 <!-- .slide: data-background-image="../assets/bg.png" data-background-size="contain" -->

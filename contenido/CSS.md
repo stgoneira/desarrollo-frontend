@@ -164,16 +164,6 @@ Algunas de las principales propiedades de estilo CSS que un desarrollador fronte
     - border-radius 
     - outline
 
-- **Propiedades de posicionamiento**: estas propiedades te permiten controlar el posicionamiento de los elementos en la página. Algunas de las propiedades más comunes son: 
-
-    - position
-    - top
-    - bottom
-    - left
-    - right
-    - z-index
-    - display
-
 - **Propiedades de dimensiones**: estas propiedades te permiten establecer la altura y el ancho de los elementos. Algunas de las propiedades más comunes son:
 
     - height
@@ -196,6 +186,16 @@ Algunas de las principales propiedades de estilo CSS que un desarrollador fronte
     - align-items
     - justify-content
     - grid-template-columns
+
+- **Propiedades de posicionamiento**: estas propiedades te permiten controlar el posicionamiento de los elementos en la página. Algunas de las propiedades más comunes son: 
+
+    - position
+    - top
+    - bottom
+    - left
+    - right
+    - z-index
+    - display
 
 Estas son solo algunas de las propiedades de estilo CSS que un desarrollador frontend debiera conocer. Hay muchas más propiedades y valores que puedes utilizar para personalizar y dar estilo a tus páginas web. Es importante experimentar y practicar para dominar CSS.
 
