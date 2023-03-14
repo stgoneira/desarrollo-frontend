@@ -139,7 +139,7 @@ Es importante tener en cuenta que algunos navegadores pueden no admitir todas la
 
 Algunas de las principales propiedades de estilo CSS que un desarrollador frontend debiera conocer:
 
-1. **Propiedades de texto**: estas propiedades te permiten modificar el aspecto del texto, como su tamaño, color, fuente, entre otras. Algunas de las propiedades más comunes son: 
+- **Propiedades de texto**: estas propiedades te permiten modificar el aspecto del texto, como su tamaño, color, fuente, entre otras. Algunas de las propiedades más comunes son: 
 
 - font-size
 - color
@@ -148,7 +148,7 @@ Algunas de las principales propiedades de estilo CSS que un desarrollador fronte
 - line-height
 - text-decoration
 
-1. **Propiedades de fondo**: estas propiedades te permiten establecer el fondo de un elemento, como su color o imagen de fondo. Algunas de las propiedades más comunes son:
+- **Propiedades de fondo**: estas propiedades te permiten establecer el fondo de un elemento, como su color o imagen de fondo. Algunas de las propiedades más comunes son:
 
 - background-color
 - background-image
@@ -156,7 +156,7 @@ Algunas de las principales propiedades de estilo CSS que un desarrollador fronte
 - background-size 
 - background-position
 
-1. **Propiedades de borde**: estas propiedades te permiten establecer el borde de un elemento, como su estilo, color y tamaño. Algunas de las propiedades más comunes son: 
+- **Propiedades de borde**: estas propiedades te permiten establecer el borde de un elemento, como su estilo, color y tamaño. Algunas de las propiedades más comunes son: 
 
 - border-style
 - border-color
@@ -165,7 +165,7 @@ Algunas de las principales propiedades de estilo CSS que un desarrollador fronte
 - outline
 
 
-1. **Propiedades de posicionamiento**: estas propiedades te permiten controlar el posicionamiento de los elementos en la página. Algunas de las propiedades más comunes son: 
+- **Propiedades de posicionamiento**: estas propiedades te permiten controlar el posicionamiento de los elementos en la página. Algunas de las propiedades más comunes son: 
 
 - position
 - top
@@ -175,7 +175,7 @@ Algunas de las principales propiedades de estilo CSS que un desarrollador fronte
 - z-index
 - display
 
-1. **Propiedades de dimensiones**: estas propiedades te permiten establecer la altura y el ancho de los elementos. Algunas de las propiedades más comunes son:
+- **Propiedades de dimensiones**: estas propiedades te permiten establecer la altura y el ancho de los elementos. Algunas de las propiedades más comunes son:
 
 - height
 - width
@@ -183,14 +183,14 @@ Algunas de las principales propiedades de estilo CSS que un desarrollador fronte
 - max-width
 - min-height.
 
-1. **Propiedades de animación y transición**: estas propiedades te permiten animar y transicionar los elementos en la página. Algunas de las propiedades más comunes son: 
+- **Propiedades de animación y transición**: estas propiedades te permiten animar y transicionar los elementos en la página. Algunas de las propiedades más comunes son: 
 
 - animation
 - transition
 - transform
 - opacity
 
-1. **Propiedades de flexbox y grid**: estas propiedades te permiten crear diseños flexibles y responsivos en la página. Algunas de las propiedades más comunes son display: 
+- **Propiedades de flexbox y grid**: estas propiedades te permiten crear diseños flexibles y responsivos en la página. Algunas de las propiedades más comunes son display: 
 
 - flex 
 - display
