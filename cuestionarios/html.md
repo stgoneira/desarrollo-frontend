@@ -1,9 +1,9 @@
 # Cuestionario HTML 
 
 ¿Qué es el atributo "class" en HTML y para qué se utiliza?
-- [] Es un atributo que se utiliza para añadir un estilo único a un elemento HTML.
+- [ ] Es un atributo que se utiliza para añadir un estilo único a un elemento HTML.
 - [x] Es un atributo que se utiliza para agrupar elementos HTML y aplicarles un estilo común.
-- [] Es un atributo que se utiliza para añadir efectos de animación a un elemento HTML.
+- [ ] Es un atributo que se utiliza para añadir efectos de animación a un elemento HTML.
 
 ¿Qué es el atributo "id" en HTML y para qué se utiliza?
 *a) Es un atributo que se utiliza para identificar un elemento HTML de manera única.
