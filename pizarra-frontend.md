@@ -5,6 +5,24 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
+### Sesión 3 - 20230314
+
+- Comprender la sintaxis de CSS
+- Integrar código CSS para estilizar un documento HTML 
+- Comprender los fundamentos de CSS 
+- Aplicar estilos básicos sobre un documento HTML 
+
+### Tareas CSS 
+
+1. Actividad 3.1 
+2. Actividad 3.2  
+
+
+
+
+
+
+
 ### Sesión 2 - 20230309
 
 - Comprender la sintaxis, estructura y fundamentos de HTML 
