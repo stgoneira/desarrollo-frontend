@@ -97,7 +97,7 @@
 - [ ] &lt;hr&gt;
 - [ ] &lt;p&gt;
 
-20. ¿Cuál es la forma correcta de enlazar a una hoja de estilo externa en HTML?
-A) &lt;link rel="stylesheet" type="text/css" href="estilos.css"&gt;
-B) &lt;style src="estilos.css"&gt;&lt;style&gt;
-C) &lt;meta name="stylesheet" content="estilos.css"&gt;
+20. **¿Cuál es la forma correcta de enlazar a una hoja de estilo externa en HTML?**
+- [x] &lt;link rel="stylesheet" type="text/css" href="estilos.css"&gt;
+- [ ] &lt;style src="estilos.css"&gt;&lt;style&gt;
+- [ ] &lt;meta name="stylesheet" content="estilos.css"&gt;
