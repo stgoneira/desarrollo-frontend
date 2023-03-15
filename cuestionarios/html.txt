@@ -1,0 +1,121 @@
+¿Qué es el atributo "class" en HTML y para qué se utiliza?
+A. Es un atributo que se utiliza para añadir un estilo único a un elemento HTML.
+B. Es un atributo que se utiliza para agrupar elementos HTML y aplicarles un estilo común.
+C. Es un atributo que se utiliza para añadir efectos de animación a un elemento HTML.
+ANSWER: B 
+
+¿Qué es el atributo "id" en HTML y para qué se utiliza?
+A. Es un atributo que se utiliza para identificar un elemento HTML de manera única.
+B. Es un atributo que se utiliza para dar un estilo especial a un elemento HTML.
+C. Es un atributo que se utiliza para añadir efectos de sonido a un elemento HTML.
+ANSWER: A 
+
+¿Qué son las listas ordenadas en HTML?
+A. Son listas en las que los elementos no tienen un orden específico.
+B. Son listas en las que los elementos se presentan en orden numérico o alfabético.
+C. Son listas en las que los elementos se presentan en un orden determinado por el usuario.
+ANSWER: B 
+
+¿Qué es el elemento "div" en HTML?
+A. Un elemento que se utiliza para crear un enlace a otra página web.
+B. Un elemento que se utiliza para agrupar otros elementos HTML y aplicarles un estilo común.
+C. Un elemento que se utiliza para mostrar una imagen en una página web.
+ANSWER: B 
+
+¿Qué es el elemento "span" en HTML?
+A. Un elemento que se utiliza para mostrar una lista de elementos.
+B. Un elemento que se utiliza para aplicar un estilo específico a una sección de texto.
+C. Un elemento que se utiliza para crear un formulario web.
+ANSWER: B 
+
+¿Qué es el elemento "img" en HTML?
+A. Un elemento que se utiliza para mostrar una imagen en una página web.
+B. Un elemento que se utiliza para crear un enlace a otra página web.
+C. Un elemento que se utiliza para mostrar un video en una página web.
+ANSWER: A 
+
+¿Qué es el elemento "a" en HTML?
+A. Un elemento que se utiliza para crear un enlace a otra página web o a una sección de la misma página.
+B. Un elemento que se utiliza para mostrar una imagen en una página web.
+C. Un elemento que se utiliza para aplicar un estilo específico a una sección de texto.
+ANSWER: A 
+
+¿Qué son las tablas en HTML?
+A. Un elemento que se utiliza para agrupar otros elementos HTML y aplicarles un estilo común.
+B. Un elemento que se utiliza para mostrar una imagen en una página web.
+C. Un elemento que se utiliza para organizar datos en filas y columnas.
+ANSWER: C 
+
+¿Qué es el elemento "input" en HTML?
+A. Un elemento que se utiliza para crear una tabla en HTML.
+B. Un elemento que se utiliza para mostrar una imagen en una página web.
+C. Un elemento que se utiliza para crear campos de entrada de datos en un formulario web.
+ANSWER: C 
+
+¿Cuál es el atributo que se utiliza para especificar el tipo de campo de entrada en un elemento "input" en HTML?
+A. "class"
+B. "id"
+C. "type"
+D. "name"
+ANSWER: C 
+
+¿Qué es el elemento "textarea" en HTML?
+A. Un elemento que se utiliza para crear campos de entrada de datos en un formulario web.
+B. Un elemento que se utiliza para mostrar una imagen en una página web.
+C. Un elemento que se utiliza para crear un área de texto para introducir datos en un formulario web.
+ANSWER: C 
+
+¿Qué es el elemento "select" en HTML?
+A. Un elemento que se utiliza para crear una lista desplegable de opciones en un formulario web.
+B. Un elemento que se utiliza para mostrar una imagen en una página web.
+C. Un elemento que se utiliza para crear un campo de entrada de fecha en un formulario web.
+ANSWER: A 
+
+¿Cuál es el atributo que se utiliza para especificar el valor predeterminado de un elemento "select" en HTML?
+A. "name"
+B. "selected"
+C. "value"
+D. "style"
+ANSWER: B 
+
+¿Qué son los elementos semánticos en HTML?
+A. Son elementos que describen el contenido de la página de una manera más clara y específica, permitiendo que los motores de búsqueda y otros programas entiendan mejor la estructura y el significado de la página.
+B. Son elementos que se utilizan para aplicar estilos CSS a la página.
+C. Son elementos que se utilizan para mostrar imágenes y otros elementos visuales.
+ANSWER: A 
+
+¿Qué es la validación de HTML?
+A. Es el proceso de comprobar si el código HTML de una página cumple con las normas y estándares establecidos por el W3C.
+B. Es el proceso de comprobar si la página se muestra correctamente en diferentes navegadores y dispositivos.
+C. Es el proceso de comprobar si la página está libre de errores de programación.
+ANSWER: A 
+
+¿Qué es un documento HTML5 válido?
+A. Es un documento que cumple con los estándares de HTML4.
+B. Es un documento que cumple con los estándares de XHTML.
+C. Es un documento que cumple con los estándares de HTML5, según las normas y especificaciones establecidas por el W3C.
+ANSWER: C 
+
+¿Qué es el atributo "data-*" en HTML?
+A. Es un atributo especial que se utiliza para crear un enlace a otra página web.
+B. Es un atributo personalizado que se utiliza para almacenar información adicional sobre un elemento HTML.
+C. Es un atributo que se utiliza para definir la longitud y el ancho de un elemento.
+ANSWER: B 
+
+¿Cuál es la diferencia entre el atributo "name" y el atributo "id" en HTML?
+A. El atributo "name" se utiliza para identificar elementos de formulario y el atributo "id" se utiliza para identificar elementos de página.
+B. El atributo "name" se utiliza para identificar elementos de página y el atributo "id" se utiliza para identificar elementos de formulario.
+C. No hay diferencia, los dos atributos se pueden utilizar indistintamente.
+ANSWER: A 
+
+¿Cuál es la etiqueta HTML que se utiliza para crear un salto de línea?
+A. &lt;br&gt;
+B. &lt;hr&gt;
+C. &lt;p&gt;
+ANSWER: A 
+
+¿Cuál es la forma correcta de enlazar a una hoja de estilo externa en HTML?
+A. &lt;link rel="stylesheet" type="text/css" href="estilos.css"&gt;
+B. &lt;style src="estilos.css"&gt;&lt;style&gt;
+C. &lt;meta name="stylesheet" content="estilos.css"&gt;
+ANSWER: A 
