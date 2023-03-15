@@ -6,9 +6,9 @@
 - [ ] Es un atributo que se utiliza para añadir efectos de animación a un elemento HTML.
 
 ¿Qué es el atributo "id" en HTML y para qué se utiliza?
-*a) Es un atributo que se utiliza para identificar un elemento HTML de manera única.
-b) Es un atributo que se utiliza para dar un estilo especial a un elemento HTML.
-c) Es un atributo que se utiliza para añadir efectos de sonido a un elemento HTML.
+- [x] Es un atributo que se utiliza para identificar un elemento HTML de manera única.
+- [ ] Es un atributo que se utiliza para dar un estilo especial a un elemento HTML.
+- [ ] Es un atributo que se utiliza para añadir efectos de sonido a un elemento HTML.
 
 ¿Qué son las listas ordenadas en HTML?
 a) Son listas en las que los elementos no tienen un orden específico.
