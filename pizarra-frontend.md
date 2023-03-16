@@ -5,6 +5,18 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
+### Sesión 4 - 20230316
+
+- Comprendes los conceptos fundamentos de CSS Flexbox 
+- Aplicar flexbox en una página básica 
+- Contestar el Cuestionario HTML que está en la plataforma del AIET, antes del Domingo 
+- Comprender los conceptos detrás del Modelo de Cajas de CSS 
+
+
+
+
+
+
 ### Sesión 3 - 20230314
 
 - Comprender la sintaxis de CSS
@@ -16,11 +28,6 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 1. Actividad 3.1 
 2. Actividad 3.2  
-
-
-
-
-
 
 
 ### Sesión 2 - 20230309

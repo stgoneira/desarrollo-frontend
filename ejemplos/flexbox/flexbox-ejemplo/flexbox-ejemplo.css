@@ -1,0 +1,30 @@
+/* layout */ 
+#contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+article {
+    flex-grow: 0.8;
+}
+aside {
+    flex-grow: 0.2;
+}
+
+/* estilos */ 
+#contenedor-principal { 
+    background: yellow;
+}
+body {margin: 0; padding:0;}
+header, footer {
+    background: black;
+    color: white;
+}
+main {background: aqua;}
+main > article {background: red;}
+main > aside {background: green;}
