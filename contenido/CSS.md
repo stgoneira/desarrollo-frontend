@@ -310,13 +310,13 @@ Sin embargo, podemos cambiar el tipo de visualización interna utilizando valore
 
 CSS Flexbox es una técnica de diseño de CSS que permite crear diseños flexibles y adaptables a diferentes tamaños de pantalla y dispositivos. A continuación se resumen los fundamentos de CSS Flexbox:
 
-**Flex container**: La técnica Flexbox se basa en un contenedor (flex container) que contiene elementos flexibles (flex items).
+**Flex container**: La técnica Flexbox se basa en un contenedor (***flex container***) que contiene elementos flexibles (***flex items***).
 
-**Eje principal y eje transversal**: En un contenedor de Flexbox, se define un eje principal y un eje transversal. El eje principal es la dirección en la que se alinean los elementos flexibles, mientras que el eje transversal es perpendicular al eje principal.
+**Eje principal y eje transversal**: En un contenedor de Flexbox, se define un ***eje principal*** y un ***eje transversal***. El eje principal es la dirección en la que se alinean los elementos flexibles, mientras que el eje transversal es perpendicular al eje principal.
 
-**Propiedades del contenedor**: El contenedor Flexbox se puede personalizar mediante propiedades como display, flex-direction, justify-content y align-items. Estas propiedades permiten controlar la dirección, el alineamiento y la distribución de los elementos flexibles dentro del contenedor.
+**Propiedades del contenedor**: El contenedor Flexbox se puede personalizar mediante propiedades como ***display, flex-direction, justify-content y align-items***. Estas propiedades permiten controlar la dirección, el alineamiento y la distribución de los elementos flexibles dentro del contenedor.
 
-**Propiedades de los elementos flexibles**: Los elementos flexibles (flex items) también se pueden personalizar mediante propiedades como flex-grow, flex-shrink y flex-basis. Estas propiedades permiten controlar el tamaño y el comportamiento de los elementos flexibles dentro del contenedor.
+**Propiedades de los elementos flexibles**: Los elementos flexibles (***flex items***) también se pueden personalizar mediante propiedades como ***flex-grow, flex-shrink y flex-basis***. Estas propiedades permiten controlar el tamaño y el comportamiento de los elementos flexibles dentro del contenedor.
 
 **Diseño responsive**: Flexbox es una técnica de diseño responsive que permite crear diseños que se adaptan automáticamente a diferentes tamaños de pantalla y dispositivos.
 
@@ -327,6 +327,8 @@ CSS Flexbox es una técnica de diseño de CSS que permite crear diseños flexibl
 ![Ejes Flex](./../assets/ppt/flexbox-axes.jpg)
 
 En resumen, CSS Flexbox es una técnica de diseño de CSS que se basa en un contenedor de elementos flexibles. La dirección, el alineamiento y la distribución de los elementos flexibles se controlan mediante propiedades del contenedor, mientras que el tamaño y el comportamiento de los elementos flexibles se controlan mediante propiedades de los elementos. Flexbox es una técnica de diseño responsive que permite crear diseños adaptables a diferentes tamaños de pantalla y dispositivos, y se puede utilizar junto con otras técnicas de diseño de CSS, como CSS grid. 
+
+![CSS Flexbox Mindmap](./../assets/mindmaps/css-flexbox.svg)
 
 ### CSS Grid 
 

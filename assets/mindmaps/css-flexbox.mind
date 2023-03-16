@@ -1,0 +1,22 @@
+mindmap
+    root((CSS Flexbox))        
+        Elementos
+            Contenedor Flex
+            Items Flex
+        Ejes
+            Principal
+            Transversal
+        Direcciones
+            Row 
+            Column 
+            Row Reverse 
+            Column Reverse 
+        Propiedades Contenedor 
+            display 
+            flex direction 
+            justify content 
+            align items 
+        Propiedades Items 
+            flex grow 
+            flex shrink 
+            flex basis 
