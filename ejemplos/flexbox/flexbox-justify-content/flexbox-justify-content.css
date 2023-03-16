@@ -1,0 +1,24 @@
+.d-flex {
+    display: flex;
+    background-color: #ccc;
+}
+.f-grow-1 {
+    flex-grow: 1;
+}
+
+.h-200 {height: 200px;}
+
+/* sytles not related to Flex */ 
+h1,h2,h3, p, figure {text-align: center;}
+ul {list-style-position: inside;}
+h2 {color: blue;}
+h3 {color: blueviolet; margin-top: 50px;}
+hr {border: 5px double royalblue; margin: 50px 0;}
+nav {margin: 0 auto; width: 250px;background: #ccc; padding: 20px;}
+
+div.d-flex > div {
+    background-color: darksalmon;
+    border: 1px solid black;
+    padding: 10px;    
+}
+

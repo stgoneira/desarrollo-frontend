@@ -322,6 +322,8 @@ CSS Flexbox es una técnica de diseño de CSS que permite crear diseños flexibl
 
 **Anidamiento de contenedores**: Los contenedores Flexbox se pueden anidar para crear diseños más complejos y personalizados.
 
+![Términos Flex](./../assets/ppt/flex_terms.png)
+
 En resumen, CSS Flexbox es una técnica de diseño de CSS que se basa en un contenedor de elementos flexibles. La dirección, el alineamiento y la distribución de los elementos flexibles se controlan mediante propiedades del contenedor, mientras que el tamaño y el comportamiento de los elementos flexibles se controlan mediante propiedades de los elementos. Flexbox es una técnica de diseño responsive que permite crear diseños adaptables a diferentes tamaños de pantalla y dispositivos, y se puede utilizar junto con otras técnicas de diseño de CSS, como CSS grid. 
 
 ### CSS Grid 

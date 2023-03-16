@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Flexbox Summary</title>
+    <link rel="stylesheet" href="flexbox-justify-content.css">
+</head>
+<body>
+    <h1>Índice justify-content</h1>
+    <nav>
+        <ol>
+            <li><a href="#">flexbox-direction: row</a></li>
+            <li><a href="#row-reverse">flexbox-direction: row reverse</a></li>
+            <li><a href="#column">flexbox-direction: column</a></li>
+            <li><a href="#column-reverse">flexbox-direction: column-reverse</a></li>
+        </ol>
+    </nav>
+
+    <figure>
+        <img src="./../../../assets/ppt/flex_terms.png" alt="Conceptos Flex">
+        <figcaption>Conceptos Flex</figcaption>
+    </figure>
+
+    <h1>Flexbox Direction: Row;</h1>
+
+    <h2>Justify Content</h2>
+    <h3>justify-content: flex-start;</h3>
+    <div class="d-flex" style="justify-content: flex-start;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: flex-end;</h3>
+    <div class="d-flex" style="justify-content: flex-end;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: center;</h3>
+    <div class="d-flex" style="justify-content: center;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: space-between;</h3>
+    <p>Distribuye los elementos uniformemente. El primer elemento está al principio, el último está al final.</p>
+    <div class="d-flex" style="justify-content: space-between;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: space-around;</h3>
+    <p>Distribuye los elementos uniformemente. Tienen un espacio de <strong>medio tamaño</strong> en cada extremo.</p>
+    <div class="d-flex" style="justify-content: space-around;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: space-evenly;</h3>
+    <p>Distribuye los objetos uniformemente. Los elementos tienen el <strong>mismo espacio</strong> a su alrededor</p>
+    <div class="d-flex" style="justify-content: space-evenly;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <!-- ################################################ -->
+    <hr />
+    <h1 id="row-reverse">Flexbox Direction: Row Reverse;</h1>
+
+    <h2>Justify Content</h2>
+    <h3>justify-content: flex-start;</h3>
+    <div class="d-flex" style="flex-direction: row-reverse; justify-content: flex-start;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: flex-end;</h3>
+    <div class="d-flex" style="flex-direction: row-reverse;justify-content: flex-end;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: center;</h3>
+    <div class="d-flex" style="flex-direction: row-reverse;justify-content: center;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <!-- ###################################################### -->
+    <!-- ###################################################### -->
+    <!-- ###################################################### -->
+    <hr />
+    <hr />
+    <hr />
+
+    <h1 id="column">Flexbox Direction: Column;</h1>
+    <p>A cada contenedor se le asignó <strong>height: 200px;</strong></p>
+
+    <h2>Justify Content</h2>
+    <p>Dependiendo de flexbox-direction el eje principal (main) cambia. Si es column el eje principal sería el eje Y, por el otro lado si es row el eje principal sería el eje X.</p>
+    
+    <h3>justify-content: flex-start;</h3>
+    <div class="d-flex h-200" style="flex-direction: column; justify-content: flex-start;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: flex-end;</h3>
+    <div class="d-flex h-200" style="flex-direction: column; justify-content: flex-end;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: center;</h3>
+    <div class="d-flex h-200" style="flex-direction: column; justify-content: center;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: space-between;</h3>
+    <div class="d-flex h-200" style="flex-direction: column; justify-content: space-between;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: space-around;</h3>
+    <div class="d-flex h-200" style="flex-direction: column; justify-content: space-around;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: space-evenly;</h3>
+    <div class="d-flex h-200" style="flex-direction: column; justify-content: space-evenly;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <!-- ###################################################### -->
+    <!-- ###################################################### -->
+    <!-- ###################################################### -->
+    <hr />
+    <hr />
+    <hr />
+
+    <h1 id="column-reverse">Flexbox Direction: Column-Reverse;</h1>    
+
+    <h2>Justify Content</h2>
+    
+    <h3>justify-content: flex-start;</h3>
+    <div class="d-flex h-200" style="flex-direction: column-reverse; justify-content: flex-start;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: flex-end;</h3>
+    <div class="d-flex h-200" style="flex-direction: column-reverse; justify-content: flex-end;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: center;</h3>
+    <div class="d-flex h-200" style="flex-direction: column-reverse; justify-content: center;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: space-between;</h3>
+    <div class="d-flex h-200" style="flex-direction: column-reverse; justify-content: space-between;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: space-around;</h3>
+    <div class="d-flex h-200" style="flex-direction: column-reverse; justify-content: space-around;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: space-evenly;</h3>
+    <div class="d-flex h-200" style="flex-direction: column-reverse; justify-content: space-evenly;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+</body>
+</html>

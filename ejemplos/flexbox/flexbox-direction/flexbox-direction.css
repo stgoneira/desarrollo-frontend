@@ -1,0 +1,13 @@
+.d-flex {
+    display: flex;
+}
+
+/* sytles not related to Flex */ 
+h2 {color: blue;}
+h3 {color: blueviolet;}
+
+div.d-flex > div {
+    background-color: darksalmon;
+    border: 1px solid black;
+    padding: 10px;    
+}

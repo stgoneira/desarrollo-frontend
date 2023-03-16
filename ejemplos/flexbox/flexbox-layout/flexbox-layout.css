@@ -1,0 +1,19 @@
+* {margin: 0; padding: 0;}
+header {
+    background-color: crimson;
+}
+footer {
+    background-color: black;
+    color: wheat;
+}
+nav {
+    background-color: coral;
+    flex: 0.2;
+}
+main {
+    background-color: olive;
+    flex: 0.8;
+}
+#cuerpo {
+    display: flex;    
+}
