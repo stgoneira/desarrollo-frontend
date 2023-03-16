@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Flexbox Align Items</title>
+    <link rel="stylesheet" href="flexbox-align-items.css">
+</head>
+<body>
+    <h1>Índice align-items</h1>
+    <nav>
+        <ol>            
+            <li><a href="#flex-direction-row">flexbox-direction: row;</a></li>
+            <li><a href="#flex-direction-column">flexbox-direction: column;</a></li>
+        </ol>
+    </nav>
+
+    <figure>
+        <img src="./../../../assets/ppt/flex_terms.png" alt="Conceptos Flex">
+        <figcaption>Conceptos Flex</figcaption>
+    </figure>
+
+    <h1 id="flex-direction-row">Flexbox Direction: Row;</h1>
+
+    <h2>Align Items</h2>
+    <h3>align-items: flex-start;</h3>
+    <div class="d-flex h-200" style="align-items: flex-start;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>align-items: flex-end;</h3>
+    <div class="d-flex h-200" style="align-items: flex-end;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>align-items: center;</h3>
+    <div class="d-flex h-200" style="align-items: center;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+    
+    <h3>align-items: baseline;</h3>
+    <div class="d-flex h-200" style="align-items: baseline;">
+        <div style="height: 50px; font-size: 10px;">Flex Item 1</div>
+        <div style="height: 70px; font-size: 30px;">Flex Item 2</div>
+        <div style="height: 30px; font-size: 20px;">Flex Item 3</div>
+    </div>
+    <h3 style="margin-top: 0;">align-items: flex-start; (comparativa con flex-start)</h3>
+    <div class="d-flex h-200" style="align-items: flex-start;">
+        <div style="height: 50px; font-size: 10px;">Flex Item 1</div>
+        <div style="height: 70px; font-size: 30px;">Flex Item 2</div>
+        <div style="height: 30px; font-size: 20px;">Flex Item 3</div>
+    </div>
+
+    <h3>align-items: stretch;</h3>
+    <div class="d-flex h-200" style="align-items: stretch;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+    <!-- ################################################ -->
+    <hr />
+    <h1 id="flex-direction-column">Flexbox Direction: Column;</h1>
+
+    <h2>Align Items</h2>
+    <h3>align-items: flex-start;</h3>
+    <div class="d-flex h-200" style="align-items: flex-start; flex-direction: column;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>align-items: flex-end;</h3>
+    <div class="d-flex h-200" style="align-items: flex-end; flex-direction: column;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <h3>align-items: center;</h3>
+    <div class="d-flex h-200" style="align-items: center; flex-direction: column;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <!-- por revisar 
+    <h3>align-items: baseline;</h3>
+    <div class="d-flex h-200" style="align-items: baseline; flex-direction: column;">
+        <div>Flex 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3Flex Item 3</div>
+    </div>
+    <h3 style="margin-top: 0;">align-items: flex-start; (comparativa con flex-start)</h3>
+    <div class="d-flex h-200" style="align-items: flex-start; flex-direction: column;">
+        <div>Flex 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3Flex Item 3</div>
+    </div>
+    -->
+
+    <h3>align-items: stretch;</h3>
+    <div class="d-flex h-200" style="align-items: stretch; flex-direction: column;">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+</body>
+</html>
