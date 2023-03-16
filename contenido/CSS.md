@@ -366,3 +366,7 @@ En resumen, CSS Grid es una técnica de diseño de CSS que se basa en un contene
 - https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors
 
 - [Lista Colores Oficiales CSS](https://www.w3.org/TR/css-color-3/#svg-color)
+
+- https://developer.mozilla.org/en/docs/Learn/CSS/Building_blocks/Styling_tables
+
+
