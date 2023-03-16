@@ -1,0 +1,43 @@
+/* layout */
+#contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+main > section {
+    flex-grow: 0.8;
+}
+main > aside {
+    flex-grow: 0.2;
+}
+
+/* estilos */
+body, #contenedor-principal {
+    margin: 0;
+    padding: 0;
+}
+#contenedor-principal {
+    background-color: #ccc;
+}
+header {
+    background-color: black;
+    color: white;
+}
+header a {
+    color: yellow;
+}
+footer {
+    background-color: black;
+    color: white;
+}
+main > section {
+    background-color: aquamarine;
+}
+main > aside {
+    background-color: darkorange;
+}
