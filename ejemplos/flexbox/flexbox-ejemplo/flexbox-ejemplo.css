@@ -15,7 +15,17 @@ article {
 aside {
     flex-grow: 0.2;
 }
+header {
+    display: flex;
+    flex-direction: row;
+}
+header > h1{
+    flex-grow: 0.9;
+}
 
+header > nav {
+    flex-grow: 0.1;
+}
 /* estilos */ 
 #contenedor-principal { 
     background: yellow;
