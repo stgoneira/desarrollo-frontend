@@ -17,7 +17,7 @@ Agregar detalles adicionales: Si es necesario, se pueden agregar detalles adicio
 
 Es importante tener en cuenta que cada historia de usuario debe ser lo suficientemente pequeña para ser completada en una o dos iteraciones (sprints). Además, las historias de usuario deben ser escritas en colaboración con el equipo de desarrollo y el propietario del producto para garantizar que sean realistas y factibles.
 
-# Ejemplos de historias de usuario 
+## Ejemplos de historias de usuario 
 
 1. Como cliente del banco, quiero poder acceder a una pantalla de inicio clara y atractiva para tener una experiencia agradable al ingresar al sitio web.
 
@@ -36,6 +36,16 @@ Es importante tener en cuenta que cada historia de usuario debe ser lo suficient
 1. Como cliente del banco, quiero poder transferir dinero entre mis cuentas de manera segura y fácil para realizar mis transacciones bancarias de manera efectiva.
 
 1. Como usuario, quiero poder acceder a una página de "Trabaja con nosotros" para conocer las oportunidades de trabajo en el banco y enviar mi currículum.
+
+## Integración con Github Projects 
+
+1. Durante la planificación de Sprint, el equipo revisa las historias de usuario y las divide en tareas más pequeñas.
+1. Cada tarea se agrega al Backlog del Sprint y se estima el tiempo que se necesita para completarla.
+1. Las tareas se organizan en el Sprint Backlog en orden de prioridad y se asignan a los miembros del equipo responsables de completarlas.
+1. Durante el Sprint, el equipo trabaja en las tareas y se reúne diariamente para la reunión de seguimiento diario de 15 minutos (Daily Scrum) para actualizar el progreso y resolver cualquier impedimento.
+1. Cuando se completa una tarea, se verifica que cumpla con los criterios de aceptación de la historia de usuario correspondiente.
+1. Cuando se completan todas las tareas relacionadas con una historia de usuario, se verifica que cumpla con los criterios de aceptación de la historia de usuario y se marca como "hecha".
+1. Al final del Sprint, el equipo revisa las historias de usuario completadas y se prepara para la siguiente iteración.
 
 ## Lectura 
 
