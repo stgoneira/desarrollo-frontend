@@ -116,7 +116,9 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 1. Comprender los conceptos básicos de las herramientas de control de versiones: Los estudiantes deben entender los conceptos fundamentales de Git, como los repositorios, los commits, las ramas y las fusiones (merges), para poder colaborar eficazmente en proyectos de desarrollo web.
 1. Utilizar herramientas de colaboración como Github Projects: Los estudiantes deben aprender cómo utilizar Github Projects para crear un plan de proyecto eficaz y organizar las tareas y las historias de usuario. Además, deben entender cómo colaborar con otros miembros del equipo a través de Github Projects y cómo mantener una comunicación clara y eficaz.
 1. Entender cómo trabajar con Pull Requests y revisión de código: Los estudiantes deben aprender cómo utilizar Pull Requests para proponer cambios en un proyecto y cómo colaborar en la revisión de código. Además, deben comprender cómo utilizar comentarios para sugerir mejoras y cómo colaborar en el proceso de fusión de ramas.
-
+1. Configurar su proyecto de curso usando un Repositorioj, un Proyecto y los Colaboradores. 
+1. Desarrollar las Historias de Usuario de su Proyecto.
+1. Desarrollar las Tareas para el 1er Sprint 
 
 
 #### recursos 
