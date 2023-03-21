@@ -47,6 +47,23 @@ Es importante tener en cuenta que cada historia de usuario debe ser lo suficient
 1. Cuando se completan todas las tareas relacionadas con una historia de usuario, se verifica que cumpla con los criterios de aceptación de la historia de usuario y se marca como "hecha".
 1. Al final del Sprint, el equipo revisa las historias de usuario completadas y se prepara para la siguiente iteración.
 
+Es recomendable también usar alguna nomenclatura para distinguir qué "issues" son historias de usuarios y cuáles son tareas o requerimientos específicos. Por ejemplo:
+
+**HU-001**: Como persona con discapacidad visual, quiero poder conocer las iniciativas y consejos expuestos en el Blog del banco utilizando un lector de pantalla.
+
+**HU-001-TA-001**: Investigación y análisis de las mejores prácticas para el diseño y desarrollo de interfaces de usuario accesibles.
+
+**HU-001-TA-002**: Diseño y desarrollo de una interfaz de usuario que sea accesible a través de un lector de pantalla, con etiquetas de texto alternativas y un contraste adecuado.
+
+**HU-001-TA-003**: Pruebas de accesibilidad de la interfaz de usuario para asegurarse de que cumpla con los requisitos de accesibilidad y sea fácil de usar para personas con discapacidad visual en ***wave.webaim.org***.
+
+**HU-001-TA-004**: Iteración y refinamiento de la interfaz de usuario en función de los comentarios de los usuarios y de los resultados de las pruebas de accesibilidad.
+
+
 ## Lectura 
 
 https://www.atlassian.com/es/agile/project-management/user-stories
+
+## Herramientas 
+
+![Validador Accesibilidad](https://wave.webaim.org/)
