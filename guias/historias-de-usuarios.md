@@ -17,7 +17,7 @@ Agregar detalles adicionales: Si es necesario, se pueden agregar detalles adicio
 
 Es importante tener en cuenta que cada historia de usuario debe ser lo suficientemente pequeña para ser completada en una o dos iteraciones (sprints). Además, las historias de usuario deben ser escritas en colaboración con el equipo de desarrollo y el propietario del producto para garantizar que sean realistas y factibles.
 
-# Ejemplos de requerimientos 
+# Ejemplos de historias de usuario 
 
 1. Como cliente del banco, quiero poder acceder a una pantalla de inicio clara y atractiva para tener una experiencia agradable al ingresar al sitio web.
 
