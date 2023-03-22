@@ -5,16 +5,32 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
+### Sesión 5 - 20230321
+
+#### Objetivos 
+1. Comprender los conceptos básicos de las herramientas de control de versiones: Los estudiantes deben entender los conceptos fundamentales de Git, como los repositorios, los commits, las ramas y las fusiones (merges), para poder colaborar eficazmente en proyectos de desarrollo web.
+2. Utilizar herramientas de colaboración como Github Projects: Los estudiantes deben aprender cómo utilizar Github Projects para crear un plan de proyecto eficaz y organizar las tareas y las historias de usuario. Además, deben entender cómo colaborar con otros miembros del equipo a través de Github Projects y cómo mantener una comunicación clara y eficaz.
+3. Entender cómo trabajar con Pull Requests y revisión de código: Los estudiantes deben aprender cómo utilizar Pull Requests para proponer cambios en un proyecto y cómo colaborar en la revisión de código. Además, deben comprender cómo utilizar comentarios para sugerir mejoras y cómo colaborar en el proceso de fusión de ramas.
+4. Configurar su proyecto de curso usando un Repositorio, un Proyecto y los Colaboradores. 
+
+
+#### Tareas 
+
+1. Desarrollar las Historias de Usuario de su Proyecto.
+2. Desarrollar las Tareas para el 1er Sprint 
+
+
+
+
+
+
+
 ### Sesión 4 - 20230316
 
 - Comprendes los conceptos fundamentos de CSS Flexbox 
 - Aplicar flexbox en una página básica 
 - Contestar el Cuestionario HTML que está en la plataforma del AIET, antes del Domingo 
 - Comprender los conceptos detrás del Modelo de Cajas de CSS 
-
-
-
-
 
 
 ### Sesión 3 - 20230314
