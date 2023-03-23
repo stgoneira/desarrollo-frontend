@@ -1,0 +1,18 @@
+* {margin:0; padding: 0;}
+
+/* layout */
+#main-container {
+    display: grid;    
+    min-height: 100vh;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px; /* cannot use "fr" unit */
+}
+
+/* estilos */
+#main-container {background-color: gold;}
+header {background-color: red;}
+footer {background-color: green;}
+header > nav {background-color: blue;}
+nav {background-color: brown;}
+aside {background-color: aquamarine;}
+main {background-color: fuchsia;}
