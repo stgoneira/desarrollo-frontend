@@ -5,6 +5,27 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
+### Sesión 6 - 20230323
+
+#### Objetivos 
+- Definir el proyecto a desarrollar durante el Curso de Frontend 
+- Configurar el Repositorio y Proyecto de Github a utilizar
+- Comenzar con el 1er Sprint del proyecto 
+
+#### Tareas 
+- Desarrollar actividad 5.0
+- Desarrollar actividad 5.1
+- Desarrollar actividad 5.2
+
+
+
+
+
+
+
+
+
+
 ### Sesión 5 - 20230321
 
 #### Objetivos 
