@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />    
+    <title>Layout 1 - CSS Grid</title>
+    <style>
+        header, nav, article, aside, footer {background-color: yellow;}
+        body {            
+            margin: 0; padding: 0;
+            display: grid;
+            grid-auto-rows: minmax(100px, auto);
+            gap: 10px;
+            grid-template-areas: 
+            "h h h h h h"
+            "n a a a a s"
+            "n f f f f f"
+            ;
+        }
+        header {grid-area: h;}
+        nav {grid-area: n;}
+        article {grid-area: a;}
+        aside {grid-area: s;}
+        footer {grid-area: f;}
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <article>Article</article>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</body>
+</html>

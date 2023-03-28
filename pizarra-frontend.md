@@ -6,24 +6,25 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 ## SESIONES
 
 ### Sesión 6 - 20230323
+#### Objetivos 
+- Identificar los distintos métodos para Layouts utilizados en la historia del desarrollo Web 
+- Comprender los conceptos básicos de CSS Grid 
+- Identificar las diferencias entre CSS Grid y Flexbox 
+- Aplicar CSS Grid para solucionar distintos requerimientos de layouts
 
+#### Tareas 
+- Desarrollar Actividad 6.1 
+
+
+### Sesión 6 - 20230323
 #### Objetivos 
 - Definir el proyecto a desarrollar durante el Curso de Frontend 
 - Configurar el Repositorio y Proyecto de Github a utilizar
 - Comenzar con el 1er Sprint del proyecto 
-
 #### Tareas 
 - Desarrollar actividad 5.0
 - Desarrollar actividad 5.1
 - Desarrollar actividad 5.2
-
-
-
-
-
-
-
-
 
 
 ### Sesión 5 - 20230321
@@ -34,16 +35,9 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 3. Entender cómo trabajar con Pull Requests y revisión de código: Los estudiantes deben aprender cómo utilizar Pull Requests para proponer cambios en un proyecto y cómo colaborar en la revisión de código. Además, deben comprender cómo utilizar comentarios para sugerir mejoras y cómo colaborar en el proceso de fusión de ramas.
 4. Configurar su proyecto de curso usando un Repositorio, un Proyecto y los Colaboradores. 
 
-
 #### Tareas 
-
 1. Desarrollar las Historias de Usuario de su Proyecto.
 2. Desarrollar las Tareas para el 1er Sprint 
-
-
-
-
-
 
 
 ### Sesión 4 - 20230316
@@ -79,9 +73,6 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 Completar ejercicios de HTML del 2.1 hasta el 2.5 en la plataforma del AIEP. 
 
 Plazo hasta el fin de semana. 
-
-
-
 
 
 ### Sesión 1 - 20230307
