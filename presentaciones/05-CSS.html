@@ -594,7 +594,98 @@ Permite alinear los [Flexbox Items](#) de manera independiente.
 
 ===
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+![CSS Grid Container](../assets/ppt/css-grid-container.png)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+![CSS Grid Conceptos Básicos](../assets/ppt/css-grid-basics.png)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ![CSS Grid Conceptos](../assets/ppt/css-grid-concepts.png)
+
+Note: We define rows and columns on our grid with the grid-template-rows and grid-template-columns properties. These define grid tracks. A grid track is the space between any two adjacent lines on the grid. The image below shows a highlighted track – this is the first-row track in our grid.
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Definiendo un Grid](#)
+
+- Los Grid Tracks (filas o columnas) se pueden definir usando cualquier unidad de medida. 
+```css 
+.container {
+	display: grid;
+	grid-template-columns: 200px 400px 200px;
+	grid-template-rows: 200px 20em;
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Unidad fr](#)
+
+- Grid también introduce una unidad de longitud adicional para ayudarnos a crear vías de cuadrícula flexibles. 
+- La nueva unidad fr representa una fracción del espacio disponible en el contenedor de la cuadrícula. 
+
+```css
+ .container2 {
+	display: grid;
+	/* La siguiente definición de cuadrícula crearía tres vias con el mismo ancho, que se expanden y se encogen
+	de acuerdo el espacio disponible. */
+	grid-template-columns: 1fr 1fr 1fr;
+}
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Posicionamiento con Líneas](#)
+
+[Propiedades:](#)
+- grid-column-start
+- grid-column-end 
+- grid-row-start 
+- grid-row-end 
+
+[Shorthands:](#)
+- grid-column
+- grid-row
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ayuda Herramientas Desarrollo](#)
+
+![CSS Grid Devtools](../assets/ppt/css-grid-inspector.png)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ejemplo](#)
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Posicionamiento con Áreas](#)
+
+[Contenedor](#)
+- grid-template-areas 
+
+[Grid Item](#)
+- grid-area
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ejemplo](#)
+```css 
+.container {
+	display: grid;
+	grid-template-areas:
+	  "header header"
+	  "sidebar content"
+	  "footer footer";
+	grid-template-columns: 1fr 3fr;
+	gap: 20px;
+  }  
+  header { grid-area: header; }  
+  article {	grid-area: content; } 
+  aside { grid-area: sidebar; }  
+  footer { grid-area: footer; }
+```
 
 
 ---

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />    
+    <title>CSS Grid Basics</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-rows: 100px minmax(200px, auto); /* el patrón se repite: 1era fila 100px, 2da fila fn minmax() y así sucesivamente */
+            column-gap: 10px;
+            row-gap: 20px;
+        }
+        .contenedor > div {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div>Uno</div>
+        <div>Dos</div>
+        <div>Tres</div>
+        <div>Cuatro</div>
+        <div>Cinco</div>
+        <div>Seis</div>
+        <div>Siete</div>
+        <div>Ocho</div>
+        <div>Nueve</div>
+        <div>Diez</div>
+    </div>
+</body>
+</html>

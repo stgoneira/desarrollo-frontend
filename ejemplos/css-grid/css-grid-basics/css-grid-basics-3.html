@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />    
+    <title>CSS Grid Basics</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(10, 1fr); 
+            gap: 10px;
+        }
+        .contenedor > div:nth-child(5) {
+            grid-column: 1 / 5;
+            grid-row: 2 / 5;
+        }
+        .contenedor > div {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div>Uno</div>
+        <div>Dos</div>
+        <div>Tres</div>
+        <div>Cuatro</div>
+        <div>Cinco</div>
+        <div>Seis</div>
+        <div>Siete</div>
+        <div>Ocho</div>
+        <div>Nueve</div>
+        <div>Diez</div>
+    </div>
+</body>
+</html>

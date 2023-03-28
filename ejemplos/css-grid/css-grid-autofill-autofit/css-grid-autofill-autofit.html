@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />    
+    <title>CSS Grid - Autofill</title>
+    <style>
+        .container1 {
+            display: grid;
+            background-color: springgreen;
+            /* grid-template-columns: repeat(auto-fill, 200px); */ /* sin la función quedan de 200px reales */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
+        }        
+
+        .container2 {
+            display: grid;
+            background-color: springgreen;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+        }        
+        div > div:nth-child(1) {background-color: lavenderblush;}
+        div > div:nth-child(2) {background-color: darksalmon;}
+        div > div:nth-child(3) {background-color: lightseagreen;}
+    </style>
+</head>
+<body>
+    <h2>Auto-fill</h2>
+    <div class="container1">
+        <div>Uno</div>
+        <div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <div>Tres</div>
+    </div>
+
+    <h2>Auto-fit</h2>
+    <div class="container2">
+        <div>Uno</div>
+        <div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <div>Tres</div>
+    </div>
+</body>
+</html>
