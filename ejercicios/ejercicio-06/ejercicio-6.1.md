@@ -11,3 +11,5 @@ Aplicar CSS Grid para solucionar distintos requerimientos de layouts.
 5. Asegúrese de que sean visibles a través de Github Pages 
 6. Genere un archivo llamado **indice.html** donde estén los vínculos hacia cada uno de los 10 Layouts. 
 7. Comparta el enlace de Github Pages para visualizar el índice 
+
+![10 Layouts en Imagen](./ejercicio-6.1.png)
