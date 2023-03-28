@@ -306,6 +306,17 @@ Sin embargo, podemos cambiar el tipo de visualización interna utilizando valore
 
 ## Layouts usando CSS 
 
+### Historia 
+
+**Diseño con tablas (1990s - principios de los 2000s)**: En los primeros días de la web, el diseño se hacía principalmente con tablas HTML. Esta técnica se utilizó para crear diseños de varias columnas y para alinear elementos en la página. Sin embargo, el diseño con tablas tenía sus limitaciones y no era una solución escalable o flexible para el diseño web.
+
+**Diseño con floats (principios de los 2000s - mediados de los 2010s)**: A medida que la web se volvió más compleja, los diseñadores comenzaron a utilizar floats para crear diseños más complejos y flexibles. Esta técnica permitía a los diseñadores crear diseños de varias columnas y posicionar elementos con precisión en la página. Sin embargo, el diseño con floats también tenía sus limitaciones y podía ser difícil de mantener y escalable.
+
+**Diseño con flexbox (mediados de los 2010s - presente)**: A medida que la web evolucionaba, los diseñadores comenzaron a adoptar flexbox, una tecnología de diseño más avanzada que permitía a los diseñadores crear diseños más flexibles y escalables. Flexbox permitía a los diseñadores alinear y distribuir elementos en la página de manera más fácil y eficiente. Además, el diseño con flexbox es más fácil de mantener y actualizar que el diseño con floats.
+
+**Diseño con CSS Grid (finales de los 2010s - presente)**: CSS Grid es una tecnología de diseño avanzada que se utiliza para crear diseños complejos y flexibles en la web. Con CSS Grid, los diseñadores pueden crear diseños de varias columnas y filas, y posicionar elementos con precisión en la página. CSS Grid también es una tecnología muy escalable y fácil de mantener, lo que lo convierte en una opción popular para los diseñadores web de hoy en día.
+
+
 ### CSS Flexbox 
 
 CSS Flexbox es una técnica de diseño de CSS que permite crear diseños flexibles y adaptables a diferentes tamaños de pantalla y dispositivos. A continuación se resumen los fundamentos de CSS Flexbox:
