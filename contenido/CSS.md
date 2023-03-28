@@ -308,6 +308,8 @@ Sin embargo, podemos cambiar el tipo de visualización interna utilizando valore
 
 ### Historia 
 
+![Historia Evolución CSS Layouts](./../assets/timelines/css-layout-timeline.svg)
+
 **Diseño con tablas (1990s - principios de los 2000s)**: En los primeros días de la web, el diseño se hacía principalmente con tablas HTML. Esta técnica se utilizó para crear diseños de varias columnas y para alinear elementos en la página. Sin embargo, el diseño con tablas tenía sus limitaciones y no era una solución escalable o flexible para el diseño web.
 
 **Diseño con floats (principios de los 2000s - mediados de los 2014s)**: A medida que la web se volvió más compleja, los diseñadores comenzaron a utilizar floats para crear diseños más complejos y flexibles. Esta técnica permitía a los diseñadores crear diseños de varias columnas y posicionar elementos con precisión en la página. Sin embargo, el diseño con floats también tenía sus limitaciones y podía ser difícil de mantener y escalable.
