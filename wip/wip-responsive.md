@@ -14,3 +14,17 @@
 
 **Accesibilidad en dispositivos móviles**: Es importante seguir las mejores prácticas de accesibilidad y utilizar herramientas como ARIA y los atributos HTML5 para mejorar la accesibilidad. También se pueden utilizar herramientas como Axe o Lighthouse para realizar pruebas de accesibilidad en el sitio web y garantizar que sea accesible para todos los usuarios.
 
+## Herramientas
+Existen varias herramientas gratuitas en Internet para probar la responsividad de un sitio web. A continuación, se presentan algunas opciones:
+
+1. **Google Mobile-Friendly Test**: Esta herramienta de Google permite comprobar si un sitio web es fácilmente usable en dispositivos móviles. Simplemente hay que ingresar la URL del sitio y se obtendrá un informe detallado con recomendaciones para mejorar su responsividad.
+
+2. **Responsinator**: Este sitio web es una herramienta muy útil para comprobar la responsividad de un sitio en diferentes dispositivos. Al ingresar la URL del sitio, se mostrará cómo se ve en diferentes tamaños de pantalla, desde smartphones hasta tablets.
+
+3. **BrowserStack**: Esta herramienta ofrece una versión gratuita para probar la responsividad de un sitio web en diferentes navegadores y dispositivos. Permite emular diferentes dispositivos y sistemas operativos para comprobar cómo se ve y funciona un sitio en cada uno de ellos.
+
+4. **Am I Responsive?**: Esta herramienta permite ver cómo se ve un sitio web en diferentes tamaños de pantalla, desde un ordenador de escritorio hasta un smartphone. Simplemente hay que ingresar la URL del sitio y esperar a que se cargue.
+
+5. **Screenfly**: Esta herramienta permite previsualizar cómo se ve un sitio web en diferentes tamaños de pantalla y dispositivos. Ofrece varias opciones para elegir, desde smartphones hasta televisores.
+
+Estas son solo algunas opciones de las muchas herramientas gratuitas que hay disponibles en Internet para probar la responsividad de un sitio web. Es importante probar la responsividad de un sitio en diferentes dispositivos y tamaños de pantalla para asegurarse de que se vea y funcione bien en todos ellos.
