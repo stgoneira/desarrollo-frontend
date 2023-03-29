@@ -5,15 +5,16 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
-### Sesión 6 - 20230323
+### Sesión 7 - 20230328
 #### Objetivos 
+
 - Identificar los distintos métodos para Layouts utilizados en la historia del desarrollo Web 
 - Comprender los conceptos básicos de CSS Grid 
 - Identificar las diferencias entre CSS Grid y Flexbox 
 - Aplicar CSS Grid para solucionar distintos requerimientos de layouts
 
 #### Tareas 
-- Desarrollar Actividad 6.1 
+- Desarrollar Actividad 7.1 
 
 
 ### Sesión 6 - 20230323
