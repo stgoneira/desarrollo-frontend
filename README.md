@@ -25,6 +25,8 @@
 
 ## Planificación 
 
+![Imagen Planificación por Semana](./assets/timelines/planificacion-timeline.svg)
+
 ### Semana 1:  
 **Clase 1:** Introducción al desarrollo web y al curso.  
 **Clase 2:** Fundamentos de HTML - etiquetas, atributos, estructura básica de una página web.
