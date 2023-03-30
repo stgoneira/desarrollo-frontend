@@ -1,0 +1,7 @@
+La línea <meta http-equiv="X-UA-Compatible" content="IE=edge"> se utiliza para indicar al navegador que debe usar la última versión del motor de renderizado de Internet Explorer disponible en el equipo del usuario, en lugar de usar una versión anterior en modo de compatibilidad.
+
+El atributo "http-equiv" se utiliza para especificar un valor de cabecera HTTP que se debe enviar con la respuesta de la página. En este caso, se utiliza el valor "X-UA-Compatible" para indicar al navegador que debe usar el modo de compatibilidad más reciente de Internet Explorer.
+
+El valor "IE=edge" se utiliza para indicar que el navegador debe utilizar la última versión del motor de renderizado disponible, en lugar de entrar en el modo de compatibilidad para versiones anteriores de Internet Explorer.
+
+Esta línea de código es comúnmente utilizada en las páginas web para asegurarse de que el sitio web se renderice correctamente en Internet Explorer, especialmente en versiones antiguas del navegador que pueden no ser compatibles con las últimas tecnologías web. Sin embargo, su uso ha disminuido en los últimos años ya que Internet Explorer ha sido reemplazado por Microsoft Edge y otros navegadores modernos que son más compatibles con los estándares web actuales.

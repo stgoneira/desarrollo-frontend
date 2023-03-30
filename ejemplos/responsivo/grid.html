@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid - Responsivo</title>
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            gap: 10px;            
+        }
+        header {grid-area: h;}
+        nav {grid-area: n;}
+        main {grid-area: m;}
+        aside {grid-area: a;}
+        footer {grid-area: f;}    
+
+        @media screen and (min-width: 600px) {
+            body {
+                grid-template-areas: 
+                    "h h h h"
+                    "n n n n"
+                    "m m m a"
+                    "f f f f"
+                ;
+            }
+        }        
+
+        /* colores */
+        header {background-color: blueviolet;}
+        nav {background-color: darksalmon;}
+        main {background-color: lightseagreen;}
+        aside {background-color: saddlebrown;}
+        footer {background-color: springgreen;}
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <main>Main</main>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</body>
+</html>
