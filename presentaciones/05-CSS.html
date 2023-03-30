@@ -704,6 +704,41 @@ Note: We define rows and columns on our grid with the grid-template-rows and gri
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Pruebas de Responsividad](#)
+
+- Browser Dev Tools 
+- Android y Chrome - Remote Debugging
+- [Responsinator](http://www.responsinator.com/)
+- [Sauce Labs](https://saucelabs.com/)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Browser Dev Tools](#)
+
+![Browser Dev Tools Responsive](../assets/ppt/browser-dev-tools-responsive.png)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Android y Chrome - Remote Debugging](#)
+
+- Consiste en poder utilizar las herramientas de Desarrollo de Manera Remota
+- Podremos visualizar el contenido
+- Modificar el código 
+- Monitorear la red y muchas más características 
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+### [Android y Chrome - Remote Debugging](#)
+
+1. Instalar [ADB](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
+2. Activar el "Debugging USB o Wifi" en Android 
+3. Conectar Android vía USB en el PC Remoto. O por Wifi "adb connect 192.168.1.x:<port>
+4. Checar con "adb devices"
+5. Abrir Chrome en PC Remoto e ir a "chrome://inspect/#devices"
+6. Apretar inspeccionar para el TAB deseado 
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Diseño Adaptable](#)
 
 ---
@@ -712,7 +747,56 @@ Note: We define rows and columns on our grid with the grid-template-rows and gri
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
-## [Imágenes y Videos Responsivos](#)
+## [Imágenes Responsivas](#)
+
+- Se recomienda utilizar etiquetas [PICTURE y SOURCE](#)
+- El atributo [MEDIA](#) nos permite expresar la condición 
+- Podemos [redimensionar](#) manualmente las fotografías 
+- Es recomendable utilizar [WEBP](https://caniuse.com/?search=webp) o [AVIF](https://caniuse.com/?search=avif) como formato en navegadores que lo soporten para mejorar la velocidad de carga
+- O utilizar alguna plataforma como [IMGIX](https://imgix.com/) que hace estas tareas automáticamente
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ejemplo](#)
+
+```html
+<picture>
+	<source 
+	  media="(max-width: 599px)" 
+	  srcset="pizza-beach-400.jpg" 
+	/>        
+	<source 
+	  media="(min-width: 600px)" 
+	  srcset="pizza-beach-600.jpg" 
+	/>
+	<img src="pizza-beach-650.jpg" alt="Pizza en la playa" />
+</picture>
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ejemplo 2](#)
+
+```html
+<picture>
+	<source type="image/avif" srcset="image.avif" />
+	<source type="image/webp" srcset="image.webp" />
+	<img src="image.jpg" alt="Descripción de la imagen" />
+</picture>
+```
+
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/mdGYWRG?default-tab=html%2Cresult" -->
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Recursos](#)
+
+- https://squoosh.app/ Permite cambiar formato, redimensionar, comparar y otras operaciones a través de una interface web.
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Videos Responsivos](#)
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
@@ -721,10 +805,6 @@ Note: We define rows and columns on our grid with the grid-template-rows and gri
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Carga de Recursos](#)
-
----
-<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
-## [Pruebas de Responsividad](#)
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
