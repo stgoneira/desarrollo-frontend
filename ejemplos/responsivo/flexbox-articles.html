@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Articles</title>
+    <style>
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .article {
+            flex-basis: 30%;
+            padding: 10px;
+        }
+        @media (max-width: 600px) {
+            .article {
+                flex-basis: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="articles">
+        <div class="article">
+          <h2>Artículo 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="article">
+          <h2>Artículo 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="article">
+          <h2>Artículo 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+</body>
+</html>

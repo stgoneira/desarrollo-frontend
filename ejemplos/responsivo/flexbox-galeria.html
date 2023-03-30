@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Galería</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gallery div {
+            flex-basis: calc(33.33% - 10px);
+            margin: 5px;
+        }
+        @media (max-width: 600px) {
+            .gallery div {
+                flex-basis: calc(50% - 10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="gallery">
+        <div>
+            <img src="https://picsum.photos/300/100">
+        </div>
+        <div>
+            <img src="https://picsum.photos/320/100">
+        </div>
+        <div>
+            <img src="https://picsum.photos/350/100">
+        </div>
+        <div>
+            <img src="https://picsum.photos/200/100">
+        </div>
+        <div>
+            <img src="https://picsum.photos/180/150">
+        </div>        
+    </div>      
+
+</body>
+</html>
