@@ -186,7 +186,7 @@ The CSS Media Query gives you a way to apply CSS only when the browser and devic
 Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width. Media queries are used for the following:
 
 - To conditionally apply styles with the CSS @media and @import at-rules.
-- To target specific media for the <style>, <link>, <source>, and other HTML elements with the media= attribute.
+- To target specific media for the STYLE, LINK, SOURCE, and other HTML elements with the media= attribute.
 - To test and monitor media states using the Window.matchMedia() and EventTarget.addEventListener() methods.
 
 ```css
@@ -345,11 +345,13 @@ The feature we tend to detect most often in order to create responsive designs (
 
 One well-supported media feature is orientation, which allows us to test for **portrait or landscape** mode. To change the body text color if the device is in landscape orientation, use the following media query.
 
+```css
 @media (orientation: landscape) {
   body {
     color: rebeccapurple;
   }
 }
+```
 
 
 ### Use of pointing devices

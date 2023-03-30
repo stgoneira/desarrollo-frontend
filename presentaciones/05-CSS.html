@@ -704,6 +704,19 @@ Note: We define rows and columns on our grid with the grid-template-rows and gri
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Responsive Web Design (RWD)](#)
+
+- Enfoque para que las páginas web se [visualicen bien](#) en [distintos tamaños y resoluciones](#)
+- Por ejemplo que el contenido se adapte si lo estoy viendo en una [tablet, teléfono, televisión, reloj](#), etc.
+- El término NO apunta a una tecnología distinta, sino es un [conjunto de buenas prácticas](#)
+- Tenemos varios recursos como:
+  * Media Queries 
+  * Unidades de Medida Relativas
+  * Nuevas especificaciones como CSS Grid y Flexbox
+  * Herramientas de Desarrollo 
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Pruebas de Responsividad](#)
 
 - Browser Dev Tools 
@@ -739,13 +752,141 @@ Note: We define rows and columns on our grid with the grid-template-rows and gri
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
-## [Diseño Adaptable](#)
+## [Valores y Unidades en CSS](#)
 
-
+[Ver documentación](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Media Queries](#)
+
+- Permite aplicar código CSS selectivamente según una o varias condiciones 
+- Puedes aplicarlo en el código CSS 
+  * [@media](#) 
+  * [@import](#) 
+- y en etiquetas [HTML](#) como:
+  * [link](#) 
+  * [source](#) 
+  * entre otras a través del atributo [MEDIA](#)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Sintaxis](#)
+- El [media type](#), le dice al Browser qué tipo de dispositivo es, por ej: pantalla o impresora
+- [media-feature-rule](#) se refiere a las reglas o condiciones bajos la que se ejecutará el código CSS 
+
+```css
+@media media-type and (media-feature-rule) {
+  /* CSS rules go here */
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ejemplo](#)
+
+El uso más común es para generar [Breakpoints](#) en relación al [ancho](#) del [Viewport](#)
+
+```css
+@media screen and (min-width: 600px) {
+	article {
+		display: flex;
+	}
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Más Ejemplos](#)
+
+Etiquetas HTML:
+```html
+<link href="estilos.css" rel="stylesheet">
+<link media="(min-width: 1200px)" href="estilos-grandes.css" rel="stylesheet">
+```
+En CSS:
+```css
+/* Importar un archivo de estilo solo para pantallas grandes */
+@import url("estilos-grandes.css") only screen and (min-width: 1200px);
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Media Types](#)
+
+- all
+- print
+- screen
+
+```css
+/* oculta la publicidad cuando se imprime */
+@media print {
+	.publicidad { display: none; }
+	/* cambio colores para mejorar el contraste con una hoja blanca */
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Media Features](#)
+
+- [width](#) (width, min-width, max-width): Ancho del Viewport incluyendo la barra de scroll
+- [height](#): Alto del Viewport
+- [orientation](#): Orientación del Viewport
+- [prefers-color-scheme](#): Detecta si está usando un esquema de colores light o dark
+- Muchos más
+
+[Listado completo](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_features)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ejemplos](#)
+
+```css
+@media (orientation: landscape) {
+  body { color: rebeccapurple; }
+}
+/* Estilos para modo claro */
+body {
+  background-color: white;
+  color: black;
+}
+/* Estilos para modo oscuro */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Lógica](#)
+
+- Podemos utilizar operadores [AND, OR y NOT](#):
+  * El operador AND en CSS se escribe tal cual: [AND](#) 
+  * El operador OR en CSS se escribe como una [coma (,)](#)
+  * El operador NOt en CSS se escribe tal cual: [NOT](#)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ejemplos](#)
+
+```css
+/* AND */ 
+@media screen and (min-width: 600px) and (orientation: landscape) {
+  body { color: blue; }
+}
+/* OR */
+@media screen and (min-width: 600px), screen and (orientation: landscape) {
+	body { color: blue;	}
+}
+/* NOT */
+@media not all and (orientation: landscape) {
+	body { color: blue;	}
+}
+```
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
@@ -757,6 +898,19 @@ Note: We define rows and columns on our grid with the grid-template-rows and gri
 - Podemos [redimensionar](#) manualmente las fotografías 
 - Es recomendable utilizar [WEBP](https://caniuse.com/?search=webp) o [AVIF](https://caniuse.com/?search=avif) como formato en navegadores que lo soporten para mejorar la velocidad de carga
 - O utilizar alguna plataforma como [IMGIX](https://imgix.com/) que hace estas tareas automáticamente
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [CSS](#)
+Para asegurar que la imagen no será más grande que el contenedor responsivo, podemos usar el siguiente código:
+
+```css
+img,
+picture,
+video {
+  max-width: 100%;
+}
+```
 
 ===
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
@@ -796,6 +950,15 @@ Note: We define rows and columns on our grid with the grid-template-rows and gri
 ## [Recursos](#)
 
 - https://squoosh.app/ Permite cambiar formato, redimensionar, comparar y otras operaciones a través de una interface web.
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Layouts Responsivos - Grid](#)
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Layouts Responsivos - Flexbox](#)
+
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
