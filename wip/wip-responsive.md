@@ -1,3 +1,5 @@
+Fuente: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+
 **Diseño web adaptable**: Se refiere a crear sitios web que se ajusten automáticamente al tamaño de la pantalla y la resolución del dispositivo en el que se están visualizando. Para lograr esto se utilizan las Media Queries y el diseño fluido. Para facilitar su implementación, se recomienda el uso de frameworks como Bootstrap, Foundation, Bulma o Tailwind CSS.
 
 **Media Queries**: Permiten aplicar diferentes estilos según las características del dispositivo en el que se está visualizando la página. Es una herramienta esencial para crear diseños responsivos. Para su uso, se deben definir breakpoints o puntos de quiebre que determinen cuándo se aplicarán los cambios de estilo. Las Media Queries se pueden utilizar en conjunto con otras herramientas como los frameworks CSS mencionados anteriormente.
@@ -158,3 +160,254 @@ By setting width=device-width you are overriding a mobile device's default, like
 
 So you should always include the viewport meta tag in the head of your documents.
 
+## Media Queries 
+
+The CSS Media Query gives you a way to apply CSS only when the browser and device environment matches a rule that you specify, for example "viewport is wider than 480 pixels". Media queries are a key part of responsive web design, as they allow you to create different layouts depending on the size of the viewport, but they can also be used to detect other things about the environment your site is running on, for example whether the user is using a touchscreen rather than a mouse. In this lesson you will first learn about the syntax used in media queries, and then move on to use them in a working example showing how a simple design might be made responsive.
+
+### Using Media Queries
+
+Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width. Media queries are used for the following:
+
+- To conditionally apply styles with the CSS @media and @import at-rules.
+- To target specific media for the <style>, <link>, <source>, and other HTML elements with the media= attribute.
+- To test and monitor media states using the Window.matchMedia() and EventTarget.addEventListener() methods.
+
+```css
+/* Definir un estilo para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  body { font-size: 14px; }
+}
+
+/* Importar un archivo de estilo solo para pantallas grandes */
+@import url("estilos-grandes.css") only screen and (min-width: 1200px);
+
+```
+
+```html
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="estilos-grandes.css" media="screen and (min-width: 1200px)">
+```
+
+```html
+<picture>
+  <source media="(min-width: 800px)" srcset="imagen-grande.png">
+  <source media="(min-width: 400px)" srcset="imagen-mediana.png">
+  <img src="imagen-pequena.png" alt="Una imagen">
+</picture>
+```
+
+### Syntax 
+
+A media query is composed of an optional media type and any number of media feature expressions, which may optionally be combined in various ways using logical operators (and, or, not). Media queries are case-insensitive.
+
+```css
+@media media-type and (media-feature-rule) {
+  /* CSS rules go here */
+}
+```
+
+It consists of:
+
+-  A media type, which tells the browser what kind of media this code is for (e.g. print, or screen).
+- A media expression, which is a rule, or test that must be passed for the contained CSS to be applied.
+- A set of CSS rules that will be applied if the test passes and the media type is correct.
+
+### Media types
+The possible types of media you can specify are:
+
+- all
+- print
+- screen
+
+```css
+@media print {
+  body {
+    font-size: 12pt;
+  }
+}
+```
+
+You can also target multiple devices. For instance, this @media rule uses two media queries to target both screen and print devices:
+```css
+@media screen, print {
+  /* … */
+}
+```
+
+**Note**: Media types are optional; if you do not indicate a media type in your media query, then the media query will default to being for all media types.
+
+#### Deprecados  
+
+**Note**: CSS2.1 and Media Queries 3 defined several additional media types (tty, tv, projection, handheld, braille, embossed, and aural), but they were deprecated in Media Queries 4 and shouldn't be used.
+
+En CSS, varios media types han sido deprecados en las Media Queries. Los media types deprecados son aquellos que han sido eliminados de la especificación CSS y, por lo tanto, ya no son recomendados para su uso en Media Queries.
+
+A continuación, te menciono algunos media types que han sido deprecados en CSS:
+
+**aural**: Este media type se utilizaba para hojas de estilo de voz, para dispositivos que leían el contenido en voz alta. Fue eliminado de la especificación CSS.
+
+**braille**: Este media type se utilizaba para hojas de estilo en Braille, para dispositivos de salida Braille. Fue eliminado de la especificación CSS.
+
+**embossed**: Este media type se utilizaba para hojas de estilo en relieve, para dispositivos de salida en relieve. Fue eliminado de la especificación CSS.
+
+**handheld**: Este media type se utilizaba para hojas de estilo para dispositivos móviles. Fue eliminado de la especificación CSS.
+
+Es importante tener en cuenta que, aunque estos media types han sido deprecados, todavía se pueden encontrar en algunos navegadores y dispositivos antiguos. Por lo tanto, si tienes que diseñar para dispositivos antiguos, es posible que aún debas utilizar algunos de estos media types.
+
+### Media Features 
+
+Media features describe a specific characteristic of the user agent, output device, or environment:
+
+Fuente: https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_features 
+
+1. **width (width, min-width, max-width)**: Width of the viewport including width of scrollbar.
+1. **height**: Height of the viewport. 
+1. **orientation**: Orientation of the viewport.
+1. **prefers-color-scheme**: Detect if the user prefers a light or dark color scheme. Added in Media Queries Level 5. 
+1. **scripting**: Detects whether scripting (i.e. JavaScript) is available. Added in Media Queries Level 5.
+1. **resolution**: Pixel density of the output device.
+1. **any-hover**: Does any available input mechanism allow the user to hover over elements? Added in Media Queries Level 4.
+1. **any-pointer**: Is any available input mechanism a pointing device, and if so, how accurate is it? Added in Media Queries Level 4.
+1. **aspect-ratio**: Width-to-height aspect ratio of the viewport
+1. **color**: Number of bits per color component of the output device, or zero if the device isn't color
+1. **color-gamut**: Approximate range of colors that are supported by the user agent and output device. Added in Media Queries Level 4.
+1. **color-index**: Number of entries in the output device's color lookup table, or zero if the device does not use such a table 
+1. **display-mode**: The display mode of the application, as specified in the web app manifest's display member. Defined in the Web App Manifest spec
+1. **dynamic-range**: Combination of brightness, contrast ratio, and color depth that are supported by the user agent and the output device. Added in Media Queries Level 5. 
+1. **forced-colors**: Detect whether user agent restricts color palette. Added in Media Queries Level 5. 
+1. **grid**: Does the device use a grid or bitmap screen? 
+1. **hover**: Does the primary input mechanism allow the user to hover over elements? Added in Media Queries Level 4. 
+1. **inverted-colors**: Is the user agent or underlying OS inverting colors? Added in Media Queries Level 5. 
+1. **monochrome**: Bits per pixel in the output device's monochrome frame buffer, or zero if the device isn't monochrome. 
+1. **overflow-block**: How does the output device handle content that overflows the viewport along the block axis? Added in Media Queries Level 4.
+1. **overflow-inline**: Can content that overflows the viewport along the inline axis be scrolled? Added in Media Queries Level 4. 
+1. **pointer**: Is the primary input mechanism a pointing device, and if so, how accurate is it? Added in Media Queries Level 4. 
+1. **prefers-contrast**: Detects if the user has requested the system increase or decrease the amount of contrast between adjacent colors. Added in Media Queries Level 5.
+1. **prefers-reduced-motion**: The user prefers less motion on the page. Added in Media Queries Level 5.
+1. **update**: How frequently the output device can modify the appearance of content. Added in Media Queries Level 4.
+1. **video-dynamic-range**: Combination of brightness, contrast ratio, and color depth that are supported by the video plane of user agent and the output device. Added in Media Queries Level 5.
+1. **device-aspect-ratio (Deprecated)**:
+1. **device-height (Deprecated)**:
+1. **device-width (Deprecated)**:
+
+If you create a media feature query without specifying a value, the nested styles will be used as long as the feature's value is not zero (or none, in Level 4). For example, this CSS will apply to any device with a color screen:
+```css
+@media (color) {
+  /* … */
+}
+```
+
+```css
+/* Nested within another conditional at-rule */
+@supports (display: flex) {
+  @media screen and (min-width: 900px) {
+    article {
+      display: flex;
+    }
+  }
+}
+```
+
+### Width and height
+
+The feature we tend to detect most often in order to create responsive designs (and that has widespread browser support) is viewport width, and we can apply CSS if the viewport is above or below a certain width — or an exact width — using the min-width, max-width, and width media features.
+
+- width
+- min-width
+- max-width 
+
+```css
+@media screen and (max-width: 600px) {
+  body {
+    color: blue;
+  }
+}
+```
+
+### Orientación 
+
+One well-supported media feature is orientation, which allows us to test for **portrait or landscape** mode. To change the body text color if the device is in landscape orientation, use the following media query.
+
+@media (orientation: landscape) {
+  body {
+    color: rebeccapurple;
+  }
+}
+
+
+### Use of pointing devices
+
+As part of the Level 4 specification, the hover media feature was introduced. This feature means you can test if the user has the ability to hover over an element, which essentially means they are using some kind of pointing device; touchscreen and keyboard navigation does not hover.
+
+```css
+@media (hover: hover) {
+  body {
+    color: rebeccapurple;
+  }
+}
+```
+
+Also in Level 4 is the pointer media feature. This takes three possible values, none, fine and coarse. A **fine** pointer is something like a mouse or trackpad. It enables the user to precisely target a small area. A **coarse** pointer is your finger on a touchscreen. The value **none** means the user has no pointing device; perhaps they are navigating with the keyboard only or with voice commands.
+
+```css
+@media (pointer: coarse) {
+  /* Estilos para dispositivos con pantallas táctiles */
+  /* Por ejemplo: */
+  body {
+    background-color: red;
+  }
+}
+
+@media (pointer: fine) {
+  /* Estilos para dispositivos sin pantallas táctiles */
+  /* Por ejemplo: */
+  body {
+    background-color: blue;
+  }
+}
+```
+
+Using pointer can help you to design better interfaces that respond to the type of interaction a user is having with a screen. For example, you could create larger hit areas if you know that the user is interacting with the device as a touchscreen.
+
+### More complex media queries
+
+With all of the different possible media queries, you may want to combine them, or create lists of queries — any of which could be matched.
+
+#### "and" logic in media queries
+To combine media features you can use and in much the same way as we have used and above to combine a media type and feature. For example, we might want to test for a min-width and orientation. The body text will only be blue if the viewport is at least 600 pixels wide and the device is in landscape mode.
+
+```css
+@media screen and (min-width: 600px) and (orientation: landscape) {
+  body {
+    color: blue;
+  }
+}
+```
+
+#### "or" logic in media queries
+
+If you have a set of queries, any of which could match, then you can comma separate these queries. In the below example the text will be blue if the viewport is at least 600 pixels wide OR the device is in landscape orientation. If either of these things are true the query matches.
+
+```css
+@media screen and (min-width: 600px), screen and (orientation: landscape) {
+  body {
+    color: blue;
+  }
+}
+```
+
+#### "not" logic in media queries
+
+You can negate an entire media query by using the not operator. This reverses the meaning of the entire media query. Therefore in this next example the text will only be blue if the orientation is portrait.
+
+```css
+@media not all and (orientation: landscape) {
+  body {
+    color: blue;
+  }
+}
+```
+
+### Do you really need a media query?
+
+Flexbox, Grid, and multi-column layout all give you ways to create flexible and even responsive components without the need for a media query.
