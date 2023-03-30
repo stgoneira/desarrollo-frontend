@@ -144,6 +144,9 @@ This means that we only need to specify the font size for the heading once, rath
 
 ## The viewport meta tag
 
+Fuente: https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag 
+Fuente: https://experienceleague.adobe.com/docs/target/using/experiences/vec/mobile-viewports.html 
+
 If you look at the HTML source of a responsive page, you will usually see the following <meta> tag in the <head> of the document.
 
 ```html
@@ -159,6 +162,20 @@ This meta tag exists because when smartphones first arrived, most sites were not
 By setting width=device-width you are overriding a mobile device's default, like Apple's default width=980px, with the actual width of the device. Without it, your responsive design with breakpoints and media queries may not work as intended on mobile browsers. If you've got a narrow screen layout that kicks in at 480px viewport width or less, but the device is saying it is 980px wide, that user will not see your narrow screen layout.
 
 So you should always include the viewport meta tag in the head of your documents.
+
+The basic properties of the "viewport" META tag include:
+
+- **width**: Controls the size of the viewport. It can be set to a specific number of pixels like width=600 or to the special value device-width, which is 100vw, or 100% of the viewport width. Minimum: 1. Maximum: 10000. Negative values: ignored.
+- **height**: Controls the size of the viewport. It can be set to a specific number of pixels like height=400 or to the special value device-height, which is 100vh, or 100% of the viewport height. Minimum: 1. Maximum: 10000. Negative values: ignored.
+- **initial-scale**: Controls the zoom level when the page is first loaded. Minimum: 0.1. Maximum: 10. Default: 1. Negative values: ignored.
+- **minimum-scale**: Controls how much zoom out is allowed on the page. Minimum: 0.1. Maximum: 10. Default: 0.1. Negative values: ignored.
+- **maximum-scale**: Controls how much zoom in is allowed on the page. Any value less than 3 fails accessibility. Minimum: 0.1. Maximum: 10. Default: 10. Negative values: ignored.
+- **user-scalable**: Controls whether zoom in and zoom out actions are allowed on the page. Valid values: 0, 1, yes, or no. Default: 1, which is the same as yes. Setting the value to 0, which is the same as no, is against Web Content Accessibility Guidelines (WCAG).
+- **interactive-widget**: Specifies the effect that interactive UI widgets, such as a virtual keyboard, have on the page's viewports. Valid values: resizes-visual, resizes-content, or overlays-content. Default: resizes-visual.
+
+
+**Warning**: Usage of user-scalable=no can cause accessibility issues to users with visual impairments such as low vision. WCAG requires a minimum of 2× scaling; however, the best practice is to enable a 5× zoom.
+
 
 ## Media Queries 
 
@@ -411,3 +428,13 @@ You can negate an entire media query by using the not operator. This reverses th
 ### Do you really need a media query?
 
 Flexbox, Grid, and multi-column layout all give you ways to create flexible and even responsive components without the need for a media query.
+
+
+## Screen Density
+
+Screen density
+Screen resolutions have risen to the size that individual pixels are indistinguishable by the human eye. For example, smartphones often have small screens with resolutions upwards of 1920–1080 pixels (≈400dpi). Because of this, many browsers can display their pages in a smaller physical size by translating multiple hardware pixels for each CSS "pixel". Initially, this caused usability and readability problems on many touch-optimized websites.
+
+On high dpi screens, pages with initial-scale=1 will effectively be zoomed by browsers. Their text will be smooth and crisp, but their bitmap images may not take advantage of the full screen resolution. To get sharper images on these screens, web developers may want to design images – or whole layouts – at a higher scale than their final size and then scale them down using CSS or viewport properties.
+
+The default pixel ratio depends on the display density. On a display with density less than 200dpi, the ratio is 1.0. On displays with density between 200 and 300dpi, the ratio is 1.5. For displays with density over 300dpi, the ratio is the integer floor (density/150dpi). Note that the default ratio is true only when the viewport scale equals 1. Otherwise, the relationship between CSS pixels and device pixels depends on the current zoom level.
