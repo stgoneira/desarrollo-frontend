@@ -973,6 +973,104 @@ video {
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Layouts Responsivos - Grid](#)
 
+- Podemos trabajar de 2 maneras dependiendo el contexto:
+  * Usando [Media Queries](#) 
+  * Con ayuda de las funciones [repeat()](#) y [minmax()](#) y los valores [auto-fill](#) y [auto-fit](#)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Usando Media Queries](#)
+
+```html
+&lt;body&gt;
+    &lt;header&gt;Header&lt;/header&gt;
+    &lt;nav&gt;Nav&lt;/nav&gt;
+    &lt;main&gt;Main&lt;/main&gt;
+    &lt;aside&gt;Aside&lt;/aside&gt;
+    &lt;footer&gt;Footer&lt;/footer&gt;
+&lt;/body&gt;
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Usando Media Queries](#)
+
+```css
+body {	
+	display: grid;
+	gap: 10px;                        
+}
+@media screen and (min-width: 600px) {            
+	body {
+		grid-template-areas: 
+			"h h h h"
+			"n n n n"
+			"m m m a"
+			"f f f f"
+		;
+	}
+	header {grid-area: h;}
+	nav {grid-area: n;}
+	main {grid-area: m;}
+	aside {grid-area: a;}
+	footer {grid-area: f;}
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Usando Media Queries](#)
+
+[Ver Ejemplo](https://stgoneira.github.io/desarrollo-frontend/ejemplos/responsivo/grid.html)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Usando auto-fill y auto-fit](#)
+
+Es una solución útil cuando se trabaja con [galerías de imágenes](#), [cards](#) o elementos similares
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Usando auto-fill y auto-fit](#)
+
+```html
+&lt;h2&gt;Auto-fill&lt;/h2&gt;
+&lt;div class=&quot;container1&quot;&gt;
+	&lt;div&gt;Uno&lt;/div&gt;
+	&lt;div&gt; Lorem Ipsum is simply dummy text of...&lt;/div&gt;
+	&lt;div&gt;Tres&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Auto-fit&lt;/h2&gt;
+&lt;div class=&quot;container2&quot;&gt;
+	&lt;div&gt;Uno&lt;/div&gt;
+	&lt;div&gt; Lorem Ipsum is simply dummy text of...&lt;/div&gt;
+	&lt;div&gt;Tres&lt;/div&gt;
+&lt;/div&gt;
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Usando auto-fill y auto-fit](#)
+
+```css 
+.container1 {
+	display: grid;	
+	/* grid-template-columns: repeat(auto-fill, 200px); */ /* sin la función quedan de 200px reales */
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
+} 
+.container2 {
+	display: grid;	
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+}        
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Usando auto-fill y auto-fit](#)
+
+[Ver Ejemplo](https://stgoneira.github.io/desarrollo-frontend/ejemplos/css-grid/css-grid-autofill-autofit/css-grid-autofill-autofit.html)
+
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Layouts Responsivos - Flexbox](#)
