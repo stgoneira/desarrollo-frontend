@@ -430,6 +430,10 @@ You can negate an entire media query by using the not operator. This reverses th
 Flexbox, Grid, and multi-column layout all give you ways to create flexible and even responsive components without the need for a media query.
 
 
+## Media queries in JavaScript
+In JavaScript, you can use the Window.matchMedia() method to test the window against a media query. You can also use MediaQueryList.addListener() to be notified whenever the state of a query changes. With this functionality, your site or app can respond to changes in the device configuration, orientation, or state.
+
+
 ## Screen Density
 
 Screen density
