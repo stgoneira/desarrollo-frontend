@@ -9,16 +9,16 @@
     <!-- Source: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
     <h1>Imagen Responsiva</h1>
     <ol>
-        <li>Utilizamos la plataforma IMGIX para redimensionar automáticamente las imágenes</li>
-        <li>Utilizando el atributo SRCSET y SIZES de la etiqueta IMG logramos que se cargue en el mejor tamaño según la pantalla</li>
+        <li>Utilizamos la plataforma IMGIX para redimensionar automáticamente las imágenes</li>        
+        <li>Utilizamos la etiqueta PICTURE, SOURCE e IMG con el atributo MEDIA</li>
         <li>Podemos probar la ejecución correcta modificando el tamaño del browser y utilizando las herramientas de desarrollo del Browser (Network)</li>
-    </ol>
-    <img
-        srcset="https://hcsdev.imgix.net/img/pizza-beach.jpg?w=400&auto=format,enhance 400w, https://hcsdev.imgix.net/img/pizza-beach.jpg?w=800&auto=format,enhance 800w" 
-        sizes="(max-width: 600px) 400px, 800px"
-        src="https://hcsdev.imgix.net/img/pizza-beach.jpg?w=800&auto=format,enhance" 
-        alt="Pizza en la playa"         
-    />
+    </ol>    
+
+    <picture>
+        <source media="(max-width: 599px)" srcset="https://hcsdev.imgix.net/img/pizza-beach.jpg?w=400&auto=format,enhance" />
+        <source media="(min-width: 600px)" srcset="https://hcsdev.imgix.net/img/pizza-beach.jpg?w=600&auto=format,enhance" />
+        <img src="https://hcsdev.imgix.net/img/pizza-beach.jpg?w=650&auto=format,enhance" alt="Pizza en la playa" />
+    </picture>
 
     <script>
         document.write("<br />");
@@ -33,11 +33,5 @@
         document.write(" x ");
         document.write( document.querySelector('html').clientHeight );
     </script>
-
-    <picture>
-        <source media="(max-width: 999px)" srcset="https://hcsdev.imgix.net/img/pizza-beach.jpg?w=700&auto=format,enhance" />
-        <source media="(min-width: 1000px)" srcset="https://hcsdev.imgix.net/img/pizza-beach.jpg?w=900&auto=format,enhance" />
-        <img src="https://hcsdev.imgix.net/img/pizza-beach.jpg?w=1000&auto=format,enhance" alt="Pizza en la playa" />
-    </picture>
 </body>
 </html>
