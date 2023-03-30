@@ -1075,6 +1075,42 @@ Es una solución útil cuando se trabaja con [galerías de imágenes](#), [cards
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Layouts Responsivos - Flexbox](#)
 
+Si está disponible CSS Grid generalmente Flexbox se utiliza para elementos interiores como menúes u elementos similares
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Menú Flexbox](#)
+
+```html
+&lt;nav class=&quot;navbar&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;Inicio&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Acerca&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Contacto&lt;/a&gt;
+&lt;/nav&gt;
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Menú Flexbox](#)
+
+```css
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+@media (max-width: 600px) {
+	.navbar {
+		flex-direction: column;
+	}
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Menú Flexbox](#)
+
+[Ver Ejemplo](https://stgoneira.github.io/desarrollo-frontend/ejemplos/responsivo/flexbox-menu.html)
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
