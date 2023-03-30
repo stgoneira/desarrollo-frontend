@@ -1112,6 +1112,93 @@ Si está disponible CSS Grid generalmente Flexbox se utiliza para elementos inte
 
 [Ver Ejemplo](https://stgoneira.github.io/desarrollo-frontend/ejemplos/responsivo/flexbox-menu.html)
 
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Artículos con Flexbox](#)
+
+```html
+&lt;div class=&quot;articles&quot;&gt;
+&lt;div class=&quot;article&quot;&gt;
+  &lt;h2&gt;Artículo 1&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;article&quot;&gt;
+  &lt;h2&gt;Artículo 2&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;article&quot;&gt;
+  &lt;h2&gt;Artículo 3&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Artículos con Flexbox](#)
+
+```css
+.articles {
+	display: flex;
+	flex-wrap: wrap;
+}
+.article {
+	flex-basis: 30%;
+	padding: 10px;
+}
+@media (max-width: 600px) {
+	.article {
+		flex-basis: 90%;
+	}
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Artículos con Flexbox](#)
+
+[Ver Ejemplo](https://stgoneira.github.io/desarrollo-frontend/ejemplos/responsivo/flexbox-articles.html)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Galería Flexbox](#)
+
+```html
+&lt;div class=&quot;gallery&quot;&gt;
+	&lt;div&gt; &lt;img src=&quot;https://placehold.co/400&quot;&gt; &lt;/div&gt;
+	&lt;div&gt; &lt;img src=&quot;https://placehold.co/400&quot;&gt; &lt;/div&gt;
+	&lt;div&gt; &lt;img src=&quot;https://placehold.co/400&quot;&gt; &lt;/div&gt;
+	&lt;div&gt; &lt;img src=&quot;https://placehold.co/400&quot;&gt; &lt;/div&gt;
+	&lt;div&gt; &lt;img src=&quot;https://placehold.co/400&quot;&gt; &lt;/div&gt;        
+&lt;/div&gt;      
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Galería Flexbox](#)
+
+```css
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+.gallery div {
+	flex-basis: calc(33.33% - 10px);
+	margin: 5px;
+}
+@media (max-width: 600px) {
+	.gallery div {
+		flex-basis: calc(50% - 10px);
+	}
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Galería Flexbox](#)
+
+[Ver Ejemplo](https://stgoneira.github.io/desarrollo-frontend/ejemplos/responsivo/flexbox-galeria.html)
+
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Videos Responsivos](#)
