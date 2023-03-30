@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />    
+    <title>Imágenes Responsivas</title>
+</head>
+<body>
+    <h1>Imagen Responsiva</h1>
+    <ol>
+        <li>Utilizamos la plataforma IMGIX para redimensionar automáticamente las imágenes</li>
+        <li>Utilizando el atributo SRCSET y SIZES de la etiqueta IMG logramos que se cargue en el mejor tamaño según la pantalla</li>
+        <li>Podemos probar la ejecución correcta modificando el tamaño del browser y utilizando las herramientas de desarrollo del Browser (Network)</li>
+    </ol>
+    <img
+        srcset="https://hcsdev.imgix.net/img/pizza-beach.jpg?w=400&auto=format,enhance 400w, https://hcsdev.imgix.net/img/pizza-beach.jpg?w=800&auto=format,enhance 800w" 
+        sizes="(max-width: 600px) 400px, 800px"
+        src="https://hcsdev.imgix.net/img/pizza-beach.jpg?w=800&auto=format,enhance" 
+        alt="Pizza en la playa"         
+    />
+
+    <script>
+        document.write( document.querySelector('html').clientWidth );
+        document.write(" x ");
+        document.write( document.querySelector('html').clientHeight );
+    </script>
+</body>
+</html>
