@@ -27,6 +27,7 @@ En resumen, JavaScript es un lenguaje de programación que se utiliza ampliament
 - Liviano
 - Interpretado o compilado justo a tiempo (Just in Time)
 - First-Class Functions (funciones tratadas como una variable)
+- Dynamic Typing (tipos dinámicos)
 - Prototype-based Programming (estilo de POO donde las clases no están explícitamente definidas)
 
 - Web APIs
@@ -148,6 +149,144 @@ Usa defer cuando:
 
 En resumen, el atributo async se utiliza para scripts independientes y no críticos, mientras que el atributo defer se utiliza para scripts críticos y que dependen del contenido de la página. Es importante elegir cuidadosamente entre ambos atributos para optimizar el rendimiento y la experiencia del usuario.
 
+
+## Comentarios 
+
+```javascript
+// comentario de una línea
+
+/* 
+comentario
+multi-línea
+lorem ipsum
+*/
+```
+
+## Tipos de Datos 
+
+### Números
+### Strings
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings
+### Booleanos
+### Arrays 
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays
+### Objetos
+
+
+## Variables y Constantes 
+
+## Var Hoisting 
+
+Hoisting no longer works with let. If we changed var to let in the above example, it would fail with an error. This is a good thing — declaring a variable after you initialize it results in confusing, harder to understand code.
+
+Secondly, when you use var, you can declare the same variable as many times as you like, but with let you can't. The following would work:
+
+For these reasons and more, we recommend that you use let in your code, rather than var. Unless you are explicitly writing support for ancient browsers, there is no longer any reason to use var as all modern browsers have supported let since 2015.
+
+## Funciones 
+
+Functions are reusable blocks of code that you can write once and run again and again, saving the need to keep repeating code all the time.
+
+```javascript
+function checkGuess() {
+  alert('I am a placeholder');
+}
+```
+
+## Funciones Pre
+
+```javascript
+console.log()
+document.write()
+alert()
+prompt()
+confirm()
+```
+
+## Operadores 
+
+### Matemáticos
+
++
+-
+*
+/
+%
+**
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math
+
+### Comparación 
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math
+
+===
+!==
+==
+<
+>
+
+### lógicos
+
+and 
+or 
+
+
+## Estructuras Condicionales 
+
+
+## Loops 
+
+
+## Eventos 
+
+
+## Web APIs
+Fuente: https://developer.mozilla.org/en-US/docs/Web/API
+
+### Console API 
+https://developer.mozilla.org/en-US/docs/Web/API/Console_API
+
+### DOM API 
+https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
+
+### Storage API 
+https://developer.mozilla.org/en-US/docs/Web/API/Storage_API
+
+
+## Debugger 
+
+https://code.visualstudio.com/docs/editor/variables-reference
+
+```javascript
+{ 
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:5500/${relativeFile}",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
+```
+
+## Troubleshooting
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong
+
 ## Security 
 
 Note: There are ways to send code and data between different websites/tabs in a safe manner, but these are advanced techniques that we won't cover in this course.
+
+## CORS
+
+
+## Juego 
+
+I want you to create a simple guess the number type game. It should choose a random number between 1 and 100, then challenge the player to guess the number in 10 turns. After each turn, the player should be told if they are right or wrong, and if they are wrong, whether the guess was too low or too high. It should also tell the player what numbers they previously guessed. The game will end once the player guesses correctly, or once they run out of turns. When the game ends, the player should be given an option to start playing again.
+
+## Debugger 
+
