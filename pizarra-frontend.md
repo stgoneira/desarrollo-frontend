@@ -5,6 +5,33 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
+### Sesión 8 - 20230330
+#### Objetivos 
+
+- Identificar las distintas técnicas para hacer un sitio web responsivo 
+
+- Aplicar CSS Media Queries 
+
+- Aplicar unidades relativas de CSS 
+
+- Crear Layouts responsivos utilizando CSS Grid 
+
+- Crear Layouts responsivos utilizando Flexbox 
+
+- Probar los sitios web responsivos utilizando distintas herramientas y plataformas 
+
+- Procesar imágenes de manera manual y automática en relación a su tamaño y formato 
+
+
+
+
+
+
+
+
+
+
+
 ### Sesión 7 - 20230328
 #### Objetivos 
 
