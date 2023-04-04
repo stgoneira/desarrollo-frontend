@@ -33,16 +33,124 @@
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
-## [Javascript](#)
+## [Introducción JS](#)
 
-- Lorem ipsum
+- Javascript es un lenguaje de programación [interpretado](#) (NO compilado)
+- Puede funcionar en el lado del [cliente (Browser)](#) y en el lado del [servidor (ej. NodeJS)](#)
+- Utiliza [tipos dinámicos](#) (NO declaro el tipo de dato) 
+
+[Continúa](#)
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Introducción JS](#)
+
+- Las funciones son tratadas como variables [(First-Class Functions)](#)
+- La POO funciona con el estilo [Prototipado](#) 
+- Existen [varias APIs](#) del lado del cliente como por ej:
+  * DOM API 
+  * Fetch API 
+  * Storage API   
+  * Video y Audio API   
 
 ===
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
-## [Javascript](#)
-asdf
+## [¿Qué diferencias tiene JS con Java?](#)
+
+Note: 
+Interpretado vs Compilado  
+Tipos dinámicos vs Tipos estáticos
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Javascript y HTML](#)
+
+1. Archivo externo:
+```javascript
+<script src="script.js" defer></script>
+```
+
+2. Incrustado en HTML con etiqueta SCRIPT 
+```javascript
+<script>
+  // JavaScript goes here
+</script>
+```
+
+3. En línea (evitar esta forma)
+```html
+<button 
+  onclick="alert('hola')"
+>Saludar</button>
+```
 
 ===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Normal, defer y async](#)
+
+![Defer vs Async](../assets/ppt/script-defer-async.jpg)
+
+Note:
+**Normal**: ejecuta en un solo hilo de manera bloqueante  
+**Defer**: parsea, descarga en 2 hilos, ejecuta al final, respetando el orden  
+**Async**: parsea y descarga en 2 hilos, ejecuta inmediatamente cuando puede  
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [1. Archivo Externo](#)
+```html
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;Javascript&lt;/title&gt;
+    &lt;script src=&quot;script.js&quot; defer&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [2. Incrustado en HTML](#)
+
+```html
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;Javascript&lt;/title&gt;
+    &lt;script&gt;
+        alert('hola mundo');
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [3. En línea](#)
+
+```html
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;Javascript&lt;/title&gt;    
+&lt;/head&gt;
+&lt;body&gt;
+    <button 
+        onclick="alert('hola')"
+    >Saludar</button>
+&lt;/body&gt;
+&lt;/html&gt;
+```
+
+---
 <!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/gOBYwKv?default-tab=html%2Cresult" -->
 
 ---
