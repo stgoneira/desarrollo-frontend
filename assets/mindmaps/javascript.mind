@@ -1,0 +1,32 @@
+mindmap
+    root((Javascript))        
+        Variables
+            const
+            let
+            var
+        Tipos de Datos 
+            Number
+            String
+            Boolean
+            Objetos
+            Array
+        Funciones 
+            Parámetros 
+            Valor Retorno
+        Operadores
+            Matemáticos
+            Lógicos
+            Comparación 
+        Estruc. Condicionales
+            if else 
+            switch 
+            ternary op.
+        Bucles 
+            for 
+            for .. in 
+            for .. of 
+            while 
+            do .. while             
+        Eventos
+
+        

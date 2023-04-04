@@ -151,6 +151,209 @@ Note:
 ```
 
 ---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Fundamentos JS](#)
+
+![Conceptos fundamentas Javascript](../assets/mindmaps/javascript.svg)
+
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Variables](#)
+
+```javascript
+// constante, idealmente siempre usar CONST 
+const sueldoBase = 500;
+// sueldoBase = 400; // daría error 
+// ----------------------------------------
+// si necesito algún cálculo o algo similar 
+let liquido = 0;
+liquido 	= sueldoBase - imposiciones;
+liquido 	= liquido - anticipos;
+// ----------------------------------------
+// se recomienda NO utilizar, forma antigua de JS 
+var mivariable = "Hola Mundo!!";
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Tipos de Datos](#)
+
+```javascript 
+const entero 	= 100; // número
+const decimal 	= 6.5; // número
+
+const nombre = "Juan"; // string
+
+const esMartes = true; // boolean 
+
+const persona = {nombre: 'Juan', edad: 20}; // Objeto 
+
+const marcas = ['BMW', 'Volvo', 'Audi']; // Array 
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Estructuras Condicionales](#)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [if .. elseif .. else](#)
+
+```javascript 
+if (condición1) {
+	// Código a ejecutar si se cumple la condición1
+ } else if (condición2) {
+	// Código a ejecutar si se cumple la condición2
+ } else {
+	// Código a ejecutar si no se cumple ninguna de las condiciones anteriores
+ }
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [switch](#)
+
+```javascript 
+switch (expresión) {
+	case valor1:
+	   // Código a ejecutar si la expresión es igual a valor1
+	   break;
+	case valor2:
+	   // Código a ejecutar si la expresión es igual a valor2
+	   break;
+	default:
+	   // Código a ejecutar si la expresión no es igual a ningún valor
+	   break;
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Operador Ternario](#)
+
+```javascript 
+variable = (condición) ? valor1 : valor2;
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Bucles](#)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [For](#)
+
+```javascript 
+for ([expresiónInicial]; [expresiónCondicional]; [expresiónDeActualización]) {
+	// instrucciones
+}
+  
+// ejemplo 
+for (let step = 0; step < 5; step++) {
+	// Se ejecuta 5 veces, con valores del paso 0 al 4.
+	console.log('Camina un paso hacia el este');
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [do .. while](#)
+
+```javascript 
+do {
+	// instrucciones 
+} while (condición);
+
+// ejemplo 
+let i = 0; 
+do { 
+	i += 1; 
+	console.log(i); 
+} while (i < 5);
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [while](#)
+
+```javascript 
+while (condición) {
+	// instrucciones 
+}
+
+// ejemplo 
+let n = 0;
+let x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [for .. in](#)
+
+```javascript 
+for (variable in objeto) {
+	// instrucciones 
+}
+
+// ejemplo 
+function dump_props(obj, obj_name) {
+	let result = '';
+	for (let i in obj) {
+		result += obj_name + '.' + i + ' = ' + obj[i] + '<br>';
+	}
+	result += '<hr>';
+	return result;
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [for .. of](#)
+
+```javascript 
+for (variable of objeto) {
+	// instrucciones 
+}
+// ejemplo 
+const arr = [3, 5, 7];
+arr.foo = 'hola';
+// itera sobre las llaves 
+for (let i in arr) {
+   console.log(i); // logs "0", "1", "2", "foo"
+}
+// itera sobre los valores 
+for (let i of arr) {
+   console.log(i); // logs 3, 5, 7
+}
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Funciones](#)
+
+```javascript 
+// sintaxis
+function myFunction(parametro1, parametro2) {
+	return value;
+}
+
+// ej. 1 - con valor de retorno y parámetros
+function sumar(uno, dos) {
+    return uno + dos;
+}
+
+// ej. 2 - no retorna nada 
+function mostrar(texto) {
+    console.log(texto);
+}
+```
+
+---
 <!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/gOBYwKv?default-tab=html%2Cresult" -->
 
 ---
