@@ -238,6 +238,33 @@ variable = (condición) ? valor1 : valor2;
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Operadoradores](#)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Operadoradores Aritméticos](#)
+
+[Ver Operadores Aritméticos](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math#arithmetic_operators)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Operadoradores Comparación](#)
+
+[Ver Operadores Comparación](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Operadoradores Lógicos](#)
+
+- AND (&&)
+- OR  (||)
+- NOT (!)
+
+[Ver Operadores Lógicos](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators)
+
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Bucles](#)
 
 ===
@@ -351,6 +378,72 @@ function sumar(uno, dos) {
 function mostrar(texto) {
     console.log(texto);
 }
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Eventos](#)
+
+- Los eventos son [acciones o cambios de estado](#) en el programa 
+- Con JS puedes [detectarlos y hacer algo](#) 
+- Por [ejemplo](#): hacer click en un elemento, mover el raton, pulsar una tecla, etc 
+
+```javascript 
+elemento
+	.addEventListener('nombreDelEvento', funcionQueManejaElEvento);
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Eventos](#)
+
+```javascript 
+window.addEventListener("DOMContentLoaded", (event) => {
+	console.log("DOM fully loaded and parsed");
+});
+``` 
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [DOM](#)
+
+- El Document Object Model (DOM) es una interfaz de programación que representa la estructura de un documento HTML
+- Se representa como un árbol de objetos JS 
+- permite acceder y manipular los elementos HTML y sus atributos utilizando JS 
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Métodos Comunes](#)
+
+```javascript 
+const parrafo = document.getElementById('parrafoBienvenida');
+parrafo.innerHTML = "Hola, bienvenido al sistema XYZ";
+
+const imgLogo = document.querySelector("img.logo"); // selector CSS 
+imgLogo.setAttribute('src', 'https://dominio.cl/nuevo-logo.jpg');
+
+// otros métodos getElementById(), getElementsByClassName(), getElementsByTagName()
+
+const otroParrafo = document.createElement('p');
+otroParrafo.textContent = "Lorem ipsum dolor asit atme";
+document.querySelector('main')
+	.appendChild(otroParrafo);
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Modificación Estilos](#)
+
+```javascript 
+// Obtenemos una referencia al elemento HTML que queremos modificar
+const miElemento = document.getElementById('mi-elemento');
+
+// Modificamos el estilo del elemento
+miElemento.style.backgroundColor = 'blue';
+// las propiedades en JS son escritas en camelCase 
+miElemento.style.color = 'white';
+miElemento.style.padding = '20px';
+
 ```
 
 ---
