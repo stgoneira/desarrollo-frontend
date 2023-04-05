@@ -5,6 +5,33 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
+### Sesión 9 - 20230404
+
+- Identificar los conceptos fundamentas de Javascript y de la mayoría de los Lenguajes de Programación 
+
+- Usar la API DOM para manipular el Documento HTML 
+
+- Usar Eventos para controlar el comportamiento del sitio web 
+
+
+#### Tareas 
+
+9.1 Aplicar lo visto para validar el formulario de contacto o similar de su proyecto. 
+    9.1.1. Validar campos al digitar o al cambiar al siguiente campo 
+	9.1.2. Colocar fondo o borde en verde cuando el campo sea válido. Y rojo en caso contrario.
+	9.1.3. Colocar texto explicativo en caso que falle la validación de un campo. 
+	9.1.4. Utilice al menos 5 campos en su formulario (ej. RUT, nombre, dirección, comuna, etc) 
+
+
+
+
+
+
+
+
+
+
+
 ### Sesión 8 - 20230330
 #### Objetivos 
 
