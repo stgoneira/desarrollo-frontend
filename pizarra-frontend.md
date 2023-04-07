@@ -5,6 +5,23 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
+### Sesión 10 - 20230406
+
+- Consolidar los aprendido hasta el momento:
+  * HTML 5 - Semántico 
+  * Fundamentos de CSS 
+  * Layouts con CSS Grid y Flexbox 
+  * Fundamentos de Javascript - Validaciones y gestión del DOM   
+
+#### Tareas 
+
+10.1 Completar Hito 2: Terminar zona pública de su proyecto. Se requiere al menos: 
+- 3 páginas web (ej. Inicio, Blog, Contacto)
+- Formulario validado con Javascript (al menos 5 campos)
+- Layouts utilizando CSS Grid y Flexbox 
+
+
+
 ### Sesión 9 - 20230404
 
 - Identificar los conceptos fundamentas de Javascript y de la mayoría de los Lenguajes de Programación 
