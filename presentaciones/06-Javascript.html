@@ -32,7 +32,14 @@
 #### [Desarrollo Frontend](#)<!-- .element style="color:white !important; display: block; margin-top: 20px; margin-left: 200px;" -->
 
 ---
-<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+<!-- .slide: id="indice" data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [INDICE](#)
+
+1. [Fundamentos de JS](#/fundamentos)
+1. [Procesar Formularios](#/formularios)
+
+---
+<!-- .slide: id="fundamentos" data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Introducción JS](#)
 
 - Javascript es un lenguaje de programación [interpretado](#) (NO compilado)
@@ -479,6 +486,282 @@ miElemento.style.padding = '20px';
 
 ---
 <!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/gOBYwKv?default-tab=html%2Cresult" -->
+
+
+---
+<!-- .slide: id="formularios" data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+# [Parte 2 - Fetch, NodeJS y Firebase](#)
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Promesas](#)
+
+- Una Promise es un [objeto](#) que [representa](#) la [terminación o el fracaso](#) de una [operación asíncrona](#)
+- Es un objeto devuelto al cual se [adjuntan funciones callback](#), [en lugar de pasar callbacks](#) a una función.
+- Se utilizan para [evitar](#) el anidamiento excesivo de callbacks, lo que se conoce como ["callback hell"](#)
+
+[Lectura](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Callbacks](#)
+
+```javascript
+function successCallback(result) {
+	console.log(`Audio file ready at URL: ${result}`);
+}
+
+function failureCallback(error) {
+	console.error(`Error generating audio file: ${error}`);
+}
+
+createAudioFileAsync(audioSettings, successCallback, failureCallback);  
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Callback Hell](#)
+
+```javascript
+doSomething(function (result) {
+	doSomethingElse(result, function (newResult) {
+		doThirdThing(newResult, function (finalResult) {
+		console.log(`Got the final result: ${finalResult}`);
+		}, failureCallback);
+	}, failureCallback);
+}, failureCallback);
+  
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ej. Promesas](#)
+
+```javascript
+doSomething()
+	.then(function (result) {
+		return doSomethingElse(result);
+	})
+	.then(function (newResult) {
+		return doThirdThing(newResult);
+	})
+	.then(function (finalResult) {
+		console.log(`Got the final result: ${finalResult}`);
+	})
+	.catch(failureCallback)
+;
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [async await](#)
+
+- async/await es una forma de escribir [código asíncrono](#) 
+- Hace que sea más [fácil de leer y entender](#). 
+- [async](#) es una función que [devuelve una promesa](#) 
+- y [await](#) es una palabra clave que solo se puede usar [dentro de una función](#) async. 
+- Cuando se usa [await](#) en una promesa, el [programa se detiene](#) hasta que la promesa se [resuelve o se rechaza](#).
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [async await](#)
+
+```javascript
+try {
+	const result = await doSomething();
+	const newResult = await doSomethingElse(result);
+	const finalResult = await doThirdThing(newResult);
+	console.log(Got the final result: ${finalResult});
+} catch (error) {
+	failureCallback(error);
+}
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Función fetch()](#)
+
+```javascript
+// con sintaxis normal 
+fetch(url)
+  .then(response => {
+    // procesar la respuesta aquí
+  })
+  .catch(error => {
+    // manejar errores aquí
+  })
+;
+```
+
+```javascript
+// con sintaxis async await 
+try {
+	const response = await fetch(url);
+} catch(error) {
+    // manejar errores aquí
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [GET - fetch()](#)
+
+```javascript
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error))
+;
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [DELETE - fetch()](#)
+
+```javascript
+fetch('https://api.example.com/users/123', {
+	method: 'DELETE'
+  })
+	.then(response => console.log(response.status))
+	.catch(error => console.error(error))
+;
+  
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [POST - fetch()](#)
+
+```javascript
+const data = {
+	name: 'John',
+	age: 30
+};  
+fetch('https://api.example.com/users', {
+		method: 'POST',
+		body: JSON.stringify(data),
+		headers: {
+			'Content-Type': 'application/json'
+		}
+	})
+	.then(response => response.json())
+	.then(data => console.log(data))
+	.catch(error => console.error(error))
+;  
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [PUT - fetch()](#)
+
+```javascript
+const data = {
+	name: 'John',
+	age: 30
+};  
+fetch('https://api.example.com/users/123', {
+		method: 'PUT',
+		body: JSON.stringify(data),
+		headers: {
+			'Content-Type': 'application/json'
+		}
+	})
+	.then(response => response.json())
+	.then(data => console.log(data))
+	.catch(error => console.error(error))
+;  
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [CORS](#)
+
+- CORS significa [Cross-Origin Resource Sharing](#)
+- [Mecanismo de seguridad](#) utilizado por los navegadores web para [limitar las solicitudes de recursos entre diferentes orígenes (dominios, protocolos o puertos)](#). 
+- Se basa en agregar [encabezados HTTP](#) adicionales a las solicitudes y respuestas que permiten que un servidor especifique qué orígenes tienen acceso a sus recursos.
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [CORS](#)
+
+- Ayuda a [prevenir ataques](#) malintencionados al limitar el acceso a los recursos del servidor solo a sitios web de confianza
+- Para habilitar es necesario configurar los encabezados HTTP de respuesta adecuados, como el encabezado [Access-Control-Allow-Origin](#)
+- CORS es una [medida de seguridad del lado del cliente y no del servidor](#), por lo que el servidor debe implementar otras medidas de seguridad adicionales para protegerse contra posibles vulnerabilidades.
+
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [require() e import](#)
+
+- Sirve para [importar módulos](#) 
+- o funcionalidad de [otros archivos](#) del proyecto 
+- [import](#) es soportado desde [ECMAScript 6](#)
+- [require](#) es lo más seguro en entornos [NodeJS](#) 
+- En [versiones actuales](#) de NodeJS es posible utilizar import
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [require()](#)
+
+```javascript
+// En el archivo my-module.js
+function sum(a, b) {
+  return a + b;
+}
+module.exports = sum;
+```
+
+```javascript
+// En otro archivo
+const myModule = require('./my-module.js');
+console.log(myModule(2, 3)); // 5
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [import](#)
+
+```javascript
+// En el archivo my-module.js
+export const sum = (a, b) => a + b;
+export const subtract = (a, b) => a - b;
+export const multiply = (a, b) => a * b;
+```
+
+```javascript
+// En otro archivo
+// Importar solo las funciones sum y multiply desde el módulo my-module.js
+import { sum, multiply } from './my-module.js';
+console.log(sum(2, 3)); // 5
+console.log(multiply(2, 3)); // 6
+
+// Importar todas las funciones desde el módulo my-module.js y asignarlas a un objeto llamado math
+import * as math from './my-module.js';
+console.log(math.sum(2, 3)); // 5
+console.log(math.subtract(5, 3)); // 2
+console.log(math.multiply(2, 3)); // 6
+
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Ejercicios con Firebase](#)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Formulario Registro](#)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Autenticación con Email y Contraseña](#)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Guardando entidades en Base de Datos](#)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Recuperando entidades en Base de Datos](#)
 
 ---
 <!-- .slide: data-background-image="../assets/bg.png" data-background-size="contain" -->
