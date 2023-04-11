@@ -387,6 +387,30 @@ function mostrar(texto) {
 }
 ```
 
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Funciones Flecha](#)
+
+```javascript 
+() => console.log('hola mundo');
+
+// con 1 param los paréntesis son opcionales 
+saludo => console.log(saludo);
+
+// con 1 sola sentencia el bloque es opcional
+// y devuelve el valor automáticamente 
+(n1, n2) => n1 + n2;
+
+// cuando se usa el bloque,
+// el return debe ser explícito 
+(n1, n2) => {
+	console.log(`n1=${n1} y n2=${n2}`);
+	return n1 + n2;
+}
+
+
+```
+
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Eventos](#)
