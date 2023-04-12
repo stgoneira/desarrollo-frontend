@@ -5,6 +5,13 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
+### Sesión 11 - 20230411
+
+- Procesamiento de Formularios 
+- CORS 
+- Uso de Firebase Auth y Firestore 
+- Introducción a NodeJS 
+
 ### Sesión 10 - 20230406
 
 - Consolidar los aprendido hasta el momento:
