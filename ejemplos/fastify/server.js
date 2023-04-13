@@ -31,6 +31,7 @@ fastify.route({
   handler: require('./src/firebase/firestore.js')
 });
 // Firebase Auth 
+fastify.get('/auth/prueba', require('./src/firebase/auth/prueba'));
 fastify.route({
   method: ['GET', 'POST', 'PUT', 'DELETE'],
   url: '/auth/user',
