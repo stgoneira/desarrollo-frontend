@@ -14,7 +14,8 @@
     "@fastify/cors": "^8.2.1",
     "@fastify/formbody": "^7.4.0",
     "fastify": "^4.15.0",
-    "firebase": "^9.19.1"
+    "firebase": "^9.19.1",
+    "firebase-admin": "^11.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
