@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+<body>
+    <h1></h1>
+
+    <a href="#" onclick="cerrarSesion()">Cerrar Sesión</a>
+
+    <script>
+        function cerrarSesion() {
+            localStorage.removeItem('usuario');
+            location.reload();
+        }
+
+        const verificaToken = async () => {
+            try {
+                const baseUrl   = 'http://localhost:3000';
+                const url       = `${baseUrl}/auth/protegido`;
+                const usuario   = localStorage.getItem('usuario');
+                if( usuario == null) throw new Error("Usuario no autenticado");
+                const token     = JSON.parse(usuario).usuario.user.stsTokenManager.accessToken;
+                const datosObj  = {a: 120, b: 'Uno'};
+                        
+                const respuesta = await fetch(
+                    url, 
+                    {
+                        method: 'GET',
+                        headers: {
+                                    'Content-Type': 'application/json',
+                                    'Authorization': 'Bearer '+token
+                                }                        
+                        //,body: JSON.stringify(datosObj)
+                    }
+                );
+                const resultado = await respuesta.json();
+                
+                console.dir(respuesta);
+                console.dir(resultado);   
+                
+                document.querySelector("h1").textContent = JSON.stringify(resultado);
+            } catch (error) {
+                console.dir(error);
+                window.location.href = 'login.html';
+            }
+        };
+
+        verificaToken();
+    </script>
+</body>
+</html>

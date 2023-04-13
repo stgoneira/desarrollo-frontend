@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js';
+        import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } 
+                        from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js';
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAk7ruyeuGcdQRJ1CIW3VMJr4ioyxPl6QA",
+            authDomain: "aiep-frontend-2023.firebaseapp.com",
+            projectId: "aiep-frontend-2023",
+            storageBucket: "aiep-frontend-2023.appspot.com",
+            messagingSenderId: "914156216806",
+            appId: "1:914156216806:web:2515f25a4d4d574efc3627",
+            measurementId: "G-VQD9WMELNX"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        
+        const register = async (email, password) => {            
+            const auth      = getAuth();
+            const user      = await createUserWithEmailAndPassword(auth, email, password);
+            console.dir( user );
+        };
+        const login = async (email, password) => {            
+            const auth      = getAuth();
+            const user      = await signInWithEmailAndPassword(auth, email, password);
+            console.dir( user );
+        };
+        
+        //register('juancho@exmaple.com', 'jaja123');
+        login('juancho@exmaple.com', 'jaja123');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -31,14 +31,13 @@ fastify.route({
   handler: require('./src/firebase/firestore.js')
 });
 // Firebase Auth 
-fastify.get('/auth/prueba', require('./src/firebase/auth/prueba'));
 fastify.route({
   method: ['GET', 'POST', 'PUT', 'DELETE'],
   url: '/auth/user',
   handler: require('./src/firebase/auth/user.js')
 });
 fastify.post('/auth/signin', require('./src/firebase/auth/signin'));
-
+fastify.get('/auth/protegido', { preHandler: require('./src/firebase/auth/protegido') }, async (req, res) =>  { return {a: 'recurso protegido accesible'}; });
 
 // Run the server!
 const start = async () => {

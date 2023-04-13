@@ -1,4 +1,4 @@
-const app = require('../../../include/firebase.js');
+const { app } = require('../../../include/firebase.js');
 const { getAuth, signInWithEmailAndPassword } = require("firebase/auth");
 
 module.exports = async (req, res) => {
@@ -12,10 +12,7 @@ module.exports = async (req, res) => {
             email: req.body.email, 
             password: req.body.password
         };
-        const usuario = await signInWithEmailAndPassword(getAuth()
-                                , userData.email
-                                , userData.password
-        );
+        const usuario = await signInWithEmailAndPassword(getAuth(), userData.email, userData.password);
         return {usuario};
     } catch (error) {
         switch( error.code ) {

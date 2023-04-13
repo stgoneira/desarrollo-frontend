@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <script>
-        window.addEventListener('DOMContentLoaded', async () => {
-            console.log("dom loaded");
+        window.addEventListener('DOMContentLoaded', async () => { 
 
-            document.querySelector('form').addEventListener('submit', async (submitEvent) => {
-                console.log("submit");
+            document.querySelector('form').addEventListener('submit', async (submitEvent) => {                
                 submitEvent.preventDefault();
                 const baseUrl       = 'http://localhost:3000';
                 const url           = `${baseUrl}/auth/signin`;
@@ -33,6 +31,14 @@
                     
                     console.dir(respuesta);
                     console.dir(usuario);
+
+                    localStorage.setItem('usuario', JSON.stringify(usuario));
+
+                    const output = formElement.querySelector('output');
+                    output.style.display = "block";
+                    output.style.background = "#CCC";
+                    output.textContent = "Redirigiendo ...";
+                    setTimeout(() => window.location = 'verifica-token.html', 3000);
                 } catch (error) {
                     formElement.querySelector('output').textContent = error.message;
                 }                

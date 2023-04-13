@@ -1,5 +1,4 @@
-const app = require('../../../include/firebase.js');
-const { getAuth, createUserWithEmailAndPassword } = require("firebase/auth");
+const { admin } = require('../../../include/firebase.js');
 
 module.exports = async (req, res) => {
     switch( req.method ) {          
@@ -16,9 +15,11 @@ function get(req, res) {
 }
 
 async function postRegistroUsuario(req, res) {
-    try {
-        const data      = req.body;
-        const usuario   = await createUserWithEmailAndPassword(getAuth(), data.email, data.password);
+    try {        
+        const usuario = await admin.auth().createUser({
+            email: req.body.email,
+            password: req.body.password
+        });
         return usuario;
     } catch(error) {
         res.code(500).send({
