@@ -38,6 +38,8 @@ fastify.route({
 });
 fastify.post('/auth/signin', require('./src/firebase/auth/signin'));
 fastify.get('/auth/protegido', { preHandler: require('./src/firebase/auth/protegido') }, async (req, res) =>  { return {a: 'recurso protegido accesible'}; });
+// Firebase Storage 
+fastify.get('/storage', require('./src/firebase/storage'));
 
 // Run the server!
 const start = async () => {

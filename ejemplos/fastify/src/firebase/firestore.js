@@ -1,4 +1,3 @@
-const { async } = require('@firebase/util');
 const { admin } = require('../../include/firebase.js');
 const db        = admin.firestore();
 const coleccion = db.collection('productos');
@@ -8,10 +7,10 @@ const coleccion = db.collection('productos');
 module.exports = async (req, res) => {
     switch(req.method) {
         case 'GET':
-            //return buscar();
+            return buscar();
             //return agregar();
             //return modificar();
-            return borrar();
+            //return borrar();
         case 'POST':
         case 'PUT':
         case 'DELETE':
