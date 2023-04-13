@@ -6,21 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <script>
-        window.addEventListener('DOMContentLoaded', () => {
+        window.addEventListener('DOMContentLoaded', () => {            
+            procesaEvento("form-get");
+            procesaEvento("form-post");
+        });  
 
-            document.querySelector("#form-get button[type='button']")
+        function procesaEvento(sectionID) {
+            document.querySelector(`#${sectionID} button[type='button']`)
                 .addEventListener('click', async (e) => {
                     // e.target - devolvería nodo STRONG si el click es sobre el texto "Javascript"
                     // e.currentTarget - devuelve siempre el elemento sobre el cual el event handler se configuró 
                     const baseURL       = 'http://localhost:3000';
                     const formElemento  = e.currentTarget.parentElement;
                     const outputE       = formElemento.querySelector('output');
+                    console.dir({
+                        formElemento,
+                        outputE
+                    });
                     const formData      = new FormData( formElemento );
                     const nombre        = formData.get('nombre');
                     const apellido      = formData.get('apellido');
-                    const urlParams     = (new URLSearchParams({nombre, apellido})).toString();
+                    let url             = `${baseURL}/form`;
+                    const fetchConfig   = {};
+
+                    if(sectionID === 'form-get') {
+                        // GET
+                        const urlParams     = (new URLSearchParams({nombre, apellido})).toString();
+                        url = `${url}?${urlParams}`;
+                    } else {
+                        // POST
+                        formObjeto          = {nombre, apellido};
+                        fetchConfig.body    = JSON.stringify( formObjeto ); 
+                        fetchConfig.method  = 'POST';
+                        fetchConfig.headers = {'Content-Type': 'application/json'};
+                    }
                     
-                    fetch(`${baseURL}/form?${urlParams}`)
+                    fetch(url, fetchConfig)
                         .then( r => r.json() ) 
                         .then( d => {console.dir(d); outputE.textContent = JSON.stringify(d);} )
                         .catch( e => console.dir(e) )
@@ -28,11 +49,7 @@
                     
                 }
             );
-
-            function procesaEvento(sectionID) {
-                
-            }
-        });        
+        }
     </script>
     <style>
         output {
@@ -78,8 +95,9 @@
     
             <button type="submit">Envío por Form</button>
             <button type="button">Envío por <strong>Javascript</strong></button>
-        </form>
-        <output></output>
+
+            <output></output>
+        </form>        
     </section>
     
 
