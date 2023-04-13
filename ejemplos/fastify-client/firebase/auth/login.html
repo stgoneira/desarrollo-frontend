@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        window.addEventListener('DOMContentLoaded', async () => {
+            console.log("dom loaded");
+
+            document.querySelector('form').addEventListener('submit', async (submitEvent) => {
+                console.log("submit");
+                submitEvent.preventDefault();
+                const baseUrl       = 'http://localhost:3000';
+                const url           = `${baseUrl}/auth/signin`;
+                const formElement   = submitEvent.currentTarget;
+                const formData      = new FormData( formElement );
+                const loginObj      = {
+                    email: formData.get('email'),
+                    password: formData.get('contrasena')
+                };
+                try {
+                    const respuesta = await fetch(
+                        url, 
+                        {
+                            method: 'POST',
+                            headers: {'Content-Type': 'application/json'},
+                            body: JSON.stringify(loginObj)
+                        }
+                    );
+                    const usuario = await respuesta.json();
+                    
+                    console.dir(respuesta);
+                    console.dir(usuario);
+                } catch (error) {
+                    formElement.querySelector('output').textContent = error.message;
+                }                
+            });
+        });
+    </script>
+    <style>
+        output {
+            display: none;
+            background-color: darkred;
+            color: white;
+            padding: 1em 2em;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="post" action="login.html">
+        <output></output>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" />
+
+        <button type="submit">Ingresar</button>
+    </form>
+</body>
+</html>

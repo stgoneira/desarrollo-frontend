@@ -1,4 +1,4 @@
-const app = require('../../include/firebase.js');
+const app = require('../../../include/firebase.js');
 const { getAuth, createUserWithEmailAndPassword } = require("firebase/auth");
 
 module.exports = async (req, res) => {

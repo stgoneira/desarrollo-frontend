@@ -12,7 +12,7 @@
             document.querySelector('form').addEventListener('submit', (submitEvent) => {
                 submitEvent.preventDefault();
                 const baseUrl       = 'http://localhost:3000';
-                const url           = `${baseUrl}/auth`;
+                const url           = `${baseUrl}/auth/user`;
                 const formElement   = submitEvent.currentTarget;
                 const formData      = new FormData( formElement );
                 const userObj       = {

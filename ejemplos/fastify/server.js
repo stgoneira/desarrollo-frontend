@@ -33,10 +33,10 @@ fastify.route({
 // Firebase Auth 
 fastify.route({
   method: ['GET', 'POST', 'PUT', 'DELETE'],
-  url: '/auth',
-  handler: require('./src/firebase/auth.js')
+  url: '/auth/user',
+  handler: require('./src/firebase/auth/user.js')
 });
-
+fastify.post('/auth/signin', require('./src/firebase/auth/signin'));
 
 
 // Run the server!
