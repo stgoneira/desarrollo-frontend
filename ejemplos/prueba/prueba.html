@@ -5,8 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        async function miFuncion() {
+            //const r = await fetch("https://treasure-mixed-leopon.glitch.me/");             
+            const persona = {nombre: 'Juan', apellido: 'Soto', edad: 30};
+            const r = await fetch("http://localhost:3000/form", {
+                method: 'POST', 
+                body: JSON.stringify(persona), 
+                headers: {'Content-Type': 'application/json'}
+            });
+            const d = await r.json();
+            console.dir(d);
+        }
+        miFuncion();
+    </script>
 </head>
 <body>
-    <button onclick="alert('hola')">saludar</button>
+    
 </body>
 </html>
