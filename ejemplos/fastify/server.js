@@ -23,6 +23,22 @@ fastify.route({
   }
 });
 
+/* ########## FIREBASE ##################### */
+// Firestore 
+fastify.route({
+  method: ['GET', 'POST', 'PUT', 'DELETE'],
+  url: '/firestore',
+  handler: require('./src/firebase/firestore.js')
+});
+// Firebase Auth 
+fastify.route({
+  method: ['GET', 'POST', 'PUT', 'DELETE'],
+  url: '/auth',
+  handler: require('./src/firebase/auth.js')
+});
+
+
+
 // Run the server!
 const start = async () => {
   try {

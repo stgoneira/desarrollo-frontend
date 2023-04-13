@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Usuario</title>
+    <script>
+        const outputFn = (datos, elemento) => {console.dir(datos); elemento.textContent = JSON.stringify(datos);};
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('form').addEventListener('submit', (submitEvent) => {
+                submitEvent.preventDefault();
+                const baseUrl       = 'http://localhost:3000';
+                const url           = `${baseUrl}/auth`;
+                const formElement   = submitEvent.currentTarget;
+                const formData      = new FormData( formElement );
+                const userObj       = {
+                    email: formData.get('email'),
+                    password: formData.get('contrasena')
+                };
+                const outputElement = formElement.querySelector("output");                
+                let errorFlag       = false;
+                fetch(url, {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify(userObj)
+                    })
+                    .then(r => {
+                        errorFlag = !r.ok ? true:false;
+                        return r.json();
+                    })
+                    .then(d => {
+                        outputFn(d, outputElement);
+                        if( errorFlag ) throw new Error(JSON.stringify(d));                        
+                    })
+                    .catch(e => {                        
+                        console.error("Ha ocurrido un error");
+                        console.error(e);
+                        outputFn(JSON.parse(e.message), outputElement);
+                    })
+                ;
+            });
+        });
+    </script>
+    <style>
+        output {display: block; background: #CCC; min-height: 1em; margin: 1em 0;}
+    </style>
+</head>
+<body>
+    <h1>Registro de Usuario</h1>        
+    <form method="post" action="register.html">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" />
+
+        <button type="submit">Registrar</button>
+
+        <output></output>
+    </form>
+</body>
+</html>
