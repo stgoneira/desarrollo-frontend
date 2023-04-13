@@ -1,6 +1,8 @@
 // Require the framework and instantiate it
 const fastify = require('fastify')({ logger: true });
 
+// soporte para forms application/x-www-form-urlencoded
+fastify.register( require('@fastify/formbody'), {} );
 // CORS
 fastify.register( require('@fastify/cors'), {} );
 
@@ -11,10 +13,14 @@ fastify.get('/', async (request, reply) => {
 
 // para probar en cliente recibir datos por GET y por POST 
 // fetch('http://localhost:3000/form', {method: 'POST', body: JSON.stringify({a:'uno', b:'dos'}), headers: {'Content-Type': 'application/json'} }).then(r=>r.json()).then(d=>console.dir(d));
-fastify.post('/form', async (request, reply) => {
-  const datosGET  = request.query;
-  const datosPOST = request.body;
-  return { datosGET, datosPOST };
+fastify.route({
+  method: ['GET', 'POST'],
+  url: '/form',
+  handler: (request, reply) => {
+    const datosGET  = request.query;
+    const datosPOST = request.body;
+    return { datosGET, datosPOST };
+  }
 });
 
 // Run the server!
