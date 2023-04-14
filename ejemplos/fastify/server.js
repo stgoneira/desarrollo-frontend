@@ -5,6 +5,8 @@ const fastify = require('fastify')({ logger: true });
 fastify.register( require('@fastify/formbody'), {} );
 // CORS
 fastify.register( require('@fastify/cors'), {} );
+// Multipart
+fastify.register( require('@fastify/multipart'), {} );
 
 // Declare a route
 fastify.get('/', async (request, reply) => {
@@ -23,6 +25,9 @@ fastify.route({
   }
 });
 
+/* ########## FILE UPLOAD ################## */
+fastify.post('/fileupload', require('./src/fileupload/fileupload') );
+
 /* ########## FIREBASE ##################### */
 // Firestore 
 fastify.route({
@@ -39,7 +44,11 @@ fastify.route({
 fastify.post('/auth/signin', require('./src/firebase/auth/signin'));
 fastify.get('/auth/protegido', { preHandler: require('./src/firebase/auth/protegido') }, async (req, res) =>  { return {a: 'recurso protegido accesible'}; });
 // Firebase Storage 
-fastify.get('/storage', require('./src/firebase/storage'));
+fastify.route({
+  url: '/storage', 
+  method: ['GET', 'POST', 'PUT', 'DELETE'],  
+  handler: require('./src/firebase/storage')
+});
 
 // Run the server!
 const start = async () => {

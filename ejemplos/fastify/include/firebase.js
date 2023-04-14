@@ -1,5 +1,13 @@
+/* ########### Firebase Admin ########################## */
+
 const admin = require('firebase-admin');
 const serviceAccount = require('../src/firebase/serviceAccountKey.json');
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    storageBucket: "aiep-frontend-2023.appspot.com"
+});
+
+/* ########### Firebase ############################## */
 
 const { initializeApp } = require('firebase/app');
 const firebaseConfig = {
@@ -13,8 +21,5 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig); 
 
-admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
-});
-
+/* ########### Module Exports ########################### */
 module.exports = {admin, app};
