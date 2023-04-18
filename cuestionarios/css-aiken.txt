@@ -1,0 +1,144 @@
+¿Cómo se vincula un archivo CSS a un archivo HTML?
+A. Con el atributo "link" dentro del elemento "head" del archivo HTML.
+B. Con el atributo "style" dentro del elemento "head" del archivo HTML.
+C. Con el atributo "css" dentro del elemento "link" del archivo HTML.
+ANSWER: A
+
+¿Qué es la cascada en CSS?
+A. Un efecto visual que se aplica a los elementos HTML.
+B. La prioridad que se le da a los diferentes estilos que se aplican a un elemento HTML.
+C. La forma en que se organizan los elementos HTML dentro de la página web.
+ANSWER: B
+
+¿Cómo se puede aplicar un estilo a un elemento HTML concreto usando un id?
+A. Con el selector "#" seguido del nombre del id.
+B. Con el selector "." seguido del nombre del id.
+C. Con el selector "<>" seguido del nombre del id.
+ANSWER: A
+
+¿Cómo se puede aplicar un estilo a un grupo de elementos HTML usando una clase?
+A. Con el selector "#" seguido del nombre de la clase.
+B. Con el selector "." seguido del nombre de la clase.
+C. Con el selector "<>" seguido del nombre de la clase.
+ANSWER: B
+
+¿Qué es la propiedad "display" en CSS?
+A. La forma en que se muestra un elemento HTML.
+B. El tamaño de un elemento HTML.
+C. El color de fondo de un elemento HTML.
+ANSWER: A
+
+¿Cómo se puede crear un borde con CSS?
+A. Con la propiedad "border" seguida del grosor, el tipo y el color del borde.
+B. Con la propiedad "margin" seguida del grosor, el tipo y el color del borde.
+C. Con la propiedad "padding" seguida del grosor, el tipo y el color del borde.
+ANSWER: A
+
+¿Cómo se puede aplicar un estilo solo cuando el ratón está sobre un elemento HTML?
+A. Con el selector ":hover".
+B. Con el selector ":active".
+C. Con el selector ":visited".
+ANSWER: A
+
+¿Qué es la propiedad "opacity" en CSS?
+A. La forma en que se muestra un elemento HTML.
+B. El tamaño de un elemento HTML.
+C. La transparencia de un elemento HTML.
+ANSWER: C
+
+¿Qué es la propiedad "z-index" en CSS?
+A. La ubicación de un elemento HTML en la página.
+B. La forma en que se muestra un elemento HTML.
+C. El orden de apilamiento de los elementos HTML.
+ANSWER: C
+
+¿Qué es la propiedad "box-sizing" en CSS?
+A. La forma en que se muestra un elemento HTML.
+B. La ubicación de un elemento HTML en la página.
+C. La forma en que se calculan las dimensiones de un elemento HTML.
+ANSWER: C
+
+¿Qué es la propiedad "media" en CSS?
+A. Una forma de seleccionar elementos HTML con un criterio específico.
+B. Una forma de aplicar diferentes estilos según el tamaño de la pantalla o el dispositivo.
+C. Una forma de animar elementos HTML con CSS.
+ANSWER: B
+
+¿Cómo se puede hacer que un elemento HTML tenga un borde redondeado con CSS?
+A. Con la propiedad "border-radius".
+B. Con la propiedad "border-style: round".
+C. Con la propiedad "border-shape: rounded".
+ANSWER: A
+
+¿Qué es la propiedad "text-decoration" en CSS?
+A. La forma en que se muestra un elemento HTML.
+B. La decoración del texto en un elemento HTML, como subrayado o tachado.
+C. La forma en que se ajusta el tamaño de un elemento HTML.
+ANSWER: B
+
+¿Cómo se puede hacer que un elemento HTML tenga un fondo con un patrón repetido con CSS?
+A. Con la propiedad "background-color: pattern".
+B. Con la propiedad "background-pattern".
+C. Con la propiedad "background-image: url('patron.png'); background-repeat: repeat;".
+ANSWER: C
+
+¿Qué es la propiedad "flexbox" en CSS?
+A. La forma en que se distribuyen los elementos HTML en la página.
+B. La forma en que se anima un cambio en una propiedad de CSS.
+C. Un sistema de diseño de cajas flexible que permite el posicionamiento y alineación de elementos HTML.
+ANSWER: C
+
+¿Qué es el "mobile-first" en diseño web?
+A. Un enfoque de diseño que se centra en la creación de una experiencia óptima para dispositivos móviles primero, y luego se adapta a las pantallas más grandes.
+B. Un enfoque de diseño que se centra en la creación de una experiencia óptima para pantallas grandes primero, y luego se adapta a los dispositivos móviles.
+C. Un enfoque de diseño que se centra en la creación de una experiencia de usuario en cualquier dispositivo.
+ANSWER: A
+
+¿Cómo se puede hacer que un elemento HTML se centre verticalmente con flexbox?
+A. Con la propiedad "align-items: center".
+B. Con la propiedad "justify-content: center".
+C. Con la propiedad "align-content: center".
+ANSWER: A
+
+¿Qué es un "breakpoint" en diseño web?
+A. Un punto de interrupción en el código de una página web.
+B. Un punto de interrupción en la carga de una página web.
+C. Un punto de interrupción en el diseño de una página web, donde se cambia la apariencia y el diseño de la página en función del tamaño de la pantalla.
+ANSWER: C
+
+¿Cómo se puede hacer que un elemento HTML se centre horizontalmente con flexbox?
+A. Con la propiedad "align-items: center".
+B. Con la propiedad "justify-content: center".
+C. Con la propiedad "align-content: center".
+ANSWER: B
+
+¿Qué es la propiedad "flex-wrap" en flexbox?
+A. La forma en que se distribuyen los elementos HTML en la página.
+B. La forma en que se ajusta el tamaño de un elemento HTML.
+C. La forma en que se maneja el posicionamiento de los elementos HTML en una sola línea o en varias líneas en un contenedor flexbox.
+ANSWER: C
+
+¿Cómo se puede hacer que un elemento HTML tenga un diseño de rejilla con grid?
+A. Con la propiedad "display: grid".
+B. Con la propiedad "display: flex".
+C. Con la propiedad "grid-template: layout".
+ANSWER: A
+
+¿Por qué es importante usar medidas relativas en CSS (por ejemplo, "em" o "%" en lugar de "px")?
+A. Porque las medidas relativas se ajustan automáticamente al tamaño de la pantalla del usuario, lo que permite una mejor experiencia de usuario en dispositivos móviles y pantallas grandes.
+B. Porque las medidas relativas son más fáciles de usar en el código CSS.
+C. Porque las medidas relativas son más precisas que las medidas absolutas.
+ANSWER: A
+
+¿Cómo se puede hacer que un elemento HTML tenga un diseño de rejilla con áreas específicas definidas en grid?
+A. Con la propiedad "grid-template-areas".
+B. Con la propiedad "grid-template-columns".
+C. Con la propiedad "grid-template-rows".
+ANSWER: A
+
+
+
+
+
+
+

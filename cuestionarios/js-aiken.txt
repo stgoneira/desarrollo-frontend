@@ -1,0 +1,119 @@
+¿Cuál es la forma correcta de incluir un archivo Javascript en una página HTML?
+A. <javascript src="script.js"></javascript>
+B. <script type="text/javascript" href="script.js"></script>
+C. <script src="script.js"></script>
+ANSWER: C
+
+¿Cómo se puede agregar un evento a un elemento HTML en Javascript?
+A. element.onClick = function() { ... }
+B. element.addEventListener("click", function() { ... })
+C. Ambas opciones son correctas.
+ANSWER: C
+
+¿Cuál es la forma correcta de obtener el valor de un elemento input por su ID en Javascript?
+A. document.getElementByName("myInput").value
+B. document.getElementById("myInput").value
+C. document.querySelector("input[name=myInput]").value
+ANSWER: B
+
+¿Cómo se puede crear un nuevo elemento HTML en Javascript?
+A. document.createElement("div")
+B. document.createElement("<div>")
+C. Ambas opciones son correctas.
+ANSWER: A
+
+¿Cómo se puede agregar un nuevo elemento HTML a un elemento existente en Javascript?
+A. parentElement.add(element)
+B. parentElement.appendChild(element)
+C. parentElement.addElement(element)
+ANSWER: B
+
+¿Cómo se puede cambiar el texto de un elemento HTML en Javascript?
+A. element.innerText = "new text"
+B. element.innerHTML = "new text"
+C. Ambas opciones son correctas.
+ANSWER: C
+
+¿Cómo se puede cambiar el atributo src de una imagen en Javascript?
+A. image.setAttribute("src", "new-image.jpg")
+B. image.src = "new-image.jpg"
+C. Ambas opciones son correctas.
+ANSWER: C
+
+¿Cómo se puede cambiar el estilo de un elemento HTML en Javascript?
+A. element.style.color = "red"
+B. element.style.background-color = "blue"
+C. element.style.margin-top = "10px"
+ANSWER: A
+
+¿Cómo se puede agregar una clase a un elemento HTML en Javascript?
+A. element.class = "new-class"
+B. element.className = "new-class"
+C. element.classList.add("new-class")
+ANSWER: C
+
+¿Cómo se puede verificar si un elemento tiene una clase en Javascript?
+A. element.hasAttribute("class", "my-class")
+B. element.className.includes("my-class")
+C. element.classList.contains("my-class")
+ANSWER: C
+
+¿Cómo se puede obtener la posición de un elemento en la pantalla en Javascript?
+A. element.screenPosition
+B. element.getBoundingClientRect()
+C. Ambas opciones son correctas.
+ANSWER: B
+
+¿Cómo se puede detener la propagación de un evento en Javascript?
+A. event.stopPropagation()
+B. event.preventDefault()
+C. Ambas opciones son correctas.
+ANSWER: A
+
+¿Cómo se puede redireccionar a una nueva página en Javascript?
+A. window.location = "new-page.html"
+B. document.redirect("new-page.html")
+C. location.href = "new-page.html"
+ANSWER: A
+
+¿Qué es el DOM en Javascript?
+A. El modelo de objetos del documento (Document Object Model) que representa la estructura de un documento HTML o XML.
+B. El lenguaje de programación utilizado para construir sitios web interactivos.
+C. La interfaz de programación de aplicaciones (API) que permite a los desarrolladores acceder a los recursos del sistema operativo.
+ANSWER: A
+
+¿Qué propiedad de Javascript se utiliza para seleccionar un elemento del DOM?
+A. document.querySelector()
+B. document.getElement()
+C. document.select()
+ANSWER: A
+
+¿Qué evento se utiliza para detectar cuando un usuario hace clic en un elemento HTML?
+A. click
+B. mouseover
+C. hover
+ANSWER: A
+
+¿Cómo se puede prevenir el comportamiento predeterminado de un enlace en Javascript?
+A. event.preventDefault()
+B. link.stopPropagation()
+C. link.preventDefault()
+ANSWER: A
+
+¿Cómo se puede ocultar un elemento HTML en Javascript?
+A. element.style.display = "none"
+B. element.visibility = "hidden"
+C. element.display = "hidden"
+ANSWER: A
+
+¿Cómo se puede detectar cuando un usuario desplaza la página en Javascript?
+A. scroll event
+B. page scroll event
+C. scrolling event
+ANSWER: A
+
+¿Cómo se puede cambiar el tamaño de un elemento HTML en Javascript?
+A. element.style.width = "100px"
+B. element.style.height = "100px"
+C. Ambas opciones anteriores son correctas
+ANSWER: C
