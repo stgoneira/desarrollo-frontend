@@ -5,6 +5,44 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
+### Sesión 13 - 20230418
+
+- Autenticación Firebase 
+- Uso de Token JWT y localStorage 
+- Uso de Firebase Firestore (CRUD) 
+- Uso de Firebase Storage
+
+#### Tareas 
+
+- Completar cuestionario de CSS 
+- Completar cuestionario de Javascript 
+
+
+
+### Sesión 12 - 20230413
+
+- Recepción datos de formularios 
+- Creación Proyecto Fastify local 
+- Instalar NodeJS 18 LTS 
+
+#### Hola Mundo con Fastify 
+
+1. npm init
+2. modificamos la zona de "scripts" del package.json con "dev": "nodemon server.js" 
+3. Instalamos dependencias con NPM:
+npm install --save fastify 
+npm install --save-dev nodemon 
+4. Copiamos código Quickstart de Fastify en server.js 
+5. Ejecutamos en la consola 
+npm run dev 
+
+
+
+
+
+
+
+
 ### Sesión 11 - 20230411
 
 - Procesamiento de Formularios 
