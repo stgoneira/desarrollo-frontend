@@ -5,12 +5,26 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
+### Sesión 14 - 20230420
+
+- Verificación de Token de Autenticación 
+- Uso de Firebase Firestore (CRUD) 
+- Uso de Firebase Storage
+- Introducción a ReactJS 
+
+#### ReactJS + NextJS 
+
+- npx create-next-app@latest --use-npm 
+- next dev --port 8080
+
+
+
+
+
 ### Sesión 13 - 20230418
 
 - Autenticación Firebase 
 - Uso de Token JWT y localStorage 
-- Uso de Firebase Firestore (CRUD) 
-- Uso de Firebase Storage
 
 #### Tareas 
 
