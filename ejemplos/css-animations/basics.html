@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics | CSS Animations</title>    
+</head>
+<body>
+    <h1>Basics | CSS Animations</h1>
+
+    <h2>1er Ejemplo</h2>
+    <p class="ejemplo-1">Lorem ipsum</p>
+    <style>
+        .ejemplo-1 {
+            animation-duration: 5s;
+            animation-name: mianimacion;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            /* 
+            it's the same                         
+            animation: 5s infinite alternate mianimacion;
+            */
+        }
+        @keyframes mianimacion {
+            from { /* representa el 0% */
+                margin-left: 100%;
+                width: 300%;
+                background: red;
+            }
+            75% {
+                font-size: 200%;
+            }
+            to { /* representa el 100% */
+                margin-left: 0;
+                width: 100%;
+                background: white;
+            }
+        }
+    </style>
+</body>
+</html>
