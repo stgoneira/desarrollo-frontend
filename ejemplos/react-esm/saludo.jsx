@@ -1,5 +1,11 @@
-export default function Saludo() {
+export default function Saludo({nombre, children}) {
     return (
-        <div>Hola Mundo Externo!!!! </div>
+        <div>
+            <h1>Saludo</h1>
+            <p>
+                Hola Mundo {nombre}!!!! 
+            </p>
+            {children}
+        </div>
     );
 }

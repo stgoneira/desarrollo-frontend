@@ -30,9 +30,30 @@
         );
         */
 
+        /* 
         import Saludo from "./saludo.js";
         ReactDOM.render(
             React.createElement(Saludo, null),
+            document.getElementById('app')
+        );
+        */
+
+        import Saludo from "./saludo.js";
+        import {jsx as _jsx, Fragment} from 'react/jsx-runtime';
+
+        const contenido = _jsx(Fragment, 
+            {
+                children: [
+                    _jsx('h1', {className: 'titulo'}, 'Probando JSX Runtime'),
+                    _jsx(Saludo, {
+                        nombre: 'Juanito',
+                        children: _jsx('p', {}, 'Soy un párrafo')
+                    })
+                ]
+            }
+        );
+        ReactDOM.render(
+            contenido,
             document.getElementById('app')
         );
     </script>
