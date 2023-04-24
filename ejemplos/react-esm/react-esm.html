@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React ESM</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="module">
+        import React from "https://esm.sh/react@18.2.0";
+        import ReactDOM from "https://esm.sh/react-dom@18.2.0";
+        
+        const App = () => React.createElement('h1', null, 'Hola Mundo!!!');
+        ReactDOM.render(
+            React.createElement(App, null),
+            document.getElementById('app')
+        );
+    </script>
+</body>
+</html>
