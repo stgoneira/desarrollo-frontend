@@ -1,0 +1,121 @@
+¿Qué es ReactJS?
+A. Un lenguaje de programación para construir páginas web
+B. Una librería de JavaScript para interfaces de usuario
+C. Un sistema operativo hecho con Javascript
+ANSWER: B
+
+¿Cuál es la sintaxis para crear un componente en ReactJS?
+A. function MyComponent() {}
+B. class MyComponent extends React.Component {}
+C. Ambas son correctas 
+ANSWER: C
+
+¿Qué es JSX?
+A. Una extensión de Javascript que permite escribir código como si fuera HTML
+B. Una función para crear componentes en ReactJS
+C. Una herramienta de compilación para JavaScript
+ANSWER: A
+
+¿Cómo puedo mantener el estado de un Componente en React?
+A. Almacenando la información en una base de datos
+B. Usando variables de estado con el Hook useState() 
+C. Usando una variable global
+ANSWER: B
+
+¿Por qué son importantes las variables de estado?
+A. Porque se pueden interpolar en JSX 
+B. Porque permiten manipular el DOM 
+C. Porque sus cambios son persistentes y activan la re-renderización de un componente 
+ANSWER: C
+
+¿Qué es una prop en ReactJS?
+A. Es información que se puede pasar a un Componente en la forma de un argumento o atributo
+B. Es un tipo de Componente especial en React 
+C. Es un atributo de HTML 
+ANSWER: A
+
+¿Cuál es la forma correcta de pasar una prop a un componente en ReactJS?
+A. <MyComponent propName="propValue" />
+B. <MyComponent propName:"propValue" />
+C. <MyComponent>propValue</MyComponent>
+ANSWER: A
+
+¿Cuál es la diferencia entre un componente controlado y un componente no controlado en ReactJS?
+A. Un componente controlado es aquel en el que el estado es manejado por React, mientras que en un componente no controlado el estado es manejado por el navegador.
+B. Un componente controlado es aquel en el que el estado es manejado por el navegador, mientras que en un componente no controlado el estado es manejado por React.
+C. No hay diferencia entre un componente controlado y un componente no controlado en ReactJS.
+ANSWER: A
+
+¿Qué son los hooks en ReactJS?
+A. Una característica de React que permite el uso de estados y otros aspectos de componentes en componentes funcionales.
+B. Un patrón de diseño para el manejo de errores en aplicaciones de React.
+C. Una característica de React que permite la creación de componentes con funciones flecha.
+ANSWER: A
+
+¿Cuál es la forma correcta de manejar un evento en ReactJS?
+A. Definiendo una función que se ejecuta cuando se produce el evento y pasándola como prop al componente.
+B. Agregando un listener al elemento DOM correspondiente dentro del componente.
+C. Usando la función handleEvent() que provee React.
+ANSWER: A
+
+¿Qué es un fragment en ReactJS?
+A. Un componente permite agrupar elementos en React, donde en su salida no existe una etiqueta HTML real que los envuelva. Generalmente usado como <></>.
+B. Un componente que permite el manejo de errores en una aplicación React.
+C. Un componente que representa un Fragmento de Javascript.
+ANSWER: A
+
+¿Qué es useEffect en ReactJS?
+A. Un hook que se utiliza para actualizar el estado de un componente cada vez que se produce un evento.
+B. Un hook que se utiliza para realizar operaciones de efecto secundario en un componente, como llamar a una API.
+C. Un hook que se utiliza para definir las propiedades y eventos de un componente.
+ANSWER: B
+
+¿Qué función cumple el array de dependencias en useEffect?
+A. Indicar a React qué props son necesarias para que se actualice el componente.
+B. Indicar a React qué estados del componente debe observar para actualizar el efecto secundario.
+C. Indicar a React cuáles son las funciones que deben ejecutarse cada vez que se actualice el componente.
+ANSWER: B
+
+¿Qué es el segundo argumento de useEffect?
+A. El estado inicial del componente.
+B. El callback que se ejecuta después del efecto secundario.
+C. El array de dependencias que indica qué estados deben ser observados para actualizar el efecto secundario.
+ANSWER: C
+
+¿Cómo se puede evitar que useEffect se ejecute en cada renderizado del componente?
+A. Definiendo el array de dependencias con todos los estados del componente.
+B. Definiendo el array de dependencias como vacío.
+C. Definiendo el array de dependencias como null.
+ANSWER: B
+
+¿Qué pasa si no se define el array de dependencias en useEffect?
+A. El efecto secundario se ejecuta en cada renderizado del componente.
+B. El efecto secundario nunca se ejecuta.
+C. El efecto secundario se ejecuta solo en el primer renderizado del componente.
+ANSWER: A
+
+¿Qué es el hook useLayoutEffect en ReactJS?
+A. Un hook que se utiliza para ejecutar efectos secundarios que dependen del tamaño y posición de los elementos en el DOM.
+B. Un hook que se utiliza para ejecutar efectos secundarios después de que se actualiza el layout de la página.
+C. Un hook que se utiliza para ejecutar efectos secundarios en el ciclo de vida del componente anterior a la renderización.
+ANSWER: C
+
+¿Es posible escribir un componente de React sin utilizar JSX?
+A. Sí, es posible.
+B. No, no es posible.
+C. Solo es posible en versiones antiguas de React.
+ANSWER: A
+
+¿Qué tipos de datos pueden recibir las props en un componente de React?
+A. Solo strings y números.
+B. Solo objetos y arreglos.
+C. Cualquier tipo de dato, incluyendo funciones y componentes.
+ANSWER: C
+
+¿Es posible pasar múltiples componentes hijos a través de la prop props.children en un componente de React?
+A. Sí, se pueden pasar múltiples componentes como hijos de un componente utilizando la prop props.children.
+B. No, solo se puede pasar un único componente como hijo utilizando la prop props.children.
+C. Solo se puede pasar un componente y un arreglo de componentes a través de la prop props.children.
+ANSWER: A
+
+
