@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Submit - Disable Button</title>
+</head>
+<body>
+    <form method="get" action="form-disabled.html">
+        <input type="text" name="nombre" id="nombre" />
+        <button type="submit">Guardar</button>
+    </form>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', se => {
+            se.preventDefault();
+            document.querySelector('button[type="submit"]').disabled = true;
+        });
+    </script>
+</body>
+</html>
