@@ -43,10 +43,16 @@
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Ejemplo Hola Mundo con React](#)
 ===
-<!-- .slide: data-background-iframe="https://codesandbox.io/s/react-hola-mundo-bpvv07" -->
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/dygRzXg?default-tab=js%2Cresult" -->
+
+<!-- https://codesandbox.io/s/react-hola-mundo-bpvv07 -->
 ===
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Explicación](#)
+
+- [JSX](#) es [opcional](#) en React, [pero muy útil](#) 
+- El uso de JSX hace necesario usar un [Transpilador](#) como [Babel](#)
+- La transpilación [convierte](#) el código [JSX](#) a [JS entendible](#) por un [Browser](#) 
 
 ---
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
@@ -56,17 +62,28 @@
 - También se puede entender como [JS y XML](#) 
 - Permite escribir código de manera más [intuitiva](#), [fácil de leer](#) y [mantener](#) 
 
+===
+## [Comparación](#)
+
 Javascript:
 ```js
-const elemento 		= document.createElement('p');
-elemento.className 	= 'parrafo'
-elemento.innerText 	= 'Hola Mundo!'
+const elemento = React.createElement(
+						'p',
+						{className: 'parrafo'},
+						'Hola Mundo!'
+);
 ```
 
 JSX:
 ```jsx
 const elemento = <p className="parrafo">Hola Mundo!</p>;
 ```
+
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/ZEqyaVO?default-tab=js%2Cresult" -->
+
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/poxwpwe?default-tab=js%2Cresult" -->
 
 ===
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
@@ -76,11 +93,106 @@ const elemento = <p className="parrafo">Hola Mundo!</p>;
 - El uso de JSX es [opcional](#) dentro de [React](#), pero es muy útil 
 - Es muy común el uso de expresiones para [interpolar variables](#), para [iterar](#) un arreglo o para escribir una expresión de manera [condicional](#) 
 
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Expresiones JSX - Interpolación Variable](#)
+
 ```jsx
 // interpolar una variable 
 const nombre = "Juan";
 const titulo = <h1>Bienvenido, {nombre}</h1>;
 ```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Expresiones JSX - Estructuras Condicionales](#)
+
+Estructura Condicional #1 (op. ternario)
+```jsx
+{edad >= 18 ? 
+	(<p>{nombre} eres mayor de edad</p>)
+	:(<p>{nombre} eres menor de edad</p>)
+}
+```
+
+Estructura Condicional #2 (cortocircuito)
+```jsx
+{
+hijos.length > 0 && 
+<h2>Hijos</h2>
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Expresiones JSX - Iteraciones](#)
+
+```jsx
+<ol>
+	{hijos.map( hijo => <li>{hijo.nombre}</li>)}
+</ol>
+```
+
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/BaqZJrj?default-tab=js%2Cresult" -->
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Componentes React](#)
+
+- Son [bloques de construcción reutilizables](#) en React 
+- Pueden ser [funcionales](#) o de [clase](#) 
+- Pueden [recibir datos](#) a través de [props](#) 
+- Pueden ser [anidados](#)
+- Pueden [mantener un estado](#) 
+- Pueden [manejar eventos](#) 
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Funcionales vs de Clase](#)
+
+React actualmente [recomienda](#) utilizar sólo componentes [Funcionales](#).
+
+```jsx
+// Componente Funcional 
+function Saludo({ nombre }) {
+	return <h1>Hola, {nombre}!</h1>;
+}
+
+// Componente de Clase 
+import { Component } from 'react';
+class Saludo extends Component {
+	render() {
+		return <h1>Hola, {this.props.nombre}!</h1>;
+	}
+}
+```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Props](#)
+
+- Son una forma de que los [componentes reciban datos](#) y configuraciones 
+- Se pueden usar como un [argumento clásico](#) generalmente llamado props 
+- O usando la [sintaxis de destructuración](#)
+- Puedes [recibir](#) como prop cualquier [variable de JS](#) u [otros Componentes](#) de React 
+
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/dygRdyb?default-tab=js%2Cresult" -->
+
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/BaqZYoW?default-tab=js%2Cresult" -->
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Componentes Anidables](#)
+
+- Los componentes de React [pueden ser anidables](#) 
+- Cuando escribimos nuestros componentes podemos usar [props.children](#) para recuperar los elementos anidadados
+- Puedes anidar [elementos de HTML](#) y [Componentes de React](#) 
+
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/OJBgQMW?default-tab=js%2Cresult" -->
 
 ---
 <!-- .slide: data-background-image="../assets/bg.png" data-background-size="contain" -->
