@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pruebas con MochaJS</title>
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+    <script src="mi-libreria.js"></script>
+</head>
+<body style="padding: 2em;">
+    <h1>Pruebas con MochaJS</h1>
+    <p>
+        <strong>INSTRUCCIONES:</strong> Para ejecutar las pruebas abra este archivo HTML en el Browser de su preferencia.
+    </p>
+    <div id="mocha"></div>
+
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+
+    <script class="mocha-init">
+        mocha.setup('bdd');
+        mocha.checkLeaks();
+    </script>
+
+    <script>        
+        describe('Pruebas validación emails()', () => {
+            const validos = [
+                'abc@123.cl',
+                'juan@gmail.com',
+                'jorge@hotmail.es'
+            ];
+            for(let i = 0; i < validos.length; i++) {
+                it(validos[i]+' debería devolver true', () => {
+                    chai.assert.equal(validaEmail(validos[i]), true);
+                });
+            }
+            
+
+            const invalidos = [
+                '123.cl',
+                'juan@localhost',
+                '....---...',
+                '...@...'
+            ];
+            for(let i = 0; i < invalidos.length; i++) {
+                it(invalidos[i]+' debería devolver false', () => {
+                    chai.assert.equal(validaEmail(invalidos[i]), false);
+                });
+            }
+        });
+    </script>
+
+    <script class="mocha-exec">
+        mocha.run();
+    </script>
+</body>
+</html>
