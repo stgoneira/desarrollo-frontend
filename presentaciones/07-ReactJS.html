@@ -330,6 +330,23 @@ Extracto sección scripts de archivo [package.json](#) con script automatizado p
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Despliegue Glitch](#)
 
+- Glitch revisa la versión necesaria de NodeJS en el archivo [package.json](#) 
+- A la fecha la [versión](#) más actual que [soporta](#) es la 16
+- Para ello utilizaremos la sección ["engines"](#)
+
+```json 
+{
+	"name": "banco-backend",	
+	"engines": {
+		"node": "16.x"
+	}
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Despliegue Glitch](#)
+
 - Es muy importante seguir esta [guía](https://glitch.happyfox.com/kb/article/85-pushing-local-code-to-a-project/). En resumen dice:
 - Clonar proyecto de Glitch (GIT) y actualizar el código
 - En Glitch activar el soporte para push en el repo
