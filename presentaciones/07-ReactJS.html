@@ -32,7 +32,17 @@
 #### [Desarrollo Frontend](#)<!-- .element style="color:white !important; display: block; margin-top: 20px; margin-left: 200px;" -->
 
 ---
-<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+<!-- .slide: id="indice" data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [INDICE DE TEMAS](#)
+
+1. [Fundamentos de React](#/fundamentos)
+1. [Hooks](#/hooks)
+1. [NextJS](#/nextjs)
+1. [Despliegue](#/deploy)
+
+
+---
+<!-- .slide: id="fundamentos" data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
 ## [Introducción a React](#)
 
 - Es una biblioteca o [librería](#) de JS para [renderizar interfaces de Usuario](#) (UI)
@@ -193,6 +203,73 @@ class Saludo extends Component {
 
 ===
 <!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/OJBgQMW?default-tab=js%2Cresult" -->
+
+---
+<!-- .slide: id="hooks" data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Hooks](#)
+
+- Permiten utilizar [características de Estado y otras](#) en [Componentes Funcionales](#) 
+- [Antes](#) sólo era posible en [Componentes de Clase](#) 
+- Existen varios ["Hooks" pre-construidos](#)
+- También puedes [crear tus propios](#) "Hooks"
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Hooks Preconstruidos](#)
+
+- Hooks de Estado 
+- Hooks de Efectos
+- Hooks de Contexto 
+- Hooks de Referencia  
+- Hooks de Performance 
+- Otros 
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Hook de Estado](#)
+
+- Permite agregar una [variable de estado](#) en un componente funcional de React
+- Por ejemplo si queremos almacenar la cantidad de clicks que recibe un botón
+
+```js
+//const [state, setState] = useState(initialState);
+const [clicks, setClicks] = useState(0); 
+// el estado inicial es 0 clicks
+```
+
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/qBJPwKp?default-tab=js%2Cresult" -->
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Hook de Efecto](#)
+
+- Permite [sincronizar](#) el componente con un [sistema externo](#)
+- Tiene un comportamiento distinto según cómo se configuren sus dependencias
+
+```js
+const cargarContenido = async () => {
+	// código que carga contenido 
+	// setData(data) // llamada a fn de Hook State 
+};
+// useEffect(setup, dependencies?)
+useEffect(() => cargarContenido(), []); 
+```
+
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/WNaZBxx?default-tab=js%2Cresult" -->
+
+===
+<!-- .slide: data-background-iframe="https://codepen.io/stgoaiep/embed/yLRzWRv?default-tab=js%2Cresult" -->
+
+---
+<!-- .slide: id="nextjs" data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [NextJS](#)
+
+
+---
+<!-- .slide: id="deploy" data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Despliegue](#)
 
 ---
 <!-- .slide: data-background-image="../assets/bg.png" data-background-size="contain" -->
