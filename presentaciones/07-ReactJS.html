@@ -37,7 +37,6 @@
 
 1. [Fundamentos de React](#/fundamentos)
 1. [Hooks](#/hooks)
-1. [NextJS](#/nextjs)
 1. [Despliegue](#/deploy)
 
 
@@ -267,6 +266,81 @@ useEffect(() => cargarContenido(), []);
 ## [Despliegue](#)
 
 ![Despliegue](../assets/ppt/deploy-solution.png)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Despliegue NextJS](#)
+
+- Para desplegar en Github Pages utilizaremos la [carpeta "out"](#) que se genera al llamar a ["next build"](#) 
+- Se requiere hacer algunas configuraciones en el archivo [next.config.js](#)
+- Para que quede con una ruta más sencilla de recordar podemos [mover y renombar la carpeta "out"](#) usando algún [script o manualmente](#)
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Despliegue NextJS](#)
+
+```js 
+// archivo: next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  output: 'export',
+  // esta será la ruta con la que se reescribirán los enlaces 
+  basePath: '/admin', 
+  trailingSlash: true,
+  images: {
+    unoptimized: true
+  }
+}
+
+module.exports = nextConfig
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Despliegue NextJS](#)
+
+- Ejemplo compatible usando ["Git Bash"](#)
+- Código fuente de archivo [post-build.js](https://github.com/stgoneira/desarrollo-frontend-banco/blob/main/admin-src/post-build.js)
+
+Extracto sección scripts de archivo [package.json](#) con script automatizado para mover y renombrar la carpeta.
+```json 
+{
+	"scripts": {
+		"dev": "next dev --port 8080",
+		"build": "next build && node post-build.js",
+		"start": "next start",
+		"lint": "next lint"
+	}
+}
+```
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Despliegue Glitch](#)
+
+- Podemos [desplegar](#) nuestra Rest API hecha con Fastify de [muchas formas](#) 
+- Por [sencillez](#) utilizaremos [Glitch](#) 
+- En Glitch podemos hacer el deploy de [3 maneras](#):
+  1. [Copiando](#) los archivos de [manera manual](#) 
+  2. [Clonando](#) el [repositorio de GIT](#) y enviando los cambios 
+  3. Si generamos un repositorio sólo para la API, podemos agregar la [URL remota de GIT](#) para [sincronizar](#) 
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Despliegue Glitch](#)
+
+- Es muy importante seguir esta [guía](https://glitch.happyfox.com/kb/article/85-pushing-local-code-to-a-project/). En resumen dice:
+- Clonar proyecto de Glitch (GIT) y actualizar el código
+- En Glitch activar el soporte para push en el repo
+```bash 
+git config receive.denyCurrentBranch updateInstead
+```
+- En su equipo realizar el commit y push 
+- Finalmente en Glitch refresque el proyecto:
+```bash 
+refresh 
+```
 
 ---
 <!-- .slide: data-background-image="../assets/bg.png" data-background-size="contain" -->
