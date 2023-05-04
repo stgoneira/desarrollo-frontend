@@ -5,6 +5,14 @@ Implementar páginas web básicas responsivas utilizando HTML, CSS, Javascript y
 
 ## SESIONES
 
+### Sesión 17 - 20230502
+
+- Está habilitado el último Cuestionario ReactJS 
+- Quedó habilitado el apartado para subir el Trabajo Final 
+- Ver ejemplos para desplegar en Github Pages y Glitch 
+
+### Sesión 16 - 20230427
+
 ### Sesión 15 - 20230425
 
 - Uso de Firebase Firestore (CRUD) 
