@@ -273,7 +273,8 @@ useEffect(() => cargarContenido(), []);
 
 - Para desplegar en Github Pages utilizaremos la [carpeta "out"](#) que se genera al llamar a ["next build"](#) 
 - Se requiere hacer algunas configuraciones en el archivo [next.config.js](#)
-- Para que quede con una ruta más sencilla de recordar podemos [mover y renombar la carpeta "out"](#) usando algún [script o manualmente](#)
+- Para que quede con una ruta más sencilla de recordar podemos [mover y renombar la carpeta "out"](#) usando algún [script](https://github.com/stgoneira/desarrollo-frontend-banco/blob/main/admin-src/post-build.js) o [manualmente](#)
+- Para mayor facilidad puede mover a la carpeta [public](#) sus otras [páginas estáticas (html)](#) y [contenidos (imgs, css, js, etc)](#)
 
 ===
 <!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
@@ -286,7 +287,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   // esta será la ruta con la que se reescribirán los enlaces 
-  basePath: '/admin', 
+  basePath: '/desarrollo-frontend-banco',
   trailingSlash: true,
   images: {
     unoptimized: true
@@ -358,6 +359,21 @@ git config receive.denyCurrentBranch updateInstead
 ```bash 
 refresh 
 ```
+
+---
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Preguntas Frecuentes](#)
+
+**Al desplegar en Github Pages los CSS de NextJS no se cargan.**  
+Puede crear un archivo [.nojekyll](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/) dentro de su repositorio.
+
+===
+<!-- .slide: data-background-image="../assets/bg2.png" data-background-size="auto" data-background-position="top right" -->
+## [Preguntas Frecuentes](#)
+
+**Cuando cambio la propiedad [basePath](#) en el archivo [next.config.js](#) deja de funcionar mi proyecto**  
+El proyecto sigue funcionando en realidad, pero cambia la URL. Por ejemplo si antes funcionaba en http://localhost:8080/admin/login luego de configurar [basePath](#) con valor [/desarrollo-frontend-banco](#) ahora tendría que ingresar a http://localhost:8080/desarrollo-frontend-banco/admin/login
+
 
 ---
 <!-- .slide: data-background-image="../assets/bg.png" data-background-size="contain" -->
